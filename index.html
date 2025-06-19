@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Kim İngilizce Bilmek İster? | Ozcelik Inc.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="MEB müfredatına uygun İngilizce quiz uygulaması. Kurumsal ve kullanıcı dostu arayüz.">
+    <meta name="keywords" content="İngilizce, quiz, eğitim, MEB, kurumsal, öğrenim, test">
+    <meta name="author" content="Ozcelik Inc.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Tema değiştir" title="Tema değiştir">
+        <i class="fas fa-moon"></i> </button>
+
+    <div class="app-wrapper">
+        <header class="app-header">
+            <img src="logo.png" alt="Kim İngilizce Bilmek İster Logosu" class="logo" onerror="this.src='fallback-logo.png'; this.alt='Logo yüklenemedi';">
+            <h1 class="app-title">(MEB müfredatına uyumlu)</h1>
+            <h2 class="app-subtitle">from Beginner to Advanced</h2>
+        </header>
+
+        <main class="app-main-content">
+            <section id="home-screen" class="screen active">
+                <div class="rules-section">
+                    <h3 class="rules-title">Kurallar</h3>
+                    <ul class="rules-list">
+                        <li>Her sınıf seviyesi, 3 bölümden oluşur. (Kolay,orta,zor).</li>
+                        <li>Her seviyede yanlış cevap sayısı 10’dan az olmalıdır.</li>
+                        <li>Seviye atlamak için tüm soruları cevaplayın ve 10’dan az yanlış yapın.</li>
+                        <li>10 yanlış cevapta oyun biter ve istatistikleriniz gösterilir.</li>
+                    </ul>
+                </div>
+                <p class="select-grade-text">Lütfen sınıfınızı seçin:</p>
+                <div class="grade-buttons">
+                    <button class="grade-button grade-5" data-grade="5" tabindex="0" aria-label="5. Sınıf Seç">5. Sınıf</button>
+                    <button class="grade-button grade-6" data-grade="6" tabindex="0" aria-label="6. Sınıf Seç">6. Sınıf</button>
+                    <button class="grade-button grade-7" data-grade="7" tabindex="0" aria-label="7. Sınıf Seç">7. Sınıf</button>
+                    <button class="grade-button grade-8" data-grade="8" tabindex="0" aria-label="8. Sınıf Seç">8. Sınıf</button>
+                </div>
+            </section>
+
+            <section id="quiz-screen" class="screen">
+                <div id="level-title" class="level-indicator"></div>
+                <div class="question-area">
+                    <p id="question" aria-live="polite"></p>
+                </div>
+                <div id="answers" class="answer-options"></div>
+                <div id="result-area" class="result-display">
+                    <p id="result"></p>
+                </div>
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <div id="wrong-bar" class="wrong-bar-container"></div>
+                <button id="back-to-home" class="btn-primary">Ana Sayfaya Dön</button>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 Ozcelik Inc. Her hakkı saklıdır.</p>
+        </footer>
+    </div> <script type="text/javascript">
+        // XLSX kütüphane kodları buraya taşındı veya harici bir dosyadan yüklendi varsayılır.
+        // Daha önceki yüklemelerinizde bu kod zaten mevcuttu.
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+    </script>
+    <script src="sorular.js"></script>
+    <script src="app.js"></script> </body>
+</html>

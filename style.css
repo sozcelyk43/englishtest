@@ -1,0 +1,834 @@
+/* Ana Renk Değişkenleri */
+:root {
+    --bg-gradient: linear-gradient(-45deg, #1a1a2e, #3a3a6b, #2a2a4e);
+    --bg-container: rgba(25, 25, 40, 0.95);
+    --text-primary: #e0e0e0;
+    --text-secondary: #aaaaaa;
+    --accent-color: #00b0ff;
+    --button-bg: #007bff;
+    --button-hover: #0056b3;
+    --progress-fill: #ff4081;
+    --progress-track: rgba(255, 255, 255, 0.1);
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    --rules-bg: rgba(0, 0, 0, 0.4);
+    --rules-border: 1px solid rgba(255, 255, 255, 0.08);
+    --rules-title: #00b0ff;
+    --level-bg: rgba(0, 0, 0, 0.5);
+    --border-radius-main: 20px;
+    --border-radius-sm: 10px;
+    --spacing-xs: 0.5rem;   /* 8px */
+    --spacing-sm: 1rem;     /* 16px */
+    --spacing-md: 1.5rem;   /* 24px */
+    --spacing-lg: 2rem;     /* 32px */
+    --spacing-xl: 3rem;     /* 48px */
+}
+
+/* Açık Tema Değişkenleri */
+[data-theme="light"] {
+    --bg-gradient: linear-gradient(-45deg, #e0e7ff, #f0f2f5, #d1d9ff);
+    --bg-container: rgba(255, 255, 255, 0.95);
+    --text-primary: #2a2a2a;
+    --text-secondary: #5a5a5a;
+    --accent-color: #0277bd;
+    --button-bg: #0277bd;
+    --button-hover: #01579b;
+    --progress-fill: #00b0ff;
+    --progress-track: rgba(0, 0, 0, 0.1);
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    --rules-bg: rgba(255, 255, 255, 0.8);
+    --rules-border: 1px solid rgba(0, 0, 0, 0.1);
+    --rules-title: #01579b;
+    --level-bg: rgba(255, 255, 255, 0.7);
+}
+
+/* Temel Reset ve Font Ayarları */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Varsayılan 1rem = 16px */
+}
+
+body {
+    background: var(--bg-gradient);
+    background-size: 400% 400%;
+    animation: gradientShift 30s ease infinite;
+    color: var(--text-primary);
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100dvh;
+    text-align: center;
+    overflow: hidden; /* Genel taşmayı engeller */
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+}
+
+/* Tema Değiştirme Butonu */
+.theme-toggle {
+    position: fixed;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: var(--button-bg);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: var(--shadow);
+    z-index: 1001;
+    font-size: 1.3rem; /* İkon boyutu */
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover);
+    transform: scale(1.1);
+}
+
+/* Ana Uygulama Kapsayıcısı */
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 95vw; /* Ekran genişliğinin %95'ini kullanır */
+    max-width: 1400px; /* Maksimum genişlik, PC'lerde çok yayılmasını engeller */
+    height: 98vh; /* Ekran yüksekliğinin %98'ini kaplar */
+    box-sizing: border-box;
+    overflow: hidden; /* İç taşmaları kontrol etmek için */
+    border-radius: var(--border-radius-main); /* Ana kapsayıcıya köşeleri kıvrımlı */
+    box-shadow: var(--shadow); /* Kapsayıcıya gölge */
+}
+
+/* Header Alanı (~%8) */
+.app-header {
+    flex: 0 0 8vh; /* %8 yüksekliği sabitle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-container); /* Konteyner arka planı gibi */
+    padding: var(--spacing-xs); /* Daha az padding */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Altına hafif çizgi */
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+.logo {
+    width: 18rem; /* 288px */
+    height: auto;
+    max-height: 80%; /* Header'ın içinde orantılı kalsın */
+    object-fit: contain;
+    display: block;
+    border-radius: var(--border-radius-main);
+    margin-bottom: 0.1rem;
+}
+
+.app-title {
+    font-size: 1.8rem; /* 28.8px */
+    margin-bottom: 0.1rem;
+    color: var(--text-primary);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.app-subtitle {
+    font-size: 0.9rem; /* 14.4px */
+    color: var(--text-secondary);
+}
+
+/* Ana İçerik Alanı (~%87) */
+.app-main-content {
+    flex: 1 1 87vh; /* %87 yüksekliği kaplar */
+    background: var(--bg-container); /* Konteyner arka planı */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: auto; kaldırıldı, iç elemanların boşluklarını daha sıkı yöneteceğiz */
+    padding: var(--spacing-lg); /* Genel iç boşluğu azalttık */
+    position: relative;
+}
+
+/* Ortak Ekran Stilleri */
+.screen {
+    width: 100%;
+    height: 100%; /* Tamamen ebeveyn yüksekliğini kaplar */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* İçerikleri dikeyde ortala */
+    /* gap kaldırıldı, elemanların kendi marjinleri olacak */
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.screen.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ana Sayfa (Home Screen) */
+#home-screen {
+    /* Buradaki justify-content hala geçerli */
+}
+
+.rules-section {
+    background: var(--rules-bg);
+    border: var(--rules-border);
+    border-radius: var(--border-radius-main);
+    padding: var(--spacing-lg);
+    width: 100%;
+    max-width: 45rem; /* 720px */
+    margin-bottom: var(--spacing-md); /* Altında boşluk */
+    box-shadow: var(--shadow);
+}
+
+.rules-title {
+    color: var(--rules-title);
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.rules-list {
+    list-style: none;
+    padding-left: var(--spacing-md);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.rules-list li {
+    margin-bottom: var(--spacing-xs);
+    position: relative;
+    padding-left: var(--spacing-sm);
+}
+.rules-list li::before {
+    content: '\2022';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.select-grade-text {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-top: var(--spacing-sm); /* Üstünde boşluk */
+    margin-bottom: var(--spacing-md); /* Altında boşluk */
+}
+
+.grade-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: var(--spacing-md);
+    width: 100%;
+    max-width: 45rem;
+    /* margin-top kaldırıldı, home-screen'deki justify-content ile yönetilecek */
+}
+
+.grade-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    color: #fff;
+    min-height: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Sınıf Buton Renkleri */
+.grade-5 { background: #28a745; }
+.grade-5:hover { background: #218838; transform: translateY(-3px); }
+.grade-6 { background: #8bc34a; }
+.grade-6:hover { background: #7cb342; transform: translateY(-3px); }
+.grade-7 { background: #ff9800; }
+.grade-7:hover { background: #e68a00; transform: translateY(-3px); }
+.grade-8 { background: #dc3545; }
+.grade-8:hover { background: #c82333; transform: translateY(-3px); }
+
+/* Quiz Ekranı */
+#quiz-screen {
+    padding: var(--spacing-sm); /* İç boşluğu daha da azalttık */
+    justify-content: center; /* İçerikleri dikeyde ortala */
+    /* gap kaldırıldı */
+}
+
+.level-indicator {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    background: var(--level-bg);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    margin: 0 auto var(--spacing-md) auto; /* Ortala ve boşlukları ayarla */
+    box-shadow: var(--shadow);
+    width: fit-content;
+}
+
+.question-area p {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md); /* Altında boşluk */
+    color: var(--text-primary);
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+.answer-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 eşit sütun */
+    gap: var(--spacing-sm); /* Butonlar arası boşluk */
+    width: 100%;
+    max-width: 65rem; /* 1040px */
+    margin-bottom: var(--spacing-md); /* Altında boşluk */
+}
+
+.answer-options button {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.8rem 0.5rem; /* Dikey padding azaltıldı, yatay korundu veya biraz azaltıldı */
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.85rem; /* Daha da küçük font, tek satıra sığması için */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    min-height: 2.5rem; /* 40px - Daha küçük */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.answer-options button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.answer-options button.correct { background: #28a745; animation: pulse 0.5s ease; }
+.answer-options button.wrong { background: #dc3545; animation: pulse 0.5s ease; }
+.answer-options button:disabled { cursor: not-allowed; opacity: 0.6; }
+.answer-options button:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.result-display p {
+    font-size: 1rem;
+    margin: var(--spacing-xs) 0; /* Boşluk azaltıldı */
+    font-weight: 500;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 35rem; /* 560px */
+    background: var(--progress-track);
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius-sm);
+    height: 1.25rem; /* 20px */
+    margin: var(--spacing-sm) auto var(--spacing-xs) auto; /* Boşluklar ayarlandı */
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--progress-fill);
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+/* Yanlış Çubuğu Stilleri */
+.wrong-bar-container {
+    display: flex;
+    width: 100%;
+    max-width: 35rem; /* 560px */
+    height: 1.25rem; /* 20px */
+    margin: var(--spacing-xs) auto var(--spacing-lg) auto; /* Boşluklar ayarlandı */
+    gap: 2px;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.wrong-bar-segment {
+    flex: 1;
+    background-color: #28a745;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+
+.wrong-bar-segment.yellow { background-color: #ffeb3b; }
+.wrong-bar-segment.red { background-color: #dc3545; }
+.wrong-bar-segment.dark-red { background-color: #c82333; }
+.wrong-bar-segment.inactive {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.6;
+}
+
+[data-theme="light"] .wrong-bar-segment.inactive {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Genel Buton Stili (Ana Sayfaya Dön vb.) */
+.btn-primary {
+    background: var(--button-bg);
+    color: #fff;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 18rem; /* 288px */
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    min-height: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: auto; /* Kendisini alta iterek alanı doldurur */
+}
+
+.btn-primary:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+/* Modal Stilleri */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--bg-container);
+    color: var(--text-primary);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow);
+    max-width: 30rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-content h3 {
+    color: var(--accent-color);
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.modal-content p, .modal-content ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.modal-content ul {
+    list-style: disc;
+    padding-left: var(--spacing-lg);
+    text-align: left;
+}
+.modal-content li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.btn-modal {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    color: #fff;
+    min-width: 7rem;
+}
+
+.btn-modal.btn-close { background: #dc3545; }
+.btn-modal.btn-continue { background: var(--button-bg); }
+.btn-modal.btn-restart { background: #ff9800; } /* Sarı renkli tekrar oyna butonu */
+
+.btn-modal:hover {
+    filter: brightness(90%);
+    transform: translateY(-2px);
+}
+
+/* Footer Alanı (~%5) */
+.app-footer {
+    flex: 0 0 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-container);
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: var(--spacing-xs);
+}
+
+/* Responsive Düzenlemeler */
+
+/* Masaüstü Büyük Ekranlar (1400px üzeri) */
+@media (min-width: 1400px) {
+    html { font-size: 16px; }
+    .app-wrapper {
+        max-width: 1600px;
+        height: 98vh;
+    }
+    .app-header {
+        flex: 0 0 8vh;
+    }
+    .logo {
+        width: 18rem;
+        max-height: 80%;
+    }
+    .app-title {
+        font-size: 1.8rem;
+    }
+    .app-subtitle {
+        font-size: 0.9rem;
+    }
+    .app-main-content {
+        flex: 1 1 87vh;
+        padding: var(--spacing-xl);
+    }
+    .rules-section {
+        max-width: 45rem;
+        padding: var(--spacing-lg);
+    }
+    .rules-title {
+        font-size: 1.6rem;
+    }
+    .rules-list {
+        font-size: 0.9rem;
+    }
+    .select-grade-text {
+        font-size: 1rem;
+    }
+    .grade-buttons {
+        max-width: 45rem;
+        gap: var(--spacing-md);
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    }
+    .grade-button {
+        min-height: 3rem;
+        font-size: 1rem;
+    }
+    /* Quiz Ekranı */
+    .level-indicator {
+        font-size: 1.3rem;
+    }
+    .question-area p {
+        font-size: 1.5rem;
+        max-width: 700px;
+    }
+    .answer-options {
+        grid-template-columns: repeat(4, 1fr); /* PC'de 4'lü sıra */
+        max-width: 65rem;
+    }
+    .answer-options button {
+        font-size: 0.9rem;
+        min-height: 2.5rem;
+    }
+    .progress-container, .wrong-bar-container {
+        max-width: 35rem;
+        height: 1.25rem;
+    }
+    .btn-primary {
+        max-width: 18rem;
+    }
+    .modal-content {
+        max-width: 30rem;
+    }
+    .modal-content h3 { font-size: 1.6rem; }
+    .modal-content p, .modal-content ul { font-size: 0.9rem; }
+    .btn-modal { font-size: 0.9rem; min-width: 7rem; }
+    .app-footer {
+        flex: 0 0 5vh;
+        font-size: 0.7rem;
+    }
+}
+
+/* Tabletler ve Küçük Laptoplar (768px - 1399px) */
+@media (min-width: 768px) and (max-width: 1399px) {
+    html {
+        font-size: 15px;
+    }
+    .app-wrapper {
+        width: 95vw;
+        max-width: 1000px;
+        height: 98vh;
+    }
+    .app-header {
+        flex: 0 0 8vh;
+    }
+    .logo {
+        width: 16rem;
+        max-height: 80%;
+    }
+    .app-title {
+        font-size: 1.6rem;
+    }
+    .app-subtitle {
+        font-size: 0.8rem;
+    }
+    .app-main-content {
+        flex: 1 1 87vh;
+        padding: var(--spacing-lg);
+    }
+    .rules-section {
+        max-width: 40rem;
+        padding: var(--spacing-md);
+    }
+    .rules-title {
+        font-size: 1.4rem;
+    }
+    .rules-list {
+        font-size: 0.85rem;
+    }
+    .select-grade-text {
+        font-size: 0.9rem;
+    }
+    .grade-buttons {
+        max-width: 40rem;
+        gap: var(--spacing-md);
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    }
+    .grade-button {
+        min-height: 2.8rem;
+        font-size: 0.95rem;
+    }
+    /* Quiz Ekranı */
+    .level-indicator {
+        font-size: 1.2rem;
+    }
+    .question-area p {
+        font-size: 1.4rem;
+        max-width: 600px;
+    }
+    .answer-options {
+        grid-template-columns: repeat(2, 1fr); /* Tabletlerde 2'li sıra */
+        max-width: 30rem; /* 450px */
+    }
+    .answer-options button {
+        font-size: 0.95rem;
+        min-height: 2.8rem;
+    }
+    .progress-container, .wrong-bar-container {
+        max-width: 28rem;
+        height: 0.9rem; /* 13.5px - Tablette biraz daha ince */
+    }
+    .btn-primary {
+        max-width: 16rem;
+        min-height: 2.8rem;
+        font-size: 0.95rem;
+    }
+    .modal-content {
+        max-width: 25rem;
+        padding: var(--spacing-md);
+    }
+    .modal-content h3 { font-size: 1.4rem; }
+    .modal-content p, .modal-content ul { font-size: 0.8rem; }
+    .btn-modal { font-size: 0.8rem; min-width: 6rem; }
+    .app-footer {
+        flex: 0 0 5vh;
+        font-size: 0.65rem;
+    }
+}
+
+
+/* Mobil Cihazlar (max-width: 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    .theme-toggle {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+    }
+    body {
+        align-items: flex-start;
+        padding-top: var(--spacing-sm);
+    }
+    .app-wrapper {
+        width: 98vw;
+        max-width: none;
+        height: 98vh;
+        padding: var(--spacing-xs);
+        border-radius: var(--border-radius-sm);
+        box-shadow: none;
+    }
+    .app-header {
+        flex: 0 0 auto;
+        padding: var(--spacing-xs);
+        border-bottom: none;
+        box-shadow: none;
+    }
+    .logo {
+        width: 10rem;
+        max-height: 60px;
+        margin-bottom: 0.1rem;
+    }
+    .app-title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .app-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .app-main-content {
+        padding: var(--spacing-sm);
+        flex: 1 1 auto;
+        overflow-y: auto;
+        gap: var(--spacing-sm);
+    }
+    .screen {
+        justify-content: space-around;
+        gap: var(--spacing-sm);
+    }
+    .rules-section {
+        padding: var(--spacing-md);
+        max-width: none;
+        margin-bottom: var(--spacing-sm);
+        box-shadow: none;
+    }
+    .rules-title {
+        font-size: 1.2rem;
+    }
+    .rules-list {
+        font-size: 0.8rem;
+        padding-left: var(--spacing-sm);
+    }
+    .select-grade-text {
+        font-size: 0.9rem;
+        margin-top: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+    .grade-buttons {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+        max-width: 14rem;
+    }
+    .grade-button {
+        min-height: 2.2rem;
+        font-size: 0.85rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    /* Quiz Ekranı */
+    .level-indicator {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-md);
+    }
+    .question-area p {
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-md);
+        max-width: none;
+    }
+    .answer-options {
+        grid-template-columns: 1fr;
+        max-width: none;
+    }
+    .answer-options button {
+        font-size: 0.85rem;
+        min-height: 2.2rem;
+        max-width: none;
+        padding: var(--spacing-xs) var(--spacing-md);
+        text-align: center;
+        white-space: normal;
+        text-overflow: clip;
+    }
+    .progress-container, .wrong-bar-container {
+        max-width: none;
+        height: 0.9rem;
+        margin: var(--spacing-xs) 0;
+    }
+    .btn-primary {
+        max-width: 14rem;
+        min-height: 2.2rem;
+        font-size: 0.85rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+        margin-top: var(--spacing-md);
+    }
+    .modal-content {
+        max-width: 90vw;
+        padding: var(--spacing-md);
+    }
+    .modal-content h3 { font-size: 1.3rem; }
+    .modal-content p, .modal-content ul { font-size: 0.8rem; }
+    .btn-modal { font-size: 0.8rem; min-width: 5rem; padding: var(--spacing-xs) var(--spacing-sm); }
+    .modal-buttons {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    .app-footer {
+        flex: 0 0 auto;
+        font-size: 0.6rem;
+        padding: var(--spacing-xs);
+        border-top: none;
+        box-shadow: none;
+    }
+}
