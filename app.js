@@ -129,12 +129,17 @@ class Quiz {
         });
     }
 
-    showScreen(screenId) {
-        document.querySelectorAll('.screen').forEach(screen => {
-            screen.classList.remove('active');
-        });
-        document.getElementById(screenId)?.classList.add('active');
-    }
+   // EKLENECEK KOD
+   showScreen(screenId) {
+       // Önce body'deki özel sınıfı kontrol et
+       document.body.classList.toggle('quiz-active', screenId === 'quiz-screen');
+
+       // Diğer ekranları gizle, isteneni göster
+       document.querySelectorAll('.screen').forEach(screen => {
+           screen.classList.remove('active');
+       });
+       document.getElementById(screenId)?.classList.add('active');
+   }
 
     initQuiz() {
         if (!this.loadQuestions()) {

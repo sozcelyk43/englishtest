@@ -71,10 +71,30 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 /* ==========================================================================
    ANA EKRAN (HOME) STİLLERİ
    ========================================================================== */
-.rules-section { background-color: var(--bg-alt-color); border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem; width: 100%; box-shadow: 0 8px 32px var(--shadow-color); }
-.rules-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; text-align: center; }
+// EKLENECEK KODLAR
+.rules-section {
+    background-color: var(--bg-alt-color);
+    border-radius: 16px;
+    padding: 1.2rem; /* İç boşluk azaltıldı */
+    margin-bottom: 1.5rem; /* Alt boşluk azaltıldı */
+    width: 100%;
+    box-shadow: 0 8px 32px var(--shadow-color);
+}
+.rules-title {
+    font-size: 1.1rem; /* Yazı boyutu küçültüldü */
+    font-weight: 700;
+    margin-bottom: 0.8rem; /* Alt boşluk azaltıldı */
+    text-align: center;
+}
+.rules-list li {
+    font-size: 0.9rem; /* Yazı boyutu küçültüldü */
+    margin-bottom: 0.5rem; /* Satırlar arası boşluk azaltıldı */
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+
 .rules-list { list-style: none; padding-left: 0; }
-.rules-list li { margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative; }
 .rules-list li::before { content: '\f058'; font-family: "Font Awesome 6 Free"; font-weight: 900; color: var(--primary-color); position: absolute; left: 0; top: 4px; }
 .select-grade-text { font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; }
 .grade-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; width: 100%; }
@@ -139,3 +159,65 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
     .grade-buttons { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
     .answer-options { grid-template-columns: 1fr 1fr; }
 }
+/* ==========================================================================
+   KOMPAKT MOBİL GÖRÜNÜM İÇİN EKSTRA STİLLER
+   ========================================================================== */
+
+/* Ekran yüksekliği 800px'den daha az olan cihazlar için bu kurallar geçerli olsun */
+@media (max-height: 800px) {
+
+    /* Üst başlık alanındaki dikey boşluğu azalt */
+    .app-header {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        max-width: 80px; /* Logoyu biraz küçült */
+    }
+
+    /* Zamanlayıcıyı küçült ve boşluğunu azalt */
+    .timer {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* Soru alanının minimum yüksekliğini ve boşluğunu azalt */
+    .question-area {
+        min-height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    #question {
+        font-size: clamp(1.1rem, 4.5vw, 1.5rem); /* Yazı boyutunu biraz küçült */
+    }
+
+    /* Cevap seçenekleri arasındaki boşlukları azalt */
+    .answer-options {
+        gap: 0.5rem; /* Butonlar arası boşluk */
+        margin-bottom: 1rem;
+    }
+
+    /* Cevap butonlarının iç boşluğunu azalt */
+    .answer-options button {
+        padding: 0.8rem;
+    }
+
+    /* Yanlış cevap barının altındaki boşluğu azalt */
+    .wrong-bar-container {
+        margin-bottom: 1rem;
+    }
+
+    /* En alttaki footer boşluğunu azalt */
+    .app-footer {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Quiz ekranı aktifken üst başlığı gizle */
+body.quiz-active .app-header {
+    display: none;
+}
+
