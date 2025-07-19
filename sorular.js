@@ -1,27 +1,13 @@
 
 
 const questionsByGrade = {
-    5: {
-        beginner: [
+	5: {
+	beginner: [
 
-    {
-                question: "What do you say to greet someone?",
-                options: ["Goodbye", "Hello", "Thank you", "Sorry"],
-                correctAnswer: "Hello",
-                explanation: "'Hello' birisiyle selamlaşmak için kullanılır ve 'Merhaba' anlamına gelir."
-    },
-    {
-        question: "What do you say when you meet someone in the morning?",
-        options: ["Good evening", "Good night", "Good morning", "Goodbye"],
-        correctAnswer: "Good morning",
-        explanation: "'Good morning' (Günaydın), sabahları biriyle karşılaştığınızda kullanılır."
-    },
-    {
-        question: "What sound does a cat make?",
-        options: ["Woof", "Moo", "Meow", "Oink"],
-        correctAnswer: "Meow",
-        explanation: "Kediler 'Meow' (Miyav) diye ses çıkarır."
-    },
+
+
+
+
     {
         question: "What color is the sky on a sunny day?",
         options: ["Green", "Black", "Blue", "Red"],
@@ -233,956 +219,1156 @@ const questionsByGrade = {
         explanation: "Diş ağrısı ('toothache') için 'dentist' (diş hekimi) gidilir."
     },
     {
-                question: "What is the opposite of 'big'?",
-                options: ["Small", "Tall", "Long", "Wide"],
-                correctAnswer: "Small",
-                explanation: "'Big' (büyük) kelimesinin zıttı 'small' (küçük) kelimesidir."
+        question: "What is the seventh day of the week?",
+        options: ["Monday", "Friday", "Sunday", "Tuesday"],
+        correctAnswer: "Sunday",
+        explanation: "Haftanın yedinci ve son günü 'Sunday' (Pazar) günüdür."
     },
-            {
-                question: "What is a place where you buy food?",
-                options: ["Market", "School", "Park", "Hospital"],
-                correctAnswer: "Market",
-                explanation: "'Market' yiyecek satın aldığımız yerdir."
-            },
-            {
-                question: "What is the color of grass?",
-                options: ["Green", "Red", "Blue", "Yellow"],
-                correctAnswer: "Green",
-                explanation: "Çimenlerin rengi 'green' (yeşil) olur."
-            },
-            {
-                question: "What do you do with a ball?",
-                options: ["Eat", "Kick", "Read", "Sleep"],
-                correctAnswer: "Kick",
-                explanation: "Topa genellikle 'kick' (vurmak) eylemi yapılır."
-            },
-            {
-                question: "What time do you wake up?",
-                options: ["Night", "Morning", "Afternoon", "Evening"],
-                correctAnswer: "Morning",
-                explanation: "Genellikle 'morning' (sabah) uyanırız."
-            },
-            {
-                question: "Who is your mother's husband?",
-                options: ["Father", "Brother", "Sister", "Friend"],
-                correctAnswer: "Father",
-                explanation: "Annenizin eşi sizin 'father' (babanız) olur."
-            },
-            {
-                question: "What is a 'cat'?",
-                options: ["Fruit", "Animal", "Color", "Game"],
-                correctAnswer: "Animal",
-                explanation: "'Cat' (kedi) bir 'animal' (hayvan) türüdür."
-            },
-            {
-                question: "What do you wear on your feet?",
-                options: ["Hat", "Gloves", "Shoes", "Jacket"],
-                correctAnswer: "Shoes",
-                explanation: "Ayaklarımıza 'shoes' (ayakkabı) giyeriz."
-            },
-            {
-                question: "Where do you play outside?",
-                options: ["Kitchen", "Bedroom", "Playground", "Bathroom"],
-                correctAnswer: "Playground",
-                explanation: "Dışarıda oynamak için 'playground' (oyun parkı) kullanılır."
-            },
-            {
-                question: "What do you do when you are tired?",
-                options: ["Run", "Sleep", "Dance", "Sing"],
-                correctAnswer: "Sleep",
-                explanation: "Yorgun olduğumuzda 'sleep' (uyumak) ihtiyacı duyarız."
-            },
-            {
-                question: "What is a 'movie'?",
-                options: ["Book", "Song", "Film", "Game"],
-                correctAnswer: "Film",
-                explanation: "'Movie' kelimesi 'film' ile eş anlamlıdır."
-            },
-            {
-                question: "What do you say at a birthday?",
-                options: ["Good night", "Happy birthday", "See you", "Good morning"],
-                correctAnswer: "Happy birthday",
-                explanation: "Doğum günlerinde 'Happy birthday' (Mutlu yıllar) denir."
-            },
-            {
-                question: "What is a sport you play with a ball?",
-                options: ["Cooking", "Reading", "Football", "Drawing"],
-                correctAnswer: "Football",
-                explanation: "'Football' (futbol) topla oynanan bir spordur."
-            },
-            {
-                question: "What is a 'dog'?",
-                options: ["Plant", "Toy", "Animal", "Place"],
-                correctAnswer: "Animal",
-                explanation: "'Dog' (köpek) bir 'animal' (hayvan) türüdür."
-            },
-            {
-                question: "What do you eat at a picnic?",
-                options: ["Books", "Clothes", "Sandwiches", "Toys"],
-                correctAnswer: "Sandwiches",
-                explanation: "Pikniklerde genellikle 'sandwiches' (sandviçler) yenir."
-            },
-            {
-                question: "What is the opposite of 'happy'?",
-                options: ["Big", "Sad", "Fast", "Tall"],
-                correctAnswer: "Sad",
-                explanation: "'Happy' (mutlu) kelimesinin zıttı 'sad' (üzgün) kelimesidir."
-            },
-            {
-                question: "What is a 'school'?",
-                options: ["Place to sleep", "Place to learn", "Place to eat", "Place to play"],
-                correctAnswer: "Place to learn",
-                explanation: "'School' (okul) öğrenim görülen bir yerdir."
-            },
-            {
-                question: "What do you use to write?",
-                options: ["Spoon", "Pen", "Shoe", "Ball"],
-                correctAnswer: "Pen",
-                explanation: "Yazı yazmak için 'pen' (kalem) kullanırız."
-            },
-            {
-                question: "What is the opposite of 'fast'?",
-                options: ["Quick", "Slow", "High", "Low"],
-                correctAnswer: "Slow",
-                explanation: "'Fast' (hızlı) kelimesinin zıttı 'slow' (yavaş) kelimesidir."
-            },
-            {
-                question: "Who is a 'friend'?",
-                options: ["A stranger", "Someone you like", "A teacher", "A boss"],
-                correctAnswer: "Someone you like",
-                explanation: "'Friend' (arkadaş), sevdiğiniz ve anlaştığınız bir kişidir."
-            },
-            {
-                question: "What do you do in a park?",
-                options: ["Cook", "Study", "Play", "Sleep"],
-                correctAnswer: "Play",
-                explanation: "Parklarda genellikle 'play' (oynamak) eylemi yapılır."
-            },
-            {
-                question: "What is a 'headache'?",
-                options: ["Pain in leg", "Pain in head", "Pain in arm", "Pain in foot"],
-                correctAnswer: "Pain in head",
-                explanation: "'Headache', 'baş ağrısı' anlamına gelir."
-            },
-            {
-                question: "What is a 'comedy' movie?",
-                options: ["Scary", "Funny", "Sad", "Boring"],
-                correctAnswer: "Funny",
-                explanation: "'Comedy' (komedi) filmleri 'funny' (eğlenceli, komik) olur."
-            },
-            {
-                question: "What do you wear to a party?",
-                options: ["Casual clothes", "Formal clothes", "Sportswear", "School uniform"],
-                correctAnswer: "Formal clothes",
-                explanation: "Partilere genellikle 'formal clothes' (resmi kıyafetler) veya şık kıyafetler giyilir."
-            },
-            {
-                question: "What is 'running'?",
-                options: ["Color", "Sport", "Animal", "Place"],
-                correctAnswer: "Sport",
-                explanation: "'Running' (koşu) bir 'sport' (spor) türüdür."
-            },
-            {
-                question: "What is a 'bird'?",
-                options: ["Toy", "Plant", "Animal", "Book"],
-                correctAnswer: "Animal",
-                explanation: "'Bird' (kuş) bir 'animal' (hayvan) türüdür."
-            },
-            {
-                question: "What do you do at a festival?",
-                options: ["Work", "Study", "Dance", "Sleep"],
-                correctAnswer: "Dance",
-                explanation: "Festivallerde genellikle 'dance' (dans) edilir ve eğlenilir."
-            },
-            {
-                question: "What is the opposite of 'old'?",
-                options: ["Young", "Big", "Tall", "Fast"],
-                correctAnswer: "Young",
-                explanation: "'Old' (yaşlı) kelimesinin zıttı 'young' (genç) kelimesidir."
-            },
-            {
-                question: "What is a 'hospital'?",
-                options: ["Place for shopping", "Place for sick people", "Place for playing", "Place for cooking"],
-                correctAnswer: "Place for sick people",
-                explanation: "'Hospital' (hastane), hasta insanlar için olan bir yerdir."
-            },
-            {
-                question: "What do you call a best friend?",
-                options: ["Teacher", "Stranger", "Pal", "Enemy"],
-                correctAnswer: "Pal",
-                explanation: "'Pal', en iyi arkadaş anlamına gelen samimi bir ifadedir."
-            },
-            {
-                question: "What do you drink?",
-                options: ["Book", "Water", "Ball", "Pen"],
-                correctAnswer: "Water",
-                explanation: "'Water' (su) içilebilen bir sıvıdır."
-            },
-            {
-                question: "What is a 'hobby'?",
-                options: ["Something you eat", "Something you like to do", "Something you wear", "Something you read"],
-                correctAnswer: "Something you like to do",
-                explanation: "'Hobby' (hobi), yapmaktan hoşlandığınız bir aktivitedir."
-            },
-            {
-                question: "What is the opposite of 'up'?",
-                options: ["Left", "Down", "Right", "In"],
-                correctAnswer: "Down",
-                explanation: "'Up' (yukarı) kelimesinin zıttı 'down' (aşağı) kelimesidir."
-            },
-            {
-                question: "Who is a 'teacher'?",
-                options: ["Person who cooks", "Person who teaches", "Person who plays", "Person who sings"],
-                correctAnswer: "Person who teaches",
-                explanation: "'Teacher' (öğretmen), bir şeyler öğreten kişidir."
-            },
-            {
-                question: "What do you do with a book?",
-                options: ["Wear", "Eat", "Read", "Kick"],
-                correctAnswer: "Read",
-                explanation: "Kitaplar 'read' (okumak) içindir."
-            },
-            {
-                question: "What is a 'fever'?",
-                options: ["Cold body", "High body temperature", "Fast running", "Loud noise"],
-                correctAnswer: "High body temperature",
-                explanation: "'Fever' (ateş), yüksek vücut sıcaklığı anlamına gelir."
-            },
-            {
-                question: "What is an 'action' movie?",
-                options: ["Sad", "Exciting", "Funny", "Slow"],
-                correctAnswer: "Exciting",
-                explanation: "'Action' (aksiyon) filmleri genellikle 'exciting' (heyecan verici) olur."
-            },
-            {
-                question: "What is a 'cake'?",
-                options: ["Toy", "Food", "Cloth", "Game"],
-                correctAnswer: "Food",
-                explanation: "'Cake' (pasta) bir 'food' (yiyecek) türüdür."
-            },
-            {
-                question: "What is 'swimming'?",
-                options: ["Color", "Animal", "Sport", "Place"],
-                correctAnswer: "Sport",
-                explanation: "'Swimming' (yüzme) bir 'sport' (spor) türüdür."
-            },
-            {
-                question: "What do you do after school?",
-                options: ["Cook", "Do homework", "Work", "Sleep"],
-                correctAnswer: "Do homework",
-                explanation: "Okuldan sonra genellikle 'do homework' (ödev yapmak) gerekir."
-            },
-            {
-                question: "Who is in your 'family'?",
-                options: ["Coworkers", "People you live with", "Strangers", "Teachers"],
-                correctAnswer: "People you live with",
-                explanation: "'Family' (aile), birlikte yaşadığınız insanlardır."
-            },
-            {
-                question: "What do you eat for breakfast?",
-                options: ["Eggs", "Cereal", "Pizza", "Ice cream"],
-                correctAnswer: "Eggs",
-                explanation: "Kahvaltıda 'eggs' (yumurta) yaygın bir yiyecektir. Cereal (gevrek) de doğru olabilir."
-            },
-            {
-                question: "What is a 'bus'?",
-                options: ["Food", "Vehicle", "Toy", "Cloth"],
-                correctAnswer: "Vehicle",
-                explanation: "'Bus' (otobüs) bir 'vehicle' (taşıt) türüdür."
-            },
-            {
-                question: "What do you say to thank someone?",
-                options: ["Sorry", "Hello", "Thank you", "Goodbye"],
-                correctAnswer: "Thank you",
-                explanation: "Birine teşekkür etmek için 'Thank you' (Teşekkür ederim) denir."
-            },
-            {
-                question: "What is a 'table'?",
-                options: ["Food", "Furniture", "Animal", "Sport"],
-                correctAnswer: "Furniture",
-                explanation: "'Table' (masa) bir 'furniture' (mobilya) türüdür."
-            },
-            {
-                question: "What do you do in the classroom?",
-                options: ["Cook", "Play", "Study", "Sleep"],
-                correctAnswer: "Study",
-                explanation: "Sınıfta 'study' (ders çalışmak) yapılır."
-            },
-            {
-                question: "What is the opposite of 'long'?",
-                options: ["Big", "Short", "Tall", "Wide"],
-                correctAnswer: "Short",
-                explanation: "'Long' (uzun) kelimesinin zıttı 'short' (kısa) kelimesidir."
-            },
-            {
-                question: "What is a 'garden'?",
-                options: ["Place to sleep", "Place with plants", "Place to eat", "Place to work"],
-                correctAnswer: "Place with plants",
-                explanation: "'Garden' (bahçe), bitkilerin olduğu bir yerdir."
-            },
-            {
-                question: "Who is a 'student'?",
-                options: ["Person who cooks", "Person who learns", "Person who drives", "Person who sings"],
-                correctAnswer: "Person who learns",
-                explanation: "'Student' (öğrenci), öğrenen kişidir."
-            },
-            {
-                question: "What is a 'chair'?",
-                options: ["Something to sit on", "Something to eat", "Something to wear", "Something to read"],
-                correctAnswer: "Something to sit on",
-                explanation: "'Chair' (sandalye), üzerine oturulan bir eşyadır."
-            },
-            {
-                question: "What do you say to apologize?",
-                options: ["Hello", "Sorry", "Thank you", "Goodbye"],
-                correctAnswer: "Sorry",
-                explanation: "Özür dilemek için 'Sorry' (Üzgünüm/Özür dilerim) denir."
-            },
-            {
-                question: "What is the opposite of 'hot'?",
-                options: ["Warm", "Cold", "Dry", "Wet"],
-                correctAnswer: "Cold",
-                explanation: "'Hot' (sıcak) kelimesinin zıttı 'cold' (soğuk) kelimesidir."
-            },
-            {
-                question: "Who is a 'sister'?",
-                options: ["Female sibling", "Male sibling", "Teacher", "Friend"],
-                correctAnswer: "Female sibling",
-                explanation: "'Sister' (kız kardeş), kadın olan kardeştir."
-            },
-            {
-                question: "What do you wear on your head?",
-                options: ["Shoes", "Jacket", "Hat", "Gloves"],
-                correctAnswer: "Hat",
-                explanation: "Başımıza 'hat' (şapka) takarız."
-            },
-            {
-                question: "What is a 'market'?",
-                options: ["Place to sleep", "Place to buy things", "Place to study", "Place to play"],
-                correctAnswer: "Place to buy things",
-                explanation: "'Market', bir şeyler satın alınan bir yerdir."
-            },
-            {
-                question: "What do you do with a pencil?",
-                options: ["Eat", "Write", "Kick", "Wear"],
-                correctAnswer: "Write",
-                explanation: "Kurşun kalem ('pencil') ile 'write' (yazmak) eylemi yapılır."
-            },
-            {
-                question: "Who is a 'brother'?",
-                options: ["Teacher", "Male sibling", "Friend", "Sister"],
-                correctAnswer: "Male sibling",
-                explanation: "'Brother' (erkek kardeş), erkek olan kardeştir."
-            },
-            {
-                question: "What is the opposite of 'dark'?",
-                options: ["Light", "Heavy", "Big", "Small"],
-                correctAnswer: "Light",
-                explanation: "'Dark' (karanlık) kelimesinin zıttı 'light' (aydınlık) kelimesidir."
-            },
-            {
-                question: "What do you eat for lunch?",
-                options: ["Book", "Soup", "Pen", "Shoe"],
-                correctAnswer: "Soup",
-                explanation: "Öğle yemeğinde 'soup' (çorba) içilebilir."
-            },
-            {
-                question: "What is a 'bed'?",
-                options: ["Something to sleep on", "Something to eat", "Something to wear", "Something to read"],
-                correctAnswer: "Something to sleep on",
-                explanation: "'Bed' (yatak), üzerinde uyunulan bir eşyadır."
-            },
-            {
-                question: "What do you say to say goodbye?",
-                options: ["Hello", "Thank you", "Goodbye", "Sorry"],
-                correctAnswer: "Goodbye",
-                explanation: "Vedalaşmak için 'Goodbye' (Hoşça kal) denir."
-            },
-            {
-                question: "What is a 'balloon'?",
-                options: ["Food", "Toy", "Cloth", "Book"],
-                correctAnswer: "Toy",
-                explanation: "'Balloon' (balon) genellikle bir 'toy' (oyuncak) olarak kullanılır."
-            },
-            {
-                question: "What do you do at a birthday party?",
-                options: ["Work", "Study", "Sing", "Sleep"],
-                correctAnswer: "Sing",
-                explanation: "Doğum günü partilerinde 'sing' (şarkı söylemek) yaygındır."
-            },
-            {
-                question: "What is a 'fish'?",
-                options: ["Plant", "Animal", "Toy", "Color"],
-                correctAnswer: "Animal",
-                explanation: "'Fish' (balık) bir 'animal' (hayvan) türüdür."
-            },
-            {
-                question: "What do you wear in winter?",
-                options: ["Swimsuit", "Jacket", "T-shirt", "Shorts"],
-                correctAnswer: "Jacket",
-                explanation: "Kışın 'jacket' (ceket, mont) giyilir."
-            },
-            {
-                question: "What is a 'gift'?",
-                options: ["Something you give", "Something you eat", "Something you wear", "Something you read"],
-                correctAnswer: "Something you give",
-                explanation: "'Gift' (hediye), birine verilen bir şeydir."
-            },
-            {
-                question: "What do you do in a library?",
-                options: ["Play", "Cook", "Read", "Sleep"],
-                correctAnswer: "Read",
-                explanation: "Kütüphanede ('library') kitap 'read' (okumak) için gidilir."
-            },
-            {
-                question: "What is a 'flower'?",
-                options: ["Animal", "Plant", "Toy", "Food"],
-                correctAnswer: "Plant",
-                explanation: "'Flower' (çiçek) bir 'plant' (bitki) türüdür."
-            },
-            {
-                question: "What is the opposite of 'loud'?",
-                options: ["Noisy", "Quiet", "Big", "Small"],
-                correctAnswer: "Quiet",
-                explanation: "'Loud' (yüksek sesli) kelimesinin zıttı 'quiet' (sessiz) kelimesidir."
-            },
-            {
-                question: "What do you eat for dinner?",
-                options: ["Pen", "Rice", "Book", "Shoe"],
-                correctAnswer: "Rice",
-                explanation: "Akşam yemeğinde 'rice' (pilav) yenebilir."
-            },
-            {
-                question: "What is a 'door'?",
-                options: ["Something to eat", "Something to open", "Something to wear", "Something to read"],
-                correctAnswer: "Something to open",
-                explanation: "'Door' (kapı), açılıp kapanan bir nesnedir."
-            },
-            {
-                question: "What do you say to ask for something?",
-                options: ["Please", "Thank you", "Goodbye", "Sorry"],
-                correctAnswer: "Please",
-                explanation: "Bir şey isterken kibarca 'Please' (Lütfen) denir."
-            },
-            {
-                question: "What is a 'rabbit'?",
-                options: ["Plant", "Toy", "Animal", "Color"],
-                correctAnswer: "Animal",
-                explanation: "'Rabbit' (tavşan) bir 'animal' (hayvan) türüdür."
-            },
-            {
-                question: "What do you wear on your hands?",
-                options: ["Hat", "Shoes", "Gloves", "Jacket"],
-                correctAnswer: "Gloves",
-                explanation: "Ellerimize 'gloves' (eldiven) takarız."
-            },
-            {
-                question: "What is a 'kitchen'?",
-                options: ["Place to cook", "Place to sleep", "Place to study", "Place to play"],
-                correctAnswer: "Place to cook",
-                explanation: "'Kitchen' (mutfak), yemek pişirilen yerdir."
-            },
-            {
-                question: "What do you do with a toy?",
-                options: ["Eat", "Play", "Write", "Wear"],
-                correctAnswer: "Play",
-                explanation: "Oyuncaklarla ('toy') 'play' (oynamak) eylemi yapılır."
-            },
-            {
-                question: "What is the opposite of 'wet'?",
-                options: ["Dry", "Cold", "Hot", "Big"],
-                correctAnswer: "Dry",
-                explanation: "'Wet' (ıslak) kelimesinin zıttı 'dry' (kuru) kelimesidir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Book", "Fruit", "Pen", "Shoe"],
-                correctAnswer: "Fruit",
-                explanation: "Atıştırmalık olarak 'fruit' (meyve) sağlıklı bir seçenektir."
-            },
-            {
-                question: "What is a 'window'?",
-                options: ["Something to eat", "Something to look through", "Something to wear", "Something to read"],
-                correctAnswer: "Something to look through",
-                explanation: "'Window' (pencere), dışarıya bakmak için kullanılır."
-            },
-            {
-                question: "What do you say to introduce yourself?",
-                options: ["Goodbye", "My name is...", "Thank you", "Sorry"],
-                correctAnswer: "My name is...",
-                explanation: "Kendinizi tanıtmak için 'My name is...' (Benim adım...) dersiniz."
-            },
-            {
-                question: "What is a 'tree'?",
-                options: ["Animal", "Toy", "Plant", "Food"],
-                correctAnswer: "Plant",
-                explanation: "'Tree' (ağaç) bir 'plant' (bitki) türüdür."
-            },
-            {
-                question: "What do you do in a bedroom?",
-                options: ["Cook", "Sleep", "Play", "Study"],
-                correctAnswer: "Sleep",
-                explanation: "Yatak odasında ('bedroom') genellikle 'sleep' (uyumak) eylemi yapılır."
-            },
-            {
-                question: "What is a 'cup'?",
-                options: ["Something to drink from", "Something to eat", "Something to wear", "Something to read"],
-                correctAnswer: "Something to drink from",
-                explanation: "'Cup' (fincan/bardak), içecek içmek için kullanılır."
-            },
-            {
-                question: "What is the opposite of 'heavy'?",
-                options: ["Light", "Big", "Tall", "Long"],
-                correctAnswer: "Light",
-                explanation: "'Heavy' (ağır) kelimesinin zıttı 'light' (hafif) kelimesidir."
-            },
-            {
-                question: "Who is a 'neighbor'?",
-                options: ["Person at school", "Person nearby", "Person at work", "Person in family"],
-                correctAnswer: "Person nearby",
-                explanation: "'Neighbor' (komşu), yakınınızda yaşayan kişidir."
-            },
-            {
-                question: "What do you do with a phone?",
-                options: ["Eat", "Call", "Wear", "Write"],
-                correctAnswer: "Call",
-                explanation: "Telefon ile 'call' (aramak) yapabilirsiniz."
-            },
-            {
-                question: "What is a 'plate'?",
-                options: ["Something to eat from", "Something to wear", "Something to read", "Something to play with"],
-                correctAnswer: "Something to eat from",
-                explanation: "'Plate' (tabak), üzerinden yemek yenilen bir eşyadır."
-            },
-            {
-                question: "What is the opposite of 'near'?",
-                options: ["Close", "Far", "Next to", "Behind"],
-                correctAnswer: "Far",
-                explanation: "'Near' (yakın) kelimesinin zıttı 'far' (uzak) kelimesidir."
-            },
-            {
-                question: "What do you wear in summer?",
-                options: ["Jacket", "T-shirt", "Gloves", "Coat"],
-                correctAnswer: "T-shirt",
-                explanation: "Yazın 'T-shirt' (tişört) gibi ince kıyafetler giyilir."
-            },
-            {
-                question: "What is a 'team'?",
-                options: ["Type of food", "Group of people", "Kind of game", "Single person"],
-                correctAnswer: "Group of people",
-                explanation: "'Team' (takım), bir grup insandan oluşur."
-            },
-            {
-                question: "What do you do at a picnic?",
-                options: ["Study", "Eat", "Work", "Sleep"],
-                correctAnswer: "Eat",
-                explanation: "Piknikte temel aktivite 'eat' (yemek yemek) ve dinlenmektir."
-            },
-            {
-                question: "What is the 'sun'?",
-                options: ["Animal", "Star", "Plant", "Toy"],
-                correctAnswer: "Star",
-                explanation: "'Sun' (Güneş) bir 'star' (yıldız) türüdür."
-            },
-            {
-                question: "What is the opposite of 'day'?",
-                options: ["Night", "Morning", "Evening", "Afternoon"],
-                correctAnswer: "Night",
-                explanation: "'Day' (gündüz) kelimesinin zıttı 'night' (gece) kelimesidir."
-            },
-            {
-                question: "What do you do with a kite?",
-                options: ["Eat", "Fly", "Wear", "Write"],
-                correctAnswer: "Fly",
-                explanation: "Uçurtma ('kite') 'fly' (uçurmak) için kullanılır."
-            },
-            {
-                question: "What is a 'clock'?",
-                options: ["Something to tell time", "Something to eat", "Something to wear", "Something to read"],
-                correctAnswer: "Something to tell time",
-                explanation: "'Clock' (saat), zamanı söyleyen bir alettir."
-            },
-            {
-                question: "What do you drink in the morning?",
-                options: ["Milk", "Soda", "Ice cream", "Soup"],
-                correctAnswer: "Milk",
-                explanation: "Sabahları 'milk' (süt) içmek yaygındır."
-            }
+    {
+        question: "Which animal says 'moo'?",
+        options: ["A pig", "A sheep", "A horse", "A cow"],
+        correctAnswer: "A cow",
+        explanation: "'Cow' (inek), 'moo' diye ses çıkaran bir hayvandır."
+    },
+    {
+        question: "How many months are in a year?",
+        options: ["Ten", "Seven", "Twelve", "Thirty"],
+        correctAnswer: "Twelve",
+        explanation: "Bir yılda 'twelve' (on iki) ay vardır."
+    },
+    {
+        question: "What do you wear on your head to keep warm?",
+        options: ["A scarf", "A hat", "Gloves", "Socks"],
+        correctAnswer: "A hat",
+        explanation: "Başınızı sıcak tutmak için 'hat' (şapka/bere) takarsınız."
+    },
+    {
+        question: "Which of these is a breakfast food?",
+        options: ["Pizza", "Soup", "Cereal", "Pasta"],
+        correctAnswer: "Cereal",
+        explanation: "'Cereal' (kahvaltılık gevrek), yaygın bir kahvaltı yiyeceğidir."
+    },
+    {
+        question: "What is the opposite of 'sad'?",
+        options: ["Angry", "Tired", "Happy", "Scared"],
+        correctAnswer: "Happy",
+        explanation: "'Sad' (üzgün) kelimesinin zıttı 'happy' (mutlu) kelimesidir."
+    },
+    {
+        question: "Where do you sleep at home?",
+        options: ["In the kitchen", "In the living room", "In the bedroom", "In the bathroom"],
+        correctAnswer: "In the bedroom",
+        explanation: "Evde 'bedroom' (yatak odası) içinde uyunur."
+    },
+    {
+        question: "Which number comes before twenty?",
+        options: ["Twenty-one", "Eighteen", "Nineteen", "Thirty"],
+        correctAnswer: "Nineteen",
+        explanation: "Yirmiden ('twenty') önce on dokuz ('nineteen') gelir."
+    },
+    {
+        question: "What do you use to drink water?",
+        options: ["A plate", "A fork", "A glass", "A knife"],
+        correctAnswer: "A glass",
+        explanation: "Su içmek için 'glass' (bardak) kullanılır."
+    },
+    {
+        question: "What is your father's daughter to you?",
+        options: ["Mother", "Aunt", "Sister", "Cousin"],
+        correctAnswer: "Sister",
+        explanation: "Babanızın kızı sizin 'sister' (kız kardeşiniz) olur."
+    },
+    {
+        question: "Which season is usually cold and snowy?",
+        options: ["Summer", "Autumn", "Winter", "Spring"],
+        correctAnswer: "Winter",
+        explanation: "'Winter' (kış) mevsimi genellikle soğuk ve karlıdır."
+    },
+    {
+        question: "What is the color of a lemon?",
+        options: ["Red", "Green", "Orange", "Yellow"],
+        correctAnswer: "Yellow",
+        explanation: "Limonun rengi 'yellow' (sarı) dır."
+    },
+    {
+        question: "How many legs does a spider have?",
+        options: ["Six", "Four", "Eight", "Ten"],
+        correctAnswer: "Eight",
+        explanation: "Bir örümceğin 'eight' (sekiz) bacağı vardır."
+    },
+    {
+        question: "What do you do when you are hungry?",
+        options: ["You sleep", "You drink", "You eat", "You play"],
+        correctAnswer: "You eat",
+        explanation: "Aç olduğunuzda 'eat' (yemek yemek) eylemini yaparsınız."
+    },
+    {
+        question: "Where can you see a doctor?",
+        options: ["At the post office", "At the hospital", "At the library", "At the bakery"],
+        correctAnswer: "At the hospital",
+        explanation: "Bir doktora 'hospital' (hastane) içinde görünebilirsiniz."
+    },
+    {
+        question: "Which of these can fly?",
+        options: ["A fish", "A dog", "A bird", "A cat"],
+        correctAnswer: "A bird",
+        explanation: "Seçenekler arasında 'bird' (kuş) uçabilen bir hayvandır."
+    },
+    {
+        question: "What is the child of your aunt or uncle?",
+        options: ["Brother", "Cousin", "Niece", "Nephew"],
+        correctAnswer: "Cousin",
+        explanation: "Teyzenizin veya amcanızın çocuğu sizin 'cousin' (kuzen) inizdir."
+    },
+    {
+        question: "What do you say to someone in the evening?",
+        options: ["Good morning", "Good afternoon", "Good evening", "Good day"],
+        correctAnswer: "Good evening",
+        explanation: "Akşamları birine 'Good evening' (İyi akşamlar) dersiniz."
+    },
+    {
+        question: "Which part of your body do you use to see?",
+        options: ["Ears", "Nose", "Eyes", "Mouth"],
+        correctAnswer: "Eyes",
+        explanation: "Görmek için 'eyes' (gözler) kullanılır."
+    },
+    {
+        question: "What is the day before Wednesday?",
+        options: ["Thursday", "Monday", "Tuesday", "Friday"],
+        correctAnswer: "Tuesday",
+        explanation: "Çarşamba'dan ('Wednesday') önceki gün Salı'dır ('Tuesday')."
+    },
+    {
+        question: "Which animal lives on a farm and gives us milk?",
+        options: ["A chicken", "A sheep", "A cow", "A pig"],
+        correctAnswer: "A cow",
+        explanation: "Çiftlikte yaşayan ve bize süt veren hayvan 'cow' (inek) dir."
+    },
+    {
+        question: "What do you sit on in a classroom?",
+        options: ["A desk", "A board", "A chair", "A window"],
+        correctAnswer: "A chair",
+        explanation: "Sınıfta 'chair' (sandalye) üzerine oturursunuz."
+    },
+    {
+        question: "What is the opposite of 'young'?",
+        options: ["New", "Old", "Small", "Short"],
+        correctAnswer: "Old",
+        explanation: "'Young' (genç) kelimesinin zıttı 'old' (yaşlı) kelimesidir."
+    },
+    {
+        question: "Which fruit is long and yellow?",
+        options: ["An apple", "An orange", "A banana", "A strawberry"],
+        correctAnswer: "A banana",
+        explanation: "'Banana' (muz) uzun ve sarı bir meyvedir."
+    },
+    {
+        question: "How do you ask for someone's age?",
+        options: ["What is your name?", "How are you?", "How old are you?", "Where are you from?"],
+        correctAnswer: "How old are you?",
+        explanation: "Birinin yaşını sormak için 'How old are you?' (Kaç yaşındasın?) sorusu kullanılır."
+    },
+    {
+        question: "What is the room where you cook food?",
+        options: ["The bedroom", "The bathroom", "The kitchen", "The living room"],
+        correctAnswer: "The kitchen",
+        explanation: "Yemek pişirilen odaya 'kitchen' (mutfak) denir."
+    },
+    {
+        question: "Which of these is a vegetable?",
+        options: ["A pear", "A carrot", "A grape", "A cherry"],
+        correctAnswer: "A carrot",
+        explanation: "'Carrot' (havuç) bir sebzedir."
+    },
+    {
+        question: "What is the main color of a fire truck?",
+        options: ["Blue", "Yellow", "Green", "Red"],
+        correctAnswer: "Red",
+        explanation: "İtfaiye araçlarının ana rengi genellikle 'red' (kırmızı) dır."
+    },
+    {
+        question: "What do you do with a football?",
+        options: ["You throw it", "You kick it", "You eat it", "You read it"],
+        correctAnswer: "You kick it",
+        explanation: "Futbol topuna 'kick' (vurmak, tekmelemek) eylemi yapılır."
+    },
+    {
+        question: "Which of these is NOT a family member?",
+        options: ["Father", "Teacher", "Mother", "Brother"],
+        correctAnswer: "Teacher",
+        explanation: "'Teacher' (öğretmen) bir meslektir, aile üyesi değildir."
+    },
+    {
+        question: "What time is it when the clock shows 3:00?",
+        options: ["It's three o'clock", "It's half past three", "It's quarter to three", "It's three thirty"],
+        correctAnswer: "It's three o'clock",
+        explanation: "Saat tam 3:00 olduğunda 'three o'clock' denir."
+    },
+    {
+        question: "What is the opposite of 'slow'?",
+        options: ["Quick", "Fast", "Short", "Small"],
+        correctAnswer: "Fast",
+        explanation: "'Slow' (yavaş) kelimesinin zıttı 'fast' (hızlı) kelimesidir."
+    },
+    {
+        question: "Where do fish live?",
+        options: ["In the sky", "In the water", "On the land", "In the forest"],
+        correctAnswer: "In the water",
+        explanation: "Balıklar 'water' (su) içinde yaşar."
+    },
+    {
+        question: "What is the first month of the year?",
+        options: ["December", "February", "January", "March"],
+        correctAnswer: "January",
+        explanation: "Yılın ilk ayı 'January' (Ocak) ayıdır."
+    },
+    {
+        question: "What do you use to clean your teeth?",
+        options: ["A comb", "A toothbrush", "A spoon", "A pencil"],
+        correctAnswer: "A toothbrush",
+        explanation: "Dişlerinizi temizlemek için 'toothbrush' (diş fırçası) kullanılır."
+    },
+    {
+        question: "What do you wear when it is sunny?",
+        options: ["A coat", "A scarf", "Sunglasses", "Boots"],
+        correctAnswer: "Sunglasses",
+        explanation: "Hava güneşli olduğunda 'sunglasses' (güneş gözlüğü) takılır."
+    },
+    {
+        question: "Which animal is known as the 'king of the jungle'?",
+        options: ["An elephant", "A tiger", "A lion", "A monkey"],
+        correctAnswer: "A lion",
+        explanation: "'Lion' (aslan), 'ormanın kralı' olarak bilinir."
+    },
+    {
+        question: "What is the number after forty-nine?",
+        options: ["Forty-eight", "Fifty", "Sixty", "Forty"],
+        correctAnswer: "Fifty",
+        explanation: "Kırk dokuzdan ('forty-nine') sonra elli ('fifty') gelir."
+    },
+    {
+        question: "What do you do at a library?",
+        options: ["You play games", "You eat food", "You read books", "You watch movies"],
+        correctAnswer: "You read books",
+        explanation: "Kütüphanede ('library') kitap okunur ('read books')."
+    },
+    {
+        question: "What is your mother's mother called?",
+        options: ["Aunt", "Grandmother", "Sister", "Cousin"],
+        correctAnswer: "Grandmother",
+        explanation: "Annenizin annesi sizin 'grandmother' (büyükanne) inizdir."
+    },
+    {
+        question: "What is the opposite of 'short' for hair?",
+        options: ["Big", "Small", "Long", "Tall"],
+        correctAnswer: "Long",
+        explanation: "Saç için 'short' (kısa) kelimesinin zıttı 'long' (uzun) kelimesidir."
+    },
+    {
+        question: "Which food is made from milk?",
+        options: ["Bread", "Cheese", "Rice", "Apple"],
+        correctAnswer: "Cheese",
+        explanation: "'Cheese' (peynir) sütten yapılan bir yiyecektir."
+    },
+    {
+        question: "What do you use to cut paper?",
+        options: ["A pen", "A ruler", "Scissors", "An eraser"],
+        correctAnswer: "Scissors",
+        explanation: "Kağıt kesmek için 'scissors' (makas) kullanılır."
+    },
+    {
+        question: "What is a baby dog called?",
+        options: ["A kitten", "A puppy", "A chick", "A cub"],
+        correctAnswer: "A puppy",
+        explanation: "Yavru köpeğe 'puppy' denir."
+    },
+    {
+        question: "Which of these is a shape?",
+        options: ["Blue", "Circle", "Soft", "Big"],
+        correctAnswer: "Circle",
+        explanation: "'Circle' (daire) bir geometrik şekildir."
+    },
+    {
+        question: "What do you do in a swimming pool?",
+        options: ["You run", "You jump", "You swim", "You read"],
+        correctAnswer: "You swim",
+        explanation: "Yüzme havuzunda 'swim' (yüzmek) eylemi yapılır."
+    },
+    {
+        question: "What color do you get when you mix red and yellow?",
+        options: ["Green", "Purple", "Orange", "Brown"],
+        correctAnswer: "Orange",
+        explanation: "Kırmızı ve sarıyı karıştırdığınızda 'orange' (turuncu) rengini elde edersiniz."
+    },
+    {
+        question: "What is the opposite of 'full'?",
+        options: ["Empty", "Open", "Big", "Heavy"],
+        correctAnswer: "Empty",
+        explanation: "'Full' (dolu) kelimesinin zıttı 'empty' (boş) kelmesidir."
+    },
+    {
+        question: "Where do you buy clothes?",
+        options: ["At a supermarket", "At a clothes shop", "At a bakery", "At a post office"],
+        correctAnswer: "At a clothes shop",
+        explanation: "Kıyafetleri bir 'clothes shop' (giyim mağazası) içinden alırsınız."
+    },
+    {
+        question: "What is a small, red fruit with seeds on the outside?",
+        options: ["An apple", "A grape", "A strawberry", "A banana"],
+        correctAnswer: "A strawberry",
+        explanation: "Dışında tohumları olan küçük, kırmızı meyve 'strawberry' (çilek) dir."
+    },
+    {
+        question: "What subject do you learn about the past?",
+        options: ["Science", "History", "Geography", "Art"],
+        correctAnswer: "History",
+        explanation: "Geçmiş hakkında öğrendiğiniz ders 'History' (Tarih) dersidir."
+    },
+    {
+        question: "What do bees make?",
+        options: ["Milk", "Honey", "Bread", "Juice"],
+        correctAnswer: "Honey",
+        explanation: "Arılar 'honey' (bal) yapar."
+    },
+    {
+        question: "What is the opposite of 'day'?",
+        options: ["Morning", "Evening", "Night", "Afternoon"],
+        correctAnswer: "Night",
+        explanation: "'Day' (gündüz) kelimesinin zıttı 'night' (gece) kelimesidir."
+    },
+    {
+        question: "What do you use to write on a blackboard?",
+        options: ["A pen", "A pencil", "Chalk", "A crayon"],
+        correctAnswer: "Chalk",
+        explanation: "Kara tahtaya yazı yazmak için 'chalk' (tebeşir) kullanılır."
+    },
+    {
+        question: "Which animal has a very long neck?",
+        options: ["An elephant", "A giraffe", "A hippo", "A rhino"],
+        correctAnswer: "A giraffe",
+        explanation: "'Giraffe' (zürafa) çok uzun bir boyuna sahiptir."
+    },
+    {
+        question: "What do you put on your bread?",
+        options: ["Soap", "Butter", "Shampoo", "Water"],
+        correctAnswer: "Butter",
+        explanation: "Ekmeğinizin üzerine 'butter' (tereyağı) sürebilirsiniz."
+    },
+    {
+        question: "What is the color of grass?",
+        options: ["Blue", "Red", "Yellow", "Green"],
+        correctAnswer: "Green",
+        explanation: "Çimenlerin rengi 'green' (yeşil) dir."
+    },
+    {
+        question: "What do you do with a gift?",
+        options: ["You open it", "You close it", "You eat it", "You drink it"],
+        correctAnswer: "You open it",
+        explanation: "Bir hediyeyi 'open' (açmak) eylemiyle açarsınız."
+    },
+    {
+        question: "How many sides does a triangle have?",
+        options: ["Two", "Three", "Four", "Five"],
+        correctAnswer: "Three",
+        explanation: "Bir üçgenin 'three' (üç) kenarı vardır."
+    },
+    {
+        question: "What do you do at a bus stop?",
+        options: ["You wait", "You play", "You eat", "You sleep"],
+        correctAnswer: "You wait",
+        explanation: "Otobüs durağında 'wait' (beklemek) eylemini yaparsınız."
+    },
+    {
+        question: "What is the opposite of 'clean'?",
+        options: ["New", "Dirty", "Fresh", "Nice"],
+        correctAnswer: "Dirty",
+        explanation: "'Clean' (temiz) kelimesinin zıttı 'dirty' (kirli) kelimesidir."
+    },
+    {
+        question: "What is your mother's husband?",
+        options: ["Uncle", "Grandfather", "Father", "Brother"],
+        correctAnswer: "Father",
+        explanation: "Annenizin eşi sizin 'father' (babanız) olur."
+    },
+    {
+        question: "Which of these do you drink from a cup?",
+        options: ["Soup", "Tea", "Salad", "Sandwich"],
+        correctAnswer: "Tea",
+        explanation: "'Tea' (çay) genellikle bir fincandan içilir."
+    },
+    {
+        question: "What is a house made of ice called?",
+        options: ["A tent", "A cottage", "An igloo", "A castle"],
+        correctAnswer: "An igloo",
+        explanation: "Buzdan yapılmış eve 'igloo' (iglo) denir."
+    },
+    {
+        question: "What part of your body do you use to smell?",
+        options: ["Your mouth", "Your ears", "Your eyes", "Your nose"],
+        correctAnswer: "Your nose",
+        explanation: "Koku almak için 'nose' (burun) kullanılır."
+    },
+    {
+        question: "What is a baby cat called?",
+        options: ["A puppy", "A kitten", "A duckling", "A lamb"],
+        correctAnswer: "A kitten",
+        explanation: "Yavru kediye 'kitten' denir."
+    },
+    {
+        question: "What is the opposite of 'heavy'?",
+        options: ["Light", "Soft", "Big", "Hard"],
+        correctAnswer: "Light",
+        explanation: "'Heavy' (ağır) kelimesinin zıttı 'light' (hafif) kelimesidir."
+    },
+    {
+        question: "What do you do after school?",
+        options: ["Go to bed", "Do homework", "Have breakfast", "Wake up"],
+        correctAnswer: "Do homework",
+        explanation: "Okuldan sonra genellikle 'do homework' (ödev yapmak) gerekir."
+    },
+    {
+        question: "Which of these is a musical instrument?",
+        options: ["A camera", "A piano", "A telephone", "A computer"],
+        correctAnswer: "A piano",
+        explanation: "'Piano' (piyano) bir müzik aletidir."
+    },
+    {
+        question: "What is the top part of a house?",
+        options: ["The floor", "The wall", "The roof", "The door"],
+        correctAnswer: "The roof",
+        explanation: "Bir evin en üst kısmına 'roof' (çatı) denir."
+    },
+    {
+        question: "What color are clouds usually on a rainy day?",
+        options: ["White", "Blue", "Grey", "Yellow"],
+        correctAnswer: "Grey",
+        explanation: "Yağmurlu bir günde bulutlar genellikle 'grey' (gri) renkte olur."
+    },
+    {
+        question: "What do you do when you are tired?",
+        options: ["You run", "You sing", "You sleep", "You dance"],
+        correctAnswer: "You sleep",
+        explanation: "Yorgun olduğunuzda 'sleep' (uyumak) ihtiyacı duyarsınız."
+    },
+    {
+        question: "What is the opposite of 'right'?",
+        options: ["Correct", "Up", "Left", "Down"],
+        correctAnswer: "Left",
+        explanation: "Yön olarak 'right' (sağ) kelimesinin zıttı 'left' (sol) kelimesidir."
+    },
+    {
+        question: "What do you eat with a spoon?",
+        options: ["A sandwich", "An apple", "Soup", "Pizza"],
+        correctAnswer: "Soup",
+        explanation: "'Soup' (çorba) kaşıkla yenen bir yiyecektir."
+    },
+    {
+        question: "Where do you play during the break at school?",
+        options: ["In the classroom", "In the library", "In the playground", "In the office"],
+        correctAnswer: "In the playground",
+        explanation: "Okuldaki teneffüste 'playground' (oyun alanı) içinde oynarsınız."
+    },
+    {
+        question: "Which month has 28 or 29 days?",
+        options: ["January", "February", "March", "April"],
+        correctAnswer: "February",
+        explanation: "'February' (Şubat) ayı 28 veya 29 gün çeker."
+    },
+    {
+        question: "What is the opposite of 'beautiful'?",
+        options: ["Nice", "Ugly", "Pretty", "Good"],
+        correctAnswer: "Ugly",
+        explanation: "'Beautiful' (güzel) kelimesinin zıttı 'ugly' (çirkin) kelimesidir."
+    },
+    {
+        question: "What vehicle runs on a track?",
+        options: ["A car", "A bus", "A train", "A boat"],
+        correctAnswer: "A train",
+        explanation: "'Train' (tren) raylar üzerinde hareket eder."
+    },
+    {
+        question: "What is a place with a lot of trees?",
+        options: ["A desert", "A beach", "A forest", "A river"],
+        correctAnswer: "A forest",
+        explanation: "Çok sayıda ağacın olduğu yere 'forest' (orman) denir."
+    },
+    {
+        question: "What do you do with a TV?",
+        options: ["You listen to it", "You watch it", "You read it", "You play it"],
+        correctAnswer: "You watch it",
+        explanation: "Televizyonu 'watch' (izlemek) eylemiyle izlersiniz."
+    },
+    {
+        question: "What is the opposite of 'near'?",
+        options: ["Close", "Next to", "Far", "Beside"],
+        correctAnswer: "Far",
+        explanation: "'Near' (yakın) kelimesinin zıttı 'far' (uzak) kelimesidir."
+    },
+    {
+        question: "What do you do before you go to bed?",
+        options: ["Get up", "Have breakfast", "Go to school", "Brush your teeth"],
+        correctAnswer: "Brush your teeth",
+        explanation: "Yatmadan önce dişlerinizi fırçalamak ('brush your teeth') sağlıklı bir alışkanlıktır."
+    },
+    {
+        question: "Which of these is a job?",
+        options: ["Student", "Holiday", "Doctor", "Friend"],
+        correctAnswer: "Doctor",
+        explanation: "'Doctor' (doktor) bir meslektir ('job')."
+    },
+    {
+        question: "What color is a polar bear?",
+        options: ["Black", "Brown", "White", "Grey"],
+        correctAnswer: "White",
+        explanation: "Kutup ayılarının rengi 'white' (beyaz) dır."
+    },
+    {
+        question: "What do you do with a camera?",
+        options: ["Make a call", "Take photos", "Write a letter", "Listen to music"],
+        correctAnswer: "Take photos",
+        explanation: "Bir kamera ile 'take photos' (fotoğraf çekmek) eylemini yaparsınız."
+    },
+    {
+        question: "What is the opposite of 'push'?",
+        options: ["Pull", "Go", "Stop", "Open"],
+        correctAnswer: "Pull",
+        explanation: "'Push' (itmek) kelimesinin zıttı 'pull' (çekmek) kelimesidir."
+    },
+    {
+        question: "What animal is big and grey with a long trunk?",
+        options: ["A hippo", "A rhino", "An elephant", "A giraffe"],
+        correctAnswer: "An elephant",
+        explanation: "Büyük, gri ve uzun hortumlu hayvan 'elephant' (fil) dir."
+    },
+    {
+        question: "What do you do at a birthday party?",
+        options: ["You study", "You work", "You celebrate", "You clean"],
+        correctAnswer: "You celebrate",
+        explanation: "Doğum günü partisinde 'celebrate' (kutlamak) eylemi yapılır."
+    },
+    {
+        question: "What color are bananas when they are not ripe?",
+        options: ["Yellow", "Brown", "Green", "Red"],
+        correctAnswer: "Green",
+        explanation: "Muzlar olgunlaşmadığında renkleri 'green' (yeşil) olur."
+    },
+    {
+        question: "What is the opposite of 'love'?",
+        options: ["Like", "Hate", "Enjoy", "Prefer"],
+        correctAnswer: "Hate",
+        explanation: "'Love' (sevmek) kelimesinin zıttı 'hate' (nefret etmek) kelimesidir."
+    },
+    {
+        question: "Which of these can you read?",
+        options: ["A radio", "A picture", "A magazine", "A song"],
+        correctAnswer: "A magazine",
+        explanation: "Seçenekler arasında 'magazine' (dergi) okunabilen bir nesnedir."
+    },
+    {
+        question: "What is the fifth letter of the alphabet?",
+        options: ["D", "F", "E", "G"],
+        correctAnswer: "E",
+        explanation: "Alfabenin beşinci harfi 'E' harfidir."
+    },
+    {
+        question: "What do you do with a kite?",
+        options: ["You eat it", "You fly it", "You wear it", "You write with it"],
+        correctAnswer: "You fly it",
+        explanation: "Uçurtmayı ('kite') uçurursunuz ('fly it')."
+    },
+    {
+        question: "What is the opposite of 'stand up'?",
+        options: ["Sit down", "Look up", "Jump up", "Run"],
+        correctAnswer: "Sit down",
+        explanation: "'Stand up' (ayağa kalkmak) ifadesinin zıttı 'sit down' (oturmak) ifadesidir."
+    },
+    {
+        question: "What is a very big town called?",
+        options: ["A village", "A city", "A farm", "A house"],
+        correctAnswer: "A city",
+        explanation: "Çok büyük kasabalara 'city' (şehir) denir."
+    },
+    {
+        question: "Which of these is a cold drink?",
+        options: ["Tea", "Coffee", "Hot chocolate", "Lemonade"],
+        correctAnswer: "Lemonade",
+        explanation: "'Lemonade' (limonata) genellikle soğuk içilen bir içecektir."
+    },
+    {
+        question: "What do you do in a race?",
+        options: ["You walk", "You talk", "You run", "You sleep"],
+        correctAnswer: "You run",
+        explanation: "Bir yarışta kazanmak için genellikle 'run' (koşmak) eylemi yapılır."
+    }
+
+    
+
+
+
+
+
+
         ],
      
         intermediate: [
-            {
-                question: "Where do you buy bread?",
-                options: ["Bakery", "Library", "Gym", "Zoo"],
-                correctAnswer: "Bakery",
-                explanation: "Ekmek almak için 'bakery' (fırın) adı verilen yere gidilir."
-            },
-            {
-                question: "What do you say when you leave?",
-                options: ["Hello", "Thank you", "Goodbye", "Please"],
-                correctAnswer: "Goodbye",
-                explanation: "Bir yerden ayrılırken 'Goodbye' (Hoşça kal) denir."
-            },
-            {
-                question: "What do you like to do in your free time?",
-                options: ["Work", "Play games", "Sleep", "Study"],
-                correctAnswer: "Play games",
-                explanation: "Boş zamanlarda 'play games' (oyun oynamak) popüler bir aktivitedir."
-            },
-            {
-                question: "What time do you go to bed?",
-                options: ["Morning", "Night", "Afternoon", "Evening"],
-                correctAnswer: "Night",
-                explanation: "Genellikle 'night' (gece) yatağa gidilir."
-            },
-            {
-                question: "What do you take when you have a cold?",
-                options: ["Book", "Medicine", "Toy", "Food"],
-                correctAnswer: "Medicine",
-                explanation: "Soğuk algınlığında 'medicine' (ilaç) alınır."
-            },
-            {
-                question: "What kind of movie is 'Star Wars'?",
-                options: ["Comedy", "Romance", "Science fiction", "Horror"],
-                correctAnswer: "Science fiction",
-                explanation: "'Star Wars' bir 'science fiction' (bilim kurgu) filmidir."
-            },
-            {
-                question: "What do you send for a party?",
-                options: ["Homework", "Invitation", "Gift", "Letter"],
-                correctAnswer: "Invitation",
-                explanation: "Bir partiye insanları çağırmak için 'invitation' (davetiye) gönderilir."
-            },
-            {
-                question: "What do you need to play soccer?",
-                options: ["Pen", "Ball", "Book", "Hat"],
-                correctAnswer: "Ball",
-                explanation: "Futbol oynamak için bir 'ball' (top) gereklidir."
-            },
-            {
-                question: "What do you feed a dog?",
-                options: ["Clothes", "Books", "Food", "Toys"],
-                correctAnswer: "Food",
-                explanation: "Köpekler 'food' (mama/yiyecek) ile beslenir."
-            },
-            {
-                question: "What do you wear in winter?",
-                options: ["Swimsuit", "T-shirt", "Jacket", "Shorts"],
-                correctAnswer: "Jacket",
-                explanation: "Kışın sıcak tutması için 'jacket' (ceket/mont) giyilir."
-            },
-            {
-                question: "What is a place in your town?",
-                options: ["Apple", "Car", "Library", "Tree"],
-                correctAnswer: "Library",
-                explanation: "'Library' (kütüphane) bir şehirde bulunabilecek bir yerdir."
-            },
-            {
-                question: "What game do you play with a racket?",
-                options: ["Football", "Basketball", "Tennis", "Volleyball"],
-                correctAnswer: "Tennis",
-                explanation: "'Tennis' (tenis) raketle oynanan bir spordur."
-            },
-            {
-                question: "What do you do every morning?",
-                options: ["Play soccer", "Watch TV", "Brush teeth", "Read a book"],
-                correctAnswer: "Brush teeth",
-                explanation: "Her sabah yapılması gereken bir alışkanlık 'brush teeth' (diş fırçalamak) eylemidir."
-            },
-            {
-                question: "What is bad for your health?",
-                options: ["Eating fruit", "Exercise", "Smoking", "Sleeping"],
-                correctAnswer: "Smoking",
-                explanation: "'Smoking' (sigara içmek) sağlığa zararlıdır."
-            },
-            {
-                question: "What do you watch at the cinema?",
-                options: ["Song", "Movie", "Book", "Game"],
-                correctAnswer: "Movie",
-                explanation: "Sinemada 'movie' (film) izlenir."
-            },
-            {
-                question: "What do you bring to a birthday party?",
-                options: ["Toothbrush", "Schoolbag", "Gift", "Homework"],
-                correctAnswer: "Gift",
-                explanation: "Doğum günü partisine 'gift' (hediye) getirilir."
-            },
-            {
-                question: "What sport uses a pool?",
-                options: ["Football", "Swimming", "Basketball", "Tennis"],
-                correctAnswer: "Swimming",
-                explanation: "'Swimming' (yüzme) havuzda yapılan bir spordur."
-            },
-            {
-                question: "What animal lives in a shelter?",
-                options: ["Snake", "Fish", "Cat", "Bird"],
-                correctAnswer: "Cat",
-                explanation: "Hayvan barınaklarında ('shelter') genellikle 'cat' (kedi) gibi evcil hayvanlar bulunur."
-            },
-            {
-                question: "What do you see at a festival?",
-                options: ["Sleeping", "Dancing", "Homework", "Working"],
-                correctAnswer: "Dancing",
-                explanation: "Festivallerde 'dancing' (dans eden) insanlar görebilirsiniz."
-            },
-            {
-                question: "What is the opposite of 'near'?",
-                options: ["Close", "Behind", "Far", "Next to"],
-                correctAnswer: "Far",
-                explanation: "'Near' (yakın) kelimesinin zıttı 'far' (uzak) kelimesidir."
-            },
-            {
-                question: "What do you do in a library?",
-                options: ["Sleep", "Eat", "Read", "Play"],
-                correctAnswer: "Read",
-                explanation: "Kütüphaneye ('library') kitap 'read' (okumak) için gidilir."
-            },
-            {
-                question: "What do you use for a hobby?",
-                options: ["Spoon", "Paint", "Shoe", "Ball"],
-                correctAnswer: "Paint",
-                explanation: "Resim yapmak gibi bir hobi için 'paint' (boya) kullanılır."
-            },
-            {
-                question: "What do you feel when you are sick?",
-                options: ["Excited", "Tired", "Happy", "Strong"],
-                correctAnswer: "Tired",
-                explanation: "Hasta olduğunuzda genellikle 'tired' (yorgun) hissedersiniz."
-            },
-            {
-                question: "What is a 'horror' movie?",
-                options: ["Funny", "Romantic", "Scary", "Exciting"],
-                correctAnswer: "Scary",
-                explanation: "'Horror' (korku) filmleri 'scary' (korkutucu) olur."
-            },
-            {
-                question: "What do you say to accept an invitation?",
-                options: ["No, thanks", "Maybe later", "Yes, please", "I’m busy"],
-                correctAnswer: "Yes, please",
-                explanation: "Bir daveti kabul etmek için 'Yes, please' (Evet, lütfen) denir."
-            },
-            {
-                question: "What do you wear for fitness?",
-                options: ["Dress", "Suit", "Sneakers", "Hat"],
-                correctAnswer: "Sneakers",
-                explanation: "Spor yapmak için 'sneakers' (spor ayakkabı) giyilir."
-            },
-            {
-                question: "What do you give to an animal?",
-                options: ["Pen", "Book", "Water", "Shirt"],
-                correctAnswer: "Water",
-                explanation: "Hayvanlara yiyecek dışında 'water' (su) verilir."
-            },
-            {
-                question: "What is a common festival food?",
-                options: ["Cake", "Sandwich", "Salad", "Soup"],
-                correctAnswer: "Cake",
-                explanation: "Festivallerde ve kutlamalarda 'cake' (pasta) yaygın bir yiyecektir."
-            },
-            {
-                question: "What is a place to exercise?",
-                options: ["Bedroom", "Kitchen", "Gym", "Bathroom"],
-                correctAnswer: "Gym",
-                explanation: "'Gym' (spor salonu) egzersiz yapılan bir yerdir."
-            },
-            {
-                question: "What do you do with friends?",
-                options: ["Study", "Work", "Play", "Sleep"],
-                correctAnswer: "Play",
-                explanation: "Arkadaşlarla genellikle 'play' (oynamak) ve vakit geçirmek için buluşulur."
-            },
-            {
-                question: "What is a 'cough'?",
-                options: ["Pain in head", "Pain in leg", "Sound from throat", "High fever"],
-                correctAnswer: "Sound from throat",
-                explanation: "'Cough' (öksürük), boğazdan gelen bir sestir."
-            },
-            {
-                question: "What is a 'romance' movie about?",
-                options: ["Fighting", "Monsters", "Love", "Space"],
-                correctAnswer: "Love",
-                explanation: "'Romance' (romantik) filmler 'love' (aşk) hakkındadır."
-            },
-            {
-                question: "What do you use for a party decoration?",
-                options: ["Pen", "Book", "Balloon", "Shoe"],
-                correctAnswer: "Balloon",
-                explanation: "Parti dekorasyonu için 'balloon' (balon) kullanılır."
-            },
-            {
-                question: "What sport uses a basket?",
-                options: ["Tennis", "Football", "Basketball", "Swimming"],
-                correctAnswer: "Basketball",
-                explanation: "'Basketball' (basketbol) pota ('basket') kullanılarak oynanır."
-            },
-            {
-                question: "What do you adopt from a shelter?",
-                options: ["Book", "Car", "Pet", "Clothes"],
-                correctAnswer: "Pet",
-                explanation: "Hayvan barınağından 'pet' (evcil hayvan) sahiplenilir."
-            },
-            {
-                question: "What do you wear at a festival?",
-                options: ["Pajamas", "Swimsuit", "Costume", "Uniform"],
-                correctAnswer: "Costume",
-                explanation: "Bazı festivallerde özel 'costume' (kostüm) giyilir."
-            },
-            {
-                question: "Who is a 'neighbor'?",
-                options: ["Person at school", "Person nearby", "Person at work", "Person in family"],
-                correctAnswer: "Person nearby",
-                explanation: "'Neighbor' (komşu), yakınınızda oturan kişidir."
-            },
-            {
-                question: "What do you do every day?",
-                options: ["Buy a car", "Eat breakfast", "Go on vacation", "Plant a tree"],
-                correctAnswer: "Eat breakfast",
-                explanation: "Her gün yapılan bir rutin 'eat breakfast' (kahvaltı yapmak) eylemidir."
-            },
-            {
-                question: "What helps you stay healthy?",
-                options: ["Watching TV", "Playing video games", "Eating vegetables", "Sleeping late"],
-                correctAnswer: "Eating vegetables",
-                explanation: "'Eating vegetables' (sebze yemek) sağlıklı kalmaya yardımcı olur."
-            },
-            {
-                question: "What do you do to stay fit?",
-                options: ["Watch TV", "Eat candy", "Exercise", "Sleep"],
-                correctAnswer: "Exercise",
-                explanation: "Formda kalmak için 'exercise' (egzersiz) yapılır."
-            },
-            {
-                question: "What is a 'cinema'?",
-                options: ["Place to sleep", "Place to watch movies", "Place to eat", "Place to play"],
-                correctAnswer: "Place to watch movies",
-                explanation: "'Cinema' (sinema), film izlenen bir yerdir."
-            },
-            {
-                question: "What do you say to ask for help?",
-                options: ["Go away!", "I’m fine!", "Please help me!", "Give me!"],
-                correctAnswer: "Please help me!",
-                explanation: "Yardım istemek için kibarca 'Please help me!' (Lütfen bana yardım edin!) denir."
-            },
-            {
-                question: "What is a 'team'?",
-                options: ["Type of food", "Single person", "Group of people", "Kind of game"],
-                correctAnswer: "Group of people",
-                explanation: "'Team' (takım), bir grup insandan oluşur."
-            },
-            {
-                question: "What do you use to draw?",
-                options: ["Spoon", "Pencil", "Shoe", "Ball"],
-                correctAnswer: "Pencil",
-                explanation: "Çizim yapmak için 'pencil' (kurşun kalem) kullanılır."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Study", "Ride a Ferris wheel", "Work", "Sleep"],
-                correctAnswer: "Ride a Ferris wheel",
-                explanation: "Panayırlarda 'ride a Ferris wheel' (dönme dolaba binmek) gibi aktiviteler yapılır."
-            },
-            {
-                question: "What do you say to suggest a game?",
-                options: ["Let’s play!", "I’m tired!", "Go away!", "No way!"],
-                correctAnswer: "Let’s play!",
-                explanation: "Bir oyun önermek için 'Let’s play!' (Hadi oynayalım!) denir."
-            },
-            {
-                question: "What is a 'schedule'?",
-                options: ["Type of food", "Plan for the day", "Kind of game", "Piece of clothing"],
-                correctAnswer: "Plan for the day",
-                explanation: "'Schedule' (program/plan), gün için yapılan bir plandır."
-            },
-            {
-                question: "What is a 'sore throat'?",
-                options: ["Pain in head", "Pain in throat", "Pain in leg", "High fever"],
-                correctAnswer: "Pain in throat",
-                explanation: "'Sore throat', boğaz ağrısı anlamına gelir."
-            },
-            {
-                question: "What do you say to decline an invitation?",
-                options: ["I’m sorry, I can’t", "I’d love to", "See you there", "Sounds great"],
-                correctAnswer: "I’m sorry, I can’t",
-                explanation: "Bir daveti reddetmek için kibarca 'I’m sorry, I can’t' (Üzgünüm, gelemem) denir."
-            },
-            {
-                question: "What do you need for a picnic?",
-                options: ["Schoolbag", "Blanket", "Toothbrush", "Laptop"],
-                correctAnswer: "Blanket",
-                explanation: "Piknik için yere sermek üzere 'blanket' (battaniye) gerekir."
-            },
-            {
-                question: "What is a 'volleyball'?",
-                options: ["Food", "Sport", "Animal", "Place"],
-                correctAnswer: "Sport",
-                explanation: "'Volleyball' (voleybol) bir spor dalıdır."
-            },
-            {
-                question: "What is a 'museum'?",
-                options: ["Place to sleep", "Place to eat", "Place to see history", "Place to play"],
-                correctAnswer: "Place to see history",
-                explanation: "'Museum' (müze), tarihi eserlerin görüldüğü bir yerdir."
-            },
-            {
-                question: "What do you say to offer help?",
-                options: ["Go away!", "Can I help you?", "I’m fine!", "No way!"],
-                correctAnswer: "Can I help you?",
-                explanation: "Yardım teklif etmek için 'Can I help you?' (Yardım edebilir miyim?) denir."
-            },
-            {
-                question: "What is a 'rule'?",
-                options: ["Something you eat", "Something you wear", "Something you must follow", "Something you read"],
-                correctAnswer: "Something you must follow",
-                explanation: "'Rule' (kural), uyulması gereken bir şeydir."
-            },
-            {
-                question: "What do you do to relax?",
-                options: ["Work", "Read a book", "Study", "Run"],
-                correctAnswer: "Read a book",
-                explanation: "Rahatlamak için 'read a book' (kitap okumak) iyi bir aktivitedir."
-            },
-            {
-                question: "What do you say to ask the time?",
-                options: ["What time is it?", "Where are you?", "How are you?", "What is this?"],
-                correctAnswer: "What time is it?",
-                explanation: "Saati sormak için 'What time is it?' (Saat kaç?) denir."
-            },
-            {
-                question: "What do you wear when it rains?",
-                options: ["T-shirt", "Swimsuit", "Raincoat", "Shorts"],
-                correctAnswer: "Raincoat",
-                explanation: "Yağmur yağdığında 'raincoat' (yağmurluk) giyilir."
-            },
-            {
-                question: "What is a 'hobby' like painting?",
-                options: ["Something you eat", "Something you do for fun", "Something you wear", "Something you read"],
-                correctAnswer: "Something you do for fun",
-                explanation: "Resim yapmak gibi bir hobi, eğlence için yapılan bir şeydir."
-            },
-            {
-                question: "What do you do at a concert?",
-                options: ["Study", "Listen to music", "Work", "Sleep"],
-                correctAnswer: "Listen to music",
-                explanation: "Konserde 'listen to music' (müzik dinlemek) için gidilir."
-            },
-            {
-                question: "Who is a 'doctor'?",
-                options: ["Person who sells food", "Person who helps sick people", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who helps sick people",
-                explanation: "'Doctor' (doktor), hasta insanlara yardım eden kişidir."
-            },
-            {
-                question: "What do you say to congratulate someone?",
-                options: ["I’m sorry!", "Well done!", "Go away!", "No way!"],
-                correctAnswer: "Well done!",
-                explanation: "Birini tebrik etmek için 'Well done!' (Aferin!/Harika iş!) denir."
-            },
-            {
-                question: "What do you need for a game?",
-                options: ["Schoolbag", "Ball", "Toothbrush", "Laptop"],
-                correctAnswer: "Ball",
-                explanation: "Birçok oyun için 'ball' (top) gereklidir."
-            },
+         {
+        question: "A person who writes books as a job is an _______.",
+        options: ["actor", "author", "artist", "architect"],
+        correctAnswer: "author",
+        explanation: "Meslek olarak kitap yazan kişiye 'author' (yazar) denir."
+    },
+    {
+        question: "I have a headache and a runny nose. I think I have a _______.",
+        options: ["fever", "cold", "toothache", "stomachache"],
+        correctAnswer: "cold",
+        explanation: "Baş ağrısı ve burun akıntısı, 'cold' (soğuk algınlığı) belirtileridir."
+    },
+    {
+        question: "You can watch a play with actors on a stage at a _______.",
+        options: ["cinema", "stadium", "theater", "gallery"],
+        correctAnswer: "theater",
+        explanation: "Sahnede oyuncuların olduğu bir oyunu 'theater' (tiyatro) içinde izleyebilirsiniz."
+    },
+    {
+        question: "What time _______ you usually wake up on weekdays?",
+        options: ["do", "does", "are", "is"],
+        correctAnswer: "do",
+        explanation: "'You' öznesi ile geniş zamanda soru sormak için 'do' yardımcı fiili kullanılır."
+    },
+    {
+        question: "A movie about the future with robots and spaceships is a _______ movie.",
+        options: ["comedy", "western", "science-fiction", "historical"],
+        correctAnswer: "science-fiction",
+        explanation: "Robotların ve uzay gemilerinin olduğu filmler 'science-fiction' (bilim kurgu) türündedir."
+    },
+    {
+        question: "My father _______ to work by car every day.",
+        options: ["go", "is going", "goes", "went"],
+        correctAnswer: "goes",
+        explanation: "Her gün yapılan bir rutini anlatırken geniş zaman kullanılır ve üçüncü tekil şahıs ('My father') için fiile -s takısı gelir."
+    },
+    {
+        question: "Can you tell me how to get to the _______? I need to buy some bread.",
+        options: ["butcher's", "bakery", "pharmacy", "library"],
+        correctAnswer: "bakery",
+        explanation: "Ekmek almak için 'bakery' (fırın) adı verilen yere gitmeniz gerekir."
+    },
+    {
+        question: "A person from Japan is called _______.",
+        options: ["Chinanese", "Japanese", "Korean", "German"],
+        correctAnswer: "Japanese",
+        explanation: "Japonya'dan olan bir kişiye 'Japanese' (Japon) denir."
+    },
+    {
+        question: "I enjoy _______ to music while I do my homework.",
+        options: ["listen", "to listen", "listening", "listens"],
+        correctAnswer: "listening",
+        explanation: "'Enjoy' fiilinden sonra gelen eylem genellikle -ing takısı alır."
+    },
+    {
+        question: "You _______ eat too much fast food. It is not good for you.",
+        options: ["should", "shouldn't", "must", "can"],
+        correctAnswer: "shouldn't",
+        explanation: "Tavsiye verirken, yapılmaması gereken bir eylem için 'shouldn't' (yapmamalısın) kullanılır."
+    },
+    {
+        question: "The museum is _______ the street from the post office.",
+        options: ["next to", "between", "across", "behind"],
+        correctAnswer: "across",
+        explanation: "Sokağın karşısında olduğunu belirtmek için 'across the street' ifadesi kullanılır."
+    },
+    {
+        question: "What is your favourite _______? I like Maths because I love numbers.",
+        options: ["hobby", "sport", "food", "subject"],
+        correctAnswer: "subject",
+        explanation: "Matematik, okulda işlenen bir 'subject' (ders) tir."
+    },
+    {
+        question: "She can play the piano, _______ she can't play the guitar.",
+        options: ["and", "so", "but", "because"],
+        correctAnswer: "but",
+        explanation: "İki zıt fikri (yapabildiği ve yapamadığı bir şey) bağlamak için 'but' (ama, fakat) bağlacı kullanılır."
+    },
+    {
+        question: "We usually _______ our grandparents on Sundays.",
+        options: ["visit", "are visiting", "visits", "visited"],
+        correctAnswer: "visit",
+        explanation: "Genellikle yapılan bir rutini anlatmak için geniş zaman kullanılır. 'We' öznesiyle fiil yalın halde kalır."
+    },
+    {
+        question: "A film that tells a true story about a person's life is a _______.",
+        options: ["fantasy", "biography", "fiction", "thriller"],
+        correctAnswer: "biography",
+        explanation: "Bir kişinin hayatı hakkındaki gerçek bir hikayeyi anlatan filme 'biography' (biyografi) denir."
+    },
+    {
+        question: "What is the matter with him? He has a high _______. ",
+        options: ["cold", "cough", "temperature", "headache"],
+        correctAnswer: "temperature",
+        explanation: "Yüksek ateş, 'high temperature' olarak ifade edilir."
+    },
+    {
+        question: "The art gallery is on the corner, _______ to the big supermarket.",
+        options: ["next", "opposite", "far", "between"],
+        correctAnswer: "next",
+        explanation: "Büyük süpermarketin hemen yanında olduğunu belirtmek için 'next to' ifadesi kullanılır."
+    },
+    {
+        question: "What do you call the meal you have in the evening?",
+        options: ["Breakfast", "Lunch", "Dinner", "Brunch"],
+        correctAnswer: "Dinner",
+        explanation: "Akşam yediğiniz öğüne 'dinner' (akşam yemeği) denir."
+    },
+    {
+        question: "I _______ my homework right now. I can't come out to play.",
+        options: ["do", "did", "am doing", "does"],
+        correctAnswer: "am doing",
+        explanation: "Konuşma anında devam eden bir eylemi belirtmek için Şimdiki Zaman ('am/is/are + V-ing') kullanılır."
+    },
+    {
+        question: "A person who acts in a movie is called an _______.",
+        options: ["author", "actor", "director", "producer"],
+        correctAnswer: "actor",
+        explanation: "Bir filmde rol alan kişiye 'actor' (aktör/oyuncu) denir."
+    },
+    {
+        question: "You should wear a _______ to protect your head when you ride a bike.",
+        options: ["hat", "helmet", "cap", "scarf"],
+        correctAnswer: "helmet",
+        explanation: "Bisiklete binerken başınızı korumak için 'helmet' (kask) takmalısınız."
+    },
+    {
+        question: "She is not very keen _______ horror films. She thinks they are too scary.",
+        options: ["at", "in", "on", "about"],
+        correctAnswer: "on",
+        explanation: "'Keen on' (-e meraklı olmak) kalıbında 'on' edatı kullanılır."
+    },
+    {
+        question: "Go straight on, and _______ left at the traffic lights.",
+        options: ["turn", "go", "walk", "cross"],
+        correctAnswer: "turn",
+        explanation: "Yol tarifi verirken 'sola dön' demek için 'turn left' ifadesi kullanılır."
+    },
+    {
+        question: "My hobby is _______ stamps from different countries.",
+        options: ["collecting", "to collect", "collect", "collects"],
+        correctAnswer: "collecting",
+        explanation: "Bir hobiyi ifade ederken genellikle eylemin '-ing' hali kullanılır."
+    },
+    {
+        question: "A person who helps sick animals is a _______.",
+        options: ["doctor", "nurse", "vet", "dentist"],
+        correctAnswer: "vet",
+        explanation: "Hasta hayvanlara yardım eden kişiye 'vet' (veteriner) denir."
+    },
+    {
+        question: "He _______ early because he was very tired last night.",
+        options: ["sleeps", "is sleeping", "slept", "sleep"],
+        correctAnswer: "slept",
+        explanation: "'Last night' (dün gece) ifadesi geçmiş zamanı belirttiği için fiilin ikinci hali (slept) kullanılır."
+    },
+    {
+        question: "A movie that is very exciting and full of suspense is a _______.",
+        options: ["comedy", "drama", "romance", "thriller"],
+        correctAnswer: "thriller",
+        explanation: "Çok heyecanlı ve gerilim dolu filmlere 'thriller' (gerilim filmi) denir."
+    },
+    {
+        question: "My mother _______ a delicious cake for my birthday yesterday.",
+        options: ["make", "is making", "makes", "made"],
+        correctAnswer: "made",
+        explanation: "'Yesterday' (dün) ifadesi geçmiş zamanı belirttiği için 'make' fiilinin ikinci hali 'made' kullanılır."
+    },
+    {
+        question: "A place where you can see many very old things is a _______.",
+        options: ["cinema", "museum", "theater", "stadium"],
+        correctAnswer: "museum",
+        explanation: "Çok eski nesneleri görebileceğiniz yere 'museum' (müze) denir."
+    },
+    {
+        question: "You can buy meat at the _______.",
+        options: ["bakery", "greengrocer's", "butcher's", "pharmacy"],
+        correctAnswer: "butcher's",
+        explanation: "Et, 'butcher's' (kasap dükkanı) içinden alınır."
+    },
+    {
+        question: "What _______ of music do you like?",
+        options: ["type", "much", "many", "time"],
+        correctAnswer: "type",
+        explanation: "Ne tür müzik sevdiğini sormak için 'What type of...?' veya 'What kind of...?' kalıbı kullanılır."
+    },
+    {
+        question: "A person from Turkey has _______ nationality.",
+        options: ["Turkey", "Turk", "Turkish", "Turkic"],
+        correctAnswer: "Turkish",
+        explanation: "Türkiye'den olan birinin milliyeti 'Turkish' (Türk) olarak ifade edilir."
+    },
+    {
+        question: "I _______ my arm when I fell off my bike.",
+        options: ["break", "broke", "am breaking", "breaks"],
+        correctAnswer: "broke",
+        explanation: "Geçmişte olmuş ve bitmiş bir olayı anlatmak için fiilin ikinci hali (broke) kullanılır."
+    },
+    {
+        question: "A story for children with cartoon characters is an _______.",
+        options: ["action", "animation", "drama", "horror"],
+        correctAnswer: "animation",
+        explanation: "Çizgi film karakterlerinin olduğu çocuk hikayelerine 'animation' (animasyon) denir."
+    },
+    {
+        question: "I have two _______, a brother and a sister.",
+        options: ["parents", "siblings", "cousins", "relatives"],
+        correctAnswer: "siblings",
+        explanation: "Erkek ve kız kardeşlere topluca 'siblings' (kardeşler) denir."
+    },
+    {
+        question: "What's the weather _______? It is cold and windy.",
+        options: ["is", "do", "like", "look"],
+        correctAnswer: "like",
+        explanation: "Havanın nasıl olduğunu sormak için 'What is the weather like?' kalıbı kullanılır."
+    },
+    {
+        question: "She is very good _______ playing tennis.",
+        options: ["in", "on", "at", "for"],
+        correctAnswer: "at",
+        explanation: "Bir konuda iyi olmak 'good at' kalıbıyla ifade edilir."
+    },
+    {
+        question: "A _______ is a place where you can have a drink and a snack.",
+        options: ["cafe", "library", "bank", "school"],
+        correctAnswer: "cafe",
+        explanation: "Bir şeyler içip atıştırabileceğiniz yere 'cafe' (kafe) denir."
+    },
+    {
+        question: "He didn't go to school yesterday _______ he was ill.",
+        options: ["so", "but", "because", "and"],
+        correctAnswer: "because",
+        explanation: "Bir eylemin nedenini belirtmek için 'because' (çünkü) bağlacı kullanılır."
+    },
+    {
+        question: "A person who cuts and styles hair is a _______.",
+        options: ["tailor", "mechanic", "hairdresser", "chef"],
+        correctAnswer: "hairdresser",
+        explanation: "Saç kesen ve şekil veren kişiye 'hairdresser' (kuaför) denir."
+    },
+    {
+        question: "I think the ghost train is _______. I am not scared at all.",
+        options: ["frightening", "exciting", "boring", "thrilling"],
+        correctAnswer: "boring",
+        explanation: "Hiç korkmayan biri için korku treni 'boring' (sıkıcı) olabilir."
+    },
+    {
+        question: "A very tall building with many floors is called a _______.",
+        options: ["cottage", "skyscraper", "mansion", "bungalow"],
+        correctAnswer: "skyscraper",
+        explanation: "Çok katlı yüksek binalara 'skyscraper' (gökdelen) denir."
+    },
+    {
+        question: "What does your father do? He is an _______.",
+        options: ["engineer", "engine", "engineering", "engines"],
+        correctAnswer: "engineer",
+        explanation: "Birinin mesleğini söylerken meslek ismi kullanılır. 'Engineer' (mühendis) bir meslektir."
+    },
+    {
+        question: "I was born _______ October 29th.",
+        options: ["at", "in", "on", "from"],
+        correctAnswer: "on",
+        explanation: "Belirli bir tarihten (gün ve ay) bahsederken 'on' edatı kullanılır."
+    },
+    {
+        question: "A person who is not polite is _______.",
+        options: ["kind", "friendly", "rude", "nice"],
+        correctAnswer: "rude",
+        explanation: "Kibar olmayan bir kişiye 'rude' (kaba) denir."
+    },
+    {
+        question: "A _______ is a place where you can exercise and play sports.",
+        options: ["cinema", "library", "gym", "museum"],
+        correctAnswer: "gym",
+        explanation: "Egzersiz yapıp spor yapabileceğiniz yere 'gym' (spor salonu) denir."
+    },
+    {
+        question: "She was very _______ when she saw the spider.",
+        options: ["happy", "excited", "scared", "bored"],
+        correctAnswer: "scared",
+        explanation: "Örümcek gördüğünde genellikle insanlar 'scared' (korkmuş) hisseder."
+    },
+    {
+        question: "This box is too _______. I can't lift it.",
+        options: ["light", "heavy", "small", "soft"],
+        correctAnswer: "heavy",
+        explanation: "Kaldıramadığınız bir kutu 'heavy' (ağır) demektir."
+    },
+    {
+        question: "Which of these is NOT a drink?",
+        options: ["Juice", "Water", "Muffin", "Milk"],
+        correctAnswer: "Muffin",
+        explanation: "'Muffin' (küçük kek) bir yiyecektir, içecek değildir."
+    },
+    {
+        question: "We saw many historical _______ when we visited Rome.",
+        options: ["monuments", "restaurants", "shops", "hotels"],
+        correctAnswer: "monuments",
+        explanation: "Roma'yı ziyaret ettiğimizde birçok tarihi 'monuments' (anıt) gördük."
+    },
+    {
+        question: "What do you call a meal eaten outdoors?",
+        options: ["A barbecue", "A picnic", "A feast", "A banquet"],
+        correctAnswer: "A picnic",
+        explanation: "Dışarıda yenen yemeğe 'picnic' (piknik) denir."
+    },
+    {
+        question: "He goes to the gym to _______ weights.",
+        options: ["pull", "push", "lift", "carry"],
+        correctAnswer: "lift",
+        explanation: "Spor salonunda ağırlık kaldırmak için 'lift weights' ifadesi kullanılır."
+    },
+    {
+        question: "She doesn't like _______ her room. She thinks it's boring.",
+        options: ["tidying", "to tidy", "tidy", "tidies"],
+        correctAnswer: "tidying",
+        explanation: "'Like' veya 'dislike' fiillerinden sonra gelen eylem genellikle -ing takısı alır."
+    },
+    {
+        question: "The opposite of 'arrive' is _______.",
+        options: ["come", "go", "leave", "stay"],
+        correctAnswer: "leave",
+        explanation: "'Arrive' (varmak) kelimesinin zıttı 'leave' (ayrılmak) kelimesidir."
+    },
+    {
+        question: "You need a passport for _______ travel.",
+        options: ["domestic", "international", "local", "regional"],
+        correctAnswer: "international",
+        explanation: "'International' (uluslararası) seyahatler için pasaport gerekir."
+    },
+    {
+        question: "The main _______ of the movie was a brave princess.",
+        options: ["actor", "character", "director", "writer"],
+        correctAnswer: "character",
+        explanation: "Filmin ana kahramanına 'main character' (ana karakter) denir."
+    },
+    {
+        question: "I _______ to bed early last night because I had an exam.",
+        options: ["go", "am going", "went", "goes"],
+        correctAnswer: "went",
+        explanation: "'Last night' (dün gece) ifadesi geçmiş zamanı belirttiği için 'go' fiilinin ikinci hali 'went' kullanılır."
+    },
+    {
+        question: "A _______ sells flowers and plants.",
+        options: ["baker", "florist", "butcher", "chemist"],
+        correctAnswer: "florist",
+        explanation: "Çiçek ve bitki satan kişiye 'florist' (çiçekçi) denir."
+    },
+    {
+        question: "What time did the party _______? It was at 8 p.m.",
+        options: ["start", "starts", "started", "starting"],
+        correctAnswer: "start",
+        explanation: "Geçmiş zamanda 'did' yardımcı fiili ile soru sorarken, ana fiil yalın (V1) halde kullanılır."
+    },
+    {
+        question: "I was very _______ after running the marathon.",
+        options: ["energetic", "exhausted", "relaxed", "excited"],
+        correctAnswer: "exhausted",
+        explanation: "Maraton koştuktan sonra çok yorgun, yani 'exhausted' (tükenmiş) hissedersiniz."
+    },
+    {
+        question: "Can you _______ a secret?",
+        options: ["say", "tell", "speak", "keep"],
+        correctAnswer: "keep",
+        explanation: "Sır saklamak için 'keep a secret' deyimi kullanılır."
+    },
+    {
+        question: "She is _______ to peanuts. She can't eat them.",
+        options: ["allergic", "addicted", "fond", "keen"],
+        correctAnswer: "allergic",
+        explanation: "Yer fıstığı yiyemeyen birinin ona 'allergic' (alerjisi) vardır."
+    },
+    {
+        question: "We live in a small house in the _______. It's very quiet.",
+        options: ["city", "town", "countryside", "downtown"],
+        correctAnswer: "countryside",
+        explanation: "Sessiz ve sakin olan yer genellikle 'countryside' (kırsal bölge) dır."
+    },
+    {
+        question: "I think action films are more _______ than romance films.",
+        options: ["boring", "exciting", "sad", "funny"],
+        correctAnswer: "exciting",
+        explanation: "Aksiyon filmleri genellikle romantik filmlerden daha 'exciting' (heyecan verici) olarak görülür."
+    },
+    {
+        question: "He has a great sense of _______. He always tells funny jokes.",
+        options: ["style", "humour", "direction", "duty"],
+        correctAnswer: "humour",
+        explanation: "Komik şakalar anlatan birinin 'sense of humour' (mizah anlayışı) iyidir."
+    },
+    {
+        question: "You need to buy a _______ of bread from the bakery.",
+        options: ["loaf", "slice", "piece", "bar"],
+        correctAnswer: "loaf",
+        explanation: "Fırından bir somun ekmek alırken 'a loaf of bread' ifadesi kullanılır."
+    },
+    {
+        question: "A person who is in charge of a company is a _______.",
+        options: ["worker", "employee", "manager", "assistant"],
+        correctAnswer: "manager",
+        explanation: "Bir şirketten sorumlu olan kişiye 'manager' (yönetici) denir."
+    },
+    {
+        question: "The opposite of 'interesting' is _______.",
+        options: ["exciting", "dull", "amazing", "great"],
+        correctAnswer: "dull",
+        explanation: "'Interesting' (ilginç) kelimesinin zıt anlamlısı 'dull' (sıkıcı) olabilir."
+    },
+    {
+        question: "Don't forget to _______ the lights when you leave the room.",
+        options: ["turn on", "turn off", "put on", "take off"],
+        correctAnswer: "turn off",
+        explanation: "Odadan çıkarken ışıkları 'turn off' (kapatmak) gerekir."
+    },
+    {
+        question: "A _______ is a piece of paper that shows you have paid for something.",
+        options: ["ticket", "receipt", "bill", "note"],
+        correctAnswer: "receipt",
+        explanation: "Bir şey için ödeme yaptığınızı gösteren kağıt parçasına 'receipt' (fiş, makbuz) denir."
+    },
+    {
+        question: "The sun _______ in the east.",
+        options: ["sets", "rises", "goes", "comes"],
+        correctAnswer: "rises",
+        explanation: "Güneş doğudan doğar. Bu genel bir gerçektir ve geniş zamanla 'rises' (doğar) olarak ifade edilir."
+    },
+    {
+        question: "I _______ for my keys for ten minutes, but I can't find them.",
+        options: ["looked", "am looking", "have been looking", "look"],
+        correctAnswer: "have been looking",
+        explanation: "Geçmişte başlayıp hala devam eden bir eylemi vurgulamak için Present Perfect Continuous Tense kullanılır."
+    },
+    {
+        question: "A _______ is a building where things are made in large quantities.",
+        options: ["shop", "factory", "warehouse", "office"],
+        correctAnswer: "factory",
+        explanation: "Eşyaların büyük miktarlarda üretildiği binaya 'factory' (fabrika) denir."
+    },
+    {
+        question: "She is wearing a beautiful _______ on her finger.",
+        options: ["necklace", "bracelet", "ring", "earring"],
+        correctAnswer: "ring",
+        explanation: "Parmağa takılan takıya 'ring' (yüzük) denir."
+    },
+    {
+        question: "He is a very _______ person. He gets angry very easily.",
+        options: ["calm", "patient", "bad-tempered", "easy-going"],
+        correctAnswer: "bad-tempered",
+        explanation: "Kolayca sinirlenen bir kişiye 'bad-tempered' (huysuz, sinirli) denir."
+    },
+    {
+        question: "I was late for school because of the traffic _______.",
+        options: ["light", "sign", "jam", "road"],
+        correctAnswer: "jam",
+        explanation: "Trafik sıkışıklığı 'traffic jam' olarak ifade edilir."
+    },
+    {
+        question: "Can you _______ me a favour? I need some help.",
+        options: ["make", "do", "give", "take"],
+        correctAnswer: "do",
+        explanation: "Birinden iyilik istemek için 'do me a favour' kalıbı kullanılır."
+    },
+    {
+        question: "The opposite of 'brave' is _______.",
+        options: ["strong", "cowardly", "courageous", "fearless"],
+        correctAnswer: "cowardly",
+        explanation: "'Brave' (cesur) kelimesinin zıttı 'cowardly' (korkak) kelimesidir."
+    },
+    {
+        question: "A _______ is a large area of land with grass but few trees.",
+        options: ["forest", "jungle", "grassland", "desert"],
+        correctAnswer: "grassland",
+        explanation: "Üzerinde otların olduğu ama az ağacın bulunduğu geniş araziye 'grassland' (çayır, otlak) denir."
+    },
+    {
+        question: "She is studying to become a _______. She wants to defend people in court.",
+        options: ["judge", "lawyer", "police officer", "detective"],
+        correctAnswer: "lawyer",
+        explanation: "Mahkemede insanları savunmak isteyen biri 'lawyer' (avukat) olmak için okur."
+    },
+    {
+        question: "What does she look _______? She has long, dark hair.",
+        options: ["is", "like", "do", "as"],
+        correctAnswer: "like",
+        explanation: "Birinin dış görünüşünü sormak için 'What does she look like?' kalıbı kullanılır."
+    },
+    {
+        question: "We had a _______ of a time at the party last night. It was fantastic.",
+        options: ["whale", "lot", "bit", "great"],
+        correctAnswer: "whale",
+        explanation: "'Have a whale of a time' (harika zaman geçirmek, çok eğlenmek) bir deyimdir."
+    },
+    {
+        question: "He is a very _______ person. He never forgets to do his homework.",
+        options: ["careless", "responsible", "lazy", "forgetful"],
+        correctAnswer: "responsible",
+        explanation: "Ödevini yapmayı asla unutmayan biri 'responsible' (sorumluluk sahibi) biridir."
+    },
+    {
+        question: "A place where you can see planes take off and land is an _______.",
+        options: ["airport", "station", "port", "harbour"],
+        correctAnswer: "airport",
+        explanation: "Uçakların kalkıp indiği yere 'airport' (havaalanı) denir."
+    },
+    {
+        question: "She is very _______ about winning the competition.",
+        options: ["pessimistic", "optimistic", "negative", "sad"],
+        correctAnswer: "optimistic",
+        explanation: "Yarışmayı kazanma konusunda 'optimistic' (iyimser) olmak olumlu bir yaklaşımdır."
+    },
+    {
+        question: "I can't _______ to buy that car. It is too expensive.",
+        options: ["afford", "spend", "pay", "cost"],
+        correctAnswer: "afford",
+        explanation: "Bir şeyi satın almaya gücü yetmek 'afford' fiiliyle ifade edilir."
+    },
+    {
+        question: "A story about crime and a detective who tries to solve it is a _______.",
+        options: ["mystery", "romance", "comedy", "adventure"],
+        correctAnswer: "mystery",
+        explanation: "Suç ve onu çözmeye çalışan bir dedektif hakkındaki hikayeler 'mystery' (gizem) türündedir."
+    },
+    {
+        question: "The opposite of 'success' is _______.",
+        options: ["victory", "achievement", "failure", "win"],
+        correctAnswer: "failure",
+        explanation: "'Success' (başarı) kelimesinin zıttı 'failure' (başarısızlık) kelimesidir."
+    },
+    {
+        question: "She was _______ with her exam results. She got the top mark.",
+        options: ["disappointed", "thrilled", "upset", "angry"],
+        correctAnswer: "thrilled",
+        explanation: "En yüksek notu alan biri sınav sonuçlarından 'thrilled' (çok heyecanlanmış, sevinçten havalara uçmuş) olur."
+    },
+    {
+        question: "A person who is travelling for pleasure is a _______.",
+        options: ["commuter", "tourist", "passenger", "driver"],
+        correctAnswer: "tourist",
+        explanation: "Zevk için seyahat eden kişiye 'tourist' (turist) denir."
+    },
+    {
+        question: "The government should do more to protect _______ species.",
+        options: ["dangerous", "wild", "endangered", "common"],
+        correctAnswer: "endangered",
+        explanation: "Hükümet, 'endangered' (nesli tükenmekte olan) türleri korumak için daha fazlasını yapmalıdır."
+    },
+    {
+        question: "He is a very _______ speaker. He can persuade anyone.",
+        options: ["boring", "persuasive", "shy", "quiet"],
+        correctAnswer: "persuasive",
+        explanation: "Herkesi ikna edebilen biri 'persuasive' (ikna edici) bir konuşmacıdır."
+    },
+    {
+        question: "I _______ tennis with my friend when it started to rain.",
+        options: ["played", "was playing", "am playing", "play"],
+        correctAnswer: "was playing",
+        explanation: "Geçmişte bir eylem devam ederken (tenis oynamak) başka bir eylemin (yağmurun başlaması) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
     {
         question: "Who works in a school and teaches students?",
         options: ["Doctor", "Teacher", "Farmer", "Pilot"],
@@ -1477,138 +1663,6 @@ const questionsByGrade = {
         correctAnswer: "nurse",
         explanation: "Hastalara bakarken doktora yardım eden kişi 'nurse' (hemşire) dir."
     },
-{
-                question: "What is a 'festival'?",
-                options: ["Place to sleep", "Event to celebrate", "Place to eat", "Place to work"],
-                correctAnswer: "Event to celebrate",
-                explanation: "'Festival', kutlama yapılan bir etkinliktir."
-            },
-            {
-                question: "What do you do to stay clean?",
-                options: ["Watch TV", "Take a shower", "Eat candy", "Play soccer"],
-                correctAnswer: "Take a shower",
-                explanation: "Temiz kalmak için 'take a shower' (duş almak) gerekir."
-            },
-            {
-                question: "What is a 'bicycle'?",
-                options: ["Food", "Vehicle", "Toy", "Cloth"],
-                correctAnswer: "Vehicle",
-                explanation: "'Bicycle' (bisiklet) bir 'vehicle' (taşıt) türüdür."
-            },
-            {
-                question: "What do you say to ask for permission?",
-                options: ["Can I go?", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Can I go?",
-                explanation: "İzin istemek için 'Can I go?' (Gidebilir miyim?) gibi ifadeler kullanılır."
-            },
-            {
-                question: "What do you do at a zoo?",
-                options: ["Study", "See animals", "Work", "Sleep"],
-                correctAnswer: "See animals",
-                explanation: "Hayvanat bahçesinde ('zoo') 'see animals' (hayvanları görmek) için gidilir."
-            },
-            {
-                question: "What is a 'breakfast'?",
-                options: ["Meal in the morning", "Meal at night", "Meal in the afternoon", "Meal at noon"],
-                correctAnswer: "Meal in the morning",
-                explanation: "'Breakfast' (kahvaltı), sabah yenen öğündür."
-            },
-            {
-                question: "What is a 'song'?",
-                options: ["Food", "Music", "Book", "Game"],
-                correctAnswer: "Music",
-                explanation: "'Song' (şarkı) bir 'music' (müzik) türüdür."
-            },
-            {
-                question: "What do you do to help a friend?",
-                options: ["Ignore them", "Share with them", "Run away", "Sleep"],
-                correctAnswer: "Share with them",
-                explanation: "Bir arkadaşa yardım etmek için onunla 'share' (paylaşmak) iyi bir davranıştır."
-            },
-            {
-                question: "What is a 'bus stop'?",
-                options: ["Place to sleep", "Place to wait for a bus", "Place to eat", "Place to play"],
-                correctAnswer: "Place to wait for a bus",
-                explanation: "'Bus stop' (otobüs durağı), otobüs beklenen yerdir."
-            },
-            {
-                question: "What do you say to introduce a friend?",
-                options: ["This is my friend", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "This is my friend",
-                explanation: "Bir arkadaşınızı tanıtmak için 'This is my friend' (Bu benim arkadaşım) dersiniz."
-            },
-            {
-                question: "What do you do at a beach?",
-                options: ["Study", "Work", "Swim", "Sleep"],
-                correctAnswer: "Swim",
-                explanation: "Sahilde ('beach') 'swim' (yüzmek) popüler bir aktivitedir."
-            },
-            {
-                question: "What is a 'lunch'?",
-                options: ["Meal at night", "Meal at noon", "Meal in the morning", "Meal in the evening"],
-                correctAnswer: "Meal at noon",
-                explanation: "'Lunch' (öğle yemeği), öğlen yenen öğündür."
-            },
-            {
-                question: "What is a 'game'?",
-                options: ["Something you eat", "Something you play", "Something you wear", "Something you read"],
-                correctAnswer: "Something you play",
-                explanation: "'Game' (oyun), oynanan bir şeydir."
-            },
-            {
-                question: "What is a 'ticket'?",
-                options: ["Type of food", "Kind of game", "Paper for travel", "Piece of clothing"],
-                correctAnswer: "Paper for travel",
-                explanation: "'Ticket' (bilet), seyahat veya etkinlikler için kullanılan bir kağıttır."
-            },
-            {
-                question: "What do you say to thank a friend?",
-                options: ["Go away!", "I’m fine!", "Thank you!", "No way!"],
-                correctAnswer: "Thank you!",
-                explanation: "Bir arkadaşa teşekkür etmek için 'Thank you!' (Teşekkür ederim!) denir."
-            },
-            {
-                question: "What do you do in a garden?",
-                options: ["Study", "Plant flowers", "Work", "Sleep"],
-                correctAnswer: "Plant flowers",
-                explanation: "Bahçede ('garden') 'plant flowers' (çiçek dikmek) gibi işler yapılır."
-            },
-            {
-                question: "What is a 'dinner'?",
-                options: ["Meal in the morning", "Meal at noon", "Meal at night", "Meal in the afternoon"],
-                correctAnswer: "Meal at night",
-                explanation: "'Dinner' (akşam yemeği), akşam yenen öğündür."
-            },
-            {
-                question: "What do you wear for sports?",
-                options: ["Dress", "Suit", "Sneakers", "Hat"],
-                correctAnswer: "Sneakers",
-                explanation: "Spor yaparken 'sneakers' (spor ayakkabı) giymek rahattır."
-            },
-            {
-                question: "What is a 'friendship'?",
-                options: ["Something you eat", "Something you wear", "Being kind to others", "Something you read"],
-                correctAnswer: "Being kind to others",
-                explanation: "'Friendship' (arkadaşlık), başkalarına karşı nazik olmayı içerir."
-            },
-            {
-                question: "What do you do at a playground?",
-                options: ["Study", "Work", "Play", "Sleep"],
-                correctAnswer: "Play",
-                explanation: "Oyun parkında ('playground') 'play' (oynamak) için gidilir."
-            },
-            {
-                question: "What is a 'snack'?",
-                options: ["Meal at night", "Small meal between meals", "Meal in the morning", "Meal at noon"],
-                correctAnswer: "Small meal between meals",
-                explanation: "'Snack' (atıştırmalık), öğünler arasında yenen küçük bir yemektir."
-            },
-            {
-                question: "What do you say to ask for a toy?",
-                options: ["Can I have it?", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Can I have it?",
-                explanation: "Bir oyuncak istemek için kibarca 'Can I have it?' (Onu alabilir miyim?) diye sorulur."
-            },
 
     {
         question: "Excuse me, how can I get to the post office?",
@@ -1791,6 +1845,567 @@ const questionsByGrade = {
         correctAnswer: "character",
         explanation: "Filmin ana kahramanına 'main character' (ana karakter) denir."
     },
+ {
+        question: "A person who writes books as a job is an _______.",
+        options: ["actor", "author", "artist", "architect"],
+        correctAnswer: "author",
+        explanation: "Meslek olarak kitap yazan kişiye 'author' (yazar) denir."
+    },
+    {
+        question: "I have a headache and a runny nose. I think I have a _______.",
+        options: ["fever", "cold", "toothache", "stomachache"],
+        correctAnswer: "cold",
+        explanation: "Baş ağrısı ve burun akıntısı, 'cold' (soğuk algınlığı) belirtileridir."
+    },
+    {
+        question: "You can watch a play with actors on a stage at a _______.",
+        options: ["cinema", "stadium", "theater", "gallery"],
+        correctAnswer: "theater",
+        explanation: "Sahnede oyuncuların olduğu bir oyunu 'theater' (tiyatro) içinde izleyebilirsiniz."
+    },
+    {
+        question: "What time _______ you usually wake up on weekdays?",
+        options: ["do", "does", "are", "is"],
+        correctAnswer: "do",
+        explanation: "'You' öznesi ile geniş zamanda soru sormak için 'do' yardımcı fiili kullanılır."
+    },
+    {
+        question: "A movie about the future with robots and spaceships is a _______ movie.",
+        options: ["comedy", "western", "science-fiction", "historical"],
+        correctAnswer: "science-fiction",
+        explanation: "Robotların ve uzay gemilerinin olduğu filmler 'science-fiction' (bilim kurgu) türündedir."
+    },
+    {
+        question: "My father _______ to work by car every day.",
+        options: ["go", "is going", "goes", "went"],
+        correctAnswer: "goes",
+        explanation: "Her gün yapılan bir rutini anlatırken geniş zaman kullanılır ve üçüncü tekil şahıs ('My father') için fiile -s takısı gelir."
+    },
+    {
+        question: "Can you tell me how to get to the _______? I need to buy some bread.",
+        options: ["butcher's", "bakery", "pharmacy", "library"],
+        correctAnswer: "bakery",
+        explanation: "Ekmek almak için 'bakery' (fırın) adı verilen yere gitmeniz gerekir."
+    },
+    {
+        question: "A person from Japan is called _______.",
+        options: ["Chinanese", "Japanese", "Korean", "German"],
+        correctAnswer: "Japanese",
+        explanation: "Japonya'dan olan bir kişiye 'Japanese' (Japon) denir."
+    },
+    {
+        question: "I enjoy _______ to music while I do my homework.",
+        options: ["listen", "to listen", "listening", "listens"],
+        correctAnswer: "listening",
+        explanation: "'Enjoy' fiilinden sonra gelen eylem genellikle -ing takısı alır."
+    },
+    {
+        question: "You _______ eat too much fast food. It is not good for you.",
+        options: ["should", "shouldn't", "must", "can"],
+        correctAnswer: "shouldn't",
+        explanation: "Tavsiye verirken, yapılmaması gereken bir eylem için 'shouldn't' (yapmamalısın) kullanılır."
+    },
+    {
+        question: "The museum is _______ the street from the post office.",
+        options: ["next to", "between", "across", "behind"],
+        correctAnswer: "across",
+        explanation: "Sokağın karşısında olduğunu belirtmek için 'across the street' ifadesi kullanılır."
+    },
+    {
+        question: "What is your favourite _______? I like Maths because I love numbers.",
+        options: ["hobby", "sport", "food", "subject"],
+        correctAnswer: "subject",
+        explanation: "Matematik, okulda işlenen bir 'subject' (ders) tir."
+    },
+    {
+        question: "She can play the piano, _______ she can't play the guitar.",
+        options: ["and", "so", "but", "because"],
+        correctAnswer: "but",
+        explanation: "İki zıt fikri (yapabildiği ve yapamadığı bir şey) bağlamak için 'but' (ama, fakat) bağlacı kullanılır."
+    },
+    {
+        question: "We usually _______ our grandparents on Sundays.",
+        options: ["visit", "are visiting", "visits", "visited"],
+        correctAnswer: "visit",
+        explanation: "Genellikle yapılan bir rutini anlatmak için geniş zaman kullanılır. 'We' öznesiyle fiil yalın halde kalır."
+    },
+    {
+        question: "A film that tells a true story about a person's life is a _______.",
+        options: ["fantasy", "biography", "fiction", "thriller"],
+        correctAnswer: "biography",
+        explanation: "Bir kişinin hayatı hakkındaki gerçek bir hikayeyi anlatan filme 'biography' (biyografi) denir."
+    },
+    {
+        question: "What is the matter with him? He has a high _______. ",
+        options: ["cold", "cough", "temperature", "headache"],
+        correctAnswer: "temperature",
+        explanation: "Yüksek ateş, 'high temperature' olarak ifade edilir."
+    },
+    {
+        question: "The art gallery is on the corner, _______ to the big supermarket.",
+        options: ["next", "opposite", "far", "between"],
+        correctAnswer: "next",
+        explanation: "Büyük süpermarketin hemen yanında olduğunu belirtmek için 'next to' ifadesi kullanılır."
+    },
+    {
+        question: "What do you call the meal you have in the evening?",
+        options: ["Breakfast", "Lunch", "Dinner", "Brunch"],
+        correctAnswer: "Dinner",
+        explanation: "Akşam yediğiniz öğüne 'dinner' (akşam yemeği) denir."
+    },
+    {
+        question: "I _______ my homework right now. I can't come out to play.",
+        options: ["do", "did", "am doing", "does"],
+        correctAnswer: "am doing",
+        explanation: "Konuşma anında devam eden bir eylemi belirtmek için Şimdiki Zaman ('am/is/are + V-ing') kullanılır."
+    },
+    {
+        question: "A person who acts in a movie is called an _______.",
+        options: ["author", "actor", "director", "producer"],
+        correctAnswer: "actor",
+        explanation: "Bir filmde rol alan kişiye 'actor' (aktör/oyuncu) denir."
+    },
+    {
+        question: "You should wear a _______ to protect your head when you ride a bike.",
+        options: ["hat", "helmet", "cap", "scarf"],
+        correctAnswer: "helmet",
+        explanation: "Bisiklete binerken başınızı korumak için 'helmet' (kask) takmalısınız."
+    },
+    {
+        question: "She is not very keen _______ horror films. She thinks they are too scary.",
+        options: ["at", "in", "on", "about"],
+        correctAnswer: "on",
+        explanation: "'Keen on' (-e meraklı olmak) kalıbında 'on' edatı kullanılır."
+    },
+    {
+        question: "Go straight on, and _______ left at the traffic lights.",
+        options: ["turn", "go", "walk", "cross"],
+        correctAnswer: "turn",
+        explanation: "Yol tarifi verirken 'sola dön' demek için 'turn left' ifadesi kullanılır."
+    },
+    {
+        question: "My hobby is _______ stamps from different countries.",
+        options: ["collecting", "to collect", "collect", "collects"],
+        correctAnswer: "collecting",
+        explanation: "Bir hobiyi ifade ederken genellikle eylemin '-ing' hali kullanılır."
+    },
+    {
+        question: "A person who helps sick animals is a _______.",
+        options: ["doctor", "nurse", "vet", "dentist"],
+        correctAnswer: "vet",
+        explanation: "Hasta hayvanlara yardım eden kişiye 'vet' (veteriner) denir."
+    },
+    {
+        question: "He _______ early because he was very tired last night.",
+        options: ["sleeps", "is sleeping", "slept", "sleep"],
+        correctAnswer: "slept",
+        explanation: "'Last night' (dün gece) ifadesi geçmiş zamanı belirttiği için fiilin ikinci hali (slept) kullanılır."
+    },
+    {
+        question: "A movie that is very exciting and full of suspense is a _______.",
+        options: ["comedy", "drama", "romance", "thriller"],
+        correctAnswer: "thriller",
+        explanation: "Çok heyecanlı ve gerilim dolu filmlere 'thriller' (gerilim filmi) denir."
+    },
+    {
+        question: "My mother _______ a delicious cake for my birthday yesterday.",
+        options: ["make", "is making", "makes", "made"],
+        correctAnswer: "made",
+        explanation: "'Yesterday' (dün) ifadesi geçmiş zamanı belirttiği için 'make' fiilinin ikinci hali 'made' kullanılır."
+    },
+    {
+        question: "A place where you can see many very old things is a _______.",
+        options: ["cinema", "museum", "theater", "stadium"],
+        correctAnswer: "museum",
+        explanation: "Çok eski nesneleri görebileceğiniz yere 'museum' (müze) denir."
+    },
+    {
+        question: "You can buy meat at the _______.",
+        options: ["bakery", "greengrocer's", "butcher's", "pharmacy"],
+        correctAnswer: "butcher's",
+        explanation: "Et, 'butcher's' (kasap dükkanı) içinden alınır."
+    },
+    {
+        question: "What _______ of music do you like?",
+        options: ["type", "much", "many", "time"],
+        correctAnswer: "type",
+        explanation: "Ne tür müzik sevdiğini sormak için 'What type of...?' veya 'What kind of...?' kalıbı kullanılır."
+    },
+    {
+        question: "A person from Turkey has _______ nationality.",
+        options: ["Turkey", "Turk", "Turkish", "Turkic"],
+        correctAnswer: "Turkish",
+        explanation: "Türkiye'den olan birinin milliyeti 'Turkish' (Türk) olarak ifade edilir."
+    },
+    {
+        question: "I _______ my arm when I fell off my bike.",
+        options: ["break", "broke", "am breaking", "breaks"],
+        correctAnswer: "broke",
+        explanation: "Geçmişte olmuş ve bitmiş bir olayı anlatmak için fiilin ikinci hali (broke) kullanılır."
+    },
+    {
+        question: "A story for children with cartoon characters is an _______.",
+        options: ["action", "animation", "drama", "horror"],
+        correctAnswer: "animation",
+        explanation: "Çizgi film karakterlerinin olduğu çocuk hikayelerine 'animation' (animasyon) denir."
+    },
+    {
+        question: "I have two _______, a brother and a sister.",
+        options: ["parents", "siblings", "cousins", "relatives"],
+        correctAnswer: "siblings",
+        explanation: "Erkek ve kız kardeşlere topluca 'siblings' (kardeşler) denir."
+    },
+    {
+        question: "What's the weather _______? It is cold and windy.",
+        options: ["is", "do", "like", "look"],
+        correctAnswer: "like",
+        explanation: "Havanın nasıl olduğunu sormak için 'What is the weather like?' kalıbı kullanılır."
+    },
+    {
+        question: "She is very good _______ playing tennis.",
+        options: ["in", "on", "at", "for"],
+        correctAnswer: "at",
+        explanation: "Bir konuda iyi olmak 'good at' kalıbıyla ifade edilir."
+    },
+    {
+        question: "A _______ is a place where you can have a drink and a snack.",
+        options: ["cafe", "library", "bank", "school"],
+        correctAnswer: "cafe",
+        explanation: "Bir şeyler içip atıştırabileceğiniz yere 'cafe' (kafe) denir."
+    },
+    {
+        question: "He didn't go to school yesterday _______ he was ill.",
+        options: ["so", "but", "because", "and"],
+        correctAnswer: "because",
+        explanation: "Bir eylemin nedenini belirtmek için 'because' (çünkü) bağlacı kullanılır."
+    },
+    {
+        question: "A person who cuts and styles hair is a _______.",
+        options: ["tailor", "mechanic", "hairdresser", "chef"],
+        correctAnswer: "hairdresser",
+        explanation: "Saç kesen ve şekil veren kişiye 'hairdresser' (kuaför) denir."
+    },
+    {
+        question: "I think the ghost train is _______. I am not scared at all.",
+        options: ["frightening", "exciting", "boring", "thrilling"],
+        correctAnswer: "boring",
+        explanation: "Hiç korkmayan biri için korku treni 'boring' (sıkıcı) olabilir."
+    },
+    {
+        question: "A very tall building with many floors is called a _______.",
+        options: ["cottage", "skyscraper", "mansion", "bungalow"],
+        correctAnswer: "skyscraper",
+        explanation: "Çok katlı yüksek binalara 'skyscraper' (gökdelen) denir."
+    },
+    {
+        question: "What does your father do? He is an _______.",
+        options: ["engineer", "engine", "engineering", "engines"],
+        correctAnswer: "engineer",
+        explanation: "Birinin mesleğini söylerken meslek ismi kullanılır. 'Engineer' (mühendis) bir meslektir."
+    },
+    {
+        question: "I was born _______ October 29th.",
+        options: ["at", "in", "on", "from"],
+        correctAnswer: "on",
+        explanation: "Belirli bir tarihten (gün ve ay) bahsederken 'on' edatı kullanılır."
+    },
+    {
+        question: "A person who is not polite is _______.",
+        options: ["kind", "friendly", "rude", "nice"],
+        correctAnswer: "rude",
+        explanation: "Kibar olmayan bir kişiye 'rude' (kaba) denir."
+    },
+    {
+        question: "A _______ is a place where you can exercise and play sports.",
+        options: ["cinema", "library", "gym", "museum"],
+        correctAnswer: "gym",
+        explanation: "Egzersiz yapıp spor yapabileceğiniz yere 'gym' (spor salonu) denir."
+    },
+    {
+        question: "She was very _______ when she saw the spider.",
+        options: ["happy", "excited", "scared", "bored"],
+        correctAnswer: "scared",
+        explanation: "Örümcek gördüğünde genellikle insanlar 'scared' (korkmuş) hisseder."
+    },
+    {
+        question: "This box is too _______. I can't lift it.",
+        options: ["light", "heavy", "small", "soft"],
+        correctAnswer: "heavy",
+        explanation: "Kaldıramadığınız bir kutu 'heavy' (ağır) demektir."
+    },
+    {
+        question: "Which of these is NOT a drink?",
+        options: ["Juice", "Water", "Muffin", "Milk"],
+        correctAnswer: "Muffin",
+        explanation: "'Muffin' (küçük kek) bir yiyecektir, içecek değildir."
+    },
+    {
+        question: "We saw many historical _______ when we visited Rome.",
+        options: ["monuments", "restaurants", "shops", "hotels"],
+        correctAnswer: "monuments",
+        explanation: "Roma'yı ziyaret ettiğimizde birçok tarihi 'monuments' (anıt) gördük."
+    },
+    {
+        question: "What do you call a meal eaten outdoors?",
+        options: ["A barbecue", "A picnic", "A feast", "A banquet"],
+        correctAnswer: "A picnic",
+        explanation: "Dışarıda yenen yemeğe 'picnic' (piknik) denir."
+    },
+    {
+        question: "He goes to the gym to _______ weights.",
+        options: ["pull", "push", "lift", "carry"],
+        correctAnswer: "lift",
+        explanation: "Spor salonunda ağırlık kaldırmak için 'lift weights' ifadesi kullanılır."
+    },
+    {
+        question: "She doesn't like _______ her room. She thinks it's boring.",
+        options: ["tidying", "to tidy", "tidy", "tidies"],
+        correctAnswer: "tidying",
+        explanation: "'Like' veya 'dislike' fiillerinden sonra gelen eylem genellikle -ing takısı alır."
+    },
+    {
+        question: "The opposite of 'arrive' is _______.",
+        options: ["come", "go", "leave", "stay"],
+        correctAnswer: "leave",
+        explanation: "'Arrive' (varmak) kelimesinin zıttı 'leave' (ayrılmak) kelimesidir."
+    },
+    {
+        question: "You need a passport for _______ travel.",
+        options: ["domestic", "international", "local", "regional"],
+        correctAnswer: "international",
+        explanation: "'International' (uluslararası) seyahatler için pasaport gerekir."
+    },
+    {
+        question: "The main _______ of the movie was a brave princess.",
+        options: ["actor", "character", "director", "writer"],
+        correctAnswer: "character",
+        explanation: "Filmin ana kahramanına 'main character' (ana karakter) denir."
+    },
+    {
+        question: "I _______ to bed early last night because I had an exam.",
+        options: ["go", "am going", "went", "goes"],
+        correctAnswer: "went",
+        explanation: "'Last night' (dün gece) ifadesi geçmiş zamanı belirttiği için 'go' fiilinin ikinci hali 'went' kullanılır."
+    },
+    {
+        question: "A _______ sells flowers and plants.",
+        options: ["baker", "florist", "butcher", "chemist"],
+        correctAnswer: "florist",
+        explanation: "Çiçek ve bitki satan kişiye 'florist' (çiçekçi) denir."
+    },
+    {
+        question: "What time did the party _______? It was at 8 p.m.",
+        options: ["start", "starts", "started", "starting"],
+        correctAnswer: "start",
+        explanation: "Geçmiş zamanda 'did' yardımcı fiili ile soru sorarken, ana fiil yalın (V1) halde kullanılır."
+    },
+    {
+        question: "I was very _______ after running the marathon.",
+        options: ["energetic", "exhausted", "relaxed", "excited"],
+        correctAnswer: "exhausted",
+        explanation: "Maraton koştuktan sonra çok yorgun, yani 'exhausted' (tükenmiş) hissedersiniz."
+    },
+    {
+        question: "Can you _______ a secret?",
+        options: ["say", "tell", "speak", "keep"],
+        correctAnswer: "keep",
+        explanation: "Sır saklamak için 'keep a secret' deyimi kullanılır."
+    },
+    {
+        question: "She is _______ to peanuts. She can't eat them.",
+        options: ["allergic", "addicted", "fond", "keen"],
+        correctAnswer: "allergic",
+        explanation: "Yer fıstığı yiyemeyen birinin ona 'allergic' (alerjisi) vardır."
+    },
+    {
+        question: "We live in a small house in the _______. It's very quiet.",
+        options: ["city", "town", "countryside", "downtown"],
+        correctAnswer: "countryside",
+        explanation: "Sessiz ve sakin olan yer genellikle 'countryside' (kırsal bölge) dır."
+    },
+    {
+        question: "I think action films are more _______ than romance films.",
+        options: ["boring", "exciting", "sad", "funny"],
+        correctAnswer: "exciting",
+        explanation: "Aksiyon filmleri genellikle romantik filmlerden daha 'exciting' (heyecan verici) olarak görülür."
+    },
+    {
+        question: "He has a great sense of _______. He always tells funny jokes.",
+        options: ["style", "humour", "direction", "duty"],
+        correctAnswer: "humour",
+        explanation: "Komik şakalar anlatan birinin 'sense of humour' (mizah anlayışı) iyidir."
+    },
+    {
+        question: "You need to buy a _______ of bread from the bakery.",
+        options: ["loaf", "slice", "piece", "bar"],
+        correctAnswer: "loaf",
+        explanation: "Fırından bir somun ekmek alırken 'a loaf of bread' ifadesi kullanılır."
+    },
+    {
+        question: "A person who is in charge of a company is a _______.",
+        options: ["worker", "employee", "manager", "assistant"],
+        correctAnswer: "manager",
+        explanation: "Bir şirketten sorumlu olan kişiye 'manager' (yönetici) denir."
+    },
+    {
+        question: "The opposite of 'interesting' is _______.",
+        options: ["exciting", "dull", "amazing", "great"],
+        correctAnswer: "dull",
+        explanation: "'Interesting' (ilginç) kelimesinin zıt anlamlısı 'dull' (sıkıcı) olabilir."
+    },
+    {
+        question: "Don't forget to _______ the lights when you leave the room.",
+        options: ["turn on", "turn off", "put on", "take off"],
+        correctAnswer: "turn off",
+        explanation: "Odadan çıkarken ışıkları 'turn off' (kapatmak) gerekir."
+    },
+    {
+        question: "A _______ is a piece of paper that shows you have paid for something.",
+        options: ["ticket", "receipt", "bill", "note"],
+        correctAnswer: "receipt",
+        explanation: "Bir şey için ödeme yaptığınızı gösteren kağıt parçasına 'receipt' (fiş, makbuz) denir."
+    },
+    {
+        question: "The sun _______ in the east.",
+        options: ["sets", "rises", "goes", "comes"],
+        correctAnswer: "rises",
+        explanation: "Güneş doğudan doğar. Bu genel bir gerçektir ve geniş zamanla 'rises' (doğar) olarak ifade edilir."
+    },
+    {
+        question: "I _______ for my keys for ten minutes, but I can't find them.",
+        options: ["looked", "am looking", "have been looking", "look"],
+        correctAnswer: "have been looking",
+        explanation: "Geçmişte başlayıp hala devam eden bir eylemi vurgulamak için Present Perfect Continuous Tense kullanılır."
+    },
+    {
+        question: "A _______ is a building where things are made in large quantities.",
+        options: ["shop", "factory", "warehouse", "office"],
+        correctAnswer: "factory",
+        explanation: "Eşyaların büyük miktarlarda üretildiği binaya 'factory' (fabrika) denir."
+    },
+    {
+        question: "She is wearing a beautiful _______ on her finger.",
+        options: ["necklace", "bracelet", "ring", "earring"],
+        correctAnswer: "ring",
+        explanation: "Parmağa takılan takıya 'ring' (yüzük) denir."
+    },
+    {
+        question: "He is a very _______ person. He gets angry very easily.",
+        options: ["calm", "patient", "bad-tempered", "easy-going"],
+        correctAnswer: "bad-tempered",
+        explanation: "Kolayca sinirlenen bir kişiye 'bad-tempered' (huysuz, sinirli) denir."
+    },
+    {
+        question: "I was late for school because of the traffic _______.",
+        options: ["light", "sign", "jam", "road"],
+        correctAnswer: "jam",
+        explanation: "Trafik sıkışıklığı 'traffic jam' olarak ifade edilir."
+    },
+    {
+        question: "Can you _______ me a favour? I need some help.",
+        options: ["make", "do", "give", "take"],
+        correctAnswer: "do",
+        explanation: "Birinden iyilik istemek için 'do me a favour' kalıbı kullanılır."
+    },
+    {
+        question: "The opposite of 'brave' is _______.",
+        options: ["strong", "cowardly", "courageous", "fearless"],
+        correctAnswer: "cowardly",
+        explanation: "'Brave' (cesur) kelimesinin zıttı 'cowardly' (korkak) kelimesidir."
+    },
+    {
+        question: "A _______ is a large area of land with grass but few trees.",
+        options: ["forest", "jungle", "grassland", "desert"],
+        correctAnswer: "grassland",
+        explanation: "Üzerinde otların olduğu ama az ağacın bulunduğu geniş araziye 'grassland' (çayır, otlak) denir."
+    },
+    {
+        question: "She is studying to become a _______. She wants to defend people in court.",
+        options: ["judge", "lawyer", "police officer", "detective"],
+        correctAnswer: "lawyer",
+        explanation: "Mahkemede insanları savunmak isteyen biri 'lawyer' (avukat) olmak için okur."
+    },
+    {
+        question: "What does she look _______? She has long, dark hair.",
+        options: ["is", "like", "do", "as"],
+        correctAnswer: "like",
+        explanation: "Birinin dış görünüşünü sormak için 'What does she look like?' kalıbı kullanılır."
+    },
+    {
+        question: "We had a _______ of a time at the party last night. It was fantastic.",
+        options: ["whale", "lot", "bit", "great"],
+        correctAnswer: "whale",
+        explanation: "'Have a whale of a time' (harika zaman geçirmek, çok eğlenmek) bir deyimdir."
+    },
+    {
+        question: "He is a very _______ person. He never forgets to do his homework.",
+        options: ["careless", "responsible", "lazy", "forgetful"],
+        correctAnswer: "responsible",
+        explanation: "Ödevini yapmayı asla unutmayan biri 'responsible' (sorumluluk sahibi) biridir."
+    },
+    {
+        question: "A place where you can see planes take off and land is an _______.",
+        options: ["airport", "station", "port", "harbour"],
+        correctAnswer: "airport",
+        explanation: "Uçakların kalkıp indiği yere 'airport' (havaalanı) denir."
+    },
+    {
+        question: "She is very _______ about winning the competition.",
+        options: ["pessimistic", "optimistic", "negative", "sad"],
+        correctAnswer: "optimistic",
+        explanation: "Yarışmayı kazanma konusunda 'optimistic' (iyimser) olmak olumlu bir yaklaşımdır."
+    },
+    {
+        question: "I can't _______ to buy that car. It is too expensive.",
+        options: ["afford", "spend", "pay", "cost"],
+        correctAnswer: "afford",
+        explanation: "Bir şeyi satın almaya gücü yetmek 'afford' fiiliyle ifade edilir."
+    },
+    {
+        question: "A story about crime and a detective who tries to solve it is a _______.",
+        options: ["mystery", "romance", "comedy", "adventure"],
+        correctAnswer: "mystery",
+        explanation: "Suç ve onu çözmeye çalışan bir dedektif hakkındaki hikayeler 'mystery' (gizem) türündedir."
+    },
+    {
+        question: "The opposite of 'success' is _______.",
+        options: ["victory", "achievement", "failure", "win"],
+        correctAnswer: "failure",
+        explanation: "'Success' (başarı) kelimesinin zıttı 'failure' (başarısızlık) kelimesidir."
+    },
+    {
+        question: "She was _______ with her exam results. She got the top mark.",
+        options: ["disappointed", "thrilled", "upset", "angry"],
+        correctAnswer: "thrilled",
+        explanation: "En yüksek notu alan biri sınav sonuçlarından 'thrilled' (çok heyecanlanmış, sevinçten havalara uçmuş) olur."
+    },
+    {
+        question: "A person who is travelling for pleasure is a _______.",
+        options: ["commuter", "tourist", "passenger", "driver"],
+        correctAnswer: "tourist",
+        explanation: "Zevk için seyahat eden kişiye 'tourist' (turist) denir."
+    },
+    {
+        question: "The government should do more to protect _______ species.",
+        options: ["dangerous", "wild", "endangered", "common"],
+        correctAnswer: "endangered",
+        explanation: "Hükümet, 'endangered' (nesli tükenmekte olan) türleri korumak için daha fazlasını yapmalıdır."
+    },
+    {
+        question: "He is a very _______ speaker. He can persuade anyone.",
+        options: ["boring", "persuasive", "shy", "quiet"],
+        correctAnswer: "persuasive",
+        explanation: "Herkesi ikna edebilen biri 'persuasive' (ikna edici) bir konuşmacıdır."
+    },
+    {
+        question: "I _______ tennis with my friend when it started to rain.",
+        options: ["played", "was playing", "am playing", "play"],
+        correctAnswer: "was playing",
+        explanation: "Geçmişte bir eylem devam ederken (tenis oynamak) başka bir eylemin (yağmurun başlaması) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+
+
+
          {
                 question: "What is a 'home'?",
                 options: ["Place to sleep", "Place to buy things", "Place to study", "Place to play"],
@@ -2286,548 +2901,584 @@ const questionsByGrade = {
         correctAnswer: "in front of",
         explanation: "Belirli bir yerin önünde buluşmayı belirtmek için 'in front of' (önünde) kullanılır. 'At' da doğru olabilir ancak 'in front of' daha spesifiktir."
     },
-{
-                question: "Which sport needs a team?",
-                options: ["Running", "Swimming", "Basketball", "Tennis"],
-                correctAnswer: "Basketball",
-                explanation: "'Basketball' (basketbol) bir takım sporudur, tek başına oynanmaz."
-            },
-            {
-                question: "What do you do at an animal shelter?",
-                options: ["Study math", "Care for animals", "Buy clothes", "Cook food"],
-                correctAnswer: "Care for animals",
-                explanation: "Hayvan barınağında ('animal shelter') hayvanların bakımı yapılır."
-            },
-            {
-                question: "What is a traditional festival activity?",
-                options: ["Doing homework", "Watching TV", "Folk dancing", "Going to school"],
-                correctAnswer: "Folk dancing",
-                explanation: "'Folk dancing' (halk oyunları) geleneksel bir festival aktivitesidir."
-            },
-            {
-                question: "What is the opposite of 'arrive'?",
-                options: ["Stay", "Leave", "Come", "Enter"],
-                correctAnswer: "Leave",
-                explanation: "'Arrive' (varmak) kelimesinin zıttı 'leave' (ayrılmak) kelimesidir."
-            },
-            {
-                question: "Where do you find books?",
-                options: ["Kitchen", "Gym", "Library", "Park"],
-                correctAnswer: "Library",
-                explanation: "Kitaplar kütüphanede ('library') bulunur."
-            },
-            {
-                question: "What do you need for painting?",
-                options: ["Spoon", "Ball", "Brush", "Shoe"],
-                correctAnswer: "Brush",
-                explanation: "Resim yapmak için 'brush' (fırça) gerekir."
-            },
-            {
-                question: "What might cause a sore throat?",
-                options: ["Running", "Virus", "Reading", "Sleeping"],
-                correctAnswer: "Virus",
-                explanation: "Bir 'virus' boğaz ağrısına neden olabilir."
-            },
-            {
-                question: "Which movie type makes you laugh?",
-                options: ["Drama", "Horror", "Comedy", "Action"],
-                correctAnswer: "Comedy",
-                explanation: "'Comedy' (komedi) filmleri insanları güldürür."
-            },
-            {
-                question: "What do you need for a party?",
-                options: ["Toothbrush", "Schoolbag", "Decorations", "Laptop"],
-                correctAnswer: "Decorations",
-                explanation: "Bir parti için 'decorations' (süslemeler) gerekir."
-            },
-            {
-                question: "Which sport is played with a net?",
-                options: ["Swimming", "Football", "Volleyball", "Running"],
-                correctAnswer: "Volleyball",
-                explanation: "'Volleyball' (voleybol) file ile oynanan bir spordur."
-            },
-            {
-                question: "What do you NOT do at an animal shelter?",
-                options: ["Adopt pets", "Feed animals", "Play games", "Clean cages"],
-                correctAnswer: "Play games",
-                explanation: "Barınaklardaki temel işler bakım ve sahiplendirmedir; oyun oynamak birincil görev değildir."
-            },
-            {
-                question: "What do you wear for a cultural festival?",
-                options: ["School uniform", "Pajamas", "Traditional clothes", "Swimsuit"],
-                correctAnswer: "Traditional clothes",
-                explanation: "Kültürel festivallerde 'traditional clothes' (geleneksel kıyafetler) giyilir."
-            },
-            {
-                question: "What is a 'landmark' in a town?",
-                options: ["Old car", "Famous place", "Small shop", "New book"],
-                correctAnswer: "Famous place",
-                explanation: "'Landmark', bir şehirdeki ünlü ve tanınmış bir yerdir."
-            },
-            {
-                question: "What is a polite way to ask for help?",
-                options: ["Do it now!", "Give me that!", "Can you help me, please?", "I don’t need you!"],
-                correctAnswer: "Can you help me, please?",
-                explanation: "'Can you help me, please?' (Bana yardım edebilir misiniz, lütfen?) kibar bir yardım isteme şeklidir."
-            },
-            {
-                question: "What hobby needs a camera?",
-                options: ["Cooking", "Swimming", "Photography", "Reading"],
-                correctAnswer: "Photography",
-                explanation: "'Photography' (fotoğrafçılık) hobisi için kamera gerekir."
-            },
-            {
-                question: "What do you take for a stomachache?",
-                options: ["Soda", "Candy", "Medicine", "Ice cream"],
-                correctAnswer: "Medicine",
-                explanation: "Karın ağrısı ('stomachache') için 'medicine' (ilaç) alınır."
-            },
-            {
-                question: "Which movie type is about love?",
-                options: ["Action", "Romance", "Horror", "Comedy"],
-                correctAnswer: "Romance",
-                explanation: "'Romance' (romantik) filmler aşk hakkındadır."
-            },
-            {
-                question: "What do you do before a party?",
-                options: ["Work", "Study", "Plan", "Sleep"],
-                correctAnswer: "Plan",
-                explanation: "Partiden önce 'plan' (planlama) yapmak gerekir."
-            },
-            {
-                question: "Which sport is NOT a team sport?",
-                options: ["Volleyball", "Football", "Swimming", "Basketball"],
-                correctAnswer: "Swimming",
-                explanation: "'Swimming' (yüzme) genellikle bireysel bir spordur."
-            },
-            {
-                question: "What is an animal shelter for?",
-                options: ["Growing plants", "Helping animals", "Selling cars", "Building houses"],
-                correctAnswer: "Helping animals",
-                explanation: "Hayvan barınakları hayvanlara yardım etmek içindir."
-            },
-            {
-                question: "What is a festival usually about?",
-                options: ["Working", "Studying", "Celebrating", "Sleeping"],
-                correctAnswer: "Celebrating",
-                explanation: "Festivaller genellikle bir şeyi 'celebrating' (kutlamak) ile ilgilidir."
-            },
-            {
-                question: "What does 'change direction to the left' mean?",
-                options: ["Stop", "Go straight", "Turn left", "Go right"],
-                correctAnswer: "Turn left",
-                explanation: "Sola yön değiştirmek, 'turn left' (sola dönmek) anlamına gelir."
-            },
-            {
-                question: "What do you do daily?",
-                options: ["Buy a house", "Go on vacation", "Brush your teeth", "Change jobs"],
-                correctAnswer: "Brush your teeth",
-                explanation: "'Brush your teeth' (dişlerini fırçalamak) günlük bir aktivitedir."
-            },
-            {
-                question: "What is good for your health?",
-                options: ["Staying up late", "Watching TV", "Exercising", "Eating candy"],
-                correctAnswer: "Exercising",
-                explanation: "'Exercising' (egzersiz yapmak) sağlık için iyidir."
-            },
-            {
-                question: "What is a 'symptom' of being sick?",
-                options: ["Playing soccer", "Feeling happy", "Having a fever", "Reading a book"],
-                correctAnswer: "Having a fever",
-                explanation: "Ateşli olmak ('having a fever') hasta olmanın bir 'symptom' (belirti)sidir."
-            },
-            {
-                question: "What do you say about a good movie?",
-                options: ["It’s slow", "It’s boring", "It’s exciting", "It’s bad"],
-                correctAnswer: "It’s exciting",
-                explanation: "İyi bir film için genellikle 'It’s exciting' (Heyecan verici) denir."
-            },
-            {
-                question: "What do you need for a birthday party?",
-                options: ["Toothpaste", "Schoolbag", "Cake", "Laptop"],
-                correctAnswer: "Cake",
-                explanation: "Doğum günü partileri için 'cake' (pasta) vazgeçilmezdir."
-            },
-            {
-                question: "Which sport needs a bicycle?",
-                options: ["Tennis", "Football", "Cycling", "Swimming"],
-                correctAnswer: "Cycling",
-                explanation: "'Cycling' (bisiklete binme) sporu için bisiklet gerekir."
-            },
-            {
-                question: "What do you do with a pet?",
-                options: ["Write it", "Wear it", "Feed it", "Read it"],
-                correctAnswer: "Feed it",
-                explanation: "Evcil hayvanınızı ('pet') 'feed' (beslemek) gerekir."
-            },
-            {
-                question: "What is a festival decoration?",
-                options: ["Pen", "Book", "Flag", "Shoe"],
-                correctAnswer: "Flag",
-                explanation: "Festivallerde 'flag' (bayrak) gibi süslemeler kullanılır."
-            },
-            {
-                question: "What is the opposite of 'healthy'?",
-                options: ["Happy", "Sick", "Strong", "Fast"],
-                correctAnswer: "Sick",
-                explanation: "'Healthy' (sağlıklı) kelimesinin zıttı 'sick' (hasta) kelimesidir."
-            },
-            {
-                question: "What do you say to give directions?",
-                options: ["What’s your name?", "I’m tired", "Go straight", "Nice to meet you"],
-                correctAnswer: "Go straight",
-                explanation: "Yol tarifi verirken 'Go straight' (Düz git) gibi ifadeler kullanılır."
-            },
-            {
-                question: "What hobby involves music?",
-                options: ["Running", "Cooking", "Singing", "Reading"],
-                correctAnswer: "Singing",
-                explanation: "'Singing' (şarkı söylemek) müzik içeren bir hobidir."
-            },
-            {
-                question: "What do you learn from a biography?",
-                options: ["A car’s history", "A person’s life story", "A book’s plot", "A game’s rules"],
-                correctAnswer: "A person’s life story",
-                explanation: "Bir 'biography' (biyografi) bir kişinin hayat hikayesini anlatır."
-            },
-            {
-                question: "What is a 'schedule'?",
-                options: ["Kind of game", "Type of food", "Plan for the day", "Piece of clothing"],
-                correctAnswer: "Plan for the day",
-                explanation: "'Schedule' (program), gün için yapılan bir plandır."
-            },
-            {
-                question: "What do you say to suggest something?",
-                options: ["No way!", "I’m tired!", "Let’s go!", "Go away!"],
-                correctAnswer: "Let’s go!",
-                explanation: "Bir öneride bulunmak için 'Let’s go!' (Hadi gidelim!) gibi ifadeler kullanılır."
-            },
-            {
-                question: "Who is a 'tourist'?",
-                options: ["Person who cooks", "Person who teaches", "Person who travels", "Person who sings"],
-                correctAnswer: "Person who travels",
-                explanation: "'Tourist' (turist), seyahat eden kişidir."
-            },
-            {
-                question: "What do you need for a city tour?",
-                options: ["Desk", "Map", "Fork", "Book"],
-                correctAnswer: "Map",
-                explanation: "Bir şehir turu için 'map' (harita) gereklidir."
-            },
-            {
-                question: "Who is a 'volunteer'?",
-                options: ["Person who sells food", "Person who helps for free", "Person who drives", "Person who sings"],
-                correctAnswer: "Person who helps for free",
-                explanation: "'Volunteer' (gönüllü), ücretsiz olarak yardım eden kişidir."
-            },
-            {
-                question: "What do you do to save water?",
-                options: ["Drink soda", "Eat candy", "Turn off the tap", "Watch TV"],
-                correctAnswer: "Turn off the tap",
-                explanation: "Suyu korumak için musluğu kapatmalısınız ('turn off the tap')."
-            },
-            {
-                question: "What do you say to invite someone?",
-                options: ["I’m busy", "Go away", "Come to my party", "See you later"],
-                correctAnswer: "Come to my party",
-                explanation: "Birini davet etmek için 'Come to my party' (Partime gel) diyebilirsiniz."
-            },
-            {
-                question: "What do you do to protect animals?",
-                options: ["Throw trash", "Feed them", "Ignore them", "Run away"],
-                correctAnswer: "Feed them",
-                explanation: "Hayvanları korumanın bir yolu onları 'feed' (beslemek) ve onlara iyi bakmaktır."
-            },
-            {
-                question: "What do you say to describe a good friend?",
-                options: ["He is mean", "She is lazy", "They are kind", "He is shy"],
-                correctAnswer: "They are kind",
-                explanation: "İyi bir arkadaşı tanımlarken 'They are kind' (Onlar kibar) gibi olumlu ifadeler kullanılır."
-            },
-            {
-                question: "What do you need for a trip?",
-                options: ["Toothpaste", "Schoolbag", "Ticket", "Laptop"],
-                correctAnswer: "Ticket",
-                explanation: "Bir seyahat ('trip') için 'ticket' (bilet) gerekir."
-            },
-            {
-                question: "Who is a 'scientist'?",
-                options: ["Person who sells food", "Person who does experiments", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who does experiments",
-                explanation: "'Scientist' (bilim insanı), deneyler yapan kişidir."
-            },
-            {
-                question: "What do you do to stay safe?",
-                options: ["Run in traffic", "Follow rules", "Eat candy", "Sleep"],
-                correctAnswer: "Follow rules",
-                explanation: "Güvende kalmak için kurallara uymalısınız ('follow rules')."
-            },
-            {
-                question: "What is a 'concert'?",
-                options: ["Place to sleep", "Event with music", "Place to eat", "Place to work"],
-                correctAnswer: "Event with music",
-                explanation: "'Concert' (konser), müzikli bir etkinliktir."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Study", "Win a prize", "Work", "Sleep"],
-                correctAnswer: "Win a prize",
-                explanation: "Panayırlarda oyun oynayarak 'win a prize' (ödül kazanmak) mümkündür."
-            },
-            {
-                question: "Who is a 'chef'?",
-                options: ["Person who sells food", "Person who cooks", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who cooks",
-                explanation: "'Chef' (şef), profesyonel olarak yemek pişiren kişidir."
-            },
-            {
-                question: "What do you do to help the environment?",
-                options: ["Throw trash", "Recycle", "Eat candy", "Sleep"],
-                correctAnswer: "Recycle",
-                explanation: "Çevreye yardım etmek için 'recycle' (geri dönüşüm yapmak) önemlidir."
-            },
-            {
-                question: "Which place is NOT in a town?",
-                options: ["Library", "Hospital", "Beach", "Market"],
-                correctAnswer: "Beach",
-                explanation: "'Beach' (plaj) genellikle kasabaların içinde değil, kıyısında bulunur."
-            },
-            {
-                question: "What do you say to ask the time?",
-                options: ["Where are you?", "What time is it?", "How are you?", "What is this?"],
-                correctAnswer: "What time is it?",
-                explanation: "Saati sormak için 'What time is it?' (Saat kaç?) kullanılır."
-            },
-            {
-                question: "What might cause a sore throat?",
-                options: ["Running", "Sleeping", "Cold weather", "Reading"],
-                correctAnswer: "Cold weather",
-                explanation: "Soğuk hava ('cold weather') boğaz ağrısına neden olabilir."
-            },
-            {
-                question: "What is a 'museum'?",
-                options: ["Place to play", "Place to sleep", "Place to see history", "Place to eat"],
-                correctAnswer: "Place to see history",
-                explanation: "'Museum' (müze), tarihi görmek için gidilen bir yerdir."
-            },
-            {
-                question: "What is a 'rule'?",
-                options: ["Something you eat", "Something you wear", "Something you read", "Something you must follow"],
-                correctAnswer: "Something you must follow",
-                explanation: "'Rule' (kural), uyulması gereken bir şeydir."
-            },
-            {
-                question: "What is a 'hobby' like dancing?",
-                options: ["Something you eat", "Something you do for fun", "Something you wear", "Something you read"],
-                correctAnswer: "Something you do for fun",
-                explanation: "Dans etmek gibi bir hobi, eğlence için yapılan bir aktivitedir."
-            },
-            {
-                question: "What do you say to offer a suggestion?",
-                options: ["Why don’t we try?", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Why don’t we try?",
-                explanation: "Bir öneri sunmak için 'Why don’t we try?' (Neden denemiyoruz?) gibi ifadeler kullanılır."
-            },
-            {
-                question: "What is a 'schedule' for a trip?",
-                options: ["Plan for travel", "Type of food", "Kind of game", "Piece of clothing"],
-                correctAnswer: "Plan for travel",
-                explanation: "Bir seyahat programı, seyahat için yapılan bir plandır."
-            },
-            {
-                question: "What do you say to ask for directions?",
-                options: ["What’s your name?", "I’m tired", "Where is the museum?", "Nice to meet you"],
-                correctAnswer: "Where is the museum?",
-                explanation: "Yol tarifi sormak için 'Where is the...?' (...'nerede?) kalıbı kullanılır."
-            },
-            {
-                question: "What is a 'teacher'?",
-                options: ["Person who sells food", "Person who teaches", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who teaches",
-                explanation: "'Teacher' (öğretmen), öğreten kişidir."
-            },
-            {
-                question: "What do you do to stay fit?",
-                options: ["Watch TV", "Eat candy", "Play sports", "Sleep"],
-                correctAnswer: "Play sports",
-                explanation: "Formda kalmak için 'play sports' (spor yapmak) iyi bir yoldur."
-            },
-            {
-                question: "What is a 'zoo'?",
-                options: ["Place to sleep", "Place to see animals", "Place to eat", "Place to work"],
-                correctAnswer: "Place to see animals",
-                explanation: "'Zoo' (hayvanat bahçesi), hayvanları görmek için bir yerdir."
-            },
-            {
-                question: "What do you say to thank someone for help?",
-                options: ["Go away!", "I’m fine!", "Thank you so much!", "No way!"],
-                correctAnswer: "Thank you so much!",
-                explanation: "Yardım için teşekkür ederken 'Thank you so much!' (Çok teşekkür ederim!) gibi daha vurgulu bir ifade kullanılabilir."
-            },
-            {
-                question: "What do you do at a picnic?",
-                options: ["Study", "Eat outdoors", "Work", "Sleep"],
-                correctAnswer: "Eat outdoors",
-                explanation: "Piknik yapmak, 'eat outdoors' (dışarıda yemek yemek) anlamına gelir."
-            },
-            {
-                question: "What is a 'pilot'?",
-                options: ["Person who sells food", "Person who flies planes", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who flies planes",
-                explanation: "'Pilot', uçakları uçuran kişidir."
-            },
-            {
-                question: "What do you do to save energy?",
-                options: ["Watch TV", "Turn off lights", "Eat candy", "Sleep"],
-                correctAnswer: "Turn off lights",
-                explanation: "Enerji tasarrufu için 'turn off lights' (ışıkları kapatmak) önemlidir."
-            },
-            {
-                question: "What is a 'plan'?",
-                options: ["Something you eat", "Something you organize", "Something you wear", "Something you read"],
-                correctAnswer: "Something you organize",
-                explanation: "'Plan', organize ettiğiniz bir şeydir."
-            },
-            {
-                question: "What do you say to describe a fun activity?",
-                options: ["It’s boring", "It’s exciting", "It’s slow", "It’s bad"],
-                correctAnswer: "It’s exciting",
-                explanation: "Eğlenceli bir aktivite için 'It’s exciting' (Heyecan verici) denilebilir."
-            },
-            {
-                question: "What do you need for a festival?",
-                options: ["Toothpaste", "Schoolbag", "Costume", "Laptop"],
-                correctAnswer: "Costume",
-                explanation: "Bazı festivaller için özel 'costume' (kostüm) gerekir."
-            },
-            {
-                question: "What is a 'musician'?",
-                options: ["Person who sells food", "Person who plays music", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who plays music",
-                explanation: "'Musician' (müzisyen), müzik çalan veya yapan kişidir."
-            },
-            {
-                question: "What do you do to help a friend?",
-                options: ["Ignore them", "Listen to them", "Run away", "Sleep"],
-                correctAnswer: "Listen to them",
-                explanation: "Bir arkadaşa yardım etmenin en iyi yollarından biri onu 'listen to' (dinlemek) eylemidir."
-            },
-            {
-                question: "What is a 'library'?",
-                options: ["Place to sleep", "Place to read books", "Place to eat", "Place to work"],
-                correctAnswer: "Place to read books",
-                explanation: "'Library' (kütüphane), kitap okunan bir yerdir."
-            },
-            {
-                question: "What do you say to ask for permission?",
-                options: ["Can I join?", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Can I join?",
-                explanation: "İzin istemek için 'Can I join?' (Katılabilir miyim?) gibi ifadeler kullanılır."
-            },
-            {
-                question: "What do you do at a beach?",
-                options: ["Study", "Build a sandcastle", "Work", "Sleep"],
-                correctAnswer: "Build a sandcastle",
-                explanation: "Sahilde 'build a sandcastle' (kumdan kale yapmak) eğlenceli bir aktivitedir."
-            },
-            {
-                question: "What is a 'firefighter'?",
-                options: ["Person who sells food", "Person who puts out fires", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who puts out fires",
-                explanation: "'Firefighter' (itfaiyeci), yangınları söndüren kişidir."
-            },
-            {
-                question: "What do you do to stay clean?",
-                options: ["Watch TV", "Wash your hands", "Eat candy", "Sleep"],
-                correctAnswer: "Wash your hands",
-                explanation: "Temiz kalmak için 'wash your hands' (ellerini yıkamak) önemlidir."
-            },
-            {
-                question: "What is a 'park'?",
-                options: ["Place to sleep", "Place to relax", "Place to eat", "Place to work"],
-                correctAnswer: "Place to relax",
-                explanation: "'Park', rahatlamak için gidilebilecek bir yerdir."
-            },
-            {
-                question: "What do you say to congratulate a winner?",
-                options: ["Try again!", "I’m fine!", "Great job!", "No way!"],
-                correctAnswer: "Great job!",
-                explanation: "Bir kazananı tebrik etmek için 'Great job!' (Harika iş!) denir."
-            },
-            {
-                question: "What do you do at a concert?",
-                options: ["Study", "Sing along", "Work", "Sleep"],
-                correctAnswer: "Sing along",
-                explanation: "Konserde sevdiğiniz şarkılara 'sing along' (eşlik etmek) yapabilirsiniz."
-            },
-            {
-                question: "What is a 'nurse'?",
-                options: ["Person who sells food", "Person who helps doctors", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who helps doctors",
-                explanation: "'Nurse' (hemşire), doktorlara yardım eden kişidir."
-            },
-            {
-                question: "What do you do to save the planet?",
-                options: ["Throw trash", "Plant trees", "Eat candy", "Sleep"],
-                correctAnswer: "Plant trees",
-                explanation: "Gezegeni kurtarmak için 'plant trees' (ağaç dikmek) önemli bir adımdır."
-            },
-            {
-                question: "What is a 'holiday'?",
-                options: ["Time to work", "Time to rest", "Time to study", "Time to sleep"],
-                correctAnswer: "Time to rest",
-                explanation: "'Holiday' (tatil), dinlenme zamanıdır."
-            },
-            {
-                question: "What do you say to suggest a movie?",
-                options: ["Let’s watch it!", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Let’s watch it!",
-                explanation: "Bir film önermek için 'Let’s watch it!' (Hadi izleyelim!) denir."
-            },
-            {
-                question: "What do you do at a zoo?",
-                options: ["Study", "Watch animals", "Work", "Sleep"],
-                correctAnswer: "Watch animals",
-                explanation: "Hayvanat bahçesinde 'watch animals' (hayvanları izlemek) için gidilir."
-            },
-            {
-                question: "What is a 'painter'?",
-                options: ["Person who sells food", "Person who paints", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who paints",
-                explanation: "'Painter' (ressam), resim yapan kişidir."
-            },
-            {
-                question: "What do you do to stay healthy?",
-                options: ["Watch TV", "Eat vegetables", "Eat candy", "Sleep"],
-                correctAnswer: "Eat vegetables",
-                explanation: "Sağlıklı kalmak için 'eat vegetables' (sebze yemek) önemlidir."
-            },
-            {
-                question: "What is a 'fair'?",
-                options: ["Place to sleep", "Event with games", "Place to eat", "Place to work"],
-                correctAnswer: "Event with games",
-                explanation: "'Fair' (panayır), oyunların olduğu bir etkinliktir."
-            },
-            {
-                question: "What do you say to describe a kind person?",
-                options: ["They are mean", "They are friendly", "They are lazy", "They are shy"],
-                correctAnswer: "They are friendly",
-                explanation: "Kibar birini tanımlamak için 'friendly' (arkadaş canlısı) kelimesi kullanılabilir."
-            }
+    {
+        question: "A person who can be trusted to do what they say they will do is _______.",
+        options: ["unreliable", "reliable", "dishonest", "deceitful"],
+        correctAnswer: "reliable",
+        explanation: "Söylediğini yapacağına güvenilebilen bir kişi 'reliable' (güvenilir) biridir."
+    },
+    {
+        question: "The film's special effects were absolutely _______. I've never seen anything like it.",
+        options: ["mind-blowing", "disappointing", "average", "terrible"],
+        correctAnswer: "mind-blowing",
+        explanation: "Daha önce benzerini görmediğiniz filmin özel efektleri 'mind-blowing' (akıl almaz, inanılmaz) olabilir."
+    },
+    {
+        question: "To fully appreciate the artwork, you need to understand its historical _______.",
+        options: ["price", "context", "size", "color"],
+        correctAnswer: "context",
+        explanation: "Sanat eserini tam olarak takdir etmek için onun tarihi 'context' (bağlam) ini anlamanız gerekir."
+    },
+    {
+        question: "You _______ to have a visa to enter that country; a passport is sufficient.",
+        options: ["must", "have", "shouldn't", "don't have"],
+        correctAnswer: "don't have",
+        explanation: "Bir zorunluluk olmadığını belirtmek için 'don't have to' (zorunda değilim) kalıbı kullanılır."
+    },
+    {
+        question: "The novel provides a _______ portrayal of life in the 19th century.",
+        options: ["vivid", "vague", "inaccurate", "modern"],
+        correctAnswer: "vivid",
+        explanation: "Roman, 19. yüzyıldaki hayata dair 'vivid' (canlı, ayrıntılı) bir tasvir sunuyor."
+    },
+    {
+        question: "He is a very _______ person. He always thinks carefully and avoids taking risks.",
+        options: ["reckless", "cautious", "impulsive", "daring"],
+        correctAnswer: "cautious",
+        explanation: "Her zaman dikkatli düşünen ve risk almaktan kaçınan kişiye 'cautious' (tedbirli) denir."
+    },
+    {
+        question: "The city's _______ is a mix of ancient temples and modern skyscrapers.",
+        options: ["skyline", "suburb", "pavement", "traffic"],
+        correctAnswer: "skyline",
+        explanation: "Şehrin 'skyline' (silüeti), antik tapınaklar ve modern gökdelenlerin bir karışımıdır."
+    },
+    {
+        question: "The documentary explores the _______ relationship between humans and nature.",
+        options: ["simple", "complex", "unimportant", "distant"],
+        correctAnswer: "complex",
+        explanation: "Belgesel, insanlar ve doğa arasındaki 'complex' (karmaşık) ilişkiyi araştırıyor."
+    },
+    {
+        question: "The government implemented new policies to _______ climate change.",
+        options: ["worsen", "ignore", "combat", "cause"],
+        correctAnswer: "combat",
+        explanation: "Hükümet, iklim değişikliğiyle 'combat' (mücadele etmek) için yeni politikalar uyguladı."
+    },
+    {
+        question: "A person who is able to do many different things well is _______.",
+        options: ["specialized", "limited", "versatile", "inept"],
+        correctAnswer: "versatile",
+        explanation: "Pek çok farklı şeyi iyi yapabilen kişiye 'versatile' (çok yönlü, becerikli) denir."
+    },
+    {
+        question: "The evidence presented in court was not _______ enough to prove his guilt.",
+        options: ["convincing", "weak", "irrelevant", "false"],
+        correctAnswer: "convincing",
+        explanation: "Mahkemede sunulan kanıt, onun suçluluğunu kanıtlamak için yeterince 'convincing' (ikna edici) değildi."
+    },
+    {
+        question: "Her _______ to her studies paid off when she graduated with top honours.",
+        options: ["indifference", "dedication", "neglect", "apathy"],
+        correctAnswer: "dedication",
+        explanation: "Çalışmalarına olan 'dedication' (adanmışlık, bağlılık) çabaları, en yüksek onurla mezun olduğunda karşılığını verdi."
+    },
+    {
+        question: "You _______ have told me you were going to be late. I was worried.",
+        options: ["must", "should", "can't", "needn't"],
+        correctAnswer: "should",
+        explanation: "Geçmişte yapılması gereken ama yapılmamış bir eylem için 'should have + V3' yapısı kullanılır."
+    },
+    {
+        question: "The artist is known for his _______ use of color.",
+        options: ["conventional", "unconventional", "boring", "dull"],
+        correctAnswer: "unconventional",
+        explanation: "Sanatçı, 'unconventional' (alışılmadık, geleneksel olmayan) renk kullanımıyla tanınır."
+    },
+    {
+        question: "The company's success can be _______ to its innovative marketing strategy.",
+        options: ["attributed", "blamed", "ignored", "denied"],
+        correctAnswer: "attributed",
+        explanation: "Şirketin başarısı, yenilikçi pazarlama stratejisine 'attributed to' (atfedilebilir, bağlanabilir)."
+    },
+    {
+        question: "A person with a _______ attitude is more likely to succeed.",
+        options: ["negative", "pessimistic", "positive", "defeatist"],
+        correctAnswer: "positive",
+        explanation: "'Positive' (pozitif, olumlu) bir tutuma sahip bir kişinin başarılı olma olasılığı daha yüksektir."
+    },
+    {
+        question: "The meeting was _______ because the main speaker was ill.",
+        options: ["held", "postponed", "advanced", "scheduled"],
+        correctAnswer: "postponed",
+        explanation: "Ana konuşmacı hasta olduğu için toplantı 'postponed' (ertelendi)."
+    },
+    {
+        question: "It is _______ that you read the instructions carefully before assembling the furniture.",
+        options: ["optional", "unimportant", "vital", "trivial"],
+        correctAnswer: "vital",
+        explanation: "Mobilyayı monte etmeden önce talimatları dikkatlice okumanız 'vital' (hayati, çok önemli) dir."
+    },
+    {
+        question: "The _______ of the new law was met with public opposition.",
+        options: ["implementation", "rejection", "discussion", "proposal"],
+        correctAnswer: "implementation",
+        explanation: "Yeni yasanın 'implementation' (uygulanması, yürürlüğe konması) halkın muhalefetiyle karşılaştı."
+    },
+    {
+        question: "A person who is extremely careful with details is _______.",
+        options: ["careless", "meticulous", "sloppy", "hasty"],
+        correctAnswer: "meticulous",
+        explanation: "Ayrıntılar konusunda son derece dikkatli olan kişiye 'meticulous' (titiz, kılı kırk yaran) denir."
+    },
+    {
+        question: "The negotiations between the two countries reached a _______.",
+        options: ["breakthrough", "conflict", "stalemate", "disagreement"],
+        correctAnswer: "stalemate",
+        explanation: "İki ülke arasındaki müzakereler bir 'stalemate' (çıkmaz, açmaz) durumuna ulaştı."
+    },
+    {
+        question: "His _______ behaviour at the party was embarrassing for everyone.",
+        options: ["appropriate", "inappropriate", "polite", "courteous"],
+        correctAnswer: "inappropriate",
+        explanation: "Partideki 'inappropriate' (uygunsuz) davranışı herkes için utanç vericiydi."
+    },
+    {
+        question: "The company is looking for candidates with _______ problem-solving skills.",
+        options: ["poor", "average", "exceptional", "mediocre"],
+        correctAnswer: "exceptional",
+        explanation: "Şirket, 'exceptional' (olağanüstü, istisnai) problem çözme becerilerine sahip adaylar arıyor."
+    },
+    {
+        question: "The antique vase was _______ and had to be handled with great care.",
+        options: ["sturdy", "fragile", "durable", "robust"],
+        correctAnswer: "fragile",
+        explanation: "Antika vazo 'fragile' (kırılgan) idi ve büyük bir özenle taşınması gerekiyordu."
+    },
+    {
+        question: "It is important to _______ between fact and opinion when reading the news.",
+        options: ["combine", "confuse", "differentiate", "ignore"],
+        correctAnswer: "differentiate",
+        explanation: "Haberleri okurken gerçek ile görüş arasında 'differentiate' (ayrım yapmak) önemlidir."
+    },
+    {
+        question: "The _______ of the Amazon rainforest is a serious global concern.",
+        options: ["conservation", "deforestation", "preservation", "protection"],
+        correctAnswer: "deforestation",
+        explanation: "Amazon yağmur ormanlarının 'deforestation' (ormansızlaşması) ciddi bir küresel endişedir."
+    },
+    {
+        question: "A person who is able to speak several languages is _______.",
+        options: ["monolingual", "bilingual", "multilingual", "linguist"],
+        correctAnswer: "multilingual",
+        explanation: "Birkaç dil konuşabilen kişiye 'multilingual' (çok dilli) denir."
+    },
+    {
+        question: "The decision was made _______, with everyone in agreement.",
+        options: ["controversially", "unanimously", "hesitantly", "reluctantly"],
+        correctAnswer: "unanimously",
+        explanation: "Karar, herkesin aynı fikirde olmasıyla 'unanimously' (oybirliğiyle) alındı."
+    },
+    {
+        question: "She showed great _______ in the face of adversity.",
+        options: ["fear", "weakness", "resilience", "despair"],
+        correctAnswer: "resilience",
+        explanation: "Zorluklar karşısında büyük bir 'resilience' (direnç, dayanıklılık) gösterdi."
+    },
+    {
+        question: "The book is a _______ examination of the causes of the war.",
+        options: ["superficial", "comprehensive", "biased", "brief"],
+        correctAnswer: "comprehensive",
+        explanation: "Kitap, savaşın nedenlerinin 'comprehensive' (kapsamlı, detaylı) bir incelemesidir."
+    },
+    {
+        question: "A person who is hopeful and confident about the future is _______.",
+        options: ["pessimistic", "optimistic", "cynical", "skeptical"],
+        correctAnswer: "optimistic",
+        explanation: "Gelecek hakkında umutlu ve kendinden emin olan kişiye 'optimistic' (iyimser) denir."
+    },
+    {
+        question: "The new technology is expected to _______ the industry.",
+        options: ["maintain", "revolutionize", "stabilize", "preserve"],
+        correctAnswer: "revolutionize",
+        explanation: "Yeni teknolojinin sektörde 'revolutionize' (devrim yapmak) yaratması bekleniyor."
+    },
+    {
+        question: "His arguments were not based on logic, but on _______ appeal.",
+        options: ["rational", "emotional", "factual", "objective"],
+        correctAnswer: "emotional",
+        explanation: "Onun argümanları mantığa değil, 'emotional' (duygusal) çekiciliğe dayanıyordu."
+    },
+    {
+        question: "The _______ of the ancient city were discovered by archaeologists.",
+        options: ["ruins", "buildings", "skyscrapers", "monuments"],
+        correctAnswer: "ruins",
+        explanation: "Antik kentin 'ruins' (kalıntıları, harabeleri) arkeologlar tarafından keşfedildi."
+    },
+    {
+        question: "It is _______ for children to get enough sleep for their development.",
+        options: ["optional", "essential", "unnecessary", "trivial"],
+        correctAnswer: "essential",
+        explanation: "Çocukların gelişimleri için yeterli uyku almaları 'essential' (zorunlu, çok önemli) dir."
+    },
+    {
+        question: "A person who is not willing to change their opinion is _______.",
+        options: ["flexible", "open-minded", "stubborn", "adaptable"],
+        correctAnswer: "stubborn",
+        explanation: "Fikrini değiştirmeye istekli olmayan kişiye 'stubborn' (inatçı) denir."
+    },
+    {
+        question: "The government took steps to _______ the economy after the recession.",
+        options: ["weaken", "stimulate", "damage", "ignore"],
+        correctAnswer: "stimulate",
+        explanation: "Hükümet, durgunluktan sonra ekonomiyi 'stimulate' (canlandırmak, teşvik etmek) için adımlar attı."
+    },
+    {
+        question: "She has an _______ knowledge of the subject.",
+        options: ["extensive", "limited", "superficial", "basic"],
+        correctAnswer: "extensive",
+        explanation: "Konu hakkında 'extensive' (geniş, kapsamlı) bir bilgisi var."
+    },
+    {
+        question: "The _______ of the two companies created a new market leader.",
+        options: ["separation", "merger", "conflict", "competition"],
+        correctAnswer: "merger",
+        explanation: "İki şirketin 'merger' (birleşmesi), yeni bir pazar lideri yarattı."
+    },
+    {
+        question: "A person who does things in a careful and logical way is _______.",
+        options: ["chaotic", "impulsive", "systematic", "random"],
+        correctAnswer: "systematic",
+        explanation: "İşleri dikkatli ve mantıklı bir şekilde yapan kişiye 'systematic' (sistematik, düzenli) denir."
+    },
+    {
+        question: "The painting is a _______, a true work of art.",
+        options: ["fake", "copy", "masterpiece", "forgery"],
+        correctAnswer: "masterpiece",
+        explanation: "Bu tablo bir 'masterpiece' (şaheser), gerçek bir sanat eseridir."
+    },
+    {
+        question: "The country's _______ heritage is protected by law.",
+        options: ["cultural", "financial", "industrial", "political"],
+        correctAnswer: "cultural",
+        explanation: "Ülkenin 'cultural' (kültürel) mirası yasalarla korunmaktadır."
+    },
+    {
+        question: "His speech was so _______ that it inspired everyone in the audience.",
+        options: ["dull", "eloquent", "confusing", "monotonous"],
+        correctAnswer: "eloquent",
+        explanation: "Konuşması o kadar 'eloquent' (etkili ve güzel) idi ki, salondaki herkese ilham verdi."
+    },
+    {
+        question: "The ability to understand something instinctively, without the need for conscious reasoning, is called _______.",
+        options: ["logic", "intuition", "analysis", "study"],
+        correctAnswer: "intuition",
+        explanation: "Bir şeyi bilinçli bir akıl yürütmeye gerek duymadan içgüdüsel olarak anlama yeteneğine 'intuition' (sezgi) denir."
+    },
+    {
+        question: "A _______ is a period of temporary economic decline.",
+        options: ["boom", "recession", "growth", "expansion"],
+        correctAnswer: "recession",
+        explanation: "Geçici bir ekonomik gerileme dönemine 'recession' (durgunluk) denir."
+    },
+    {
+        question: "A person who is skilled in a particular art or activity is a _______.",
+        options: ["novice", "amateur", "virtuoso", "beginner"],
+        correctAnswer: "virtuoso",
+        explanation: "Belirli bir sanatta veya aktivitede çok yetenekli olan kişiye 'virtuoso' (virtüöz, üstat) denir."
+    },
+    {
+        question: "The treaty was designed to _______ peace between the two nations.",
+        options: ["disrupt", "foster", "threaten", "undermine"],
+        correctAnswer: "foster",
+        explanation: "Antlaşma, iki ulus arasında barışı 'foster' (geliştirmek, teşvik etmek) için tasarlanmıştır."
+    },
+    {
+        question: "His explanation was very _______ and easy to understand.",
+        options: ["ambiguous", "lucid", "obscure", "complex"],
+        correctAnswer: "lucid",
+        explanation: "Açıklaması çok 'lucid' (açık, anlaşılır) ve anlaşılması kolaydı."
+    },
+    {
+        question: "A _______ is a situation in which a difficult choice has to be made.",
+        options: ["certainty", "solution", "dilemma", "conclusion"],
+        correctAnswer: "dilemma",
+        explanation: "Zor bir seçimin yapılması gereken duruma 'dilemma' (ikilem, çıkmaz) denir."
+    },
+    {
+        question: "The _______ of renewable energy is crucial for a sustainable future.",
+        options: ["depletion", "adoption", "rejection", "limitation"],
+        correctAnswer: "adoption",
+        explanation: "Yenilenebilir enerjinin 'adoption' (benimsenmesi, kabulü), sürdürülebilir bir gelecek için çok önemlidir."
+    },
+    {
+        question: "A person who is quiet and prefers to be alone is an _______.",
+        options: ["extrovert", "introvert", "ambivert", "socialite"],
+        correctAnswer: "introvert",
+        explanation: "Sessiz ve yalnız olmayı tercih eden kişiye 'introvert' (içe dönük) denir."
+    },
+    {
+        question: "The new discovery has _______ implications for the future of medicine.",
+        options: ["minor", "profound", "trivial", "insignificant"],
+        correctAnswer: "profound",
+        explanation: "Yeni keşfin, tıbbın geleceği için 'profound' (derin, köklü) etkileri var."
+    },
+    {
+        question: "It is important to be _______ of other people's cultures and beliefs.",
+        options: ["intolerant", "respectful", "dismissive", "critical"],
+        correctAnswer: "respectful",
+        explanation: "Diğer insanların kültürlerine ve inançlarına karşı 'respectful' (saygılı) olmak önemlidir."
+    },
+    {
+        question: "The company had to _______ its strategy to adapt to the changing market.",
+        options: ["maintain", "alter", "preserve", "continue"],
+        correctAnswer: "alter",
+        explanation: "Şirket, değişen pazara uyum sağlamak için stratejisini 'alter' (değiştirmek) zorunda kaldı."
+    },
+    {
+        question: "A _______ is a person who has a natural ability to do something well.",
+        options: ["prodigy", "beginner", "amateur", "novice"],
+        correctAnswer: "prodigy",
+        explanation: "Bir şeyi iyi yapmak için doğal bir yeteneği olan kişiye, özellikle genç yaşta ise, 'prodigy' (dâhi çocuk, harika) denir."
+    },
+    {
+        question: "The ancient script was finally _______ after years of research.",
+        options: ["written", "coded", "deciphered", "confused"],
+        correctAnswer: "deciphered",
+        explanation: "Antik yazı, yıllarca süren araştırmalardan sonra nihayet 'deciphered' (deşifre edildi, çözüldü)."
+    },
+    {
+        question: "She gave a very _______ speech that moved everyone to tears.",
+        options: ["poignant", "humorous", "dull", "informative"],
+        correctAnswer: "poignant",
+        explanation: "Herkesi gözyaşlarına boğan çok 'poignant' (dokunaklı, etkileyici) bir konuşma yaptı."
+    },
+    {
+        question: "The two events happened _______, at exactly the same time.",
+        options: ["sequentially", "simultaneously", "separately", "previously"],
+        correctAnswer: "simultaneously",
+        explanation: "İki olay 'simultaneously' (eş zamanlı olarak), tam olarak aynı anda meydana geldi."
+    },
+    {
+        question: "A _______ is a widespread occurrence of an infectious disease in a community.",
+        options: ["cure", "vaccine", "epidemic", "symptom"],
+        correctAnswer: "epidemic",
+        explanation: "Bir toplulukta bulaşıcı bir hastalığın yaygın olarak görülmesine 'epidemic' (salgın) denir."
+    },
+    {
+        question: "He is _______ in three languages: English, French, and Spanish.",
+        options: ["fluent", "basic", "weak", "poor"],
+        correctAnswer: "fluent",
+        explanation: "İngilizce, Fransızca ve İspanyolca olmak üzere üç dilde 'fluent' (akıcı) dir."
+    },
+    {
+        question: "The long-term _______ of pollution are a major concern for scientists.",
+        options: ["benefits", "consequences", "advantages", "causes"],
+        correctAnswer: "consequences",
+        explanation: "Kirliliğin uzun vadeli 'consequences' (sonuçları), bilim insanları için büyük bir endişe kaynağıdır."
+    },
+    {
+        question: "A person who is practical and realistic is described as _______.",
+        options: ["idealistic", "pragmatic", "dreamy", "romantic"],
+        correctAnswer: "pragmatic",
+        explanation: "Pratik ve gerçekçi olan bir kişi 'pragmatic' (faydacı, pratik) olarak tanımlanır."
+    },
+    {
+        question: "The country's economy is heavily _______ on tourism.",
+        options: ["independent", "reliant", "separate", "free"],
+        correctAnswer: "reliant",
+        explanation: "Ülke ekonomisi büyük ölçüde turizme 'reliant on' (bağımlı) dır."
+    },
+    {
+        question: "Her _______ and hard work led to her success.",
+        options: ["laziness", "perseverance", "apathy", "procrastination"],
+        correctAnswer: "perseverance",
+        explanation: "Onun 'perseverance' (azim, sebat) ve sıkı çalışması onu başarıya götürdü."
+    },
+    {
+        question: "The new evidence will _______ his innocence.",
+        options: ["disprove", "challenge", "corroborate", "question"],
+        correctAnswer: "corroborate",
+        explanation: "Yeni kanıtlar onun masumiyetini 'corroborate' (doğrulamak, teyit etmek) edecektir."
+    },
+    {
+        question: "A _______ is a fundamental truth or proposition that serves as the foundation for a system of belief or behaviour.",
+        options: ["theory", "hypothesis", "principle", "guess"],
+        correctAnswer: "principle",
+        explanation: "Bir inanç veya davranış sisteminin temelini oluşturan temel bir doğruya veya önermeye 'principle' (prensip, ilke) denir."
+    },
+    {
+        question: "The ability to recover quickly from difficulties is _______.",
+        options: ["vulnerability", "resilience", "fragility", "weakness"],
+        correctAnswer: "resilience",
+        explanation: "Zorluklardan hızla kurtulma yeteneği 'resilience' (direnç, esneklik) dir."
+    },
+    {
+        question: "His comments were _______ and not relevant to the discussion.",
+        options: ["pertinent", "extraneous", "crucial", "relevant"],
+        correctAnswer: "extraneous",
+        explanation: "Yorumları 'extraneous' (konu dışı, alakasız) ve tartışmayla ilgili değildi."
+    },
+    {
+        question: "The author's writing style is known for its _______ and clarity.",
+        options: ["complexity", "ambiguity", "brevity", "verbosity"],
+        correctAnswer: "brevity",
+        explanation: "Yazarın yazı stili, 'brevity' (kısalık, özlülük) ve netliği ile bilinir."
+    },
+    {
+        question: "A _______ is a person who has left their country to escape war or persecution.",
+        options: ["tourist", "migrant", "refugee", "expatriate"],
+        correctAnswer: "refugee",
+        explanation: "Savaş veya zulümden kaçmak için ülkesini terk eden kişiye 'refugee' (mülteci) denir."
+    },
+    {
+        question: "The _______ of the situation required immediate action.",
+        options: ["gravity", "levity", "humor", "triviality"],
+        correctAnswer: "gravity",
+        explanation: "Durumun 'gravity' (ciddiyeti, vehameti) acil eylem gerektiriyordu."
+    },
+    {
+        question: "He is known for his _______ lifestyle, avoiding all forms of luxury.",
+        options: ["extravagant", "lavish", "ascetic", "materialistic"],
+        correctAnswer: "ascetic",
+        explanation: "Her türlü lüksten kaçınan 'ascetic' (çileci, münzevi) yaşam tarzıyla tanınır."
+    },
+    {
+        question: "The two ideas are _______; they cannot both be true.",
+        options: ["compatible", "complementary", "incompatible", "consistent"],
+        correctAnswer: "incompatible",
+        explanation: "İki fikir 'incompatible' (uyumsuz, bağdaşmaz); ikisi birden doğru olamaz."
+    },
+    {
+        question: "A _______ is a subtle difference in or shade of meaning, expression, or sound.",
+        options: ["nuance", "statement", "fact", "declaration"],
+        correctAnswer: "nuance",
+        explanation: "Anlam, ifade veya seste ince bir fark veya gölgeye 'nuance' (nüans, ince ayrım) denir."
+    },
+    {
+        question: "The politician's speech was full of _______ and empty promises.",
+        options: ["sincerity", "rhetoric", "facts", "evidence"],
+        correctAnswer: "rhetoric",
+        explanation: "Politikacının konuşması 'rhetoric' (güzel söz söyleme sanatı, boş laf) ve boş vaatlerle doluydu."
+    },
+    {
+        question: "It is important to approach the problem from a _______ perspective.",
+        options: ["biased", "subjective", "holistic", "narrow"],
+        correctAnswer: "holistic",
+        explanation: "Soruna 'holistic' (bütüncül) bir bakış açısıyla yaklaşmak önemlidir."
+    },
+    {
+        question: "The _______ of the internet has transformed modern society.",
+        options: ["advent", "decline", "end", "disappearance"],
+        correctAnswer: "advent",
+        explanation: "İnternetin 'advent' (gelişi, ortaya çıkışı), modern toplumu dönüştürmüştür."
+    },
+    {
+        question: "A _______ is a temporary solution to a problem.",
+        options: ["panacea", "remedy", "stopgap", "cure"],
+        correctAnswer: "stopgap",
+        explanation: "Bir soruna geçici bir çözüme 'stopgap' (geçici çare) denir."
+    },
+    {
+        question: "His _______ nature made him a great diplomat.",
+        options: ["confrontational", "tactful", "aggressive", "rude"],
+        correctAnswer: "tactful",
+        explanation: "Onun 'tactful' (nazik, diplomatik) doğası onu harika bir diplomat yaptı."
+    },
+    {
+        question: "The city is a _______ of different cultures and traditions.",
+        options: ["separation", "melting pot", "uniformity", "division"],
+        correctAnswer: "melting pot",
+        explanation: "Şehir, farklı kültürlerin ve geleneklerin bir 'melting pot' (kaynaştığı pota) dır."
+    },
+    {
+        question: "A person who is _______ has an excessive interest in themselves.",
+        options: ["altruistic", "narcissistic", "humble", "modest"],
+        correctAnswer: "narcissistic",
+        explanation: "Kendine aşırı ilgi duyan bir kişiye 'narcissistic' (narsist) denir."
+    },
+    {
+        question: "The _______ of the evidence was questioned by the defense lawyer.",
+        options: ["validity", "falsehood", "weakness", "irrelevance"],
+        correctAnswer: "validity",
+        explanation: "Kanıtların 'validity' (geçerliliği), savunma avukatı tarafından sorgulandı."
+    },
+    {
+        question: "The _______ of the problem was far greater than we had initially thought.",
+        options: ["simplicity", "magnitude", "smallness", "ease"],
+        correctAnswer: "magnitude",
+        explanation: "Sorunun 'magnitude' (büyüklüğü, önemi), başlangıçta düşündüğümüzden çok daha fazlaydı."
+    },
+    {
+        question: "He has a _______ for telling stories.",
+        options: ["dislike", "penchant", "aversion", "hatred"],
+        correctAnswer: "penchant",
+        explanation: "Hikaye anlatmaya karşı bir 'penchant' (eğilim, meyil) i var."
+    },
+    {
+        question: "The _______ of the ancient civilization remains a mystery.",
+        options: ["demise", "origin", "rise", "continuity"],
+        correctAnswer: "demise",
+        explanation: "Antik uygarlığın 'demise' (çöküşü, sonu) bir sır olarak kalmaya devam ediyor."
+    },
+    {
+        question: "A person who is friendly and easy to talk to is _______.",
+        options: ["unapproachable", "affable", "reserved", "hostile"],
+        correctAnswer: "affable",
+        explanation: "Arkadaş canlısı ve konuşması kolay olan kişiye 'affable' (cana yakın, sıcakkanlı) denir."
+    },
+    {
+        question: "The new manager's _______ approach improved the team's morale.",
+        options: ["authoritarian", "collaborative", "dictatorial", "ineffective"],
+        correctAnswer: "collaborative",
+        explanation: "Yeni yöneticinin 'collaborative' (işbirlikçi) yaklaşımı takımın moralini yükseltti."
+    },
+    {
+        question: "The company plans to _______ its operations into Asia.",
+        options: ["withdraw", "expand", "reduce", "limit"],
+        correctAnswer: "expand",
+        explanation: "Şirket, operasyonlarını Asya'ya 'expand' (genişletmek) planlıyor."
+    },
+    {
+        question: "The movie's plot was so _______ that I guessed the ending in the first ten minutes.",
+        options: ["unpredictable", "clichéd", "original", "surprising"],
+        correctAnswer: "clichéd",
+        explanation: "Filmin konusu o kadar 'clichéd' (klişe, basmakalıp) idi ki, sonunu ilk on dakikada tahmin ettim."
+    },
+    {
+        question: "A _______ is a person who is recovering from an illness.",
+        options: ["convalescent", "patient", "doctor", "nurse"],
+        correctAnswer: "convalescent",
+        explanation: "Bir hastalıktan iyileşmekte olan kişiye 'convalescent' (nekahat dönemindeki hasta) denir."
+    },
+    {
+        question: "The artist's work is a _______ of different styles and influences.",
+        options: ["synthesis", "separation", "division", "rejection"],
+        correctAnswer: "synthesis",
+        explanation: "Sanatçının eseri, farklı tarzların ve etkilerin bir 'synthesis' (sentez, birleşim) idir."
+    },
+    {
+        question: "His _______ remarks during the meeting were not appreciated.",
+        options: ["thoughtful", "flippant", "serious", "respectful"],
+        correctAnswer: "flippant",
+        explanation: "Toplantı sırasındaki 'flippant' (saygısız, laubali) sözleri takdir edilmedi."
+    },
+    {
+        question: "The protest was a _______ expression of public dissatisfaction.",
+        options: ["subtle", "tangible", "hidden", "invisible"],
+        correctAnswer: "tangible",
+        explanation: "Protesto, halkın memnuniyetsizliğinin 'tangible' (somut, elle tutulur) bir ifadesiydi."
+    },
+    {
+        question: "The company's _______ practices were exposed by a journalist.",
+        options: ["ethical", "unscrupulous", "honest", "principled"],
+        correctAnswer: "unscrupulous",
+        explanation: "Şirketin 'unscrupulous' (vicdansız, ahlaksız) uygulamaları bir gazeteci tarafından ortaya çıkarıldı."
+    },
+    {
+        question: "A _______ is a strong feeling of dislike or ill will.",
+        options: ["fondness", "amity", "animosity", "affection"],
+        correctAnswer: "animosity",
+        explanation: "Güçlü bir hoşnutsuzluk veya kötü niyet duygusuna 'animosity' (düşmanlık, kin) denir."
+    }
 
         ]},
 
     6: 
     {
         beginner: [
-            {
-                question: "What do you do in the morning?",
-                options: ["Eat breakfast", "Sleep", "Watch TV", "Go to bed"],
-                correctAnswer: "Eat breakfast",
-                explanation: "Sabahları yapılan rutin bir eylem 'eat breakfast' (kahvaltı yapmak)tır."
-            },
-
-            {
+            
+    {
         question: "What time is it if the small hand is on 9 and the big hand is on 12?",
         options: ["It's nine o'clock.", "It's half past nine.", "It's quarter to nine.", "It's ten o'clock."],
         correctAnswer: "It's nine o'clock.",
@@ -3009,55 +3660,6 @@ const questionsByGrade = {
         correctAnswer: "waiter",
         explanation: "Restoranda yiyecek ve içecek servisi yapan kişiye 'waiter' (garson) denir."
     },
-{
-                question: "What is a place to buy food?",
-                options: ["School", "Market", "Park", "Hospital"],
-                correctAnswer: "Market",
-                explanation: "Yiyecek almak için 'market'e gidilir."
-            },
-            {
-                question: "What is the opposite of 'hot'?",
-                options: ["Cold", "Warm", "Dry", "Wet"],
-                correctAnswer: "Cold",
-                explanation: "'Hot' (sıcak) kelimesinin zıttı 'cold' (soğuk) kelimesidir."
-            },
-            {
-                question: "What do you eat for breakfast?",
-                options: ["Pen", "Bread", "Shoe", "Book"],
-                correctAnswer: "Bread",
-                explanation: "Kahvaltıda 'bread' (ekmek) yaygın bir yiyecektir."
-            },
-            {
-                question: "What is a place in a city?",
-                options: ["Library", "Tree", "Car", "Cloud"],
-                correctAnswer: "Library",
-                explanation: "'Library' (kütüphane) bir şehirde bulunabilecek bir yerdir."
-            },
-            {
-                question: "What is the weather like when it rains?",
-                options: ["Sunny", "Windy", "Rainy", "Snowy"],
-                correctAnswer: "Rainy",
-                explanation: "Yağmur yağdığında hava 'rainy' (yağmurlu) olur."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Play games", "Study", "Sleep", "Work"],
-                correctAnswer: "Play games",
-                explanation: "Panayırlarda ('fair') 'play games' (oyun oynamak) yaygın bir aktivitedir."
-            },
-            {
-                question: "What do you need for a vacation?",
-                options: ["Desk", "Suitcase", "Fork", "Book"],
-                correctAnswer: "Suitcase",
-                explanation: "Tatile ('vacation') giderken eşyaları koymak için 'suitcase' (bavul) gerekir."
-            },
-            {
-                question: "What is a 'teacher'?",
-                options: ["Person who cooks", "Person who teaches", "Person who drives", "Person who sings"],
-                correctAnswer: "Person who teaches",
-                explanation: "'Teacher' (öğretmen) bir şeyler öğreten kişidir."
-            },
-
     {
         question: "What is a place where you can buy books?",
         options: ["Bakery", "Bookshop", "Butcher", "Pharmacy"],
@@ -3232,13 +3834,7 @@ const questionsByGrade = {
         correctAnswer: "excited",
         explanation: "Doğum günü olan biri genellikle 'excited' (heyecanlı) olur."
     },
-    {
-        question: "A person who cuts your hair is a _______.",
-        options: ["butcher", "hairdresser", "tailor", "farmer"],
-        correctAnswer: "hairdresser",
-        explanation: "Saçınızı kesen kişiye 'hairdresser' (kuaför) denir."
-    },
-    {
+        {
         question: "We _______ a delicious cake for my mother's birthday yesterday.",
         options: ["make", "makes", "made", "making"],
         correctAnswer: "made",
@@ -3334,563 +3930,565 @@ const questionsByGrade = {
         correctAnswer: "post office",
         explanation: "Mektuplar 'post office' (postane) aracılığıyla gönderilir."
     },
-
-            {
-                question: "What do you do to save the planet?",
-                options: ["Eat", "Recycle", "Run", "Sing"],
-                correctAnswer: "Recycle",
-                explanation: "Gezegeni korumak için 'recycle' (geri dönüşüm yapmak) önemlidir."
-            },
-            {
-                question: "What is the opposite of 'happy'?",
-                options: ["Big", "Sad", "Fast", "Tall"],
-                correctAnswer: "Sad",
-                explanation: "'Happy' (mutlu) kelimesinin zıttı 'sad' (üzgün) kelimesidir."
-            },
-            {
-                question: "What do you drink in the morning?",
-                options: ["Book", "Milk", "Ball", "Pen"],
-                correctAnswer: "Milk",
-                explanation: "Sabahları 'milk' (süt) içmek yaygın bir alışkanlıktır."
-            },
-            {
-                question: "What is a 'park'?",
-                options: ["Place to sleep", "Place to play", "Place to eat", "Place to work"],
-                correctAnswer: "Place to play",
-                explanation: "'Park', oynamak ve dinlenmek için gidilen bir yerdir."
-            },
-            {
-                question: "What is the weather like when it’s cold?",
-                options: ["Rainy", "Snowy", "Sunny", "Windy"],
-                correctAnswer: "Snowy",
-                explanation: "Hava çok soğuk olduğunda 'snowy' (karlı) olabilir."
-            },
-            {
-                question: "What do you ride at a fair?",
-                options: ["Car", "Bus", "Ferris wheel", "Train"],
-                correctAnswer: "Ferris wheel",
-                explanation: "Panayırlarda 'Ferris wheel' (dönme dolap) gibi eğlence araçlarına binilir."
-            },
-            {
-                question: "Where do you go on vacation?",
-                options: ["Hospital", "School", "Beach", "Market"],
-                correctAnswer: "Beach",
-                explanation: "Tatilde gidilebilecek popüler yerlerden biri 'beach' (plaj)dır."
-            },
-            {
-                question: "What is a 'doctor'?",
-                options: ["Person who sells food", "Person who helps sick people", "Person who builds houses", "Person who writes books"],
-                correctAnswer: "Person who helps sick people",
-                explanation: "'Doctor' (doktor) hasta insanlara yardım eden meslek grubudur."
-            },
-            {
-                question: "What is a 'bottle' used for?",
-                options: ["Reading books", "Drinking water", "Playing games", "Writing notes"],
-                correctAnswer: "Drinking water",
-                explanation: "'Bottle' (şişe) genellikle su içmek için kullanılır."
-            },
-            {
-                question: "What do you do when you vote?",
-                options: ["Eat food", "Choose a candidate", "Play games", "Sleep"],
-                correctAnswer: "Choose a candidate",
-                explanation: "Oy verirken ('vote') bir aday ('candidate') seçilir."
-            },
-            {
-                question: "What is the opposite of 'big'?",
-                options: ["Tall", "Small", "Long", "Wide"],
-                correctAnswer: "Small",
-                explanation: "'Big' (büyük) kelimesinin zıttı 'small' (küçük) kelimesidir."
-            },
-            {
-                question: "What do you eat with eggs?",
-                options: ["Shoe", "Cheese", "Pen", "Book"],
-                correctAnswer: "Cheese",
-                explanation: "Yumurta ile birlikte 'cheese' (peynir) sıkça tüketilir."
-            },
-            {
-                question: "What is a place to watch movies?",
-                options: ["Park", "Cinema", "School", "Kitchen"],
-                correctAnswer: "Cinema",
-                explanation: "Film izlemek için 'cinema' (sinema) salonlarına gidilir."
-            },
-            {
-                question: "What is the weather like when the sun shines?",
-                options: ["Foggy", "Rainy", "Sunny", "Windy"],
-                correctAnswer: "Sunny",
-                explanation: "Güneş parladığında hava 'sunny' (güneşli) olur."
-            },
-            {
-                question: "What do you buy at a fair?",
-                options: ["Desk", "Candy", "Car", "Shirt"],
-                correctAnswer: "Candy",
-                explanation: "Panayırlarda genellikle 'candy' (şekerleme) gibi yiyecekler satılır."
-            },
-            {
-                question: "What do you wear on vacation?",
-                options: ["Coat", "Swimsuit", "Uniform", "Gloves"],
-                correctAnswer: "Swimsuit",
-                explanation: "Deniz kenarında bir tatilde 'swimsuit' (mayo) giyilir."
-            },
-            {
-                question: "What is a 'farmer'?",
-                options: ["Person who teaches", "Person who grows food", "Person who drives", "Person who sings"],
-                correctAnswer: "Person who grows food",
-                explanation: "'Farmer' (çiftçi) yiyecek yetiştiren kişidir."
-            },
-            {
-                question: "What do you do with paper to save the planet?",
-                options: ["Throw away", "Eat", "Recycle", "Wear"],
-                correctAnswer: "Recycle",
-                explanation: "Kağıtları 'recycle' (geri dönüştürmek) gezegeni korumaya yardımcı olur."
-            },
-            {
-                question: "What is the opposite of 'fast'?",
-                options: ["Quick", "High", "Slow", "Low"],
-                correctAnswer: "Slow",
-                explanation: "'Fast' (hızlı) kelimesinin zıttı 'slow' (yavaş) kelimesidir."
-            },
-            {
-                question: "What is a 'hospital'?",
-                options: ["Place for shopping", "Place for playing", "Place for sick people", "Place for cooking"],
-                correctAnswer: "Place for sick people",
-                explanation: "'Hospital' (hastane), hasta insanlar için olan bir yerdir."
-            },
-            {
-                question: "What do you eat for lunch?",
-                options: ["Book", "Soup", "Ball", "Pen"],
-                correctAnswer: "Soup",
-                explanation: "Öğle yemeğinde 'soup' (çorba) popüler bir seçenektir."
-            },
-            {
-                question: "What is a place to read books?",
-                options: ["Mall", "Kitchen", "Library", "Park"],
-                correctAnswer: "Library",
-                explanation: "Kitap okumak için en uygun yer 'library' (kütüphane)dir."
-            },
-            {
-                question: "What is the weather like when it’s very cold?",
-                options: ["Windy", "Rainy", "Snowy", "Sunny"],
-                correctAnswer: "Snowy",
-                explanation: "Hava çok soğuk olduğunda 'snowy' (karlı) olabilir."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Cook", "Study", "Ride a roller coaster", "Sleep"],
-                correctAnswer: "Ride a roller coaster",
-                explanation: "Büyük panayırlarda 'roller coaster' (hız treni) gibi araçlara binilebilir."
-            },
-            {
-                question: "What do you need for a trip?",
-                options: ["Fork", "Desk", "Map", "Book"],
-                correctAnswer: "Map",
-                explanation: "Bir gezi ('trip') için yolunuzu bulmanıza yardımcı olacak bir 'map' (harita) gerekir."
-            },
-            {
-                question: "What is a 'nurse'?",
-                options: ["Person who sells clothes", "Person who helps doctors", "Person who writes books", "Person who plays music"],
-                correctAnswer: "Person who helps doctors",
-                explanation: "'Nurse' (hemşire) doktorlara yardım eden sağlık görevlisidir."
-            },
-            {
-                question: "What do you do with trash?",
-                options: ["Wear", "Eat", "Recycle", "Read"],
-                correctAnswer: "Recycle",
-                explanation: "Çöpleri ('trash') ayrıştırarak 'recycle' (geri dönüşüm) yapmalıyız."
-            },
-            {
-                question: "What is the opposite of 'up'?",
-                options: ["Left", "Right", "Down", "In"],
-                correctAnswer: "Down",
-                explanation: "'Up' (yukarı) kelimesinin zıttı 'down' (aşağı) kelimesidir."
-            },
-            {
-                question: "What do you eat with bread?",
-                options: ["Pen", "Butter", "Shoe", "Book"],
-                correctAnswer: "Butter",
-                explanation: "Ekmek ile birlikte 'butter' (tereyağı) yenir."
-            },
-            {
-                question: "What is a place to shop?",
-                options: ["Park", "Mall", "School", "Hospital"],
-                correctAnswer: "Mall",
-                explanation: "Alışveriş yapmak için 'mall' (alışveriş merkezi) gibi yerlere gidilir."
-            },
-            {
-                question: "What is a 'leader' in democracy?",
-                options: ["Person who cooks", "Person who guides", "Person who plays", "Person who sleeps"],
-                correctAnswer: "Person who guides",
-                explanation: "Demokrasideki bir 'leader' (lider), insanlara yol gösteren kişidir."
-            },
-            {
-                question: "What do you wear when it’s rainy?",
-                options: ["Swimsuit", "T-shirt", "Raincoat", "Shorts"],
-                correctAnswer: "Raincoat",
-                explanation: "Yağmurlu havalarda ıslanmamak için 'raincoat' (yağmurluk) giyilir."
-            },
-            {
-                question: "What is a 'student'?",
-                options: ["Person who cooks", "Person who drives", "Person who learns", "Person who sings"],
-                correctAnswer: "Person who learns",
-                explanation: "'Student' (öğrenci) öğrenim gören kişidir."
-            },
-            {
-                question: "What do you say to thank someone?",
-                options: ["Hello", "Sorry", "Thank you", "Goodbye"],
-                correctAnswer: "Thank you",
-                explanation: "Birine teşekkür etmek için 'Thank you' (Teşekkür ederim) denir."
-            },
-            {
-                question: "What is a 'bus stop'?",
-                options: ["Place to sleep", "Place to wait for a bus", "Place to eat", "Place to play"],
-                correctAnswer: "Place to wait for a bus",
-                explanation: "'Bus stop' (otobüs durağı), otobüs beklenen yerdir."
-            },
-            {
-                question: "What do you do in a library?",
-                options: ["Eat", "Play", "Read", "Sleep"],
-                correctAnswer: "Read",
-                explanation: "Kütüphanede ('library') kitap okunur."
-            },
-            {
-                question: "What is the opposite of 'long'?",
-                options: ["Big", "Tall", "Short", "Wide"],
-                correctAnswer: "Short",
-                explanation: "'Long' (uzun) kelimesinin zıttı 'short' (kısa) kelimesidir."
-            },
-            {
-                question: "What do you use to draw?",
-                options: ["Spoon", "Shoe", "Pencil", "Ball"],
-                correctAnswer: "Pencil",
-                explanation: "Çizim yapmak için 'pencil' (kalem) kullanılır."
-            },
-            {
-                question: "What is a 'hobby'?",
-                options: ["Something you eat", "Something you wear", "Something you like to do", "Something you read"],
-                correctAnswer: "Something you like to do",
-                explanation: "'Hobby' (hobi), yapmaktan hoşlandığınız bir aktivitedir."
-            },
-            {
-                question: "What do you do at a beach?",
-                options: ["Cook", "Study", "Swim", "Sleep"],
-                correctAnswer: "Swim",
-                explanation: "Plajda ('beach') genellikle 'swim' (yüzmek) aktivitesi yapılır."
-            },
-            {
-                question: "What is a 'ticket'?",
-                options: ["Kind of game", "Type of food", "Paper for travel", "Piece of clothing"],
-                correctAnswer: "Paper for travel",
-                explanation: "'Ticket' (bilet), seyahat veya etkinlikler için kullanılan bir kağıttır."
-            },
-            {
-                question: "What do you say to greet a friend?",
-                options: ["Goodbye", "Hi", "Thank you", "Sorry"],
-                correctAnswer: "Hi",
-                explanation: "Bir arkadaşı selamlarken samimi bir ifade olan 'Hi' (Selam) kullanılır."
-            },
-            {
-                question: "What is the opposite of 'tall'?",
-                options: ["Long", "Big", "Short", "Wide"],
-                correctAnswer: "Short",
-                explanation: "'Tall' (uzun boylu) kelimesinin zıttı 'short' (kısa boylu) kelimesidir."
-            },
-            {
-                question: "What do you wear on your head?",
-                options: ["Jacket", "Hat", "Shoes", "Gloves"],
-                correctAnswer: "Hat",
-                explanation: "Başımıza 'hat' (şapka) takarız."
-            },
-            {
-                question: "What is a 'kitchen'?",
-                options: ["Place to sleep", "Place to cook", "Place to study", "Place to play"],
-                correctAnswer: "Place to cook",
-                explanation: "'Kitchen' (mutfak), yemek pişirilen yerdir."
-            },
-            {
-                question: "What do you do with a book?",
-                options: ["Wear", "Eat", "Read", "Kick"],
-                correctAnswer: "Read",
-                explanation: "Kitaplar ('book') okunmak içindir."
-            },
-            {
-                question: "What is a 'friend'?",
-                options: ["Person you don’t know", "Person you work with", "Person you like", "Person you teach"],
-                correctAnswer: "Person you like",
-                explanation: "'Friend' (arkadaş), sevdiğiniz ve anlaştığınız bir kişidir."
-            },
-            {
-                question: "What is the weather like when it’s hot?",
-                options: ["Rainy", "Sunny", "Snowy", "Windy"],
-                correctAnswer: "Sunny",
-                explanation: "Hava sıcak olduğunda genellikle 'sunny' (güneşli) olur."
-            },
-            {
-                question: "What do you eat for dinner?",
-                options: ["Pen", "Rice", "Book", "Shoe"],
-                correctAnswer: "Rice",
-                explanation: "Akşam yemeğinde 'rice' (pilav) yenebilir."
-            },
-            {
-                question: "What is a 'bed'?",
-                options: ["Something to eat", "Something to sleep on", "Something to wear", "Something to read"],
-                correctAnswer: "Something to sleep on",
-                explanation: "'Bed' (yatak), üzerinde uyunulan bir eşyadır."
-            },
-            {
-                question: "What do you say to apologize?",
-                options: ["Thank you", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Sorry",
-                explanation: "Özür dilemek için 'Sorry' (Üzgünüm/Özür dilerim) denir."
-            },
-            {
-                question: "What is a 'cat'?",
-                options: ["Fruit", "Color", "Animal", "Game"],
-                correctAnswer: "Animal",
-                explanation: "'Cat' (kedi) bir hayvandır."
-            },
-            {
-                question: "What do you wear on your feet?",
-                options: ["Hat", "Gloves", "Shoes", "Jacket"],
-                correctAnswer: "Shoes",
-                explanation: "Ayaklarımıza 'shoes' (ayakkabı) giyeriz."
-            },
-            {
-                question: "What is a 'playground'?",
-                options: ["Place to sleep", "Place to play", "Place to eat", "Place to work"],
-                correctAnswer: "Place to play",
-                explanation: "'Playground' (oyun parkı) oynamak için bir yerdir."
-            },
-            {
-                question: "What do you do when you’re tired?",
-                options: ["Run", "Sing", "Sleep", "Dance"],
-                correctAnswer: "Sleep",
-                explanation: "Yorgun olduğumuzda 'sleep' (uyumak) ihtiyacı duyarız."
-            },
-            {
-                question: "What is a 'movie'?",
-                options: ["Book", "Song", "Film", "Game"],
-                correctAnswer: "Film",
-                explanation: "'Movie' kelimesi 'film' ile eş anlamlıdır."
-            },
-            {
-                question: "What do you say at a party?",
-                options: ["Good morning", "Happy birthday", "See you", "Good night"],
-                correctAnswer: "Happy birthday",
-                explanation: "Bir doğum günü partisinde 'Happy birthday' (Mutlu yıllar) denir."
-            },
-            {
-                question: "What is a 'dog'?",
-                options: ["Toy", "Plant", "Animal", "Place"],
-                correctAnswer: "Animal",
-                explanation: "'Dog' (köpek) bir hayvandır."
-            },
-            {
-                question: "What do you eat at a picnic?",
-                options: ["Books", "Clothes", "Food", "Toys"],
-                correctAnswer: "Food",
-                explanation: "Piknikte genellikle 'food' (yiyecek) yenir."
-            },
-            {
-                question: "What is a 'school'?",
-                options: ["Place to sleep", "Place to eat", "Place to learn", "Place to play"],
-                correctAnswer: "Place to learn",
-                explanation: "'School' (okul) öğrenim görülen bir yerdir."
-            },
-            {
-                question: "What do you use to write?",
-                options: ["Spoon", "Shoe", "Pen", "Ball"],
-                correctAnswer: "Pen",
-                explanation: "Yazı yazmak için 'pen' (kalem) kullanırız."
-            },
-            {
-                question: "What is the opposite of 'loud'?",
-                options: ["Noisy", "Big", "Quiet", "Small"],
-                correctAnswer: "Quiet",
-                explanation: "'Loud' (yüksek sesli) kelimesinin zıttı 'quiet' (sessiz) kelimesidir."
-            },
-            {
-                question: "What do you do with a toy?",
-                options: ["Eat", "Play", "Write", "Wear"],
-                correctAnswer: "Play",
-                explanation: "Oyuncaklarla ('toy') oynanır."
-            },
-            {
-                question: "What is a 'bird'?",
-                options: ["Toy", "Plant", "Animal", "Book"],
-                correctAnswer: "Animal",
-                explanation: "'Bird' (kuş) bir hayvandır."
-            },
-            {
-                question: "What do you do after school?",
-                options: ["Cook", "Work", "Do homework", "Sleep"],
-                correctAnswer: "Do homework",
-                explanation: "Okuldan sonra genellikle 'do homework' (ödev yapmak) gerekir."
-            },
-            {
-                question: "What is a 'family'?",
-                options: ["People you work with", "People you don’t know", "People you live with", "People you teach"],
-                correctAnswer: "People you live with",
-                explanation: "'Family' (aile), birlikte yaşadığınız insanlardır."
-            },
-            {
-                question: "What is a 'table'?",
-                options: ["Food", "Animal", "Furniture", "Sport"],
-                correctAnswer: "Furniture",
-                explanation: "'Table' (masa) bir mobilyadır."
-            },
-            {
-                question: "What do you do in the classroom?",
-                options: ["Cook", "Play", "Study", "Sleep"],
-                correctAnswer: "Study",
-                explanation: "Sınıfta ('classroom') ders çalışılır."
-            },
-            {
-                question: "What is a 'garden'?",
-                options: ["Place to sleep", "Place to eat", "Place with plants", "Place to work"],
-                correctAnswer: "Place with plants",
-                explanation: "'Garden' (bahçe), bitkilerin olduğu bir yerdir."
-            },
-            {
-                question: "What is a 'chair'?",
-                options: ["Something to eat", "Something to wear", "Something to sit on", "Something to read"],
-                correctAnswer: "Something to sit on",
-                explanation: "'Chair' (sandalye), üzerine oturulan bir eşyadır."
-            },
-            {
-                question: "What do you say to say goodbye?",
-                options: ["Thank you", "Hello", "Goodbye", "Sorry"],
-                correctAnswer: "Goodbye",
-                explanation: "Vedalaşmak için 'Goodbye' (Hoşça kal) denir."
-            },
-            {
-                question: "What is a 'balloon'?",
-                options: ["Food", "Cloth", "Toy", "Book"],
-                correctAnswer: "Toy",
-                explanation: "'Balloon' (balon) genellikle bir oyuncaktır."
-            },
-            {
-                question: "What do you do at a birthday party?",
-                options: ["Work", "Study", "Sing", "Sleep"],
-                correctAnswer: "Sing",
-                explanation: "Doğum günü partilerinde 'sing' (şarkı söylemek) yaygındır."
-            },
-            {
-                question: "What is a 'fish'?",
-                options: ["Plant", "Animal", "Toy", "Color"],
-                correctAnswer: "Animal",
-                explanation: "'Fish' (balık) bir hayvandır."
-            },
-            {
-                question: "What do you wear in winter?",
-                options: ["Swimsuit", "T-shirt", "Jacket", "Shorts"],
-                correctAnswer: "Jacket",
-                explanation: "Kışın 'jacket' (mont/ceket) giyilir."
-            },
-            {
-                question: "What is a 'gift'?",
-                options: ["Something you eat", "Something you give", "Something you wear", "Something you read"],
-                correctAnswer: "Something you give",
-                explanation: "'Gift' (hediye), birine verilen bir şeydir."
-            },
-            {
-                question: "What is a 'flower'?",
-                options: ["Animal", "Plant", "Toy", "Food"],
-                correctAnswer: "Plant",
-                explanation: "'Flower' (çiçek) bir bitkidir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Pen", "Fruit", "Book", "Shoe"],
-                correctAnswer: "Fruit",
-                explanation: "Atıştırmalık olarak 'fruit' (meyve) sağlıklı bir seçenektir."
-            },
-            {
-                question: "What is a 'door'?",
-                options: ["Something to eat", "Something to wear", "Something to open", "Something to read"],
-                correctAnswer: "Something to open",
-                explanation: "'Door' (kapı), açılıp kapanan bir nesnedir."
-            },
-            {
-                question: "What do you say to ask for something?",
-                options: ["Thank you", "Please", "Goodbye", "Sorry"],
-                correctAnswer: "Please",
-                explanation: "Bir şey isterken kibarca 'Please' (Lütfen) denir."
-            },
-            {
-                question: "What is a 'rabbit'?",
-                options: ["Toy", "Plant", "Animal", "Color"],
-                correctAnswer: "Animal",
-                explanation: "'Rabbit' (tavşan) bir hayvandır."
-            },
-            {
-                question: "What do you wear on your hands?",
-                options: ["Hat", "Shoes", "Gloves", "Jacket"],
-                correctAnswer: "Gloves",
-                explanation: "Ellerimize 'gloves' (eldiven) takarız."
-            },
-            {
-                question: "What is the opposite of 'wet'?",
-                options: ["Cold", "Dry", "Hot", "Big"],
-                correctAnswer: "Dry",
-                explanation: "'Wet' (ıslak) kelimesinin zıttı 'dry' (kuru) kelimesidir."
-            },
-            {
-                question: "What is a 'window'?",
-                options: ["Something to eat", "Something to wear", "Something to look through", "Something to read"],
-                correctAnswer: "Something to look through",
-                explanation: "'Window' (pencere), dışarıya bakmak için kullanılır."
-            },
-            {
-                question: "What is a 'tree'?",
-                options: ["Animal", "Toy", "Plant", "Food"],
-                correctAnswer: "Plant",
-                explanation: "'Tree' (ağaç) bir bitkidir."
-            },
-            {
-                question: "What do you do in a bedroom?",
-                options: ["Cook", "Play", "Sleep", "Study"],
-                correctAnswer: "Sleep",
-                explanation: "Yatak odasında ('bedroom') genellikle uyunur."
-            },
-            {
-                question: "What is a 'cup'?",
-                options: ["Something to eat", "Something to wear", "Something to drink from", "Something to read"],
-                correctAnswer: "Something to drink from",
-                explanation: "'Cup' (fincan/bardak), içecek içmek için kullanılır."
-            },
-            {
-                question: "What is the opposite of 'heavy'?",
-                options: ["Big", "Light", "Tall", "Long"],
-                correctAnswer: "Light",
-                explanation: "'Heavy' (ağır) kelimesinin zıttı 'light' (hafif) kelimesidir."
-            },
-            {
-                question: "What do you do with a phone?",
-                options: ["Eat", "Wear", "Call", "Write"],
-                correctAnswer: "Call",
-                explanation: "Telefon ile 'call' (arama yapmak) eylemi gerçekleştirilir."
-            },
-            {
-                question: "What is a 'plate'?",
-                options: ["Something to wear", "Something to eat from", "Something to read", "Something to play with"],
-                correctAnswer: "Something to eat from",
-                explanation: "'Plate' (tabak), üzerinden yemek yenilen bir eşyadır."
-            },
-            {
-                question: "What do you wear in summer?",
-                options: ["Coat", "Gloves", "T-shirt", "Jacket"],
-                correctAnswer: "T-shirt",
-                explanation: "Yazın 'T-shirt' (tişört) gibi ince kıyafetler giyilir."
-            }
+    {
+        question: "What do you do with a television?",
+        options: ["Read", "Watch", "Listen", "Write"],
+        correctAnswer: "Watch",
+        explanation: "Televizyonu 'watch' (izlemek) eylemiyle izlersiniz."
+    },
+    {
+        question: "Which place do you visit when you are sick?",
+        options: ["The school", "The park", "The hospital", "The cinema"],
+        correctAnswer: "The hospital",
+        explanation: "Hasta olduğunuzda 'hospital' (hastane) adı verilen yere gidersiniz."
+    },
+    {
+        question: "What is the meal you eat in the morning?",
+        options: ["Lunch", "Dinner", "Snack", "Breakfast"],
+        correctAnswer: "Breakfast",
+        explanation: "Sabah yenen öğüne 'breakfast' (kahvaltı) denir."
+    },
+    {
+        question: "What is the opposite of 'cold'?",
+        options: ["Warm", "Cool", "Hot", "Freezing"],
+        correctAnswer: "Hot",
+        explanation: "'Cold' (soğuk) kelimesinin zıttı 'hot' (sıcak) kelimesidir."
+    },
+    {
+        question: "How many days are in a week?",
+        options: ["Five", "Ten", "Seven", "Thirty"],
+        correctAnswer: "Seven",
+        explanation: "Bir haftada 'seven' (yedi) gün vardır."
+    },
+    {
+        question: "What does a baker sell?",
+        options: ["Meat", "Vegetables", "Bread", "Medicine"],
+        correctAnswer: "Bread",
+        explanation: "Bir 'baker' (fırıncı), 'bread' (ekmek) ve unlu mamuller satar."
+    },
+    {
+        question: "It is raining outside. You should take your _______.",
+        options: ["sunglasses", "umbrella", "t-shirt", "shorts"],
+        correctAnswer: "umbrella",
+        explanation: "Dışarıda yağmur yağıyorsa, yanınıza 'umbrella' (şemsiye) almalısınız."
+    },
+    {
+        question: "What is your father's brother to you?",
+        options: ["Grandfather", "Cousin", "Uncle", "Nephew"],
+        correctAnswer: "Uncle",
+        explanation: "Babanızın erkek kardeşi sizin 'uncle' (amcanız) olur."
+    },
+    {
+        question: "What do you do after school every day?",
+        options: ["I do my homework", "I have breakfast", "I go to school", "I get up"],
+        correctAnswer: "I do my homework",
+        explanation: "Okuldan sonra her gün genellikle 'do my homework' (ödevimi yaparım) eylemi yapılır."
+    },
+    {
+        question: "Where can you see many tall buildings?",
+        options: ["In a village", "On a farm", "In a city", "In a forest"],
+        correctAnswer: "In a city",
+        explanation: "Çok sayıda yüksek binayı bir 'city' (şehir) içinde görebilirsiniz."
+    },
+    {
+        question: "What is the opposite of 'happy'?",
+        options: ["Excited", "Sad", "Tired", "Angry"],
+        correctAnswer: "Sad",
+        explanation: "'Happy' (mutlu) kelimesinin zıttı 'sad' (üzgün) kelimesidir."
+    },
+    {
+        question: "A _______ flies an airplane.",
+        options: ["doctor", "teacher", "pilot", "farmer"],
+        correctAnswer: "pilot",
+        explanation: "Uçak kullanan kişiye 'pilot' denir."
+    },
+    {
+        question: "What time is it? It's ten _______.",
+        options: ["thirty", "o'clock", "fifteen", "forty"],
+        correctAnswer: "o'clock",
+        explanation: "Tam saatleri belirtmek için 'o'clock' kullanılır. Saat tam on."
+    },
+    {
+        question: "What do you eat at the cinema?",
+        options: ["Soup", "Salad", "Popcorn", "Pasta"],
+        correctAnswer: "Popcorn",
+        explanation: "Sinemada yenen popüler atıştırmalık 'popcorn' (patlamış mısır) dır."
+    },
+    {
+        question: "How do you feel on your birthday?",
+        options: ["Bored", "Excited", "Sleepy", "Upset"],
+        correctAnswer: "Excited",
+        explanation: "Doğum gününüzde genellikle 'excited' (heyecanlı) hissedersiniz."
+    },
+    {
+        question: "A _______ sells meat.",
+        options: ["baker", "butcher", "florist", "grocer"],
+        correctAnswer: "butcher",
+        explanation: "Et satan dükkana veya kişiye 'butcher' (kasap) denir."
+    },
+    {
+        question: "I _______ at the park yesterday.",
+        options: ["am", "is", "were", "was"],
+        correctAnswer: "was",
+        explanation: "'Yesterday' (dün) geçmiş zamanı belirttiği için ve özne 'I' olduğu için 'was' kullanılır."
+    },
+    {
+        question: "What is the weather like in winter?",
+        options: ["It is hot", "It is sunny", "It is snowy", "It is warm"],
+        correctAnswer: "It is snowy",
+        explanation: "Kışın hava durumu genellikle 'snowy' (karlı) olabilir."
+    },
+    {
+        question: "Where do you wait for a train?",
+        options: ["At the bus stop", "At the airport", "At the station", "At the port"],
+        correctAnswer: "At the station",
+        explanation: "Tren beklediğiniz yere 'train station' (tren istasyonu) denir."
+    },
+    {
+        question: "A person who teaches children is a _______.",
+        options: ["waiter", "teacher", "mechanic", "nurse"],
+        correctAnswer: "teacher",
+        explanation: "Çocuklara eğitim veren kişiye 'teacher' (öğretmen) denir."
+    },
+    {
+        question: "The opposite of 'big' is _______.",
+        options: ["long", "tall", "small", "wide"],
+        correctAnswer: "small",
+        explanation: "'Big' (büyük) kelimesinin zıttı 'small' (küçük) kelimesidir."
+    },
+    {
+        question: "What do you drink when you are thirsty?",
+        options: ["Juice", "Milk", "Water", "Tea"],
+        correctAnswer: "Water",
+        explanation: "Susadığınızda 'water' (su) içersiniz."
+    },
+    {
+        question: "What do you wear on your feet?",
+        options: ["A hat", "Gloves", "A scarf", "Shoes"],
+        correctAnswer: "Shoes",
+        explanation: "Ayağınıza 'shoes' (ayakkabı) giyersiniz."
+    },
+    {
+        question: "I _______ to music every evening.",
+        options: ["listen", "listens", "listened", "listening"],
+        correctAnswer: "listen",
+        explanation: "Her akşam yapılan bir rutini anlatırken geniş zaman kullanılır. 'I' öznesiyle fiil yalın halde kalır."
+    },
+    {
+        question: "Where can you buy vegetables and fruits?",
+        options: ["At the bakery", "At the greengrocer's", "At the butcher's", "At the pharmacy"],
+        correctAnswer: "At the greengrocer's",
+        explanation: "Meyve ve sebzeleri 'greengrocer's' (manav) dükkanından alabilirsiniz."
+    },
+    {
+        question: "A _______ is a place with many books you can borrow.",
+        options: ["bookshop", "library", "school", "museum"],
+        correctAnswer: "library",
+        explanation: "Kitap ödünç alabileceğiniz yere 'library' (kütüphane) denir."
+    },
+    {
+        question: "What do you ride at a funfair?",
+        options: ["A car", "A bus", "A Ferris wheel", "A train"],
+        correctAnswer: "A Ferris wheel",
+        explanation: "Lunaparkta 'Ferris wheel' (dönme dolap) gibi eğlence araçlarına binersiniz."
+    },
+    {
+        question: "My mother is a _______. She helps sick people.",
+        options: ["doctor", "teacher", "cook", "driver"],
+        correctAnswer: "doctor",
+        explanation: "Hasta insanlara yardım eden meslek 'doctor' (doktor) dur."
+    },
+    {
+        question: "The opposite of 'fast' is _______.",
+        options: ["quick", "slow", "high", "low"],
+        correctAnswer: "slow",
+        explanation: "'Fast' (hızlı) kelimesinin zıttı 'slow' (yavaş) kelimesidir."
+    },
+    {
+        question: "She _______ her friend at the cinema last night.",
+        options: ["meet", "meets", "met", "meeting"],
+        correctAnswer: "met",
+        explanation: "'Last night' (dün gece) geçmiş zamanı belirttiği için 'meet' fiilinin ikinci hali 'met' kullanılır."
+    },
+    {
+        question: "A person who serves food in a cafe is a _______.",
+        options: ["chef", "waiter", "customer", "manager"],
+        correctAnswer: "waiter",
+        explanation: "Kafede yemek servisi yapan kişiye 'waiter' (garson) denir."
+    },
+    {
+        question: "It's sunny today. Let's go to the _______.",
+        options: ["cinema", "museum", "beach", "library"],
+        correctAnswer: "beach",
+        explanation: "Hava güneşli olduğunda 'beach' (plaj) gidilecek güzel bir yerdir."
+    },
+    {
+        question: "What time do you go to _______?",
+        options: ["school", "breakfast", "bed", "homework"],
+        correctAnswer: "bed",
+        explanation: "Genellikle akşamları 'go to bed' (yatağa gitmek) eylemi yapılır."
+    },
+    {
+        question: "A _______ repairs cars.",
+        options: ["dentist", "mechanic", "tailor", "vet"],
+        correctAnswer: "mechanic",
+        explanation: "Arabaları tamir eden kişiye 'mechanic' (tamirci) denir."
+    },
+    {
+        question: "The opposite of 'up' is _______.",
+        options: ["in", "on", "down", "under"],
+        correctAnswer: "down",
+        explanation: "'Up' (yukarı) kelimesinin zıttı 'down' (aşağı) kelimesidir."
+    },
+    {
+        question: "I have a _______ and I can't talk.",
+        options: ["headache", "sore throat", "fever", "stomachache"],
+        correctAnswer: "sore throat",
+        explanation: "Konuşamadığınızda genellikle 'sore throat' (boğaz ağrısı) şikayetiniz olur."
+    },
+    {
+        question: "A _______ is a place where you can buy medicine.",
+        options: ["bookshop", "pharmacy", "bakery", "butcher's"],
+        correctAnswer: "pharmacy",
+        explanation: "İlaç satın alabileceğiniz yere 'pharmacy' (eczane) denir."
+    },
+    {
+        question: "He _______ feeling happy because he won the game.",
+        options: ["is", "are", "am", "be"],
+        correctAnswer: "is",
+        explanation: "Şu anki bir duyguyu ifade ederken Şimdiki Zaman kullanılır. 'He' öznesiyle 'is' kullanılır."
+    },
+    {
+        question: "A person who cuts hair is a _______.",
+        options: ["farmer", "hairdresser", "engineer", "writer"],
+        correctAnswer: "hairdresser",
+        explanation: "Saç kesen kişiye 'hairdresser' (kuaför) denir."
+    },
+    {
+        question: "The opposite of 'old' is _______.",
+        options: ["big", "new", "long", "short"],
+        correctAnswer: "new",
+        explanation: "Eşyalar için 'old' (eski) kelimesinin zıttı 'new' (yeni) kelimesidir."
+    },
+    {
+        question: "We _______ a party for my sister's birthday last week.",
+        options: ["have", "has", "had", "having"],
+        correctAnswer: "had",
+        explanation: "'Last week' (geçen hafta) geçmiş zamanı belirttiği için 'have' fiilinin ikinci hali 'had' kullanılır."
+    },
+    {
+        question: "What do you do with a camera?",
+        options: ["Make a call", "Take photos", "Listen to music", "Write an email"],
+        correctAnswer: "Take photos",
+        explanation: "Bir kamera ile 'take photos' (fotoğraf çekmek) eylemini yaparsınız."
+    },
+    {
+        question: "A building with a lot of shops inside is a _______.",
+        options: ["hospital", "shopping mall", "city hall", "fire station"],
+        correctAnswer: "shopping mall",
+        explanation: "İçinde çok sayıda dükkan olan binaya 'shopping mall' (alışveriş merkezi) denir."
+    },
+    {
+        question: "The weather is _______ today. I can't see far.",
+        options: ["sunny", "windy", "foggy", "clear"],
+        correctAnswer: "foggy",
+        explanation: "Uzağı göremediğiniz hava durumu 'foggy' (sisli) olarak tanımlanır."
+    },
+    {
+        question: "The opposite of 'difficult' is _______.",
+        options: ["hard", "easy", "long", "short"],
+        correctAnswer: "easy",
+        explanation: "'Difficult' (zor) kelimesinin zıttı 'easy' (kolay) kelimesidir."
+    },
+    {
+        question: "What do you eat for breakfast in Turkey?",
+        options: ["Cereal", "Pancakes", "Cheese and olives", "Sausages"],
+        correctAnswer: "Cheese and olives",
+        explanation: "Türkiye'de kahvaltıda genellikle 'cheese and olives' (peynir ve zeytin) yenir."
+    },
+    {
+        question: "A _______ is a person who grows vegetables on a farm.",
+        options: ["baker", "farmer", "doctor", "teacher"],
+        correctAnswer: "farmer",
+        explanation: "Çiftlikte sebze yetiştiren kişiye 'farmer' (çiftçi) denir."
+    },
+    {
+        question: "She _______ her room every Saturday.",
+        options: ["clean", "cleans", "cleaned", "cleaning"],
+        correctAnswer: "cleans",
+        explanation: "Her Cumartesi yapılan bir rutini anlatırken geniş zaman kullanılır ve 'she' öznesiyle fiile -s takısı gelir."
+    },
+    {
+        question: "The museum is _______ to the art gallery.",
+        options: ["next", "between", "opposite", "behind"],
+        correctAnswer: "next",
+        explanation: "Sanat galerisinin hemen bitişiğinde olduğunu belirtmek için 'next to' kullanılır."
+    },
+    {
+        question: "A _______ is a meal you eat in the middle of the day.",
+        options: ["breakfast", "dinner", "lunch", "snack"],
+        correctAnswer: "lunch",
+        explanation: "Günün ortasında yenen öğüne 'lunch' (öğle yemeği) denir."
+    },
+    {
+        question: "The opposite of 'boring' is _______.",
+        options: ["sad", "exciting", "tiring", "angry"],
+        correctAnswer: "exciting",
+        explanation: "'Boring' (sıkıcı) kelimesinin zıttı 'exciting' (heyecan verici) kelimesidir."
+    },
+    {
+        question: "He _______ tired yesterday evening.",
+        options: ["feel", "feels", "felt", "feeling"],
+        correctAnswer: "felt",
+        explanation: "'Yesterday evening' (dün akşam) geçmiş zamanı belirttiği için 'feel' fiilinin ikinci hali 'felt' kullanılır."
+    },
+    {
+        question: "A place where children go to learn is a _______.",
+        options: ["park", "school", "shop", "cinema"],
+        correctAnswer: "school",
+        explanation: "Çocukların öğrenmek için gittiği yere 'school' (okul) denir."
+    },
+    {
+        question: "What was the weather like last weekend? It was _______.",
+        options: ["rainy", "rains", "raining", "rain"],
+        correctAnswer: "rainy",
+        explanation: "Geçmişteki hava durumunu tanımlarken 'rainy' (yağmurlu) sıfatı kullanılır."
+    },
+    {
+        question: "The opposite of 'full' is _______.",
+        options: ["open", "empty", "closed", "heavy"],
+        correctAnswer: "empty",
+        explanation: "'Full' (dolu) kelimesinin zıttı 'empty' (boş) kelimesidir."
+    },
+    {
+        question: "A _______ is a professional cook.",
+        options: ["waiter", "chef", "baker", "butcher"],
+        correctAnswer: "chef",
+        explanation: "Profesyonel aşçıya 'chef' (şef) denir."
+    },
+    {
+        question: "She _______ her homework at the moment.",
+        options: ["do", "does", "is doing", "did"],
+        correctAnswer: "is doing",
+        explanation: "Konuşma anında devam eden bir eylemi belirtmek için Şimdiki Zaman kullanılır."
+    },
+    {
+        question: "What do you do with a ball in your hands in basketball?",
+        options: ["You kick it", "You bounce it", "You hit it", "You head it"],
+        correctAnswer: "You bounce it",
+        explanation: "Basketbolda topu elinizdeyken 'bounce' (zıplatmak, sektirmek) eylemini yaparsınız."
+    },
+    {
+        question: "The opposite of 'polite' is _______.",
+        options: ["kind", "rude", "nice", "friendly"],
+        correctAnswer: "rude",
+        explanation: "'Polite' (kibar) kelimesinin zıttı 'rude' (kaba) kelimesidir."
+    },
+    {
+        question: "A person who designs buildings is an _______.",
+        options: ["engineer", "architect", "artist", "actor"],
+        correctAnswer: "architect",
+        explanation: "Binaları tasarlayan kişiye 'architect' (mimar) denir."
+    },
+    {
+        question: "I _______ to my friend on the phone yesterday.",
+        options: ["talk", "talks", "talked", "talking"],
+        correctAnswer: "talked",
+        explanation: "'Yesterday' (dün) geçmiş zamanı belirttiği için fiilin ikinci hali 'talked' kullanılır."
+    },
+    {
+        question: "It is a _______ day. You don't need a jacket.",
+        options: ["cold", "warm", "freezing", "cool"],
+        correctAnswer: "warm",
+        explanation: "Cekete ihtiyaç duymadığınız bir gün 'warm' (ılık) bir gündür."
+    },
+    {
+        question: "What time do you usually have _______?",
+        options: ["breakfast", "school", "shower", "dinner"],
+        correctAnswer: "dinner",
+        explanation: "Akşam yemeği için 'have dinner' kalıbı kullanılır."
+    },
+    {
+        question: "A _______ is a place where you can watch a play.",
+        options: ["cinema", "theater", "stadium", "gallery"],
+        correctAnswer: "theater",
+        explanation: "Bir tiyatro oyununu 'theater' (tiyatro) içinde izleyebilirsiniz."
+    },
+    {
+        question: "The opposite of 'cheap' is _______.",
+        options: ["nice", "good", "expensive", "bad"],
+        correctAnswer: "expensive",
+        explanation: "'Cheap' (ucuz) kelimesinin zıttı 'expensive' (pahalı) kelimesidir."
+    },
+    {
+        question: "He _______ a lot of photos on his holiday.",
+        options: ["take", "takes", "took", "taking"],
+        correctAnswer: "took",
+        explanation: "Geçmişteki bir tatilden bahsederken Simple Past Tense kullanılır. 'Take' fiilinin ikinci hali 'took'tur."
+    },
+    {
+        question: "A _______ is a large shop that sells food and household goods.",
+        options: ["supermarket", "bakery", "butcher's", "pharmacy"],
+        correctAnswer: "supermarket",
+        explanation: "Yiyecek ve ev eşyaları satan büyük dükkana 'supermarket' denir."
+    },
+    {
+        question: "How do you feel when you lose something important?",
+        options: ["Happy", "Worried", "Excited", "Pleased"],
+        correctAnswer: "Worried",
+        explanation: "Önemli bir şeyi kaybettiğinizde 'worried' (endişeli) hissedersiniz."
+    },
+    {
+        question: "A person who makes or repairs clothes is a _______.",
+        options: ["tailor", "mechanic", "hairdresser", "chef"],
+        correctAnswer: "tailor",
+        explanation: "Kıyafet yapan veya tamir eden kişiye 'tailor' (terzi) denir."
+    },
+    {
+        question: "The opposite of 'strong' is _______.",
+        options: ["big", "weak", "long", "hard"],
+        correctAnswer: "weak",
+        explanation: "'Strong' (güçlü) kelimesinin zıttı 'weak' (zayıf) kelimesidir."
+    },
+    {
+        question: "She _______ her bike to school yesterday.",
+        options: ["ride", "rides", "rode", "riding"],
+        correctAnswer: "rode",
+        explanation: "'Yesterday' (dün) geçmiş zamanı belirttiği için 'ride' fiilinin ikinci hali 'rode' kullanılır."
+    },
+    {
+        question: "What do you do with a dirty car?",
+        options: ["You drive it", "You sell it", "You wash it", "You buy it"],
+        correctAnswer: "You wash it",
+        explanation: "Kirli bir arabayı 'wash' (yıkamak) eylemiyle temizlersiniz."
+    },
+    {
+        question: "A _______ is a building where you can see historical objects.",
+        options: ["cinema", "museum", "hospital", "library"],
+        correctAnswer: "museum",
+        explanation: "Tarihi nesneleri görebileceğiniz binaya 'museum' (müze) denir."
+    },
+    {
+        question: "It is _______ today. The sun is not shining.",
+        options: ["sunny", "bright", "cloudy", "clear"],
+        correctAnswer: "cloudy",
+        explanation: "Güneşin parlamadığı bir gün genellikle 'cloudy' (bulutlu) olur."
+    },
+    {
+        question: "The opposite of 'beautiful' is _______.",
+        options: ["nice", "ugly", "pretty", "lovely"],
+        correctAnswer: "ugly",
+        explanation: "'Beautiful' (güzel) kelimesinin zıttı 'ugly' (çirkin) kelimesidir."
+    },
+    {
+        question: "A person who delivers letters is a _______.",
+        options: ["postman", "policeman", "fireman", "doctor"],
+        correctAnswer: "postman",
+        explanation: "Mektupları dağıtan kişiye 'postman' (postacı) denir."
+    },
+    {
+        question: "I _______ very happy when I saw my friends.",
+        options: ["am", "is", "was", "were"],
+        correctAnswer: "was",
+        explanation: "Geçmişteki bir andaki duyguyu ifade ederken Simple Past Tense kullanılır. 'I' öznesiyle 'was' kullanılır."
+    },
+    {
+        question: "What do you do with a present?",
+        options: ["You give it", "You take it", "You open it", "You close it"],
+        correctAnswer: "You open it",
+        explanation: "Bir hediyeyi ('present') genellikle 'open' (açmak) eylemiyle açarsınız."
+    },
+    {
+        question: "A _______ is a place where you can buy stamps.",
+        options: ["post office", "bank", "library", "school"],
+        correctAnswer: "post office",
+        explanation: "Pul alabileceğiniz yere 'post office' (postane) denir."
+    },
+    {
+        question: "The children _______ in the garden now.",
+        options: ["play", "plays", "are playing", "played"],
+        correctAnswer: "are playing",
+        explanation: "'Now' (şimdi) ifadesi, eylemin konuşma anında devam ettiğini gösterir, bu yüzden Şimdiki Zaman kullanılır."
+    },
+    {
+        question: "The opposite of 'short' is _______.",
+        options: ["small", "tall", "little", "low"],
+        correctAnswer: "tall",
+        explanation: "Boy için 'short' (kısa) kelimesinin zıttı 'tall' (uzun) kelimesidir."
+    },
+    {
+        question: "A person who works in a hospital and helps doctors is a _______.",
+        options: ["nurse", "teacher", "farmer", "waiter"],
+        correctAnswer: "nurse",
+        explanation: "Hastanede çalışan ve doktorlara yardım eden kişiye 'nurse' (hemşire) denir."
+    },
+    {
+        question: "He _______ to London last year.",
+        options: ["travel", "travels", "traveled", "traveling"],
+        correctAnswer: "traveled",
+        explanation: "'Last year' (geçen yıl) ifadesi geçmiş zamanı belirttiği için fiilin ikinci hali 'traveled' kullanılır."
+    },
+    {
+        question: "A _______ is a place to have a picnic and play games.",
+        options: ["park", "shop", "office", "station"],
+        correctAnswer: "park",
+        explanation: "Piknik yapıp oyun oynayabileceğiniz yere 'park' denir."
+    },
+    {
+        question: "It's a beautiful day. The sky is _______.",
+        options: ["grey", "dark", "blue", "black"],
+        correctAnswer: "blue",
+        explanation: "Güzel bir günde gökyüzü genellikle 'blue' (mavi) ve açıktır."
+    },
+    {
+        question: "The opposite of 'right' is _______.",
+        options: ["correct", "wrong", "good", "bad"],
+        correctAnswer: "wrong",
+        explanation: "Doğruluk anlamında 'right' (doğru) kelimesinin zıttı 'wrong' (yanlış) kelimesidir."
+    },
+    {
+        question: "A _______ is a place where trains stop.",
+        options: ["bus stop", "train station", "airport", "port"],
+        correctAnswer: "train station",
+        explanation: "Trenlerin durduğu yere 'train station' (tren istasyonu) denir."
+    },
+    {
+        question: "He _______ his teeth twice a day.",
+        options: ["brush", "brushes", "brushed", "brushing"],
+        correctAnswer: "brushes",
+        explanation: "Her gün yapılan bir rutini anlatırken geniş zaman kullanılır ve 'he' öznesiyle fiile -s takısı gelir."
+    },
+    {
+        question: "What do you do with a book? You _______ it.",
+        options: ["eat", "drink", "read", "wear"],
+        correctAnswer: "read",
+        explanation: "Bir kitabı 'read' (okumak) eylemiyle okursunuz."
+    },
+    {
+        question: "A place with many trees and wild animals is a _______.",
+        options: ["city", "farm", "forest", "beach"],
+        correctAnswer: "forest",
+        explanation: "Çok sayıda ağacın ve vahşi hayvanın olduğu yere 'forest' (orman) denir."
+    },
+    {
+        question: "The opposite of 'noisy' is _______.",
+        options: ["loud", "quiet", "crowded", "busy"],
+        correctAnswer: "quiet",
+        explanation: "'Noisy' (gürültülü) kelimesinin zıttı 'quiet' (sessiz) kelimesidir."
+    },
+    {
+        question: "I _______ a movie with my family last night.",
+        options: ["watch", "watches", "watched", "watching"],
+        correctAnswer: "watched",
+        explanation: "'Last night' (dün gece) geçmiş zamanı belirttiği için fiilin ikinci hali 'watched' kullanılır."
+    }
+        
+    
         ],
 
         intermediate: [
-            {
-                question: "What do you do every day?",
-                options: ["Eat breakfast", "Go on vacation", "Buy a car", "Plant a tree"],
-                correctAnswer: "Eat breakfast",
-                explanation: "Her gün yapılan bir rutin 'eat breakfast' (kahvaltı yapmak) eylemidir."
-            },
-            {
+           
+    {
         question: "She _______ arrives at school on time. She is a punctual student.",
         options: ["never", "rarely", "always", "sometimes"],
         correctAnswer: "always",
@@ -4335,520 +4933,544 @@ const questionsByGrade = {
         correctAnswer: "funny",
         explanation: "Herkesi güldüren bir palyaço 'funny' (komik) olarak tanımlanır."
     },
-{
-                question: "What is a healthy breakfast food?",
-                options: ["Chips", "Eggs", "Candy", "Soda"],
-                correctAnswer: "Eggs",
-                explanation: "'Eggs' (yumurta) sağlıklı bir kahvaltı yiyeceğidir."
-            },
-            {
-                question: "Where is the cinema?",
-                options: ["In the kitchen", "Next to the park", "Under the table", "On the chair"],
-                correctAnswer: "Next to the park",
-                explanation: "Sinemanın konumu 'next to the park' (parkın yanında) gibi bir ifadeyle belirtilebilir."
-            },
-            {
-                question: "How is the weather today?",
-                options: ["It’s a book", "It’s sunny", "It’s a car", "It’s a pen"],
-                correctAnswer: "It’s sunny",
-                explanation: "Hava durumunu belirtmek için 'It’s sunny' (Hava güneşli) gibi ifadeler kullanılır."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Sleep all day", "Eat cotton candy", "Study math", "Work"],
-                correctAnswer: "Eat cotton candy",
-                explanation: "Panayırlarda 'eat cotton candy' (pamuk şeker yemek) yaygındır."
-            },
-            {
-                question: "Where do you stay on vacation?",
-                options: ["School", "Hospital", "Hotel", "Market"],
-                correctAnswer: "Hotel",
-                explanation: "Tatilde genellikle bir 'hotel' (otel)de konaklanır."
-            },
-            {
-                question: "What does a firefighter do?",
-                options: ["Sells clothes", "Puts out fires", "Teaches students", "Writes books"],
-                correctAnswer: "Puts out fires",
-                explanation: "Bir itfaiyeci ('firefighter') yangınları söndürür ('puts out fires')."
-            },
-            {
-                question: "What does a leader do?",
-                options: ["Cooks food", "Guides people", "Plays games", "Sings songs"],
-                correctAnswer: "Guides people",
-                explanation: "Bir lider ('leader') insanlara yol gösterir ('guides people')."
-            },
-            {
-                question: "What do you do to save water?",
-                options: ["Drink soda", "Eat candy", "Turn off the tap", "Watch TV"],
-                correctAnswer: "Turn off the tap",
-                explanation: "Suyu korumak için musluğu kapatmak ('turn off the tap') gerekir."
-            },
-            {
-                question: "What do you do in a democracy?",
-                options: ["Sleep", "Eat", "Vote", "Run"],
-                correctAnswer: "Vote",
-                explanation: "Demokrasilerde vatandaşlar 'vote' (oy kullanır)."
-            },
-            {
-                question: "What do you eat with cereal?",
-                options: ["Water", "Milk", "Juice", "Tea"],
-                correctAnswer: "Milk",
-                explanation: "Mısır gevreği ('cereal') genellikle 'milk' (süt) ile yenir."
-            },
-            {
-                question: "What is opposite the school?",
-                options: ["Chair", "Park", "Table", "Book"],
-                correctAnswer: "Park",
-                explanation: "Okulun karşısında ('opposite') bir 'park' olabilir."
-            },
-            {
-                question: "What do you feel when it’s cold?",
-                options: ["Happy", "Sad", "Cold", "Angry"],
-                correctAnswer: "Cold",
-                explanation: "Hava soğuk olduğunda 'cold' (üşümüş) hissedersiniz."
-            },
-            {
-                question: "What do you win at a fair?",
-                options: ["Car", "Desk", "Prize", "Shirt"],
-                correctAnswer: "Prize",
-                explanation: "Panayırlarda oyunlardan 'prize' (ödül) kazanılabilir."
-            },
-            {
-                question: "What do you need for a vacation?",
-                options: ["Desk", "Fork", "Ticket", "Book"],
-                correctAnswer: "Ticket",
-                explanation: "Tatile gitmek için genellikle bir 'ticket' (bilet) gerekir."
-            },
-            {
-                question: "What does a chef do?",
-                options: ["Drives cars", "Cooks food", "Teaches students", "Sings songs"],
-                correctAnswer: "Cooks food",
-                explanation: "Bir 'chef' (şef) yemek pişirir ('cooks food')."
-            },
-            {
-                question: "What is a famous person’s life story?",
-                options: ["Movie", "Biography", "Game", "Song"],
-                correctAnswer: "Biography",
-                explanation: "Ünlü birinin hayat hikayesine 'biography' (biyografi) denir."
-            },
-            {
-                question: "What do you do with plastic bottles?",
-                options: ["Eat", "Throw away", "Recycle", "Wear"],
-                correctAnswer: "Recycle",
-                explanation: "Plastik şişeleri 'recycle' (geri dönüştürmek) çevre için önemlidir."
-            },
-            {
-                question: "What do you choose in an election?",
-                options: ["Book", "Food", "Leader", "Game"],
-                correctAnswer: "Leader",
-                explanation: "Bir seçimde ('election') bir 'leader' (lider) seçilir."
-            },
-            {
-                question: "What is a breakfast drink?",
-                options: ["Soda", "Coffee", "Juice", "Water"],
-                correctAnswer: "Juice",
-                explanation: "'Juice' (meyve suyu) popüler bir kahvaltı içeceğidir."
-            },
-            {
-                question: "Where do you go to buy clothes?",
-                options: ["Park", "School", "Mall", "Hospital"],
-                correctAnswer: "Mall",
-                explanation: "Kıyafet almak için bir 'mall' (AVM) veya mağazaya gidilir."
-            },
-            {
-                question: "What do you wear when it’s rainy?",
-                options: ["T-shirt", "Swimsuit", "Shorts", "Raincoat"],
-                correctAnswer: "Raincoat",
-                explanation: "Yağmurlu havada 'raincoat' (yağmurluk) giyilir."
-            },
-            {
-                question: "What do you play at a fair?",
-                options: ["Basketball", "Football", "Ring toss", "Tennis"],
-                correctAnswer: "Ring toss",
-                explanation: "'Ring toss' (halka atma) bir panayır oyunudur."
-            },
-            {
-                question: "What do you see on vacation?",
-                options: ["Books", "Homework", "Sights", "Cars"],
-                correctAnswer: "Sights",
-                explanation: "Tatilde turistik yerler ('sights') görülür."
-            },
-            {
-                question: "What does a pilot do?",
-                options: ["Cooks food", "Flies planes", "Teaches students", "Sells clothes"],
-                correctAnswer: "Flies planes",
-                explanation: "Bir 'pilot' uçak kullanır ('flies planes')."
-            },
-            {
-                question: "What did a famous person do in the past?",
-                options: ["Ate food", "Wrote a book", "Slept", "Ran"],
-                correctAnswer: "Wrote a book",
-                explanation: "Ünlü bir kişi geçmişte 'wrote a book' (kitap yazmış) olabilir."
-            },
-            {
-                question: "What do you plant to save the planet?",
-                options: ["Books", "Trees", "Cars", "Shoes"],
-                correctAnswer: "Trees",
-                explanation: "Gezegeni korumak için 'trees' (ağaçlar) dikmek önemlidir."
-            },
-            {
-                question: "What is a ‘candidate’ in an election?",
-                options: ["Person who votes", "Person who cooks", "Person who runs for office", "Person who sings"],
-                correctAnswer: "Person who runs for office",
-                explanation: "Seçimdeki bir 'candidate' (aday), bir makam için yarışan kişidir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Shoe", "Fruit", "Pen", "Book"],
-                correctAnswer: "Fruit",
-                explanation: "'Fruit' (meyve) sağlıklı bir atıştırmalıktır."
-            },
-            {
-                question: "What is behind the library?",
-                options: ["Table", "Chair", "Park", "Book"],
-                correctAnswer: "Park",
-                explanation: "Kütüphanenin arkasında ('behind') bir 'park' olabilir."
-            },
-            {
-                question: "What do you feel when you win?",
-                options: ["Sad", "Angry", "Happy", "Tired"],
-                correctAnswer: "Happy",
-                explanation: "Kazandığınızda 'happy' (mutlu) hissedersiniz."
-            },
-            {
-                question: "What do you buy at a fair?",
-                options: ["Car", "Desk", "Toys", "Shirt"],
-                correctAnswer: "Toys",
-                explanation: "Panayırlardan 'toys' (oyuncaklar) satın alınabilir."
-            },
-            {
-                question: "What do you pack for a trip?",
-                options: ["Books", "Cars", "Clothes", "Tables"],
-                correctAnswer: "Clothes",
-                explanation: "Bir gezi için 'clothes' (kıyafetler) hazırlarsınız."
-            },
-            {
-                question: "What does a police officer do?",
-                options: ["Cooks food", "Keeps people safe", "Teaches students", "Sings songs"],
-                correctAnswer: "Keeps people safe",
-                explanation: "Bir polis memuru ('police officer') insanları güvende tutar."
-            },
-            {
-                question: "What is a biography about?",
-                options: ["A car’s history", "A person’s life", "A book’s story", "A game’s rules"],
-                correctAnswer: "A person’s life",
-                explanation: "Bir biyografi bir insanın hayatı hakkındadır."
-            },
-            {
-                question: "What do you do to save energy?",
-                options: ["Eat candy", "Watch TV", "Turn off lights", "Run"],
-                correctAnswer: "Turn off lights",
-                explanation: "Enerji tasarrufu için 'turn off lights' (ışıkları kapatmak) gerekir."
-            },
-            {
-                question: "What do you do before an election?",
-                options: ["Eat", "Sleep", "Campaign", "Vote"],
-                correctAnswer: "Campaign",
-                explanation: "Seçimden önce adaylar 'campaign' (kampanya) yapar."
-            },
-            {
-                question: "What is a healthy breakfast?",
-                options: ["Chips", "Candy", "Yogurt", "Soda"],
-                correctAnswer: "Yogurt",
-                explanation: "'Yogurt' (yoğurt) sağlıklı bir kahvaltı seçeneğidir."
-            },
-            {
-                question: "What is a place to exercise?",
-                options: ["Bedroom", "Kitchen", "Bathroom", "Gym"],
-                correctAnswer: "Gym",
-                explanation: "'Gym' (spor salonu) egzersiz yapmak için bir yerdir."
-            },
-            {
-                question: "What do you wear when it’s snowy?",
-                options: ["T-shirt", "Swimsuit", "Coat", "Shorts"],
-                correctAnswer: "Coat",
-                explanation: "Karlı havada sıcak kalmak için 'coat' (palto/mont) giyilir."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Cook", "Study", "Win a prize", "Sleep"],
-                correctAnswer: "Win a prize",
-                explanation: "Panayırlarda 'win a prize' (ödül kazanmak) mümkündür."
-            },
-            {
-                question: "What is a 'museum'?",
-                options: ["Place to sleep", "Place to eat", "Place to see history", "Place to play"],
-                correctAnswer: "Place to see history",
-                explanation: "'Museum' (müze), tarihi eserleri ve sanat eserlerini görmek için bir yerdir."
-            },
-            {
-                question: "What do you say to ask for help?",
-                options: ["Go away!", "I’m fine!", "Can you help me?", "No way!"],
-                correctAnswer: "Can you help me?",
-                explanation: "Yardım istemek için kibarca 'Can you help me?' (Bana yardım edebilir misin?) diye sorulur."
-            },
-            {
-                question: "What is a 'schedule'?",
-                options: ["Type of food", "Kind of game", "Plan for the day", "Piece of clothing"],
-                correctAnswer: "Plan for the day",
-                explanation: "'Schedule' (program), gün için yapılan bir plandır."
-            },
-            {
-                question: "What do you wear on your head?",
-                options: ["Jacket", "Shoes", "Hat", "Gloves"],
-                correctAnswer: "Hat",
-                explanation: "Başımıza 'hat' (şapka) takarız."
-            },
-            {
-                question: "What is a 'tourist'?",
-                options: ["Person who cooks", "Person who teaches", "Person who travels", "Person who sings"],
-                correctAnswer: "Person who travels",
-                explanation: "'Tourist' (turist), gezi amaçlı seyahat eden kişidir."
-            },
-            {
-                question: "What do you do to stay healthy?",
-                options: ["Watch TV", "Eat candy", "Exercise", "Sleep"],
-                correctAnswer: "Exercise",
-                explanation: "Sağlıklı kalmak için 'exercise' (egzersiz) yapmak önemlidir."
-            },
-            {
-                question: "What is a 'rule'?",
-                options: ["Something you eat", "Something you wear", "Something you must follow", "Something you read"],
-                correctAnswer: "Something you must follow",
-                explanation: "'Rule' (kural), uyulması gereken bir yönergedir."
-            },
-            {
-                question: "What do you use for a hobby like painting?",
-                options: ["Spoon", "Shoe", "Brush", "Ball"],
-                correctAnswer: "Brush",
-                explanation: "Resim yapma hobisi için 'brush' (fırça) kullanılır."
-            },
-            {
-                question: "What is a 'neighbor'?",
-                options: ["Person at school", "Person at work", "Person nearby", "Person in family"],
-                correctAnswer: "Person nearby",
-                explanation: "'Neighbor' (komşu), yakınınızda yaşayan kişidir."
-            },
-            {
-                question: "What do you say to ask the time?",
-                options: ["Where are you?", "What time is it?", "How are you?", "What is this?"],
-                correctAnswer: "What time is it?",
-                explanation: "Saati sormak için 'What time is it?' (Saat kaç?) denir."
-            },
-            {
-                question: "What do you do before bed?",
-                options: ["Play soccer", "Watch TV", "Brush teeth", "Eat lunch"],
-                correctAnswer: "Brush teeth",
-                explanation: "Yatmadan önce 'brush teeth' (diş fırçalamak) sağlıklı bir alışkanlıktır."
-            },
-            {
-                question: "What is a 'sore throat'?",
-                options: ["Pain in head", "Pain in leg", "Pain in throat", "High fever"],
-                correctAnswer: "Pain in throat",
-                explanation: "'Sore throat', boğazdaki ağrı anlamına gelir."
-            },
-            {
-                question: "What do you say to invite someone?",
-                options: ["I’m busy", "Go away", "Come to my party", "See you later"],
-                correctAnswer: "Come to my party",
-                explanation: "Birini davet etmek için 'Come to my party' (Partime gel) diyebilirsiniz."
-            },
-            {
-                question: "What do you need for a picnic?",
-                options: ["Schoolbag", "Toothbrush", "Blanket", "Laptop"],
-                correctAnswer: "Blanket",
-                explanation: "Piknikte üzerine oturmak için 'blanket' (battaniye) kullanılır."
-            },
-            {
-                question: "What is a 'volleyball'?",
-                options: ["Food", "Animal", "Sport", "Place"],
-                correctAnswer: "Sport",
-                explanation: "'Volleyball' (voleybol) bir spor dalıdır."
-            },
-            {
-                question: "What do you do at a concert?",
-                options: ["Study", "Work", "Listen to music", "Sleep"],
-                correctAnswer: "Listen to music",
-                explanation: "Konserlerde 'listen to music' (müzik dinlenir)."
-            },
-            {
-                question: "What do you say to congratulate someone?",
-                options: ["I’m sorry!", "No way!", "Well done!", "Go away!"],
-                correctAnswer: "Well done!",
-                explanation: "Birini tebrik etmek için 'Well done!' (Harika iş!) denir."
-            },
-            {
-                question: "What do you need for a game?",
-                options: ["Schoolbag", "Toothbrush", "Ball", "Laptop"],
-                correctAnswer: "Ball",
-                explanation: "Birçok oyun için bir 'ball' (top) gerekir."
-            },
-            {
-                question: "What is a 'festival'?",
-                options: ["Place to sleep", "Place to eat", "Event to celebrate", "Place to work"],
-                correctAnswer: "Event to celebrate",
-                explanation: "'Festival', kutlama amaçlı bir etkinliktir."
-            },
-            {
-                question: "What do you do to stay clean?",
-                options: ["Watch TV", "Eat candy", "Take a shower", "Play soccer"],
-                correctAnswer: "Take a shower",
-                explanation: "Temiz kalmak için 'take a shower' (duş almak) önemlidir."
-            },
-            {
-                question: "What is a 'bicycle'?",
-                options: ["Food", "Cloth", "Vehicle", "Toy"],
-                correctAnswer: "Vehicle",
-                explanation: "'Bicycle' (bisiklet) bir ulaşım aracıdır ('vehicle')."
-            },
-            {
-                question: "What do you say to ask for permission?",
-                options: ["Go away!", "I’m fine!", "Can I go?", "No way!"],
-                correctAnswer: "Can I go?",
-                explanation: "İzin istemek için 'Can I go?' (Gidebilir miyim?) gibi ifadeler kullanılır."
-            },
-            {
-                question: "What do you do at a zoo?",
-                options: ["Study", "Work", "See animals", "Sleep"],
-                correctAnswer: "See animals",
-                explanation: "Hayvanat bahçesinde ('zoo') hayvanları görürsünüz."
-            },
-            {
-                question: "What is a 'breakfast'?",
-                options: ["Meal at night", "Meal in the afternoon", "Meal in the morning", "Meal at noon"],
-                correctAnswer: "Meal in the morning",
-                explanation: "'Breakfast' (kahvaltı), sabah yenen öğündür."
-            },
-            {
-                question: "What do you wear for a party?",
-                options: ["Uniform", "Pajamas", "Swimsuit", "Dress"],
-                correctAnswer: "Dress",
-                explanation: "Bir partiye giderken 'dress' (elbise) gibi şık kıyafetler giyilebilir."
-            },
-            {
-                question: "What is a 'song'?",
-                options: ["Book", "Food", "Music", "Game"],
-                correctAnswer: "Music",
-                explanation: "'Song' (şarkı), bir müzik türüdür."
-            },
-            {
-                question: "What do you do to help a friend?",
-                options: ["Run away", "Ignore them", "Share with them", "Sleep"],
-                correctAnswer: "Share with them",
-                explanation: "Bir arkadaşa yardım etmek için onunla bir şeyler paylaşabilirsiniz ('share with them')."
-            },
-            {
-                question: "What is a 'bus stop'?",
-                options: ["Place to sleep", "Place to eat", "Place to wait for a bus", "Place to play"],
-                correctAnswer: "Place to wait for a bus",
-                explanation: "'Bus stop' (otobüs durağı), otobüs beklenen yerdir."
-            },
-            {
-                question: "What do you say to introduce a friend?",
-                options: ["Go away!", "I’m fine!", "This is my friend", "No way!"],
-                correctAnswer: "This is my friend",
-                explanation: "Bir arkadaşınızı tanıtmak için 'This is my friend' (Bu benim arkadaşım) dersiniz."
-            },
-            {
-                question: "What do you do at a beach?",
-                options: ["Study", "Work", "Sleep", "Swim"],
-                correctAnswer: "Swim",
-                explanation: "Plajda ('beach') 'swim' (yüzmek) popüler bir aktivitedir."
-            },
-            {
-                question: "What is a 'lunch'?",
-                options: ["Meal at night", "Meal in the morning", "Meal at noon", "Meal in the evening"],
-                correctAnswer: "Meal at noon",
-                explanation: "'Lunch' (öğle yemeği), öğlen yenen öğündür."
-            },
-            {
-                question: "What do you wear for sports?",
-                options: ["Dress", "Suit", "Hat", "Sneakers"],
-                correctAnswer: "Sneakers",
-                explanation: "Spor yaparken 'sneakers' (spor ayakkabı) giyilir."
-            },
-            {
-                question: "What is a 'friendship'?",
-                options: ["Something you eat", "Something you wear", "Something you read", "Being kind to others"],
-                correctAnswer: "Being kind to others",
-                explanation: "'Friendship' (arkadaşlık), başkalarına karşı nazik olmayı içerir."
-            },
-            {
-                question: "What do you do at a playground?",
-                options: ["Study", "Work", "Sleep", "Play"],
-                correctAnswer: "Play",
-                explanation: "Oyun parkında ('playground') oynanır."
-            },
-            {
-                question: "What is a 'snack'?",
-                options: ["Meal at night", "Meal in the morning", "Small meal between meals", "Meal at noon"],
-                correctAnswer: "Small meal between meals",
-                explanation: "'Snack' (atıştırmalık), öğünler arasında yenen küçük bir yemektir."
-            },
-            {
-                question: "What do you say to ask for a toy?",
-                options: ["Go away!", "I’m fine!", "No way!", "Can I have it?"],
-                correctAnswer: "Can I have it?",
-                explanation: "Bir oyuncak istemek için kibarca 'Can I have it?' (Onu alabilir miyim?) diye sorulur."
-            },
-            {
-                question: "What do you do at a party?",
-                options: ["Study", "Work", "Dance", "Sleep"],
-                correctAnswer: "Dance",
-                explanation: "Partilerde 'dance' (dans etmek) yaygındır."
-            },
-            {
-                question: "What is a 'home'?",
-                options: ["Place to buy things", "Place to study", "Place to sleep", "Place to play"],
-                correctAnswer: "Place to sleep",
-                explanation: "'Home' (ev), içinde yaşanılan ve uyunulan bir yerdir."
-            },
-            {
-                question: "What do you say to suggest a game?",
-                options: ["I’m tired!", "Go away!", "Let’s play!", "No way!"],
-                correctAnswer: "Let’s play!",
-                explanation: "Bir oyun önermek için 'Let’s play!' (Hadi oynayalım!) denir."
-            },
-            {
-                question: "What do you do to relax?",
-                options: ["Work", "Study", "Run", "Read a book"],
-                correctAnswer: "Read a book",
-                explanation: "Rahatlamak için 'read a book' (kitap okumak) iyi bir aktivitedir."
-            },
-            {
-                question: "What do you say to offer help?",
-                options: ["Go away!", "I’m fine!", "No way!", "Can I help you?"],
-                correctAnswer: "Can I help you?",
-                explanation: "Yardım teklif etmek için 'Can I help you?' (Yardım edebilir miyim?) denir."
-            },
-            {
-                question: "What do you do in a garden?",
-                options: ["Study", "Work", "Sleep", "Plant flowers"],
-                correctAnswer: "Plant flowers",
-                explanation: "Bahçede 'plant flowers' (çiçek dikmek) gibi işler yapılır."
-            },
-            {
-                question: "What is a 'dinner'?",
-                options: ["Meal in the morning", "Meal at noon", "Meal in the afternoon", "Meal at night"],
-                correctAnswer: "Meal at night",
-                explanation: "'Dinner' (akşam yemeği), akşam yenen öğündür."
-            }
+    {
+        question: "A person who is always telling others what to do in a dominant way is _______.",
+        options: ["shy", "bossy", "kind", "modest"],
+        correctAnswer: "bossy",
+        explanation: "Her zaman başkalarına ne yapacaklarını dominant bir şekilde söyleyen kişiye 'bossy' (patronluk taslayan) denir."
+    },
+    {
+        question: "While we _______ dinner, the lights suddenly went out.",
+        options: ["were having", "had", "are having", "have"],
+        correctAnswer: "were having",
+        explanation: "Geçmişte bir eylem devam ederken (akşam yemeği yemek) başka bir eylemin (ışıkların gitmesi) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "You can find many historical buildings and narrow streets in the _______ of the city.",
+        options: ["suburbs", "old town", "business district", "outskirts"],
+        correctAnswer: "old town",
+        explanation: "Tarihi binaları ve dar sokakları şehrin 'old town' (eski şehir) kısmında bulabilirsiniz."
+    },
+    {
+        question: "A _______ is a special meal with large amounts of food and drink.",
+        options: ["snack", "diet", "feast", "starter"],
+        correctAnswer: "feast",
+        explanation: "Büyük miktarlarda yiyecek ve içeceğin olduğu özel bir yemeğe 'feast' (ziyafet, şölen) denir."
+    },
+    {
+        question: "He felt _______ when he couldn't answer the teacher's question.",
+        options: ["proud", "embarrassed", "confident", "pleased"],
+        correctAnswer: "embarrassed",
+        explanation: "Öğretmenin sorusuna cevap veremediğinde 'embarrassed' (utanmış, mahcup) hissetti."
+    },
+    {
+        question: "What is the capital city of Italy?",
+        options: ["Madrid", "Athens", "Rome", "Lisbon"],
+        correctAnswer: "Rome",
+        explanation: "İtalya'nın başkenti 'Rome' (Roma) şehridir."
+    },
+    {
+        question: "A person who is good at making things with their hands is _______.",
+        options: ["clumsy", "practical", "intellectual", "forgetful"],
+        correctAnswer: "practical",
+        explanation: "Elleriyle bir şeyler yapmada iyi olan kişiye 'practical' (becerikli, pratik) denir."
+    },
+    {
+        question: "I _______ for my keys when I remembered I had left them at the office.",
+        options: ["was looking", "looked", "am looking", "look"],
+        correctAnswer: "was looking",
+        explanation: "Geçmişte bir eylem (anahtarları aramak) devam ederken başka bir olayı (hatırlamak) anımsadığınızda Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The view from the top of the mountain was absolutely _______.",
+        options: ["awful", "stunning", "plain", "ordinary"],
+        correctAnswer: "stunning",
+        explanation: "Dağın tepesinden manzara kesinlikle 'stunning' (büyüleyici, nefes kesici) idi."
+    },
+    {
+        question: "Before you bake the cake, you should _______ the oven to 180 degrees.",
+        options: ["cool", "preheat", "mix", "freeze"],
+        correctAnswer: "preheat",
+        explanation: "Keki pişirmeden önce, fırını 180 dereceye 'preheat' (önceden ısıtmak) yapmalısınız."
+    },
+    {
+        question: "An _______ is a professional who checks a company's financial records.",
+        options: ["accountant", "architect", "engineer", "lawyer"],
+        correctAnswer: "accountant",
+        explanation: "Bir şirketin mali kayıtlarını kontrol eden profesyonele 'accountant' (muhasebeci) denir."
+    },
+    {
+        question: "She _______ eats junk food because she wants to stay healthy.",
+        options: ["always", "often", "usually", "rarely"],
+        correctAnswer: "rarely",
+        explanation: "Sağlıklı kalmak isteyen biri 'rarely' (nadiren) abur cubur yer."
+    },
+    {
+        question: "He is interested _______ ancient history.",
+        options: ["in", "at", "on", "about"],
+        correctAnswer: "in",
+        explanation: "'Interested in' (-ile ilgilenmek) doğru edat kullanımıdır."
+    },
+    {
+        question: "The opposite of 'brave' is _______.",
+        options: ["courageous", "fearful", "daring", "adventurous"],
+        correctAnswer: "fearful",
+        explanation: "'Brave' (cesur) kelimesinin zıttı 'fearful' veya 'cowardly' (korkak) olabilir."
+    },
+    {
+        question: "What _______ you do if you won the lottery?",
+        options: ["will", "would", "do", "are"],
+        correctAnswer: "would",
+        explanation: "Hayali bir durumu (piyangoyu kazanmak) sormak için 'would' kullanılır (Type 2 Conditional)."
+    },
+    {
+        question: "She was very _______ with the service at the hotel. It was excellent.",
+        options: ["disappointed", "satisfied", "annoyed", "upset"],
+        correctAnswer: "satisfied",
+        explanation: "Oteldeki hizmetten çok 'satisfied' (memnun) kaldı. Mükemmeldi."
+    },
+    {
+        question: "A _______ is a structure built to honor a person or event.",
+        options: ["skyscraper", "monument", "bridge", "fountain"],
+        correctAnswer: "monument",
+        explanation: "Bir kişiyi veya olayı onurlandırmak için inşa edilen yapıya 'monument' (anıt) denir."
+    },
+    {
+        question: "A person who is able to persuade people to do something is _______.",
+        options: ["persuasive", "shy", "stubborn", "lazy"],
+        correctAnswer: "persuasive",
+        explanation: "İnsanları bir şey yapmaya ikna edebilen kişiye 'persuasive' (ikna edici) denir."
+    },
+    {
+        question: "I prefer reading a book _______ watching a film.",
+        options: ["than", "from", "to", "over"],
+        correctAnswer: "to",
+        explanation: "'Prefer + V-ing + to + V-ing' kalıbı, bir aktiviteyi diğerine tercih ettiğini belirtir."
+    },
+    {
+        question: "He is a _______ person; he always forgets where he puts his keys.",
+        options: ["punctual", "forgetful", "organized", "reliable"],
+        correctAnswer: "forgetful",
+        explanation: "Anahtarlarını nereye koyduğunu sürekli unutan kişiye 'forgetful' (unutkan) denir."
+    },
+    {
+        question: "A person who designs clothes is a _______.",
+        options: ["web designer", "fashion designer", "graphic designer", "interior designer"],
+        correctAnswer: "fashion designer",
+        explanation: "Kıyafet tasarlayan kişiye 'fashion designer' (moda tasarımcısı) denir."
+    },
+    {
+        question: "The movie was so _______ that I couldn't stop laughing.",
+        options: ["sad", "scary", "hilarious", "dull"],
+        correctAnswer: "hilarious",
+        explanation: "Gülmekten kendinizi alamadığınız bir film 'hilarious' (çok komik, gülünç) bir filmdir."
+    },
+    {
+        question: "You _______ to wear a seatbelt in the car. It's the law.",
+        options: ["should", "can", "have", "may"],
+        correctAnswer: "have",
+        explanation: "Yasa veya kural olan zorunlulukları belirtmek için 'have to' kullanılır."
+    },
+    {
+        question: "What do you call a person who doesn't like spending money?",
+        options: ["Generous", "Stingy", "Kind", "Rich"],
+        correctAnswer: "Stingy",
+        explanation: "Para harcamayı sevmeyen kişiye 'stingy' (cimri) denir."
+    },
+    {
+        question: "The opposite of 'temporary' is _______.",
+        options: ["short", "permanent", "brief", "long"],
+        correctAnswer: "permanent",
+        explanation: "'Temporary' (geçici) kelimesinin zıttı 'permanent' (kalıcı) kelimesidir."
+    },
+    {
+        question: "He _______ for his exam all night, so he is very tired now.",
+        options: ["studied", "was studying", "is studying", "studies"],
+        correctAnswer: "was studying",
+        explanation: "Geçmişte uzun bir süre devam eden ve bir sonuca (yorgun olmak) yol açan eylemi belirtmek için Past Continuous Tense kullanılabilir."
+    },
+    {
+        question: "A _______ is a person who has a lot of knowledge about a subject.",
+        options: ["beginner", "novice", "expert", "student"],
+        correctAnswer: "expert",
+        explanation: "Bir konu hakkında çok fazla bilgisi olan kişiye 'expert' (uzman) denir."
+    },
+    {
+        question: "She is a very _______ person; she always has new ideas.",
+        options: ["boring", "creative", "dull", "unimaginative"],
+        correctAnswer: "creative",
+        explanation: "Her zaman yeni fikirleri olan kişiye 'creative' (yaratıcı) denir."
+    },
+    {
+        question: "A period of one hundred years is called a _______.",
+        options: ["decade", "century", "millennium", "era"],
+        correctAnswer: "century",
+        explanation: "Yüz yıllık döneme 'century' (yüzyıl) denir."
+    },
+    {
+        question: "The food was so _______ that I couldn't eat it. It was too hot.",
+        options: ["mild", "spicy", "bland", "sweet"],
+        correctAnswer: "spicy",
+        explanation: "Çok acı olduğu için yiyemediğiniz bir yemek 'spicy' (baharatlı, acı) bir yemektir."
+    },
+    {
+        question: "A person who works in an office and does clerical work is a _______.",
+        options: ["clerk", "chef", "carpenter", "plumber"],
+        correctAnswer: "clerk",
+        explanation: "Ofiste çalışan ve evrak işleri yapan kişiye 'clerk' (memur, katip) denir."
+    },
+    {
+        question: "I _______ my wallet. Have you seen it anywhere?",
+        options: ["lost", "have lost", "was losing", "lose"],
+        correctAnswer: "have lost",
+        explanation: "Geçmişte olan ve sonucu şimdiki zamanı etkileyen (cüzdanı bulamama) bir eylem için Present Perfect Tense kullanılır."
+    },
+    {
+        question: "The opposite of 'optimistic' is _______.",
+        options: ["positive", "pessimistic", "hopeful", "cheerful"],
+        correctAnswer: "pessimistic",
+        explanation: "'Optimistic' (iyimser) kelimesinin zıttı 'pessimistic' (kötümser) kelimesidir."
+    },
+    {
+        question: "A person who is always on time for appointments is _______.",
+        options: ["late", "punctual", "early", "tardy"],
+        correctAnswer: "punctual",
+        explanation: "Randevularına her zaman vaktinde gelen kişiye 'punctual' (dakik) denir."
+    },
+    {
+        question: "It was a _______ decision to make, but I think I chose correctly.",
+        options: ["simple", "tough", "clear", "obvious"],
+        correctAnswer: "tough",
+        explanation: "Verilmesi zor bir karar için 'tough decision' (zor karar) ifadesi kullanılır."
+    },
+    {
+        question: "A person who can be trusted is _______.",
+        options: ["dishonest", "unreliable", "trustworthy", "deceitful"],
+        correctAnswer: "trustworthy",
+        explanation: "Güvenilebilen bir kişiye 'trustworthy' (güvenilir) denir."
+    },
+    {
+        question: "While the teacher _______, the students were taking notes.",
+        options: ["was explaining", "explained", "is explaining", "explains"],
+        correctAnswer: "was explaining",
+        explanation: "Geçmişte iki eylemin aynı anda devam ettiğini belirtmek için her ikisinde de Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The city is famous for its _______ nightlife.",
+        options: ["dull", "boring", "vibrant", "quiet"],
+        correctAnswer: "vibrant",
+        explanation: "Şehir, 'vibrant' (canlı, hareketli) gece hayatıyla ünlüdür."
+    },
+    {
+        question: "A _______ is a formal event to celebrate something.",
+        options: ["gathering", "meeting", "ceremony", "party"],
+        correctAnswer: "ceremony",
+        explanation: "Bir şeyi kutlamak için yapılan resmi etkinliğe 'ceremony' (tören) denir."
+    },
+    {
+        question: "The opposite of 'modest' is _______.",
+        options: ["humble", "arrogant", "shy", "quiet"],
+        correctAnswer: "arrogant",
+        explanation: "'Modest' (mütevazı) kelimesinin zıttı 'arrogant' (kibirli) kelimesidir."
+    },
+    {
+        question: "He is a very _______ person; he thinks he is better than everyone else.",
+        options: ["confident", "conceited", "humble", "kind"],
+        correctAnswer: "conceited",
+        explanation: "Kendini herkesten daha iyi sanan kişiye 'conceited' (kendini beğenmiş) denir."
+    },
+    {
+        question: "What _______ you do yesterday at 5 p.m.?",
+        options: ["did", "were", "was", "do"],
+        correctAnswer: "were",
+        explanation: "Geçmişte belirli bir anda ne yapıldığını sormak için Past Continuous Tense soru yapısı ('Were you...?') kullanılır."
+    },
+    {
+        question: "A person who is good at sports is _______.",
+        options: ["artistic", "athletic", "musical", "academic"],
+        correctAnswer: "athletic",
+        explanation: "Sporlarda iyi olan kişiye 'athletic' (atletik) denir."
+    },
+    {
+        question: "The government should _______ action to solve the problem.",
+        options: ["do", "make", "take", "give"],
+        correctAnswer: "take",
+        explanation: "Sorunu çözmek için harekete geçmek 'take action' deyimiyle ifade edilir."
+    },
+    {
+        question: "The opposite of 'courageous' is _______.",
+        options: ["brave", "timid", "daring", "fearless"],
+        correctAnswer: "timid",
+        explanation: "'Courageous' (cesur) kelimesinin zıttı 'timid' (ürkek, çekingen) kelimesidir."
+    },
+    {
+        question: "A person who gives money to help people or causes is a _______.",
+        options: ["scientist", "philanthropist", "politician", "artist"],
+        correctAnswer: "philanthropist",
+        explanation: "İnsanlara veya amaçlara yardım etmek için para veren kişiye 'philanthropist' (hayırsever) denir."
+    },
+    {
+        question: "As I _______ down the street, I ran into an old friend.",
+        options: ["was walking", "walked", "am walking", "walk"],
+        correctAnswer: "was walking",
+        explanation: "Geçmişte bir eylem devam ederken (yürümek) başka bir olayın (karşılaşmak) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The _______ of this book is about a young wizard.",
+        options: ["character", "plot", "setting", "theme"],
+        correctAnswer: "plot",
+        explanation: "Bu kitabın 'plot' (konusu, olay örgüsü) genç bir büyücü hakkındadır."
+    },
+    {
+        question: "A _______ is a person who is very good at something.",
+        options: ["beginner", "amateur", "professional", "novice"],
+        correctAnswer: "professional",
+        explanation: "Bir işte çok iyi olan kişiye 'professional' (profesyonel) denir."
+    },
+    {
+        question: "The opposite of 'compulsory' is _______.",
+        options: ["necessary", "optional", "required", "mandatory"],
+        correctAnswer: "optional",
+        explanation: "'Compulsory' (zorunlu) kelimesinin zıttı 'optional' (seçmeli, isteğe bağlı) kelimesidir."
+    },
+    {
+        question: "She is a very _______ person; she is always calm and doesn't get stressed.",
+        options: ["anxious", "easy-going", "nervous", "tense"],
+        correctAnswer: "easy-going",
+        explanation: "Her zaman sakin olan ve strese girmeyen kişiye 'easy-going' (rahat, uyumlu) denir."
+    },
+    {
+        question: "A person who is not honest is _______.",
+        options: ["truthful", "sincere", "deceitful", "frank"],
+        correctAnswer: "deceitful",
+        explanation: "Dürüst olmayan kişiye 'deceitful' (hilekar, aldatıcı) denir."
+    },
+    {
+        question: "While my dad _______ the car, my mom was cooking.",
+        options: ["was washing", "washed", "is washing", "washes"],
+        correctAnswer: "was washing",
+        explanation: "Geçmişte iki eylemin aynı anda devam ettiğini belirtmek için her ikisinde de Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The _______ of the city is over 10 million.",
+        options: ["area", "population", "location", "climate"],
+        correctAnswer: "population",
+        explanation: "Şehrin 'population' (nüfus) u 10 milyonun üzerindedir."
+    },
+    {
+        question: "A _______ is a piece of land surrounded by water.",
+        options: ["peninsula", "island", "continent", "bay"],
+        correctAnswer: "island",
+        explanation: "Etrafı suyla çevrili kara parçasına 'island' (ada) denir."
+    },
+    {
+        question: "The opposite of 'predecessor' is _______.",
+        options: ["ancestor", "forerunner", "successor", "descendant"],
+        correctAnswer: "successor",
+        explanation: "'Predecessor' (selef, bir görevde önceki kişi) kelimesinin zıttı 'successor' (halef, bir görevde sonraki kişi) kelimesidir."
+    },
+    {
+        question: "He is a very _______ person; he always finishes his work on time.",
+        options: ["lazy", "diligent", "careless", "irresponsible"],
+        correctAnswer: "diligent",
+        explanation: "İşini her zaman vaktinde bitiren kişiye 'diligent' (çalışkan, gayretli) denir."
+    },
+    {
+        question: "I _______ a strange noise, so I went to check.",
+        options: ["was hearing", "heard", "am hearing", "hear"],
+        correctAnswer: "heard",
+        explanation: "Duyma gibi duyu fiilleri genellikle anlık olduğu için Simple Past Tense ile kullanılır."
+    },
+    {
+        question: "The movie was _______ on a true story.",
+        options: ["based", "created", "written", "directed"],
+        correctAnswer: "based",
+        explanation: "Film, gerçek bir hikayeye 'based on' (dayanıyordu)."
+    },
+    {
+        question: "A _______ is a person who has extreme political or religious ideas.",
+        options: ["moderate", "liberal", "extremist", "conservative"],
+        correctAnswer: "extremist",
+        explanation: "Aşırı siyasi veya dini fikirlere sahip kişiye 'extremist' (aşırılık yanlısı) denir."
+    },
+    {
+        question: "The opposite of 'interior' is _______.",
+        options: ["inside", "exterior", "internal", "central"],
+        correctAnswer: "exterior",
+        explanation: "'Interior' (iç, dahili) kelimesinin zıttı 'exterior' (dış, harici) kelimesidir."
+    },
+    {
+        question: "She is a _______ supporter of the local team.",
+        options: ["passionate", "indifferent", "apathetic", "reluctant"],
+        correctAnswer: "passionate",
+        explanation: "Yerel takımın 'passionate' (tutkulu, ateşli) bir destekçisidir."
+    },
+    {
+        question: "I _______ about my holiday when you interrupted me.",
+        options: ["daydreamed", "was daydreaming", "daydream", "am daydreaming"],
+        correctAnswer: "was daydreaming",
+        explanation: "Geçmişte bir eylem devam ederken (hayal kurmak) başka bir eylemin (sözünü kesmek) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The _______ of the painting is a beautiful landscape.",
+        options: ["subject", "artist", "frame", "style"],
+        correctAnswer: "subject",
+        explanation: "Tablonun 'subject' (konusu) güzel bir manzaradır."
+    },
+    {
+        question: "A _______ is a person who is very skilled at something.",
+        options: ["novice", "adept", "beginner", "amateur"],
+        correctAnswer: "adept",
+        explanation: "Bir işte çok yetenekli olan kişiye 'adept' (usta, mahir) denir."
+    },
+    {
+        question: "The opposite of 'transparent' is _______.",
+        options: ["clear", "opaque", "translucent", "see-through"],
+        correctAnswer: "opaque",
+        explanation: "'Transparent' (şeffaf) kelimesinin zıttı 'opaque' (opak, şeffaf olmayan) kelimesidir."
+    },
+    {
+        question: "He is a very _______ person; he always keeps his promises.",
+        options: ["reliable", "unreliable", "dishonest", "deceitful"],
+        correctAnswer: "reliable",
+        explanation: "Sözlerini her zaman tutan kişiye 'reliable' (güvenilir) denir."
+    },
+    {
+        question: "The storm caused _______ damage to the town.",
+        options: ["minor", "considerable", "insignificant", "trivial"],
+        correctAnswer: "considerable",
+        explanation: "Fırtına, kasabada 'considerable' (önemli, hatırı sayılır) hasara neden oldu."
+    },
+    {
+        question: "A _______ is a period of great happiness or success.",
+        options: ["golden age", "dark age", "stone age", "ice age"],
+        correctAnswer: "golden age",
+        explanation: "Büyük bir mutluluk veya başarı dönemine 'golden age' (altın çağ) denir."
+    },
+    {
+        question: "The opposite of 'abundant' is _______.",
+        options: ["plentiful", "scarce", "ample", "copious"],
+        correctAnswer: "scarce",
+        explanation: "'Abundant' (bol, bereketli) kelimesinin zıttı 'scarce' (kıt, nadir) kelimesidir."
+    },
+    {
+        question: "She has a _______ for detail.",
+        options: ["good eye", "bad memory", "short temper", "loud voice"],
+        correctAnswer: "good eye",
+        explanation: "'Have a good eye for detail' (ayrıntıları iyi görmek) bir deyimdir."
+    },
+    {
+        question: "The police are _______ the cause of the accident.",
+        options: ["investigating", "ignoring", "forgetting", "creating"],
+        correctAnswer: "investigating",
+        explanation: "Polis, kazanın nedenini 'investigating' (araştırıyor, soruşturuyor)."
+    },
+    {
+        question: "A _______ is a person who is forced to leave their country.",
+        options: ["tourist", "immigrant", "exile", "visitor"],
+        correctAnswer: "exile",
+        explanation: "Ülkesini terk etmeye zorlanan kişiye 'exile' (sürgün) denir."
+    },
+    {
+        question: "The opposite of 'voluntary' is _______.",
+        options: ["optional", "compulsory", "free", "willing"],
+        correctAnswer: "compulsory",
+        explanation: "'Voluntary' (gönüllü) kelimesinin zıttı 'compulsory' (zorunlu) kelimesidir."
+    },
+    {
+        question: "He is a _______ of the arts.",
+        options: ["patron", "critic", "enemy", "opponent"],
+        correctAnswer: "patron",
+        explanation: "O, sanatın bir 'patron' (hamisi, koruyucusu) dur."
+    },
+    {
+        question: "The project was a _______ effort between two universities.",
+        options: ["separate", "collaborative", "individual", "divided"],
+        correctAnswer: "collaborative",
+        explanation: "Proje, iki üniversite arasında 'collaborative' (işbirlikçi) bir çabaydı."
+    },
+    {
+        question: "A _______ is a sudden and great disaster.",
+        options: ["success", "triumph", "catastrophe", "miracle"],
+        correctAnswer: "catastrophe",
+        explanation: "Ani ve büyük bir felakete 'catastrophe' (felaket, facia) denir."
+    },
+    {
+        question: "The opposite of 'explicit' is _______.",
+        options: ["clear", "implicit", "obvious", "direct"],
+        correctAnswer: "implicit",
+        explanation: "'Explicit' (açık, net) kelimesinin zıttı 'implicit' (üstü kapalı, dolaylı) kelimesidir."
+    },
+    {
+        question: "She is _______ about her chances of winning.",
+        options: ["sanguine", "pessimistic", "negative", "doubtful"],
+        correctAnswer: "sanguine",
+        explanation: "Kazanma şansı konusunda 'sanguine' (iyimser, umutlu) dur."
+    },
+    {
+        question: "The company's new product was a _______ success.",
+        options: ["dismal", "phenomenal", "mediocre", "poor"],
+        correctAnswer: "phenomenal",
+        explanation: "Şirketin yeni ürünü 'phenomenal' (olağanüstü, harika) bir başarıydı."
+    },
+    {
+        question: "A _______ is a person who is always complaining.",
+        options: ["optimist", "pessimist", "realist", "grumbler"],
+        correctAnswer: "grumbler",
+        explanation: "Sürekli şikayet eden kişiye 'grumbler' (homurdanan, mızmız) denir."
+    },
+    {
+        question: "The opposite of 'benevolent' is _______.",
+        options: ["kind", "malevolent", "generous", "caring"],
+        correctAnswer: "malevolent",
+        explanation: "'Benevolent' (hayırsever, iyiliksever) kelimesinin zıttı 'malevolent' (kötü niyetli, kötücül) kelimesidir."
+    },
+    {
+        question: "He has a _______ ability to learn languages.",
+        options: ["remarkable", "common", "ordinary", "average"],
+        correctAnswer: "remarkable",
+        explanation: "Dil öğrenme konusunda 'remarkable' (dikkate değer, olağanüstü) bir yeteneği var."
+    },
+    {
+        question: "The peace talks ended in a _______.",
+        options: "['success', 'breakthrough', 'deadlock', 'agreement']",
+        correctAnswer: "'deadlock'",
+        explanation: "Barış görüşmeleri bir 'deadlock' (çıkmaz, kilitlenme) ile sonuçlandı."
+    },
+    {
+        question: "A _______ is a person who wanders from place to place.",
+        options: ["settler", "resident", "nomad", "inhabitant"],
+        correctAnswer: "nomad",
+        explanation: "Yerden yere dolaşan kişiye 'nomad' (göçebe) denir."
+    },
+    {
+        question: "The opposite of 'ephemeral' is _______.",
+        options: ["transient", "permanent", "fleeting", "momentary"],
+        correctAnswer: "permanent",
+        explanation: "'Ephemeral' (geçici, fani) kelimesinin zıttı 'permanent' (kalıcı) kelimesidir."
+    },
+    {
+        question: "She is a _______ reader; she reads at least one book a week.",
+        options: ["voracious", "reluctant", "slow", "occasional"],
+        correctAnswer: "voracious",
+        explanation: "O, 'voracious' (obur, doymak bilmez) bir okurdur; haftada en az bir kitap okur."
+    },
+    {
+        question: "The new law was met with widespread _______.",
+        options: ["acclaim", "condemnation", "approval", "praise"],
+        correctAnswer: "condemnation",
+        explanation: "Yeni yasa, yaygın bir 'condemnation' (kınama, ayıplama) ile karşılandı."
+    }    
+    
         ],
 
         advanced: [
-            {
-                question: "What do you say to ask about someone’s routine?",
-                options: ["What do you do every day?", "Where are you?", "What is this?", "How is the weather?"],
-                correctAnswer: "What do you do every day?",
-                explanation: "Birinin rutinini sormak için 'What do you do every day?' (Her gün ne yaparsın?) sorusu kullanılır."
-            },
-
     {
-                question: "He _______ home at half past four, and then he meets his friends.",
-                options: ["arrive", "is arriving", "arrives", "arrived"],
-                correctAnswer: "arrives",
-                explanation: "Geniş zamanda bir rutini anlatırken, 'he' öznesiyle fiile -s takısı gelir. 'Arrive home' eve varmaktır."
-            },
+    question: "He _______ home at half past four, and then he meets his friends.",
+    options: ["arrive", "is arriving", "arrives", "arrived"],
+    correctAnswer: "arrives",
+    explanation: "Geniş zamanda bir rutini anlatırken, 'he' öznesiyle fiile -s takısı gelir. 'Arrive home' eve varmaktır."
+    },
     {
         question: "A: _______ do you do after you finish your homework? B: I watch TV.",
         options: ["What", "When", "Where", "Who"],
@@ -5025,31 +5647,6 @@ const questionsByGrade = {
         correctAnswer: "entertaining",
         explanation: "İki şeyi karşılaştırırken, çarpışan arabaların atlıkarıncadan daha 'entertaining' (eğlenceli) olduğunu belirtebiliriz."
     },
-{
-                question: "Which food is NOT healthy for breakfast?",
-                options: ["Yogurt", "Fruit", "Candy", "Eggs"],
-                correctAnswer: "Candy",
-                explanation: "'Candy' (şeker) kahvaltı için sağlıklı bir seçenek değildir."
-            },
-            {
-                question: "What do you say to give directions?",
-                options: ["I’m tired", "Nice to meet you", "Go straight", "What’s your name?"],
-                correctAnswer: "Go straight",
-                explanation: "Yol tarifi verirken 'Go straight' (Düz git) gibi ifadeler kullanılır."
-            },
-            {
-                question: "How do you describe snowy weather?",
-                options: ["It’s very hot", "It’s very cold", "It’s very dry", "It’s very windy"],
-                correctAnswer: "It’s very cold",
-                explanation: "Karlı hava ('snowy weather') çok soğuk olur."
-            },
-            {
-                question: "What can you NOT do at a fair?",
-                options: ["Eat cotton candy", "Win a prize", "Study math", "Ride a roller coaster"],
-                correctAnswer: "Study math",
-                explanation: "Panayırlar eğlence yerleridir, 'study math' (matematik çalışmak) için uygun değildir."
-            },
-
     {
         question: "A person who is not afraid of taking risks is considered to be _______.",
         options: ["cautious", "adventurous", "timid", "shy"],
@@ -5314,504 +5911,579 @@ const questionsByGrade = {
         correctAnswer: "tiring",
         explanation: "Çok fazla seyahat içeren bir iş oldukça 'tiring' (yorucu) olabilir."
     },
-{
-                question: "What do you need to plan a vacation?",
-                options: ["Desk", "Fork", "A map", "Book"],
-                correctAnswer: "A map",
-                explanation: "Bir tatil planlamak için 'a map' (bir harita) faydalı olabilir."
-            },
-            {
-                question: "What is a veterinarian’s job?",
-                options: ["Cooks food", "Teaches students", "Treats animals", "Drives cars"],
-                correctAnswer: "Treats animals",
-                explanation: "Bir veterinerin ('veterinarian') işi hayvanları tedavi etmektir ('treats animals')."
-            },
-            {
-                question: "What did a famous person achieve?",
-                options: ["Ate food", "Slept", "Won a prize", "Ran"],
-                correctAnswer: "Won a prize",
-                explanation: "Ünlü bir kişi 'won a prize' (bir ödül kazanmış) olabilir."
-            },
-            {
-                question: "What should you do to help the environment?",
-                options: ["Eat candy", "Use less plastic", "Watch TV", "Sleep"],
-                correctAnswer: "Use less plastic",
-                explanation: "Çevreye yardım etmek için 'use less plastic' (daha az plastik kullanmak) gerekir."
-            },
-            {
-                question: "What is the purpose of an election?",
-                options: ["To play games", "To choose leaders", "To eat food", "To sleep"],
-                correctAnswer: "To choose leaders",
-                explanation: "Bir seçimin amacı ('purpose') liderleri seçmektir."
-            },
-            {
-                question: "Which drink is good for breakfast?",
-                options: ["Soda", "Coffee", "Milk", "Water"],
-                correctAnswer: "Milk",
-                explanation: "'Milk' (süt) kahvaltı için iyi bir içecektir."
-            },
-            {
-                question: "What is the opposite of ‘near’?",
-                options: ["Close", "Next to", "Far", "Behind"],
-                correctAnswer: "Far",
-                explanation: "'Near' (yakın) kelimesinin zıttı 'far' (uzak) kelimesidir."
-            },
-            {
-                question: "What do you feel when you lose a game?",
-                options: ["Happy", "Excited", "Sad", "Tired"],
-                correctAnswer: "Sad",
-                explanation: "Bir oyunu kaybettiğinizde 'sad' (üzgün) hissedebilirsiniz."
-            },
-            {
-                question: "What do you NOT buy at a fair?",
-                options: ["Balloons", "Candy", "Toys", "Car"],
-                correctAnswer: "Car",
-                explanation: "Panayırlarda genellikle araba ('car') satılmaz."
-            },
-            {
-                question: "What is important for a vacation?",
-                options: ["Sleeping", "Eating", "Planning", "Running"],
-                correctAnswer: "Planning",
-                explanation: "Bir tatil için 'planning' (planlama) yapmak önemlidir."
-            },
-            {
-                question: "What does an engineer do?",
-                options: ["Cooks food", "Teaches students", "Designs buildings", "Sings songs"],
-                correctAnswer: "Designs buildings",
-                explanation: "Bir mühendis ('engineer') binalar tasarlar ('designs buildings')."
-            },
-            {
-                question: "What is included in a biography?",
-                options: ["A car’s history", "A book’s story", "A person’s achievements", "A game’s rules"],
-                correctAnswer: "A person’s achievements",
-                explanation: "Bir biyografi, bir kişinin başarılarını ('achievements') içerir."
-            },
-            {
-                question: "What can you do to reduce waste?",
-                options: ["Eat candy", "Watch TV", "Reuse bags", "Sleep"],
-                correctAnswer: "Reuse bags",
-                explanation: "Atığı azaltmak için poşetleri tekrar kullanabilirsiniz ('reuse bags')."
-            },
-            {
-                question: "What does a voter do in a democracy?",
-                options: ["Cooks food", "Plays games", "Chooses a leader", "Sings songs"],
-                correctAnswer: "Chooses a leader",
-                explanation: "Bir seçmen ('voter') demokraside bir lider seçer."
-            },
-            {
-                question: "Which food is good for energy?",
-                options: ["Soda", "Candy", "Chips", "Bread"],
-                correctAnswer: "Bread",
-                explanation: "'Bread' (ekmek) gibi karbonhidratlar enerji için iyidir."
-            },
-            {
-                question: "What is a landmark in a city?",
-                options: ["Small shop", "Old car", "Famous place", "New book"],
-                correctAnswer: "Famous place",
-                explanation: "Bir şehirdeki 'landmark', ünlü bir yerdir."
-            },
-            {
-                question: "What do you wear in foggy weather?",
-                options: ["Swimsuit", "T-shirt", "Shorts", "Jacket"],
-                correctAnswer: "Jacket",
-                explanation: "Sisli ('foggy') hava serin olabileceğinden 'jacket' (ceket) giyilebilir."
-            },
-            {
-                question: "What is a popular fair activity?",
-                options: ["Working", "Studying", "Face painting", "Sleeping"],
-                correctAnswer: "Face painting",
-                explanation: "'Face painting' (yüz boyama) popüler bir panayır aktivitesidir."
-            },
-            {
-                question: "What do you do before a vacation?",
-                options: ["Eat food", "Sleep", "Pack a suitcase", "Run"],
-                correctAnswer: "Pack a suitcase",
-                explanation: "Tatile çıkmadan önce 'pack a suitcase' (bavul hazırlamak) gerekir."
-            },
-            {
-                question: "What does a scientist do?",
-                options: ["Cooks food", "Teaches students", "Conducts experiments", "Sings songs"],
-                correctAnswer: "Conducts experiments",
-                explanation: "Bir bilim insanı ('scientist') deneyler yapar ('conducts experiments')."
-            },
-            {
-                question: "What do you learn from a biography?",
-                options: ["A car’s history", "A book’s plot", "A person’s life story", "A game’s rules"],
-                correctAnswer: "A person’s life story",
-                explanation: "Bir biyografiden bir kişinin hayat hikayesini öğrenirsiniz."
-            },
-            {
-                question: "What is bad for the environment?",
-                options: ["Recycling", "Saving water", "Pollution", "Planting trees"],
-                correctAnswer: "Pollution",
-                explanation: "'Pollution' (kirlilik) çevre için kötüdür."
-            },
-            {
-                question: "What is a ‘ballot’ in an election?",
-                options: ["Food recipe", "Voting paper", "Game rule", "Book page"],
-                correctAnswer: "Voting paper",
-                explanation: "Seçimdeki bir 'ballot' oy pusulasıdır ('voting paper')."
-            },
-            {
-                question: "Which food is NOT for breakfast?",
-                options: ["Yogurt", "Eggs", "Pizza", "Fruit"],
-                correctAnswer: "Pizza",
-                explanation: "'Pizza' genellikle bir kahvaltı yiyeceği değildir."
-            },
-            {
-                question: "What do you say to ask for directions?",
-                options: ["What is your name?", "How are you?", "Where is the park?", "What time is it?"],
-                correctAnswer: "Where is the park?",
-                explanation: "Yol tarifi sormak için 'Where is the...?' (...'nerede?) kalıbı kullanılır."
-            },
-            {
-                question: "What do you feel in windy weather?",
-                options: ["Happy", "Sad", "Cold", "Hot"],
-                correctAnswer: "Cold",
-                explanation: "Rüzgarlı ('windy') havada üşümüş ('cold') hissedebilirsiniz."
-            },
-            {
-                question: "What do you NOT do at a fair?",
-                options: ["Ride a Ferris wheel", "Eat cotton candy", "Do homework", "Win a prize"],
-                correctAnswer: "Do homework",
-                explanation: "Panayırlar ödev yapmak ('do homework') için bir yer değildir."
-            },
-            {
-                question: "What do you need for a long trip?",
-                options: ["Desk", "Fork", "Water bottle", "Book"],
-                correctAnswer: "Water bottle",
-                explanation: "Uzun bir gezi için 'water bottle' (su şişesi) önemlidir."
-            },
-            {
-                question: "What does a journalist do?",
-                options: ["Cooks food", "Teaches students", "Writes news", "Sings songs"],
-                correctAnswer: "Writes news",
-                explanation: "Bir gazeteci ('journalist') haber yazar ('writes news')."
-            },
-            {
-                question: "What did a historical figure do?",
-                options: ["Ate food", "Slept", "Changed history", "Ran"],
-                correctAnswer: "Changed history",
-                explanation: "Tarihi bir figür, tarihi değiştirmiş ('changed history') olabilir."
-            },
-            {
-                question: "What can you do to save energy?",
-                options: ["Eat candy", "Watch TV", "Use solar power", "Sleep"],
-                correctAnswer: "Use solar power",
-                explanation: "Enerji tasarrufu için 'use solar power' (güneş enerjisi kullanmak) iyi bir yoldur."
-            },
-            {
-                question: "What is a ‘campaign’ in a democracy?",
-                options: ["Cooking food", "Playing games", "Promoting a candidate", "Singing songs"],
-                correctAnswer: "Promoting a candidate",
-                explanation: "Demokrasideki bir 'campaign' (kampanya), bir adayı tanıtmaktır."
-            },
-            {
-                question: "Which drink is healthy for breakfast?",
-                options: ["Soda", "Coffee", "Tea", "Juice"],
-                correctAnswer: "Juice",
-                explanation: "'Juice' (meyve suyu) sağlıklı bir kahvaltı içeceği olabilir."
-            },
-            {
-                question: "What is a place to relax in a city?",
-                options: ["School", "Hospital", "Market", "Park"],
-                correctAnswer: "Park",
-                explanation: "Bir şehirde rahatlamak için bir 'park'a gidebilirsiniz."
-            },
-            {
-                question: "What do you say to describe a cloudy day?",
-                options: ["It’s sunny", "It’s rainy", "It’s cloudy", "It’s snowy"],
-                correctAnswer: "It’s cloudy",
-                explanation: "Bulutlu bir günü 'It’s cloudy' (Hava bulutlu) diye tarif edersiniz."
-            },
-            {
-                question: "What is a 'rule'?",
-                options: ["Something you eat", "Something you wear", "Something you must follow", "Something you read"],
-                correctAnswer: "Something you must follow",
-                explanation: "'Rule' (kural), uyulması gereken bir şeydir."
-            },
-            {
-                question: "What do you do to stay fit?",
-                options: ["Watch TV", "Eat candy", "Sleep", "Exercise"],
-                correctAnswer: "Exercise",
-                explanation: "Formda kalmak ('stay fit') için egzersiz yaparsınız."
-            },
-            {
-                question: "What is a 'neighbor'?",
-                options: ["Person at school", "Person at work", "Person in family", "Person nearby"],
-                correctAnswer: "Person nearby",
-                explanation: "'Neighbor' (komşu), yakınınızda yaşayan kişidir."
-            },
-            {
-                question: "What do you say to invite someone?",
-                options: ["I’m busy", "Go away", "See you later", "Come to my party"],
-                correctAnswer: "Come to my party",
-                explanation: "Birini davet etmek için 'Come to my party' (Partime gel) diyebilirsiniz."
-            },
-            {
-                question: "What is a 'museum'?",
-                options: ["Place to sleep", "Place to eat", "Place to play", "Place to see history"],
-                correctAnswer: "Place to see history",
-                explanation: "'Museum' (müze), tarihi görmek için bir yerdir."
-            },
-            {
-                question: "What do you use for a hobby like painting?",
-                options: ["Spoon", "Shoe", "Ball", "Brush"],
-                correctAnswer: "Brush",
-                explanation: "Resim yapma hobisi için 'brush' (fırça) kullanılır."
-            },
-            {
-                question: "What is a 'schedule'?",
-                options: ["Type of food", "Kind of game", "Piece of clothing", "Plan for the day"],
-                correctAnswer: "Plan for the day",
-                explanation: "'Schedule' (program), gün için yapılan bir plandır."
-            },
-            {
-                question: "What do you say to ask for help?",
-                options: ["Go away!", "I’m fine!", "No way!", "Can you help me?"],
-                correctAnswer: "Can you help me?",
-                explanation: "Yardım istemek için kibarca 'Can you help me?' (Bana yardım edebilir misin?) denir."
-            },
-            {
-                question: "What is a 'tourist'?",
-                options: ["Person who cooks", "Person who teaches", "Person who sings", "Person who travels"],
-                correctAnswer: "Person who travels",
-                explanation: "'Tourist' (turist), seyahat eden kişidir."
-            },
-            {
-                question: "What do you need for a city tour?",
-                options: ["Desk", "Fork", "Book", "Map"],
-                correctAnswer: "Map",
-                explanation: "Bir şehir turu için 'map' (harita) gereklidir."
-            },
-            {
-                question: "What do you do to protect animals?",
-                options: ["Throw trash", "Ignore them", "Feed them", "Run away"],
-                correctAnswer: "Feed them",
-                explanation: "Hayvanları korumak için onları besleyebilirsiniz ('feed them')."
-            },
-            {
-                question: "What do you say to describe a good friend?",
-                options: ["He is mean", "She is lazy", "They are kind", "He is shy"],
-                correctAnswer: "They are kind",
-                explanation: "İyi bir arkadaşı 'They are kind' (Onlar kibar) diye tarif edebilirsiniz."
-            },
-            {
-                question: "What is a 'scientist'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who does experiments", "Person who writes books"],
-                correctAnswer: "Person who does experiments",
-                explanation: "Bir bilim insanı ('scientist') deneyler yapar."
-            },
-            {
-                question: "What do you do to stay safe?",
-                options: ["Run in traffic", "Eat candy", "Sleep", "Follow rules"],
-                correctAnswer: "Follow rules",
-                explanation: "Güvende kalmak için kurallara uymanız ('follow rules') gerekir."
-            },
-            {
-                question: "What is a 'concert'?",
-                options: ["Place to sleep", "Place to eat", "Event with music", "Place to work"],
-                correctAnswer: "Event with music",
-                explanation: "'Concert' (konser), müzikli bir etkinliktir."
-            },
-            {
-                question: "What do you say to offer a suggestion?",
-                options: ["Go away!", "I’m fine!", "No way!", "Why don’t we try?"],
-                correctAnswer: "Why don’t we try?",
-                explanation: "Bir öneride bulunmak için 'Why don’t we try?' (Neden denemiyoruz?) diyebilirsiniz."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Study", "Work", "Sleep", "Win a prize"],
-                correctAnswer: "Win a prize",
-                explanation: "Panayırda 'win a prize' (ödül kazanmak) mümkündür."
-            },
-            {
-                question: "What is a 'chef'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who cooks", "Person who writes books"],
-                correctAnswer: "Person who cooks",
-                explanation: "Bir 'chef' (şef) profesyonel olarak yemek pişiren kişidir."
-            },
-            {
-                question: "What do you do to help the environment?",
-                options: ["Throw trash", "Eat candy", "Sleep", "Recycle"],
-                correctAnswer: "Recycle",
-                explanation: "Çevreye yardım etmek için 'recycle' (geri dönüşüm) yapmalısınız."
-            },
-            {
-                question: "What is a 'schedule' for a trip?",
-                options: ["Type of food", "Kind of game", "Piece of clothing", "Plan for travel"],
-                correctAnswer: "Plan for travel",
-                explanation: "Bir gezi programı, seyahat için bir plandır."
-            },
-            {
-                question: "What do you say to ask for directions?",
-                options: ["What’s your name?", "I’m tired", "Nice to meet you", "Where is the museum?"],
-                correctAnswer: "Where is the museum?",
-                explanation: "Yol tarifi sormak için 'Where is the...?' (...'nerede?) kalıbını kullanırsınız."
-            },
-            {
-                question: "What is a 'teacher'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who writes books", "Person who teaches"],
-                correctAnswer: "Person who teaches",
-                explanation: "'Teacher' (öğretmen) öğreten kişidir."
-            },
-            {
-                question: "What do you do to stay healthy?",
-                options: ["Watch TV", "Eat candy", "Sleep", "Eat vegetables"],
-                correctAnswer: "Eat vegetables",
-                explanation: "Sağlıklı kalmak için sebze yersiniz ('eat vegetables')."
-            },
-            {
-                question: "What is a 'zoo'?",
-                options: ["Place to sleep", "Place to eat", "Place to work", "Place to see animals"],
-                correctAnswer: "Place to see animals",
-                explanation: "'Zoo' (hayvanat bahçesi), hayvanları görmek için bir yerdir."
-            },
-            {
-                question: "What do you say to thank someone for help?",
-                options: ["Go away!", "I’m fine!", "No way!", "Thank you so much!"],
-                correctAnswer: "Thank you so much!",
-                explanation: "Yardım için teşekkür ederken 'Thank you so much!' (Çok teşekkür ederim!) dersiniz."
-            },
-            {
-                question: "What do you do at a picnic?",
-                options: ["Study", "Work", "Sleep", "Eat outdoors"],
-                correctAnswer: "Eat outdoors",
-                explanation: "Piknikte 'eat outdoors' (açık havada yemek yemek) aktivitesi yapılır."
-            },
-            {
-                question: "What is a 'pilot'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who writes books", "Person who flies planes"],
-                correctAnswer: "Person who flies planes",
-                explanation: "Bir 'pilot' uçakları uçurur."
-            },
-            {
-                question: "What do you do to save energy?",
-                options: ["Watch TV", "Eat candy", "Sleep", "Turn off lights"],
-                correctAnswer: "Turn off lights",
-                explanation: "Enerji tasarrufu için ışıkları kapatırsınız ('turn off lights')."
-            },
-            {
-                question: "What is a 'plan'?",
-                options: ["Something you eat", "Something you wear", "Something you read", "Something you organize"],
-                correctAnswer: "Something you organize",
-                explanation: "'Plan', organize ettiğiniz bir şeydir."
-            },
-            {
-                question: "What do you say to describe a fun activity?",
-                options: ["It’s boring", "It’s slow", "It’s bad", "It’s exciting"],
-                correctAnswer: "It’s exciting",
-                explanation: "Eğlenceli bir aktiviteyi 'It’s exciting' (Heyecan verici) diye tarif edebilirsiniz."
-            },
-            {
-                question: "What do you need for a festival?",
-                options: ["Toothpaste", "Schoolbag", "Laptop", "Costume"],
-                correctAnswer: "Costume",
-                explanation: "Bir festival için 'costume' (kostüm) gerekebilir."
-            },
-            {
-                question: "What is a 'musician'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who writes books", "Person who plays music"],
-                correctAnswer: "Person who plays music",
-                explanation: "Bir müzisyen ('musician') müzik çalar."
-            },
-            {
-                question: "What do you do to help a friend?",
-                options: ["Ignore them", "Run away", "Sleep", "Listen to them"],
-                correctAnswer: "Listen to them",
-                explanation: "Bir arkadaşa yardım etmek için onu dinlersiniz ('listen to them')."
-            },
-            {
-                question: "What is a 'library'?",
-                options: ["Place to sleep", "Place to eat", "Place to work", "Place to read books"],
-                correctAnswer: "Place to read books",
-                explanation: "'Library' (kütüphane), kitap okumak için bir yerdir."
-            },
-            {
-                question: "What do you say to ask for permission?",
-                options: ["Go away!", "I’m fine!", "No way!", "Can I join?"],
-                correctAnswer: "Can I join?",
-                explanation: "İzin istemek için 'Can I join?' (Katılabilir miyim?) diye sorabilirsiniz."
-            },
-            {
-                question: "What do you do at a beach?",
-                options: ["Study", "Work", "Sleep", "Build a sandcastle"],
-                correctAnswer: "Build a sandcastle",
-                explanation: "Plajda 'build a sandcastle' (kumdan kale yapmak) eğlenceli bir aktivitedir."
-            },
-            {
-                question: "What is a 'firefighter'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who puts out fires", "Person who writes books"],
-                correctAnswer: "Person who puts out fires",
-                explanation: "Bir itfaiyeci ('firefighter') yangınları söndürür."
-            },
-            {
-                question: "What do you do to stay clean?",
-                options: ["Watch TV", "Eat candy", "Sleep", "Wash your hands"],
-                correctAnswer: "Wash your hands",
-                explanation: "Temiz kalmak için ellerinizi yıkarsınız ('wash your hands')."
-            },
-            {
-                question: "What is a 'park'?",
-                options: ["Place to sleep", "Place to eat", "Place to work", "Place to relax"],
-                correctAnswer: "Place to relax",
-                explanation: "'Park', rahatlamak için bir yerdir."
-            },
-            {
-                question: "What do you say to congratulate a winner?",
-                options: ["Try again!", "I’m fine!", "No way!", "Great job!"],
-                correctAnswer: "Great job!",
-                explanation: "Bir kazananı tebrik etmek için 'Great job!' (Harika iş!) dersiniz."
-            },
-            {
-                question: "What do you do at a concert?",
-                options: ["Study", "Work", "Sleep", "Sing along"],
-                correctAnswer: "Sing along",
-                explanation: "Konserde şarkılara eşlik edersiniz ('sing along')."
-            },
-            {
-                question: "What is a 'nurse'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who writes books", "Person who helps doctors"],
-                correctAnswer: "Person who helps doctors",
-                explanation: "Bir hemşire ('nurse') doktorlara yardım eder."
-            },
-            {
-                question: "What do you do to save the planet?",
-                options: ["Throw trash", "Eat candy", "Sleep", "Plant trees"],
-                correctAnswer: "Plant trees",
-                explanation: "Gezegeni kurtarmak için ağaç dikersiniz ('plant trees')."
-            },
-            {
-                question: "What is a 'holiday'?",
-                options: ["Time to work", "Time to study", "Time to sleep", "Time to rest"],
-                correctAnswer: "Time to rest",
-                explanation: "'Holiday' (tatil), dinlenme zamanıdır."
-            },
-            {
-                question: "What do you say to suggest a movie?",
-                options: ["Go away!", "I’m fine!", "No way!", "Let’s watch it!"],
-                correctAnswer: "Let’s watch it!",
-                explanation: "Bir film önermek için 'Let’s watch it!' (Hadi izleyelim!) dersiniz."
-            },
-            {
-                question: "What do you do at a zoo?",
-                options: ["Study", "Work", "Sleep", "Watch animals"],
-                correctAnswer: "Watch animals",
-                explanation: "Hayvanat bahçesinde hayvanları izlersiniz ('watch animals')."
-            },
-            {
-                question: "What is a 'painter'?",
-                options: ["Person who sells food", "Person who builds houses", "Person who writes books", "Person who paints"],
-                correctAnswer: "Person who paints",
-                explanation: "Bir ressam ('painter') resim yapar."
-            },
-            {
-                question: "What do you say to describe a kind person?",
-                options: ["They are mean", "They are lazy", "They are shy", "They are friendly"],
-                correctAnswer: "They are friendly",
-                explanation: "Kibar bir kişiyi 'They are friendly' (Onlar arkadaş canlısı) diye tarif edebilirsiniz."
-            }
+    {
+        question: "A person who is excessively concerned with minor details and rules is _______.",
+        options: ["easy-going", "pedantic", "careless", "flexible"],
+        correctAnswer: "pedantic",
+        explanation: "Küçük ayrıntılar ve kurallar konusunda aşırı endişeli olan kişiye 'pedantic' (bilgiçlik taslayan, kılı kırk yaran) denir."
+    },
+    {
+        question: "The journalist was praised for her _______ investigation into the political scandal.",
+        options: ["superficial", "tenacious", "cursory", "brief"],
+        correctAnswer: "tenacious",
+        explanation: "Gazeteci, siyasi skandala yönelik 'tenacious' (inatçı, azimli) araştırmasıyla övüldü."
+    },
+    {
+        question: "The artist's work is characterized by its _______ beauty and simplicity.",
+        options: ["ostentatious", "ornate", "austere", "elaborate"],
+        correctAnswer: "austere",
+        explanation: "Sanatçının eseri, 'austere' (sade, yalın) güzelliği ve basitliği ile karakterize edilir."
+    },
+    {
+        question: "The _______ of the new policy are still unknown, but they are expected to be significant.",
+        options: ["ramifications", "origins", "causes", "beginnings"],
+        correctAnswer: "ramifications",
+        explanation: "Yeni politikanın 'ramifications' (dallanıp budaklanmaları, olası sonuçları) hala bilinmiyor, ancak önemli olması bekleniyor."
+    },
+    {
+        question: "He has a _______ for saying the wrong thing at the wrong time.",
+        options: ["talent", "knack", "skill", "inability"],
+        correctAnswer: "knack",
+        explanation: "Yanlış zamanda yanlış şeyi söyleme konusunda özel bir 'knack' (beceri, ustalık) i var (genellikle ironik anlamda kullanılır)."
+    },
+    {
+        question: "A person who is reserved and uncommunicative in speech is _______.",
+        options: ["talkative", "garrulous", "taciturn", "loquacious"],
+        correctAnswer: "taciturn",
+        explanation: "Konuşmasında çekingen ve iletişime kapalı olan kişiye 'taciturn' (suskun, ağzı sıkı) denir."
+    },
+    {
+        question: "The lawyer tried to _______ the witness's testimony by pointing out inconsistencies.",
+        options: ["corroborate", "support", "validate", "discredit"],
+        correctAnswer: "discredit",
+        explanation: "Avukat, tutarsızlıklara işaret ederek tanığın ifadesini 'discredit' (gözden düşürmek, itibarsızlaştırmak) etmeye çalıştı."
+    },
+    {
+        question: "The _______ of the two cultures resulted in a unique blend of traditions.",
+        options: ["separation", "assimilation", "division", "distinction"],
+        correctAnswer: "assimilation",
+        explanation: "İki kültürün 'assimilation' (asimilasyonu, benzeşmesi), eşsiz bir gelenek karışımıyla sonuçlandı."
+    },
+    {
+        question: "A situation that is strange and difficult to understand is _______.",
+        options: ["straightforward", "enigmatic", "clear", "simple"],
+        correctAnswer: "enigmatic",
+        explanation: "Anlaşılması garip ve zor olan bir duruma 'enigmatic' (esrarengiz, muammalı) denir."
+    },
+    {
+        question: "The _______ of the city's infrastructure is a top priority for the new mayor.",
+        options: ["neglect", "deterioration", "revitalization", "destruction"],
+        correctAnswer: "revitalization",
+        explanation: "Şehrin altyapısının 'revitalization' (yeniden canlandırılması), yeni belediye başkanı için en önemli önceliktir."
+    },
+    {
+        question: "A person who is hardworking and careful is _______.",
+        options: ["lazy", "assiduous", "negligent", "careless"],
+        correctAnswer: "assiduous",
+        explanation: "Çalışkan ve dikkatli olan kişiye 'assiduous' (gayretli, çalışkan) denir."
+    },
+    {
+        question: "The speech was full of _______, intended to praise the leader without sincerity.",
+        options: ["criticism", "adulation", "slander", "condemnation"],
+        correctAnswer: "adulation",
+        explanation: "Konuşma, lideri samimiyetsiz bir şekilde övmeyi amaçlayan 'adulation' (dalkavukluk, aşırı övgü) ile doluydu."
+    },
+    {
+        question: "The _______ of the problem was not immediately apparent.",
+        options: ["simplicity", "crux", "surface", "exterior"],
+        correctAnswer: "crux",
+        explanation: "Sorunun 'crux' (en önemli ve zor noktası), hemen belirgin değildi."
+    },
+    {
+        question: "A person who is quick to argue is _______.",
+        options: ["agreeable", "peaceful", "contentious", "placid"],
+        correctAnswer: "contentious",
+        explanation: "Tartışmaya çabuk giren kişiye 'contentious' (tartışmacı, kavgacı) denir."
+    },
+    {
+        question: "The evidence was _______; it was not relevant to the case.",
+        options: ["pertinent", "extraneous", "crucial", "essential"],
+        correctAnswer: "extraneous",
+        explanation: "Kanıtlar 'extraneous' (konu dışı, alakasız) idi; davayla ilgili değildi."
+    },
+    {
+        question: "The _______ of the ancient manuscript was a difficult task for the scholars.",
+        options: ["translation", "transcription", "creation", "destruction"],
+        correctAnswer: "transcription",
+        explanation: "Antik el yazmasının 'transcription' (kopyasını çıkarma, yazıya dökme), akademisyenler için zor bir görevdi."
+    },
+    {
+        question: "A _______ is a perfect example of a particular quality or type.",
+        options: ["failure", "flaw", "paragon", "defect"],
+        correctAnswer: "paragon",
+        explanation: "Belirli bir nitelik veya türün mükemmel bir örneğine 'paragon' (örnek, model) denir."
+    },
+    {
+        question: "The politician's _______ speech failed to win over the voters.",
+        options: ["inspiring", "impassioned", "insipid", "moving"],
+        correctAnswer: "insipid",
+        explanation: "Politikacının 'insipid' (yavan, sıkıcı) konuşması seçmenleri kazanamadı."
+    },
+    {
+        question: "A person who is self-indulgent and fond of luxury is _______.",
+        options: ["ascetic", "austere", "frugal", "hedonistic"],
+        correctAnswer: "hedonistic",
+        explanation: "Zevkine düşkün ve lüksü seven kişiye 'hedonistic' (hazcı) denir."
+    },
+    {
+        question: "The _______ of the new software was a significant improvement.",
+        options: ["advent", "decline", "cessation", "disappearance"],
+        correctAnswer: "advent",
+        explanation: "Yeni yazılımın 'advent' (gelişi, ortaya çıkışı), önemli bir gelişmeydi."
+    },
+    {
+        question: "A person who is known for their great wisdom is a _______.",
+        options: ["fool", "sage", "novice", "ignoramus"],
+        correctAnswer: "sage",
+        explanation: "Büyük bilgeliğiyle tanınan kişiye 'sage' (bilge, akil insan) denir."
+    },
+    {
+        question: "The company's _______ practices led to its eventual downfall.",
+        options: ["ethical", "fraudulent", "honest", "principled"],
+        correctAnswer: "fraudulent",
+        explanation: "Şirketin 'fraudulent' (hileli, sahtekar) uygulamaları, nihai çöküşüne yol açtı."
+    },
+    {
+        question: "The _______ of the two rivers creates a larger waterway.",
+        options: ["divergence", "confluence", "separation", "division"],
+        correctAnswer: "confluence",
+        explanation: "İki nehrin 'confluence' (birleşme yeri), daha büyük bir su yolu oluşturur."
+    },
+    {
+        question: "A person who is lively and cheerful is _______.",
+        options: ["somber", "morose", "ebullient", "melancholy"],
+        correctAnswer: "ebullient",
+        explanation: "Canlı ve neşeli olan kişiye 'ebullient' (coşkulu, neşeli) denir."
+    },
+    {
+        question: "The _______ evidence was enough to convict the defendant.",
+        options: ["scant", "irrefutable", "dubious", "inconclusive"],
+        correctAnswer: "irrefutable",
+        explanation: "'Irrefutable' (çürütülemez) kanıtlar, sanığı mahkum etmek için yeterliydi."
+    },
+    {
+        question: "A _______ is a short journey for pleasure.",
+        options: ["commute", "expedition", "jaunt", "pilgrimage"],
+        correctAnswer: "jaunt",
+        explanation: "Zevk için yapılan kısa bir yolculuğa 'jaunt' (kısa gezinti) denir."
+    },
+    {
+        question: "A person who is overly emotional and dramatic is _______.",
+        options: ["stoic", "phlegmatic", "histrionic", "calm"],
+        correctAnswer: "histrionic",
+        explanation: "Aşırı duygusal ve dramatik olan kişiye 'histrionic' (teatral, abartılı) denir."
+    },
+    {
+        question: "The _______ of the disease was traced back to a contaminated water source.",
+        options: ["outbreak", "cure", "prevention", "treatment"],
+        correctAnswer: "outbreak",
+        explanation: "Hastalığın 'outbreak' (patlak vermesi, salgını), kirlenmiş bir su kaynağına kadar takip edildi."
+    },
+    {
+        question: "A _______ is a false belief that is firmly held despite evidence to the contrary.",
+        options: ["fact", "truth", "delusion", "reality"],
+        correctAnswer: "delusion",
+        explanation: "Aksine kanıtlara rağmen sıkıca inanılan yanlış bir inanca 'delusion' (sanrı, hezeyan) denir."
+    },
+    {
+        question: "The politician was known for his _______ speeches, which often changed depending on the audience.",
+        options: ["consistent", "protean", "static", "unchanging"],
+        correctAnswer: "protean",
+        explanation: "Politikacı, dinleyiciye göre sık sık değişen 'protean' (değişken, çok yönlü) konuşmalarıyla tanınırdı."
+    },
+    {
+        question: "A person who is friendly and welcoming to strangers is _______.",
+        options: ["hostile", "suspicious", "hospitable", "unfriendly"],
+        correctAnswer: "hospitable",
+        explanation: "Yabancılara karşı arkadaş canlısı ve misafirperver olan kişiye 'hospitable' (misafirperver) denir."
+    },
+    {
+        question: "The _______ atmosphere of the old library was perfect for studying.",
+        options: ["chaotic", "serene", "noisy", "disruptive"],
+        correctAnswer: "serene",
+        explanation: "Eski kütüphanenin 'serene' (huzurlu, sakin) atmosferi ders çalışmak için mükemmeldi."
+    },
+    {
+        question: "A person who is quick-witted and clever in a playful way is _______.",
+        options: ["dull", "slow", "witless", "witty"],
+        correctAnswer: "witty",
+        explanation: "Hızlı düşünen ve şakacı bir şekilde zeki olan kişiye 'witty' (esprili, nüktedan) denir."
+    },
+    {
+        question: "The _______ of the situation was clear to everyone.",
+        options: ["ambiguity", "clarity", "complexity", "obscurity"],
+        correctAnswer: "clarity",
+        explanation: "Durumun 'clarity' (netliği, açıklığı) herkes için açıktı."
+    },
+    {
+        question: "A _______ is a person who has a strong desire for wealth and power.",
+        options: ["philanthropist", "ascetic", "magnate", "misanthrope"],
+        correctAnswer: "magnate",
+        explanation: "Servet ve güç için güçlü bir arzusu olan kişiye 'magnate' (çok zengin ve güçlü iş insanı) denir."
+    },
+    {
+        question: "The _______ of the evidence made it difficult to reach a conclusion.",
+        options: ["abundance", "paucity", "wealth", "surplus"],
+        correctAnswer: "paucity",
+        explanation: "Kanıtların 'paucity' (azlığı, kıtlığı), bir sonuca varmayı zorlaştırdı."
+    },
+    {
+        question: "A person who is stubbornly attached to a belief is _______.",
+        options: ["open-minded", "flexible", "dogmatic", "reasonable"],
+        correctAnswer: "dogmatic",
+        explanation: "Bir inanca inatla bağlı olan kişiye 'dogmatic' (dogmatik, değişmez fikirli) denir."
+    },
+    {
+        question: "The _______ beauty of the landscape left us speechless.",
+        options: ["mundane", "sublime", "ordinary", "ugly"],
+        correctAnswer: "sublime",
+        explanation: "Manzaranın 'sublime' (yüce, heybetli) güzelliği bizi suskun bıraktı."
+    },
+    {
+        question: "A _______ is a situation requiring a choice between equally undesirable alternatives.",
+        options: ["solution", "quandary", "certainty", "benefit"],
+        correctAnswer: "quandary",
+        explanation: "Eşit derecede istenmeyen alternatifler arasında bir seçim gerektiren duruma 'quandary' (çıkmaz, zor durum) denir."
+    },
+    {
+        question: "The author's _______ style is difficult to read but rewarding.",
+        options: ["simple", "lucid", "convoluted", "straightforward"],
+        correctAnswer: "convoluted",
+        explanation: "Yazarın 'convoluted' (karmaşık, dolambaçlı) tarzını okumak zor ama ödüllendirici."
+    },
+    {
+        question: "A person who is calm and dependable is _______.",
+        options: ["volatile", "erratic", "mercurial", "staid"],
+        correctAnswer: "staid",
+        explanation: "Sakin ve güvenilir olan kişiye 'staid' (ağırbaşlı, oturaklı) denir."
+    },
+    {
+        question: "The _______ of the argument was lost in all the shouting.",
+        options: ["nuance", "loudness", "anger", "simplicity"],
+        correctAnswer: "nuance",
+        explanation: "Tartışmanın 'nuance' (ince ayrımı, detayı), tüm bağrışmalar arasında kayboldu."
+    },
+    {
+        question: "A _______ is a feeling of great happiness and triumph.",
+        options: ["despair", "misery", "sorrow", "elation"],
+        correctAnswer: "elation",
+        explanation: "Büyük bir mutluluk ve zafer hissine 'elation' (büyük sevinç, coşku) denir."
+    },
+    {
+        question: "The politician was accused of _______ for using his position for personal gain.",
+        options: ["integrity", "honesty", "probity", "corruption"],
+        correctAnswer: "corruption",
+        explanation: "Politikacı, konumunu kişisel çıkar için kullandığı için 'corruption' (yolsuzluk) ile suçlandı."
+    },
+    {
+        question: "A person who is skilled at dealing with people in a sensitive way is _______.",
+        options: ["blunt", "abrasive", "diplomatic", "rude"],
+        correctAnswer: "diplomatic",
+        explanation: "İnsanlarla hassas bir şekilde başa çıkmada yetenekli olan kişiye 'diplomatic' (diplomatik) denir."
+    },
+    {
+        question: "The _______ of the ancient language is known only to a few scholars.",
+        options: ["vernacular", "lexicon", "slang", "jargon"],
+        correctAnswer: "lexicon",
+        explanation: "Antik dilin 'lexicon' (söz varlığı, kelime dağarcığı) sadece birkaç bilim adamı tarafından bilinmektedir."
+    },
+    {
+        question: "A _______ is a person who is cheerful and full of energy.",
+        options: ["lethargic", "apathetic", "vivacious", "listless"],
+        correctAnswer: "vivacious",
+        explanation: "Neşeli ve enerji dolu bir kişiye 'vivacious' (canlı, hayat dolu) denir."
+    },
+    {
+        question: "The _______ of his argument was that the new law was unfair.",
+        options: ["premise", "conclusion", "digression", "summary"],
+        correctAnswer: "premise",
+        explanation: "Argümanının 'premise' (dayanak noktası, öncülü), yeni yasanın adil olmadığıydı."
+    },
+    {
+        question: "A person who is willing to take risks is _______.",
+        options: ["cautious", "timid", "audacious", "hesitant"],
+        correctAnswer: "audacious",
+        explanation: "Risk almaya istekli olan kişiye 'audacious' (cüretkar, gözü pek) denir."
+    },
+    {
+        question: "The _______ nature of the problem made it difficult to solve.",
+        options: ["simple", "multifaceted", "straightforward", "clear"],
+        correctAnswer: "multifaceted",
+        explanation: "Sorunun 'multifaceted' (çok yönlü) doğası, onu çözmeyi zorlaştırdı."
+    },
+    {
+        question: "A _______ is a person who has a deep love for their country.",
+        options: ["traitor", "rebel", "patriot", "cynic"],
+        correctAnswer: "patriot",
+        explanation: "Ülkesine derin bir sevgi duyan kişiye 'patriot' (vatansever) denir."
+    },
+    {
+        question: "The _______ of the two companies will create a global giant.",
+        options: ["rivalry", "amalgamation", "split", "competition"],
+        correctAnswer: "amalgamation",
+        explanation: "İki şirketin 'amalgamation' (birleşmesi), küresel bir dev yaratacak."
+    },
+    {
+        question: "A person who is not easily convinced is _______.",
+        options: ["gullible", "credulous", "skeptical", "trusting"],
+        correctAnswer: "skeptical",
+        explanation: "Kolayca ikna olmayan kişiye 'skeptical' (şüpheci) denir."
+    },
+    {
+        question: "The _______ beauty of the aurora borealis is a sight to behold.",
+        options: ["mundane", "ethereal", "ordinary", "common"],
+        correctAnswer: "ethereal",
+        explanation: "Kuzey ışıklarının 'ethereal' (göksel, ruhani) güzelliği, görülmeye değer bir manzaradır."
+    },
+    {
+        question: "A _______ is a brief and witty saying.",
+        options: ["lecture", "sermon", "epigram", "novel"],
+        correctAnswer: "epigram",
+        explanation: "Kısa ve esprili bir söze 'epigram' (nükte, vecize) denir."
+    },
+    {
+        question: "A person who is deserving of blame is _______.",
+        options: ["innocent", "blameless", "culpable", "virtuous"],
+        correctAnswer: "culpable",
+        explanation: "Suçlanmayı hak eden kişiye 'culpable' (kusurlu, suçlu) denir."
+    },
+    {
+        question: "The _______ of the volcano was felt for miles around.",
+        options: ["tremor", "whisper", "breeze", "glow"],
+        correctAnswer: "tremor",
+        explanation: "Yanardağın 'tremor' (hafif sarsıntısı), kilometrelerce öteden hissedildi."
+    },
+    {
+        question: "A person who is excessively talkative is _______.",
+        options: ["taciturn", "reticent", "loquacious", "silent"],
+        correctAnswer: "loquacious",
+        explanation: "Aşırı konuşkan olan kişiye 'loquacious' (geveze, konuşkan) denir."
+    },
+    {
+        question: "The _______ of the old king was a time of peace and prosperity.",
+        options: ["tyranny", "reign", "rebellion", "anarchy"],
+        correctAnswer: "reign",
+        explanation: "Yaşlı kralın 'reign' (saltanatı, hükümdarlığı), bir barış ve refah zamanıydı."
+    },
+    {
+        question: "A _______ is a person who has a natural talent for something.",
+        options: ["klutz", "prodigy", "dunce", "amateur"],
+        correctAnswer: "prodigy",
+        explanation: "Bir şeye karşı doğal yeteneği olan kişiye, özellikle gençse, 'prodigy' (dâhi çocuk, harika) denir."
+    },
+    {
+        question: "The _______ details of the plan were worked out by the committee.",
+        options: ["general", "vague", "minute", "broad"],
+        correctAnswer: "minute",
+        explanation: "Planın 'minute' (çok küçük, ayrıntılı) detayları komite tarafından çalışıldı."
+    },
+    {
+        question: "A person who is showing a lack of respect is _______.",
+        options: ["deferential", "reverent", "insolent", "polite"],
+        correctAnswer: "insolent",
+        explanation: "Saygı eksikliği gösteren kişiye 'insolent' (küstah, saygısız) denir."
+    },
+    {
+        question: "The _______ of the problem was its sheer complexity.",
+        options: ["enormity", "simplicity", "smallness", "ease"],
+        correctAnswer: "enormity",
+        explanation: "Sorunun 'enormity' (büyüklüğü, vahameti), onun katıksız karmaşıklığıydı."
+    },
+    {
+        question: "A _______ is a person who avoids social interaction.",
+        options: ["socialite", "extrovert", "recluse", "gregarious person"],
+        correctAnswer: "recluse",
+        explanation: "Sosyal etkileşimden kaçınan kişiye 'recluse' (münzevi, toplumdan kaçan kimse) denir."
+    },
+    {
+        question: "The _______ of his speech was that we all need to work together.",
+        options:["gist", "detail", "digression", "footnote"],
+        correctAnswer: "gist",
+        explanation: "Konuşmasının 'gist' (ana fikri, özü), hepimizin birlikte çalışması gerektiğiydi."
+    },
+    {
+        question: "A person who is difficult to please is _______.",
+        options: ["easy-going", "fastidious", "agreeable", "flexible"],
+        correctAnswer: "fastidious",
+        explanation: "Memnun edilmesi zor olan kişiye 'fastidious' (titiz, zor beğenen) denir."
+    },
+    {
+        question: "The _______ of the new evidence changed the course of the trial.",
+        options: ["revelation", "concealment", "suppression", "denial"],
+        correctAnswer: "revelation",
+        explanation: "Yeni kanıtın 'revelation' (ortaya çıkması, ifşası), davanın seyrini değiştirdi."
+    },
+    {
+        question: "A _______ is a person who is hopeful about the future.",
+        options: ["cynic", "optimist", "pessimist", "skeptic"],
+        correctAnswer: "optimist",
+        explanation: "Gelecek hakkında umutlu olan kişiye 'optimist' (iyimser) denir."
+    },
+    {
+        question: "The company made a _______ decision to invest in new technology.",
+        options: ["rash", "prudent", "reckless", "hasty"],
+        correctAnswer: "prudent",
+        explanation: "Şirket, yeni teknolojiye yatırım yapmak için 'prudent' (ihtiyatlı, basiretli) bir karar verdi."
+    },
+    {
+        question: "A person who is known for their honesty and strong moral principles is _______.",
+        options: ["unscrupulous", "deceitful", "virtuous", "corrupt"],
+        correctAnswer: "virtuous",
+        explanation: "Dürüstlüğü ve güçlü ahlaki ilkeleriyle tanınan kişiye 'virtuous' (erdemli, faziletli) denir."
+    },
+    {
+        question: "The _______ of the two ideas created a new and exciting concept.",
+        options: ["juxtaposition", "separation", "contrast", "division"],
+        correctAnswer: "juxtaposition",
+        explanation: "İki fikrin 'juxtaposition' (yan yana konulması, karşılaştırılması), yeni ve heyecan verici bir konsept yarattı."
+    },
+    {
+        question: "A person who is calm and unemotional in the face of difficulty is _______.",
+        options: ["excitable", "passionate", "stoic", "emotional"],
+        correctAnswer: "stoic",
+        explanation: "Zorluk karşısında sakin ve duygusuz olan kişiye 'stoic' (metanetli, soğukkanlı) denir."
+    },
+    {
+        question: "The _______ of the rainforest is home to countless species.",
+        options: ["canopy", "desert", "tundra", "savanna"],
+        correctAnswer: "canopy",
+        explanation: "Yağmur ormanının 'canopy' (ağaç tepelerinden oluşan katman), sayısız türe ev sahipliği yapar."
+    },
+    {
+        question: "A person who is eager to fight is _______.",
+        options: ["pacific", "peaceful", "bellicose", "dovish"],
+        correctAnswer: "bellicose",
+        explanation: "Savaşmaya hevesli olan kişiye 'bellicose' (savaşkan, kavgacı) denir."
+    },
+    {
+        question: "The _______ nature of her comments made everyone uncomfortable.",
+        options: ["kind", "acerbic", "gentle", "complimentary"],
+        correctAnswer: "acerbic",
+        explanation: "Yorumlarının 'acerbic' (iğneleyici, acı) doğası herkesi rahatsız etti."
+    },
+    {
+        question: "A _______ is a list of books or articles on a particular subject.",
+        options: ["glossary", "index", "bibliography", "appendix"],
+        correctAnswer: "bibliography",
+        explanation: "Belirli bir konudaki kitap veya makalelerin listesine 'bibliography' (kaynakça) denir."
+    },
+    {
+        question: "A person who is shy and avoids social situations is a _______.",
+        options: ["gregarious", "convivial", "diffident", "extroverted"],
+        correctAnswer: "diffident",
+        explanation: "Utangaç olan ve sosyal durumlardan kaçınan kişiye 'diffident' (çekingen, kendine güvensiz) denir."
+    },
+    {
+        question: "The _______ of the evidence was overwhelming.",
+        options: ["paucity", "scarcity", "dearth", "preponderance"],
+        correctAnswer: "preponderance",
+        explanation: "Kanıtların 'preponderance' (ağır basması, üstünlüğü) eziciydi."
+    },
+    {
+        question: "A person who is clumsy and awkward is _______.",
+        options: ["adroit", "dexterous", "gauche", "graceful"],
+        correctAnswer: "gauche",
+        explanation: "Sakar ve beceriksiz olan kişiye 'gauche' (sakar, patavatsız) denir."
+    },
+    {
+        question: "The _______ of the situation was not lost on him.",
+        options: ["humor", "irony", "levity", "seriousness"],
+        correctAnswer: "irony",
+        explanation: "Durumun 'irony' (ince alay, ironi) si onun gözünden kaçmadı."
+    },
+    {
+        question: "A _______ is a person who is new to a subject or activity.",
+        options: ["veteran", "expert", "tyro", "professional"],
+        correctAnswer: "tyro",
+        explanation: "Bir konuya veya aktiviteye yeni başlayan kişiye 'tyro' (acemi, çaylak) denir."
+    },
+    {
+        question: "The politician's speech was dismissed as mere _______.",
+        options: ["veracity", "bombast", "sincerity", "truth"],
+        correctAnswer: "bombast",
+        explanation: "Politikacının konuşması, sadece 'bombast' (görkemli ve tumturaklı sözler) olarak reddedildi."
+    },
+    {
+        question: "A person who is sparing in their use of words is _______.",
+        options: ["verbose", "garrulous", "loquacious", "laconic"],
+        correctAnswer: "laconic",
+        explanation: "Kelimeleri idareli kullanan kişiye 'laconic' (az ve öz konuşan) denir."
+    },
+    {
+        question: "The _______ of the new discovery is still being debated.",
+        options: ["implications", "certainty", "simplicity", "clarity"],
+        correctAnswer: "implications",
+        explanation: "Yeni keşfin 'implications' (olası etkileri, sonuçları) hala tartışılıyor."
+    },
+    {
+        question: "A _______ is a person who has an optimistic nature.",
+        options: ["misanthrope", "cynic", "pessimist", "pollyanna"],
+        correctAnswer: "pollyanna",
+        explanation: "Aşırı iyimser bir yapıya sahip kişiye 'pollyanna' (polyanna, aşırı iyimser) denir."
+    },
+    {
+        question: "The problem was _______ by a lack of communication.",
+        options: ["alleviated", "eased", "exacerbated", "mitigated"],
+        correctAnswer: "exacerbated",
+        explanation: "Sorun, iletişim eksikliği nedeniyle 'exacerbated' (kötüleşti, şiddetlendi)."
+    },
+    {
+        question: "A person who is stubborn and unwilling to change is _______.",
+        options: ["flexible", "pliable", "obdurate", "compliant"],
+        correctAnswer: "obdurate",
+        explanation: "İnatçı ve değişime isteksiz olan kişiye 'obdurate' (inatçı, dik kafalı) denir."
+    },
+    {
+        question: "The _______ of the evidence pointed to his guilt.",
+        options: ["totality", "paucity", "absence", "lack"],
+        correctAnswer: "totality",
+        explanation: "Kanıtların 'totality' (bütünü, tamamı), onun suçluluğuna işaret ediyordu."
+    },
+    {
+        question: "A _______ is a short story with a moral lesson.",
+        options: ["fable", "epic", "novel", "biography"],
+        correctAnswer: "fable",
+        explanation: "Ahlaki bir ders içeren kısa hikayeye 'fable' (fabl, masal) denir."
+    },
+    {
+        question: "The _______ nature of his argument was not convincing.",
+        options: ["sound", "specious", "valid", "logical"],
+        correctAnswer: "specious",
+        explanation: "Argümanının 'specious' (görünüşte doğru ama aslında yanlış) doğası ikna edici değildi."
+    },
+    {
+        question: "A person who is dull and unoriginal is _______.",
+        options: ["creative", "imaginative", "inventive", "banal"],
+        correctAnswer: "banal",
+        explanation: "Sıkıcı ve özgün olmayan kişiye 'banal' (banal, sıradan) denir."
+    },
+    {
+        question: "The _______ of his knowledge on the subject was impressive.",
+        options: ["paucity", "breadth", "narrowness", "limitation"],
+        correctAnswer: "breadth",
+        explanation: "Konu hakkındaki bilgisinin 'breadth' (genişliği, kapsamı) etkileyiciydi."
+    },
+    {
+        question: "A _______ is a statement that seems contradictory but may be true.",
+        options: ["paradox", "certainty", "fact", "truism"],
+        correctAnswer: "paradox",
+        explanation: "Çelişkili görünen ama doğru olabilecek bir ifadeye 'paradox' (paradoks) denir."
+    },
+    {
+        question: "The _______ of the situation was not lost on the experienced detective.",
+        options: ["simplicity", "subtlety", "obviousness", "clarity"],
+        correctAnswer: "subtlety",
+        explanation: "Durumun 'subtlety' (inceliği, nüansı), deneyimli dedektifin gözünden kaçmadı."
+    },
+    {
+        question: "A person who is known for their honesty and fairness is _______.",
+        options: ["corrupt", "unscrupulous", "deceitful", "scrupulous"],
+        correctAnswer: "scrupulous",
+        explanation: "Dürüstlüğü ve adaletiyle tanınan kişiye 'scrupulous' (vicdanlı, dürüst) denir."
+    }
+    
+
+
 
         ]    },
 
@@ -5820,18 +6492,6 @@ const questionsByGrade = {
     
     {
         beginner: [
-            {
-                question: "What do you say to welcome someone?",
-                options: ["Goodbye", "Welcome!", "Sorry", "Thank you"],
-                correctAnswer: "Welcome!",
-                explanation: "Birini karşılarken 'Welcome!' (Hoş geldin!) denir."
-            },
-            {
-                question: "What is a place to see animals?",
-                options: ["Library", "Zoo", "Market", "School"],
-                correctAnswer: "Zoo",
-                explanation: "'Zoo' (hayvanat bahçesi), hayvanları görebileceğiniz bir yerdir."
-            },
 
     {
         question: "A person who is friendly and enjoys being with other people is _______.",
@@ -6291,976 +6951,548 @@ const questionsByGrade = {
         correctAnswer: "cake",
         explanation: "Düğün partilerinde gelin ve damat 'cake' (pasta) keser."
     },
-{
-                question: "What is the opposite of 'new'?",
-                options: ["Old", "Big", "Fast", "Tall"],
-                correctAnswer: "Old",
-                explanation: "'New' (yeni) kelimesinin zıttı 'old' (eski) kelimesidir."
-            },
-            {
-                question: "What do you eat for lunch?",
-                options: ["Pasta", "Notebook", "Pencil", "Shoe"],
-                correctAnswer: "Pasta",
-                explanation: "Öğle yemeğinde 'pasta' (makarna) yenebilir."
-            },
-            {
-                question: "What is a type of weather?",
-                options: ["Cloudy", "Car", "Book", "Desk"],
-                correctAnswer: "Cloudy",
-                explanation: "'Cloudy' (bulutlu), bir hava durumu türüdür."
-            },
-            {
-                question: "What do you wear in cold weather?",
-                options: ["Swimsuit", "T-shirt", "Coat", "Shorts"],
-                correctAnswer: "Coat",
-                explanation: "Soğuk havada sıcak tutması için 'coat' (palto/mont) giyilir."
-            },
-            {
-                question: "What is a place to exercise?",
-                options: ["Kitchen", "Gym", "Bedroom", "Bathroom"],
-                correctAnswer: "Gym",
-                explanation: "'Gym' (spor salonu), egzersiz yapılan bir yerdir."
-            },
-            {
-                question: "What do you use to call someone?",
-                options: ["Spoon", "Phone", "Ball", "Pen"],
-                correctAnswer: "Phone",
-                explanation: "Birini aramak için 'phone' (telefon) kullanılır."
-            },
-            {
-                question: "What is a type of fruit?",
-                options: ["Apple", "Car", "Book", "Shoe"],
-                correctAnswer: "Apple",
-                explanation: "'Apple' (elma) bir meyve türüdür."
-            },
-            {
-                question: "What do you do in a classroom?",
-                options: ["Cook", "Study", "Sleep", "Play"],
-                correctAnswer: "Study",
-                explanation: "Sınıfta ('classroom') ders çalışılır ('study')."
-            },
-            {
-                question: "What is the opposite of 'high'?",
-                options: ["Low", "Fast", "Big", "Tall"],
-                correctAnswer: "Low",
-                explanation: "'High' (yüksek) kelimesinin zıttı 'low' (alçak) kelimesidir."
-            },
-            {
-                question: "What do you drink after sports?",
-                options: ["Water", "Soda", "Ice cream", "Soup"],
-                correctAnswer: "Water",
-                explanation: "Spor yaptıktan sonra vücudun su ihtiyacını karşılamak için 'water' (su) içilir."
-            },
-            {
-                question: "What is a place to read books?",
-                options: ["Library", "Park", "Kitchen", "Zoo"],
-                correctAnswer: "Library",
-                explanation: "Kitap okumak için en uygun yer 'library' (kütüphane)dir."
-            },
-            {
-                question: "What do you wear on your head?",
-                options: ["Shoes", "Hat", "Gloves", "Jacket"],
-                correctAnswer: "Hat",
-                explanation: "Başımıza 'hat' (şapka) takarız."
-            },
-            {
-                question: "What is a type of vegetable?",
-                options: ["Carrot", "Book", "Pen", "Shoe"],
-                correctAnswer: "Carrot",
-                explanation: "'Carrot' (havuç) bir sebze türüdür."
-            },
-            {
-                question: "What do you do at a playground?",
-                options: ["Cook", "Play", "Study", "Sleep"],
-                correctAnswer: "Play",
-                explanation: "Oyun parkında ('playground') oyun oynanır ('play')."
-            },
-            {
-                question: "What is the opposite of 'open'?",
-                options: ["Close", "Big", "Fast", "Tall"],
-                correctAnswer: "Close",
-                explanation: "'Open' (açık) kelimesinin zıttı 'close' (kapalı) kelimesidir."
-            },
-            {
-                question: "What do you eat for dinner?",
-                options: ["Chicken", "Book", "Pen", "Shoe"],
-                correctAnswer: "Chicken",
-                explanation: "Akşam yemeğinde 'chicken' (tavuk) yenebilir."
-            },
-            {
-                question: "What is a place to watch sports?",
-                options: ["Stadium", "School", "Kitchen", "Library"],
-                correctAnswer: "Stadium",
-                explanation: "'Stadium' (stadyum), spor müsabakalarını izlemek için bir yerdir."
-            },
-            {
-                question: "What do you use to draw?",
-                options: ["Spoon", "Pencil", "Ball", "Shoe"],
-                correctAnswer: "Pencil",
-                explanation: "Çizim yapmak için 'pencil' (kalem) kullanılır."
-            },
-            {
-                question: "What is a type of animal?",
-                options: ["Lion", "Book", "Car", "Tree"],
-                correctAnswer: "Lion",
-                explanation: "'Lion' (aslan) bir hayvan türüdür."
-            },
-            {
-                question: "What do you do at a birthday party?",
-                options: ["Work", "Celebrate", "Study", "Sleep"],
-                correctAnswer: "Celebrate",
-                explanation: "Doğum günü partisinde kutlama yapılır ('celebrate')."
-            },
-            {
-                question: "What is the opposite of 'big'?",
-                options: ["Small", "Fast", "High", "Long"],
-                correctAnswer: "Small",
-                explanation: "'Big' (büyük) kelimesinin zıttı 'small' (küçük) kelimesidir."
-            },
-            {
-                question: "What do you drink in the morning?",
-                options: ["Juice", "Soda", "Ice cream", "Soup"],
-                correctAnswer: "Juice",
-                explanation: "Sabahları 'juice' (meyve suyu) içilebilir."
-            },
-            {
-                question: "What is a place to swim?",
-                options: ["Pool", "Library", "Market", "School"],
-                correctAnswer: "Pool",
-                explanation: "Yüzmek için 'pool' (havuz) kullanılır."
-            },
-            {
-                question: "What do you wear in summer?",
-                options: ["Coat", "T-shirt", "Gloves", "Jacket"],
-                correctAnswer: "T-shirt",
-                explanation: "Yazın 'T-shirt' (tişört) gibi hafif kıyafetler giyilir."
-            },
-            {
-                question: "What is a type of sport?",
-                options: ["Soccer", "Book", "Car", "Tree"],
-                correctAnswer: "Soccer",
-                explanation: "'Soccer' (futbol) bir spor türüdür."
-            },
-            {
-                question: "What do you do after school?",
-                options: ["Work", "Do homework", "Cook", "Sleep"],
-                correctAnswer: "Do homework",
-                explanation: "Okuldan sonra genellikle ödev yapılır ('do homework')."
-            },
-            {
-                question: "What is the opposite of 'clean'?",
-                options: ["Dirty", "Big", "Fast", "Tall"],
-                correctAnswer: "Dirty",
-                explanation: "'Clean' (temiz) kelimesinin zıttı 'dirty' (kirli) kelimesidir."
-            },
-            {
-                question: "What do you eat for breakfast?",
-                options: ["Bread", "Book", "Pen", "Shoe"],
-                correctAnswer: "Bread",
-                explanation: "Kahvaltıda 'bread' (ekmek) yaygın bir yiyecektir."
-            },
-            {
-                question: "What is a place to buy clothes?",
-                options: ["Store", "Zoo", "Park", "Kitchen"],
-                correctAnswer: "Store",
-                explanation: "Kıyafet almak için 'store' (mağaza) gibi yerlere gidilir."
-            },
-            {
-                question: "What do you use to write?",
-                options: ["Spoon", "Pen", "Ball", "Shoe"],
-                correctAnswer: "Pen",
-                explanation: "Yazı yazmak için 'pen' (kalem) kullanılır."
-            },
-            {
-                question: "What is a type of flower?",
-                options: ["Rose", "Book", "Car", "Tree"],
-                correctAnswer: "Rose",
-                explanation: "'Rose' (gül) bir çiçek türüdür."
-            },
-            {
-                question: "What do you do at a park?",
-                options: ["Cook", "Run", "Study", "Sleep"],
-                correctAnswer: "Run",
-                explanation: "Parkta 'run' (koşmak) gibi spor aktiviteleri yapılabilir."
-            },
-            {
-                question: "What is the opposite of 'hot'?",
-                options: ["Cold", "Big", "Fast", "Tall"],
-                correctAnswer: "Cold",
-                explanation: "'Hot' (sıcak) kelimesinin zıttı 'cold' (soğuk) kelimesidir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Chips", "Book", "Pen", "Shoe"],
-                correctAnswer: "Chips",
-                explanation: "Atıştırmalık olarak 'chips' (cips) yenebilir."
-            },
-            {
-                question: "What is a place to eat?",
-                options: ["Kitchen", "Library", "Zoo", "School"],
-                correctAnswer: "Kitchen",
-                explanation: "'Kitchen' (mutfak), evde yemek yenilen bir yerdir."
-            },
-            {
-                question: "What do you wear on your feet?",
-                options: ["Hat", "Shoes", "Gloves", "Jacket"],
-                correctAnswer: "Shoes",
-                explanation: "Ayaklarımıza 'shoes' (ayakkabı) giyeriz."
-            },
-            {
-                question: "What is a type of bird?",
-                options: ["Eagle", "Book", "Car", "Tree"],
-                correctAnswer: "Eagle",
-                explanation: "'Eagle' (kartal) bir kuş türüdür."
-            },
-            {
-                question: "What do you do at a festival?",
-                options: ["Work", "Dance", "Study", "Sleep"],
-                correctAnswer: "Dance",
-                explanation: "Festivallerde 'dance' (dans etmek) yaygın bir aktivitedir."
-            },
-            {
-                question: "What describes a person's hair?",
-                options: ["Tall", "Curly", "Fast", "Kind"],
-                correctAnswer: "Curly",
-                explanation: "'Curly' (kıvırcık), saç tipini tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport played with a ball?",
-                options: ["Swimming", "Basketball", "Running", "Skiing"],
-                correctAnswer: "Basketball",
-                explanation: "'Basketball' (basketbol) topla oynanan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'tall'?",
-                options: ["Long", "Big", "Short", "Wide"],
-                correctAnswer: "Short",
-                explanation: "'Tall' (uzun boylu) kelimesinin zıttı 'short' (kısa boylu) kelimesidir."
-            },
-            {
-                question: "What do you call a friendly person?",
-                options: ["Mean", "Kind", "Shy", "Lazy"],
-                correctAnswer: "Kind",
-                explanation: "Arkadaş canlısı bir kişiye 'kind' (nazik, kibar) denir."
-            },
-            {
-                question: "What is a place to exercise?",
-                options: ["Kitchen", "Gym", "Bedroom", "Bathroom"],
-                correctAnswer: "Gym",
-                explanation: "'Gym' (spor salonu), egzersiz yapılan bir yerdir."
-            },
-            {
-                question: "What do you use to write?",
-                options: ["Spoon", "Pen", "Shoe", "Ball"],
-                correctAnswer: "Pen",
-                explanation: "Yazı yazmak için 'pen' (kalem) kullanılır."
-            },
-            {
-                question: "What is the opposite of 'happy'?",
-                options: ["Sad", "Big", "Fast", "Tall"],
-                correctAnswer: "Sad",
-                explanation: "'Happy' (mutlu) kelimesinin zıttı 'sad' (üzgün) kelimesidir."
-            },
-            {
-                question: "What is a 'scientist'?",
-                options: ["Person who cooks", "Person who experiments", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who experiments",
-                explanation: "'Scientist' (bilim insanı), deneyler yapan kişidir."
-            },
-            {
-                question: "What do you do to save the planet?",
-                options: ["Throw trash", "Recycle", "Eat candy", "Sleep"],
-                correctAnswer: "Recycle",
-                explanation: "Gezegeni korumak için 'recycle' (geri dönüşüm yapmak) önemlidir."
-            },
-            {
-                question: "What is a 'dream'?",
-                options: ["Something you eat", "Something you wish for", "Something you wear", "Something you read"],
-                correctAnswer: "Something you wish for",
-                explanation: "'Dream' (hayal/rüya), dilediğiniz bir şeydir."
-            },
-            {
-                question: "What describes a person's eyes?",
-                options: ["Blue", "Tall", "Fast", "Kind"],
-                correctAnswer: "Blue",
-                explanation: "'Blue' (mavi), göz rengini tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport with a racket?",
-                options: ["Football", "Tennis", "Swimming", "Cycling"],
-                correctAnswer: "Tennis",
-                explanation: "'Tennis' (tenis), raketle oynanan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'big'?",
-                options: ["Small", "Tall", "Long", "Wide"],
-                correctAnswer: "Small",
-                explanation: "'Big' (büyük) kelimesinin zıttı 'small' (küçük) kelimesidir."
-            },
-            {
-                question: "What do you call a helpful person?",
-                options: ["Lazy", "Helpful", "Mean", "Shy"],
-                correctAnswer: "Helpful",
-                explanation: "Yardımsever bir kişiye 'helpful' denir."
-            },
-            {
-                question: "What is a place to read books?",
-                options: ["Mall", "Library", "Park", "Kitchen"],
-                correctAnswer: "Library",
-                explanation: "Kitap okumak için 'library' (kütüphane) ideal bir yerdir."
-            },
-            {
-                question: "What do you eat for lunch?",
-                options: ["Pen", "Soup", "Book", "Shoe"],
-                correctAnswer: "Soup",
-                explanation: "Öğle yemeğinde 'soup' (çorba) yenebilir."
-            },
-            {
-                question: "What is the opposite of 'fast'?",
-                options: ["Quick", "Slow", "High", "Low"],
-                correctAnswer: "Slow",
-                explanation: "'Fast' (hızlı) kelimesinin zıttı 'slow' (yavaş) kelimesidir."
-            },
-            {
-                question: "What is a 'computer'?",
-                options: ["Food", "Toy", "Technology", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Computer' (bilgisayar) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do with plastic bottles?",
-                options: ["Eat", "Recycle", "Wear", "Read"],
-                correctAnswer: "Recycle",
-                explanation: "Plastik şişeleri geri dönüştürmek ('recycle') çevre için iyidir."
-            },
-            {
-                question: "What is a 'firefighter'?",
-                options: ["Person who cooks", "Person who puts out fires", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who puts out fires",
-                explanation: "'Firefighter' (itfaiyeci), yangınları söndüren kişidir."
-            },
-            {
-                question: "What describes a person's height?",
-                options: ["Tall", "Funny", "Smart", "Kind"],
-                correctAnswer: "Tall",
-                explanation: "'Tall' (uzun), bir kişinin boyunu tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport in water?",
-                options: ["Football", "Swimming", "Basketball", "Tennis"],
-                correctAnswer: "Swimming",
-                explanation: "'Swimming' (yüzme) suda yapılan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'hot'?",
-                options: ["Cold", "Warm", "Dry", "Wet"],
-                correctAnswer: "Cold",
-                explanation: "'Hot' (sıcak) kelimesinin zıttı 'cold' (soğuk) kelimesidir."
-            },
-            {
-                question: "What do you call a funny person?",
-                options: ["Serious", "Funny", "Shy", "Mean"],
-                correctAnswer: "Funny",
-                explanation: "Komik bir kişiye 'funny' denir."
-            },
-            {
-                question: "What is a place to shop?",
-                options: ["Park", "Mall", "School", "Hospital"],
-                correctAnswer: "Mall",
-                explanation: "'Mall' (AVM), alışveriş yapmak için gidilen bir yerdir."
-            },
-            {
-                question: "What do you drink?",
-                options: ["Book", "Water", "Ball", "Pen"],
-                correctAnswer: "Water",
-                explanation: "Seçenekler arasında sadece 'water' (su) içilebilir."
-            },
-            {
-                question: "What is the opposite of 'up'?",
-                options: ["Left", "Down", "Right", "In"],
-                correctAnswer: "Down",
-                explanation: "'Up' (yukarı) kelimesinin zıttı 'down' (aşağı) kelimesidir."
-            },
-            {
-                question: "What is a 'phone'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Phone' (telefon) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do to save water?",
-                options: ["Drink soda", "Turn off the tap", "Eat candy", "Watch TV"],
-                correctAnswer: "Turn off the tap",
-                explanation: "Suyu korumak için musluğu kapatmak ('turn off the tap') gerekir."
-            },
-            {
-                question: "What is a 'police officer'?",
-                options: ["Person who cooks", "Person who keeps people safe", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who keeps people safe",
-                explanation: "'Police officer' (polis memuru), insanları güvende tutan kişidir."
-            },
-            {
-                question: "What describes a person's weight?",
-                options: ["Slim", "Funny", "Smart", "Kind"],
-                correctAnswer: "Slim",
-                explanation: "'Slim' (zayıf), bir kişinin kilosunu tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport on a bike?",
-                options: ["Cycling", "Swimming", "Football", "Tennis"],
-                correctAnswer: "Cycling",
-                explanation: "'Cycling' (bisiklet sürme) bisikletle yapılan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'long'?",
-                options: ["Big", "Short", "Tall", "Wide"],
-                correctAnswer: "Short",
-                explanation: "'Long' (uzun) kelimesinin zıttı 'short' (kısa) kelimesidir."
-            },
-            {
-                question: "What do you call a smart person?",
-                options: ["Lazy", "Mean", "Clever", "Shy"],
-                correctAnswer: "Clever",
-                explanation: "Zeki bir kişiye 'clever' denir."
-            },
-            {
-                question: "What is a place to watch movies?",
-                options: ["Cinema", "Park", "School", "Kitchen"],
-                correctAnswer: "Cinema",
-                explanation: "'Cinema' (sinema), film izlenen bir yerdir."
-            },
-            {
-                question: "What do you eat for breakfast?",
-                options: ["Pen", "Eggs", "Book", "Shoe"],
-                correctAnswer: "Eggs",
-                explanation: "Kahvaltıda 'eggs' (yumurta) yenebilir."
-            },
-            {
-                question: "What is the opposite of 'loud'?",
-                options: ["Noisy", "Quiet", "Big", "Small"],
-                correctAnswer: "Quiet",
-                explanation: "'Loud' (yüksek sesli) kelimesinin zıttı 'quiet' (sessiz) kelimesidir."
-            },
-            {
-                question: "What is a 'robot'?",
-                options: ["Food", "Toy", "Technology", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Robot' bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do with paper?",
-                options: ["Eat", "Recycle", "Wear", "Read"],
-                correctAnswer: "Recycle",
-                explanation: "Kağıtları geri dönüştürmek ('recycle') çevre için önemlidir."
-            },
-            {
-                question: "What is a 'doctor'?",
-                options: ["Person who cooks", "Person who helps sick people", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who helps sick people",
-                explanation: "'Doctor' (doktor), hasta insanlara yardım eden kişidir."
-            },
-            {
-                question: "What describes a person's personality?",
-                options: ["Tall", "Friendly", "Slim", "Curly"],
-                correctAnswer: "Friendly",
-                explanation: "'Friendly' (arkadaş canlısı), bir kişinin kişiliğini tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport with a net?",
-                options: ["Football", "Volleyball", "Swimming", "Cycling"],
-                correctAnswer: "Volleyball",
-                explanation: "'Volleyball' (voleybol) file ile oynanan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'wet'?",
-                options: ["Dry", "Cold", "Hot", "Big"],
-                correctAnswer: "Dry",
-                explanation: "'Wet' (ıslak) kelimesinin zıttı 'dry' (kuru) kelimesidir."
-            },
-            {
-                question: "What do you call a shy person?",
-                options: ["Talkative", "Shy", "Mean", "Funny"],
-                correctAnswer: "Shy",
-                explanation: "Utangaç bir kişiye 'shy' denir."
-            },
-            {
-                question: "What is a place to play?",
-                options: ["Kitchen", "Bedroom", "Playground", "Bathroom"],
-                correctAnswer: "Playground",
-                explanation: "'Playground' (oyun parkı), oyun oynamak için bir yerdir."
-            },
-            {
-                question: "What do you eat for dinner?",
-                options: ["Pen", "Rice", "Book", "Shoe"],
-                correctAnswer: "Rice",
-                explanation: "Akşam yemeğinde 'rice' (pilav) yenebilir."
-            },
-            {
-                question: "What is the opposite of 'heavy'?",
-                options: ["Light", "Big", "Tall", "Long"],
-                correctAnswer: "Light",
-                explanation: "'Heavy' (ağır) kelimesinin zıttı 'light' (hafif) kelimesidir."
-            },
-            {
-                question: "What is a 'tablet'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Tablet' bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do to save energy?",
-                options: ["Watch TV", "Turn off lights", "Eat candy", "Sleep"],
-                correctAnswer: "Turn off lights",
-                explanation: "Enerji tasarrufu için ışıkları kapatmak ('turn off lights') gerekir."
-            },
-            {
-                question: "What is a 'nurse'?",
-                options: ["Person who cooks", "Person who helps doctors", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who helps doctors",
-                explanation: "'Nurse' (hemşire), doktorlara yardım eden kişidir."
-            },
-            {
-                question: "What describes a person's clothes?",
-                options: ["Smart", "Tall", "Slim", "Curly"],
-                correctAnswer: "Smart",
-                explanation: "'Smart' (şık), bir kişinin kıyafetlerini tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport in the mountains?",
-                options: ["Swimming", "Skiing", "Football", "Tennis"],
-                correctAnswer: "Skiing",
-                explanation: "'Skiing' (kayak), dağlarda yapılan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'near'?",
-                options: ["Close", "Far", "Next to", "Behind"],
-                correctAnswer: "Far",
-                explanation: "'Near' (yakın) kelimesinin zıttı 'far' (uzak) kelimesidir."
-            },
-            {
-                question: "What do you call a lazy person?",
-                options: ["Active", "Lazy", "Kind", "Funny"],
-                correctAnswer: "Lazy",
-                explanation: "Tembel bir kişiye 'lazy' denir."
-            },
-            {
-                question: "What is a place to study?",
-                options: ["Kitchen", "School", "Park", "Mall"],
-                correctAnswer: "School",
-                explanation: "'School' (okul), ders çalışmak için bir yerdir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Pen", "Fruit", "Book", "Shoe"],
-                correctAnswer: "Fruit",
-                explanation: "Atıştırmalık olarak 'fruit' (meyve) sağlıklı bir seçenektir."
-            },
-            {
-                question: "What is the opposite of 'dark'?",
-                options: ["Light", "Heavy", "Big", "Small"],
-                correctAnswer: "Light",
-                explanation: "'Dark' (karanlık) kelimesinin zıttı 'light' (aydınlık) kelimesidir."
-            },
-            {
-                question: "What is a 'camera'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Camera' (kamera) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do with trash?",
-                options: ["Eat", "Recycle", "Wear", "Read"],
-                correctAnswer: "Recycle",
-                explanation: "Çöpleri geri dönüştürmek ('recycle') çevre için önemlidir."
-            },
-            {
-                question: "What is a 'teacher'?",
-                options: ["Person who cooks", "Person who teaches", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who teaches",
-                explanation: "'Teacher' (öğretmen), öğreten kişidir."
-            },
-            {
-                question: "What describes a person's face?",
-                options: ["Tall", "Slim", "Freckled", "Kind"],
-                correctAnswer: "Freckled",
-                explanation: "'Freckled' (çilli), bir kişinin yüzünü tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport with a team?",
-                options: ["Running", "Swimming", "Football", "Skiing"],
-                correctAnswer: "Football",
-                explanation: "'Football' (futbol) bir takım sporudur."
-            },
-            {
-                question: "What is the opposite of 'day'?",
-                options: ["Night", "Morning", "Evening", "Afternoon"],
-                correctAnswer: "Night",
-                explanation: "'Day' (gündüz) kelimesinin zıttı 'night' (gece) kelimesidir."
-            },
-            {
-                question: "What do you call a talkative person?",
-                options: ["Quiet", "Talkative", "Mean", "Shy"],
-                correctAnswer: "Talkative",
-                explanation: "Çok konuşan bir kişiye 'talkative' denir."
-            },
-            {
-                question: "What is a place to relax?",
-                options: ["Kitchen", "Park", "School", "Mall"],
-                correctAnswer: "Park",
-                explanation: "'Park', rahatlamak için gidilebilecek bir yerdir."
-            },
-            {
-                question: "What do you drink for breakfast?",
-                options: ["Pen", "Milk", "Book", "Shoe"],
-                correctAnswer: "Milk",
-                explanation: "Kahvaltıda 'milk' (süt) içilebilir."
-            },
-            {
-                question: "What is the opposite of 'old'?",
-                options: ["Young", "Big", "Tall", "Fast"],
-                correctAnswer: "Young",
-                explanation: "'Old' (yaşlı) kelimesinin zıttı 'young' (genç) kelimesidir."
-            },
-            {
-                question: "What is a 'laptop'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Laptop' (dizüstü bilgisayar) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do to help animals?",
-                options: ["Throw trash", "Feed them", "Eat candy", "Sleep"],
-                correctAnswer: "Feed them",
-                explanation: "Hayvanlara yardım etmek için onları besleyebilirsiniz ('feed them')."
-            },
-            {
-                question: "What is a 'student'?",
-                options: ["Person who cooks", "Person who learns", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who learns",
-                explanation: "'Student' (öğrenci), öğrenen kişidir."
-            },
-            {
-                question: "What describes a person's build?",
-                options: ["Tall", "Slim", "Funny", "Kind"],
-                correctAnswer: "Slim",
-                explanation: "'Slim' (zayıf), bir kişinin vücut yapısını tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport with a board?",
-                options: ["Football", "Skateboarding", "Swimming", "Tennis"],
-                correctAnswer: "Skateboarding",
-                explanation: "'Skateboarding' (kaykay), bir tahta ile yapılan spordur."
-            },
-            {
-                question: "What is the opposite of 'strong'?",
-                options: ["Weak", "Big", "Tall", "Fast"],
-                correctAnswer: "Weak",
-                explanation: "'Strong' (güçlü) kelimesinin zıttı 'weak' (güçsüz) kelimesidir."
-            },
-            {
-                question: "What do you call a generous person?",
-                options: ["Selfish", "Generous", "Mean", "Shy"],
-                correctAnswer: "Generous",
-                explanation: "Cömert bir kişiye 'generous' denir."
-            },
-            {
-                question: "What is a place to buy food?",
-                options: ["Market", "School", "Park", "Hospital"],
-                correctAnswer: "Market",
-                explanation: "'Market', yiyecek satın almak için bir yerdir."
-            },
-            {
-                question: "What do you eat with bread?",
-                options: ["Pen", "Butter", "Book", "Shoe"],
-                correctAnswer: "Butter",
-                explanation: "Ekmekle birlikte 'butter' (tereyağı) yenebilir."
-            },
-            {
-                question: "What is the opposite of 'easy'?",
-                options: ["Difficult", "Simple", "Big", "Small"],
-                correctAnswer: "Difficult",
-                explanation: "'Easy' (kolay) kelimesinin zıttı 'difficult' (zor) kelimesidir."
-            },
-            {
-                question: "What is a 'television'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Television' (televizyon) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do to save trees?",
-                options: ["Cut them", "Plant them", "Eat candy", "Sleep"],
-                correctAnswer: "Plant them",
-                explanation: "Ağaçları korumak için onları dikmelisiniz ('plant them')."
-            },
-            {
-                question: "What is a 'librarian'?",
-                options: ["Person who cooks", "Person who manages books", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who manages books",
-                explanation: "'Librarian' (kütüphaneci), kitapları yöneten kişidir."
-            },
-            {
-                question: "What describes a person's skin?",
-                options: ["Tall", "Fair", "Funny", "Kind"],
-                correctAnswer: "Fair",
-                explanation: "'Fair' (açık tenli), bir kişinin ten rengini tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport with a horse?",
-                options: ["Football", "Horse riding", "Swimming", "Tennis"],
-                correctAnswer: "Horse riding",
-                explanation: "'Horse riding' (binicilik), atla yapılan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'clean'?",
-                options: ["Dirty", "Big", "Tall", "Fast"],
-                correctAnswer: "Dirty",
-                explanation: "'Clean' (temiz) kelimesinin zıttı 'dirty' (kirli) kelimesidir."
-            },
-            {
-                question: "What do you call a cheerful person?",
-                options: ["Sad", "Cheerful", "Mean", "Shy"],
-                correctAnswer: "Cheerful",
-                explanation: "Neşeli bir kişiye 'cheerful' denir."
-            },
-            {
-                question: "What is a place to swim?",
-                options: ["Kitchen", "Pool", "School", "Mall"],
-                correctAnswer: "Pool",
-                explanation: "'Pool' (havuz), yüzmek için bir yerdir."
-            },
-            {
-                question: "What do you eat with cereal?",
-                options: ["Pen", "Milk", "Book", "Shoe"],
-                correctAnswer: "Milk",
-                explanation: "Gevrek ('cereal') genellikle sütle ('milk') yenir."
-            },
-            {
-                question: "What is the opposite of 'high'?",
-                options: ["Low", "Big", "Tall", "Fast"],
-                correctAnswer: "Low",
-                explanation: "'High' (yüksek) kelimesinin zıttı 'low' (alçak) kelimesidir."
-            },
-            {
-                question: "What is a 'printer'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Printer' (yazıcı) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do to help the environment?",
-                options: ["Throw trash", "Use less plastic", "Eat candy", "Sleep"],
-                correctAnswer: "Use less plastic",
-                explanation: "Çevreye yardım etmek için daha az plastik kullanmalısınız ('use less plastic')."
-            },
-            {
-                question: "What is a 'pilot'?",
-                options: ["Person who cooks", "Person who flies planes", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who flies planes",
-                explanation: "'Pilot', uçakları uçuran kişidir."
-            },
-            {
-                question: "What describes a person's age?",
-                options: ["Young", "Funny", "Smart", "Kind"],
-                correctAnswer: "Young",
-                explanation: "'Young' (genç), bir kişinin yaşını tanımlayan bir sıfattır."
-            },
-            {
-                question: "What is a sport with a bat?",
-                options: ["Baseball", "Swimming", "Football", "Tennis"],
-                correctAnswer: "Baseball",
-                explanation: "'Baseball' (beyzbol), sopayla ('bat') oynanan bir spordur."
-            },
-            {
-                question: "What is the opposite of 'full'?",
-                options: ["Empty", "Big", "Tall", "Fast"],
-                correctAnswer: "Empty",
-                explanation: "'Full' (dolu) kelimesinin zıttı 'empty' (boş) kelimesidir."
-            },
-            {
-                question: "What do you call a rude person?",
-                options: ["Polite", "Rude", "Kind", "Funny"],
-                correctAnswer: "Rude",
-                explanation: "Kaba bir kişiye 'rude' denir."
-            },
-            {
-                question: "What is a place to see animals?",
-                options: ["Kitchen", "Zoo", "School", "Mall"],
-                correctAnswer: "Zoo",
-                explanation: "'Zoo' (hayvanat bahçesi), hayvanları görmek için bir yerdir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Pen", "Yogurt", "Book", "Shoe"],
-                correctAnswer: "Yogurt",
-                explanation: "Atıştırmalık olarak 'yogurt' (yoğurt) yenebilir."
-            },
-            {
-                question: "What is the opposite of 'rich'?",
-                options: ["Poor", "Big", "Tall", "Fast"],
-                correctAnswer: "Poor",
-                explanation: "'Rich' (zengin) kelimesinin zıttı 'poor' (fakir) kelimesidir."
-            },
-            {
-                question: "What is a 'smartphone'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Smartphone' (akıllı telefon) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do to save animals?",
-                options: ["Throw trash", "Protect them", "Eat candy", "Sleep"],
-                correctAnswer: "Protect them",
-                explanation: "Hayvanları kurtarmak için onları korumalısınız ('protect them')."
-            },
-            {
-                question: "What is a 'vet'?",
-                options: ["Person who cooks", "Person who treats animals", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who treats animals",
-                explanation: "'Vet' (veteriner), hayvanları tedavi eden kişidir."
-            }
+    {
+        question: "What does an outgoing person like to do?",
+        options: ["Read alone", "Be with people", "Sleep", "Watch TV by themselves"],
+        correctAnswer: "Be with people",
+        explanation: "'Outgoing' (dışa dönük) bir kişi, insanlarla birlikte olmaktan hoşlanır."
+    },
+    {
+        question: "He _______ born in 1990.",
+        options: ["is", "was", "are", "were"],
+        correctAnswer: "was",
+        explanation: "Geçmişteki bir doğum tarihinden bahsederken 'was/were born' kalıbı kullanılır. 'He' öznesi için 'was' doğrudur."
+    },
+    {
+        question: "A _______ is a reptile that has no legs.",
+        options: ["lizard", "crocodile", "snake", "turtle"],
+        correctAnswer: "snake",
+        explanation: "'Snake' (yılan), bacakları olmayan bir sürüngendir."
+    },
+    {
+        question: "In which sport do players use a small, hard ball and a bat?",
+        options: ["Football", "Basketball", "Baseball", "Volleyball"],
+        correctAnswer: "Baseball",
+        explanation: "'Baseball' (beyzbol), küçük sert bir top ve sopa ile oynanır."
+    },
+    {
+        question: "A TV show with questions and answers to win prizes is a _______.",
+        options: ["sitcom", "documentary", "quiz show", "the news"],
+        correctAnswer: "quiz show",
+        explanation: "Ödül kazanmak için soruların ve cevapların olduğu bir TV programı 'quiz show' (bilgi yarışması) dır."
+    },
+    {
+        question: "What do you need to send to your friends for a party?",
+        options: ["Presents", "Decorations", "Invitations", "Beverages"],
+        correctAnswer: "Invitations",
+        explanation: "Arkadaşlarınızı bir partiye çağırmak için 'invitations' (davetiyeler) gönderirsiniz."
+    },
+    {
+        question: "What is the opposite of 'slim'?",
+        options: ["Thin", "Well-built", "Plump", "Tall"],
+        correctAnswer: "Plump",
+        explanation: "'Slim' (ince, zayıf) kelimesinin zıttı 'plump' (balık etli, tombul) olabilir."
+    },
+    {
+        question: "She _______ her first song when she was a teenager.",
+        options: ["writes", "is writing", "wrote", "write"],
+        correctAnswer: "wrote",
+        explanation: "Geçmişte tamamlanmış bir eylemi anlatırken fiilin ikinci hali (wrote) kullanılır."
+    },
+    {
+        question: "Which animal lives in the ocean and is very intelligent?",
+        options: ["A dolphin", "A shark", "A whale", "An octopus"],
+        correctAnswer: "A dolphin",
+        explanation: "'Dolphin' (yunus), okyanusta yaşayan ve çok zeki bir hayvandır."
+    },
+    {
+        question: "You need a _______ to play sports like ice hockey.",
+        options: ["ball", "racket", "puck", "bat"],
+        correctAnswer: "puck",
+        explanation: "Buz hokeyi gibi sporlarda top yerine 'puck' (disk) kullanılır."
+    },
+    {
+        question: "I prefer watching comedies _______ dramas.",
+        options: ["than", "from", "for", "to"],
+        correctAnswer: "to",
+        explanation: "Bir şeyi diğerine tercih ettiğinizi belirtirken 'prefer... to...' kalıbı kullanılır."
+    },
+    {
+        question: "A party where everyone wears costumes is a _______ party.",
+        options: ["birthday", "slumber", "fancy dress", "graduation"],
+        correctAnswer: "fancy dress",
+        explanation: "Herkesin kostüm giydiği partilere 'fancy dress party' (kostüm partisi) denir."
+    },
+    {
+        question: "A person who always tells the truth is _______.",
+        options: ["dishonest", "honest", "stubborn", "generous"],
+        correctAnswer: "honest",
+        explanation: "Her zaman doğruyu söyleyen kişiye 'honest' (dürüst) denir."
+    },
+    {
+        question: "Where _______ you yesterday afternoon?",
+        options: ["was", "are", "were", "is"],
+        correctAnswer: "were",
+        explanation: "'You' öznesi ile geçmiş zamanda soru sorarken 'were' kullanılır."
+    },
+    {
+        question: "Which animal is a large mammal with a long trunk?",
+        options: ["A hippo", "A rhino", "An elephant", "A giraffe"],
+        correctAnswer: "An elephant",
+        explanation: "'Elephant' (fil), uzun bir hortuma sahip büyük bir memelidir."
+    },
+    {
+        question: "In which sport do you wear gloves and try to hit another person?",
+        options: ["Karate", "Judo", "Boxing", "Wrestling"],
+        correctAnswer: "Boxing",
+        explanation: "Eldiven giyip başka bir kişiye vurmaya çalıştığınız spor 'boxing' (boks) dur."
+    },
+    {
+        question: "What do you call a funny TV series about a group of friends?",
+        options: ["A documentary", "The news", "A sitcom", "A talk show"],
+        correctAnswer: "A sitcom",
+        explanation: "Bir grup arkadaş hakkındaki komik TV dizilerine 'sitcom' (durum komedisi) denir."
+    },
+    {
+        question: "What do you give someone on their special day?",
+        options: ["A list", "A bill", "A present", "An excuse"],
+        correctAnswer: "A present",
+        explanation: "Birinin özel gününde ona 'present' (hediye) verirsiniz."
+    },
+    {
+        question: "What is the opposite of 'punctual'?",
+        options: ["Early", "On time", "Late", "Quick"],
+        correctAnswer: "Late",
+        explanation: "'Punctual' (dakik) kelimesinin zıttı 'late' (geç kalan) kelimesidir."
+    },
+    {
+        question: "He _______ from university last year.",
+        options: ["graduates", "is graduating", "graduated", "graduate"],
+        correctAnswer: "graduated",
+        explanation: "'Last year' (geçen yıl) ifadesi geçmiş zamanı belirttiği için fiilin ikinci hali kullanılır."
+    },
+    {
+        question: "A _______ is an animal that eats only plants.",
+        options: ["carnivore", "herbivore", "omnivore", "predator"],
+        correctAnswer: "herbivore",
+        explanation: "Sadece bitki yiyen hayvanlara 'herbivore' (otobur) denir."
+    },
+    {
+        question: "In which sport do you need a swimsuit?",
+        options: ["Cycling", "Running", "Swimming", "Skiing"],
+        correctAnswer: "Swimming",
+        explanation: "Yüzme ('swimming') sporu için mayoya ('swimsuit') ihtiyacınız vardır."
+    },
+    {
+        question: "What do you use to change channels on television?",
+        options: ["The screen", "The remote control", "The button", "The cable"],
+        correctAnswer: "The remote control",
+        explanation: "Televizyonda kanalları değiştirmek için 'remote control' (uzaktan kumanda) kullanılır."
+    },
+    {
+        question: "A party to celebrate the end of your school years is a _______ party.",
+        options: ["wedding", "birthday", "graduation", "welcome"],
+        correctAnswer: "graduation",
+        explanation: "Okul yıllarınızın bitişini kutlamak için yapılan partiye 'graduation party' (mezuniyet partisi) denir."
+    },
+    {
+        question: "What is the opposite of 'generous'?",
+        options: ["Kind", "Stingy", "Friendly", "Helpful"],
+        correctAnswer: "Stingy",
+        explanation: "'Generous' (cömert) kelimesinin zıttı 'stingy' (cimri) kelimesidir."
+    },
+    {
+        question: "What did you _______ on your last holiday?",
+        options: ["do", "did", "does", "doing"],
+        correctAnswer: "do",
+        explanation: "Geçmiş zamanda 'did' yardımcı fiili ile soru sorarken, ana fiil yalın halde kullanılır."
+    },
+    {
+        question: "Which animal is known for changing its color?",
+        options: ["A lizard", "A frog", "A chameleon", "A snake"],
+        correctAnswer: "A chameleon",
+        explanation: "'Chameleon' (bukalemun), rengini değiştirmesiyle bilinir."
+    },
+    {
+        question: "In which sport do players hit a ball over a net?",
+        options: ["Basketball", "Football", "Volleyball", "Hockey"],
+        correctAnswer: "Volleyball",
+        explanation: "Voleybolda ('Volleyball') oyuncular topa bir filenin üzerinden vurur."
+    },
+    {
+        question: "A _______ gives you information about what is happening in the world.",
+        options: ["cartoon", "sitcom", "the news", "movie"],
+        correctAnswer: "the news",
+        explanation: "'The news' (haberler), dünyada neler olup bittiği hakkında size bilgi verir."
+    },
+    {
+        question: "What do you need for a birthday celebration?",
+        options: ["A book", "A cake", "A pen", "A bag"],
+        correctAnswer: "A cake",
+        explanation: "Bir doğum günü kutlaması için genellikle bir 'cake' (pasta) gerekir."
+    },
+    {
+        question: "A person who is not smart is _______.",
+        options: ["clever", "intelligent", "stupid", "wise"],
+        correctAnswer: "stupid",
+        explanation: "Akıllı olmayan bir kişiye 'stupid' (aptal) denebilir."
+    },
+    {
+        question: "He _______ a famous actor in the 1980s.",
+        options: ["was", "is", "were", "are"],
+        correctAnswer: "was",
+        explanation: "Geçmişteki bir durumdan bahsederken 'was' kullanılır."
+    },
+    {
+        question: "Which of these is a farm animal?",
+        options: ["A lion", "A tiger", "A sheep", "A monkey"],
+        correctAnswer: "A sheep",
+        explanation: "'Sheep' (koyun), bir çiftlik hayvanıdır."
+    },
+    {
+        question: "In which sport do you need a helmet for safety?",
+        options: ["Chess", "Swimming", "Cycling", "Tennis"],
+        correctAnswer: "Cycling",
+        explanation: "Bisiklet sürerken ('cycling') güvenlik için bir kaska ihtiyacınız vardır."
+    },
+    {
+        question: "What is the opposite of 'shy'?",
+        options: ["Quiet", "Outgoing", "Nervous", "Serious"],
+        correctAnswer: "Outgoing",
+        explanation: "'Shy' (utangaç) kelimesinin zıttı 'outgoing' (dışa dönük) kelimesidir."
+    },
+    {
+        question: "A party where you stay at a friend's house overnight is a _______ party.",
+        options: ["fancy dress", "slumber", "birthday", "farewell"],
+        correctAnswer: "slumber",
+        explanation: "Geceyi bir arkadaşınızın evinde geçirdiğiniz partiye 'slumber party' (pijama partisi) denir."
+    },
+    {
+        question: "A person who often forgets things is _______.",
+        options: ["punctual", "forgetful", "thoughtful", "honest"],
+        correctAnswer: "forgetful",
+        explanation: "Sık sık bir şeyleri unutan kişiye 'forgetful' (unutkan) denir."
+    },
+    {
+        question: "She _______ married in 2010.",
+        options: ["get", "gets", "got", "getting"],
+        correctAnswer: "got",
+        explanation: "Geçmişteki bir olaydan bahsederken 'get' fiilinin ikinci hali 'got' kullanılır."
+    },
+    {
+        question: "A _______ is a place where wild animals are kept.",
+        options: ["farm", "zoo", "pet shop", "house"],
+        correctAnswer: "zoo",
+        explanation: "Vahşi hayvanların tutulduğu yere 'zoo' (hayvanat bahçesi) denir."
+    },
+    {
+        question: "In which sport do you use your feet to move the ball?",
+        options: ["Basketball", "Tennis", "Football", "Volleyball"],
+        correctAnswer: "Football",
+        explanation: "Futbolda ('Football') topu hareket ettirmek için ayaklarınızı kullanırsınız."
+    },
+    {
+        question: "What is a TV programme about nature?",
+        options: ["A cartoon", "A sitcom", "A documentary", "A quiz show"],
+        correctAnswer: "A documentary",
+        explanation: "Doğa hakkındaki bir TV programına 'documentary' (belgesel) denir."
+    },
+    {
+        question: "What do you blow out at a birthday party?",
+        options: ["Balloons", "Presents", "Candles", "Music"],
+        correctAnswer: "Candles",
+        explanation: "Doğum günü partisinde pastanın üzerindeki 'candles' (mumlar) üflenir."
+    },
+    {
+        question: "A person who is not tall is _______.",
+        options: ["long", "short", "big", "small"],
+        correctAnswer: "short",
+        explanation: "Boyu uzun olmayan kişiye 'short' (kısa boylu) denir."
+    },
+    {
+        question: "I _______ my best friend yesterday.",
+        options: ["see", "sees", "saw", "seeing"],
+        correctAnswer: "saw",
+        explanation: "'Yesterday' (dün) geçmiş zamanı belirttiği için 'see' fiilinin ikinci hali 'saw' kullanılır."
+    },
+    {
+        question: "Which of these animals can swim?",
+        options: ["A bird", "A fish", "A cat", "A dog"],
+        correctAnswer: "A fish",
+        explanation: "Seçenekler arasında 'fish' (balık) yüzebilen bir hayvandır."
+    },
+    {
+        question: "Which sport do you do on a mountain with snow?",
+        options: ["Surfing", "Sailing", "Skiing", "Diving"],
+        correctAnswer: "Skiing",
+        explanation: "Karlı bir dağda 'skiing' (kayak) yaparsınız."
+    },
+    {
+        question: "What is the opposite of 'well-built'?",
+        options: ["Strong", "Fat", "Thin", "Tall"],
+        correctAnswer: "Thin",
+        explanation: "'Well-built' (yapılı) kelimesinin zıttı 'thin' (zayıf, ince) olabilir."
+    },
+    {
+        question: "A party to say goodbye to someone is a _______ party.",
+        options: ["welcome", "farewell", "surprise", "birthday"],
+        correctAnswer: "farewell",
+        explanation: "Birine veda etmek için yapılan partiye 'farewell party' (veda partisi) denir."
+    },
+    {
+        question: "A person who doesn't talk much is _______.",
+        options: ["talkative", "quiet", "outgoing", "friendly"],
+        correctAnswer: "quiet",
+        explanation: "Çok konuşmayan kişiye 'quiet' (sessiz) denir."
+    },
+    {
+        question: "They _______ a new house last month.",
+        options: ["buy", "buys", "bought", "buying"],
+        correctAnswer: "bought",
+        explanation: "'Last month' (geçen ay) geçmiş zamanı belirttiği için 'buy' fiilinin ikinci hali 'bought' kullanılır."
+    },
+    {
+        question: "What is the natural home of a wild animal?",
+        options: ["A cage", "A habitat", "A zoo", "A house"],
+        correctAnswer: "A habitat",
+        explanation: "Vahşi bir hayvanın doğal evine 'habitat' (yaşam alanı) denir."
+    },
+    {
+        question: "Which sport is played by two teams of eleven players?",
+        options: ["Basketball", "Volleyball", "Football", "Tennis"],
+        correctAnswer: "Football",
+        explanation: "On birer oyuncudan oluşan iki takımla oynanan spor 'football' (futbol) dur."
+    },
+    {
+        question: "A program on TV where people discuss topics is a _______.",
+        options: ["talk show", "cartoon", "sitcom", "movie"],
+        correctAnswer: "talk show",
+        explanation: "İnsanların konuları tartıştığı bir TV programına 'talk show' (sohbet programı) denir."
+    },
+    {
+        question: "What is the opposite of 'stubborn'?",
+        options: ["Determined", "Easy-going", "Strong", "Selfish"],
+        correctAnswer: "Easy-going",
+        explanation: "'Stubborn' (inatçı) kelimesinin zıttı 'easy-going' (uyumlu, geçimli) kelimesidir."
+    },
+    {
+        question: "He is a _______ person. He always makes me laugh.",
+        options: ["serious", "funny", "shy", "sad"],
+        correctAnswer: "funny",
+        explanation: "Sizi her zaman güldüren kişi 'funny' (komik) biridir."
+    },
+    {
+        question: "We _______ at a hotel during our holiday.",
+        options: ["stay", "stays", "stayed", "staying"],
+        correctAnswer: "stayed",
+        explanation: "Geçmişteki bir tatilden bahsederken Simple Past Tense kullanılır."
+    },
+    {
+        question: "A _______ is a dangerous animal that lives in the sea.",
+        options: ["dolphin", "shark", "seal", "turtle"],
+        correctAnswer: "shark",
+        explanation: "'Shark' (köpek balığı), denizde yaşayan tehlikeli bir hayvandır."
+    },
+    {
+        question: "Which sport is about fighting with hands and feet?",
+        options: ["Archery", "Fencing", "Karate", "Cycling"],
+        correctAnswer: "Karate",
+        explanation: "'Karate', eller ve ayaklarla dövüşme sporudur."
+    },
+    {
+        question: "What is the opposite of 'generous'?",
+        options: ["Mean", "Kind", "Nice", "Helpful"],
+        correctAnswer: "Mean",
+        explanation: "'Generous' (cömert) kelimesinin zıtlarından biri 'mean' (cimri) kelimesidir."
+    },
+    {
+        question: "A celebration for a marriage is a _______.",
+        options: ["birthday", "wedding", "funeral", "festival"],
+        correctAnswer: "wedding",
+        explanation: "Bir evlilik için yapılan kutlamaya 'wedding' (düğün) denir."
+    },
+    {
+        question: "A person with fair hair is _______.",
+        options: ["dark", "red", "blonde", "brown"],
+        correctAnswer: "blonde",
+        explanation: "Açık renk saçlı kişiye 'blonde' (sarışın) denir."
+    },
+    {
+        question: "I _______ my grandfather last weekend.",
+        options: ["visit", "visits", "visited", "visiting"],
+        correctAnswer: "visited",
+        explanation: "'Last weekend' (geçen hafta sonu) geçmiş zamanı belirttiği için fiilin ikinci hali kullanılır."
+    },
+    {
+        question: "A _______ is an animal that eats meat.",
+        options: ["herbivore", "carnivore", "omnivore", "mammal"],
+        correctAnswer: "carnivore",
+        explanation: "Et yiyen hayvanlara 'carnivore' (etobur) denir."
+    },
+    {
+        question: "In which sport do you need a team?",
+        options: ["Running", "Swimming", "Basketball", "Tennis"],
+        correctAnswer: "Basketball",
+        explanation: "'Basketball' (basketbol), bir takım sporu olarak oynanır."
+    },
+    {
+        question: "What do you watch to learn about the weather?",
+        options: ["The news", "A sitcom", "The weather forecast", "A documentary"],
+        correctAnswer: "The weather forecast",
+        explanation: "Hava durumunu öğrenmek için 'weather forecast' (hava durumu tahmini) izlersiniz."
+    },
+    {
+        question: "What is the opposite of 'straight' for hair?",
+        options: ["Long", "Short", "Blonde", "Curly"],
+        correctAnswer: "Curly",
+        explanation: "Saç için 'straight' (düz) kelimesinin zıttı 'curly' (kıvırcık) kelimesidir."
+    },
+    {
+        question: "A party that is a secret from the main person is a _______ party.",
+        options: ["surprise", "welcome", "farewell", "birthday"],
+        correctAnswer: "surprise",
+        explanation: "Ana kişiden gizli tutulan partiye 'surprise party' (sürpriz parti) denir."
+    },
+    {
+        question: "A person who is friendly and enjoys talking is _______.",
+        options: ["shy", "talkative", "quiet", "serious"],
+        correctAnswer: "talkative",
+        explanation: "Arkadaş canlısı ve konuşmaktan hoşlanan kişiye 'talkative' (konuşkan) denir."
+    },
+    {
+        question: "He _______ his homework an hour ago.",
+        options: ["finish", "finishes", "finished", "finishing"],
+        correctAnswer: "finished",
+        explanation: "'An hour ago' (bir saat önce) geçmiş zamanı belirttiği için fiilin ikinci hali kullanılır."
+    },
+    {
+        question: "A _______ is a very large and strong bird.",
+        options: ["sparrow", "pigeon", "eagle", "parrot"],
+        correctAnswer: "eagle",
+        explanation: "'Eagle' (kartal), çok büyük ve güçlü bir kuştur."
+    },
+    {
+        question: "In which sport do you throw a heavy ball?",
+        options: ["Bowling", "Golf", "Cricket", "Badminton"],
+        correctAnswer: "Bowling",
+        explanation: "'Bowling' (bovling) sporunda ağır bir top atarsınız."
+    },
+    {
+        question: "What is the opposite of 'clumsy'?",
+        options: ["Careful", "Graceful", "Awkward", "Slow"],
+        correctAnswer: "Graceful",
+        explanation: "'Clumsy' (sakar) kelimesinin zıttı 'graceful' (zarif, becerikli) kelimesidir."
+    },
+    {
+        question: "What do you need to buy things for a party?",
+        options: ["A guest list", "A shopping list", "An invitation", "A present"],
+        correctAnswer: "A shopping list",
+        explanation: "Parti için bir şeyler almak üzere 'shopping list' (alışveriş listesi) hazırlarsınız."
+    },
+    {
+        question: "A person who is tall and thin is _______.",
+        options: ["plump", "short", "lanky", "well-built"],
+        correctAnswer: "lanky",
+        explanation: "Uzun boylu ve zayıf olan kişiye 'lanky' (sırık gibi) denir."
+    },
+    {
+        question: "She _______ her keys, so she can't get into her house.",
+        options: ["lose", "loses", "lost", "losing"],
+        correctAnswer: "lost",
+        explanation: "Geçmişte olan ve sonucu şimdiki zamanı etkileyen bir eylem için Simple Past Tense kullanılabilir."
+    },
+    {
+        question: "Which animal is a large cat that lives in Africa?",
+        options: ["A tiger", "A lion", "A leopard", "A cheetah"],
+        correctAnswer: "A lion",
+        explanation: "'Lion' (aslan), Afrika'da yaşayan büyük bir kedi türüdür."
+    },
+    {
+        question: "Which sport do you need a horse for?",
+        options: ["Polo", "Golf", "Rugby", "Hockey"],
+        correctAnswer: "Polo",
+        explanation: "'Polo' (polo), at üzerinde oynanan bir spordur."
+    },
+    {
+        question: "What is the opposite of 'forgetful'?",
+        options: ["Smart", "Clever", "Punctual", "Thoughtful"],
+        correctAnswer: "Thoughtful",
+        explanation: "Unutkan birinin zıttı, her şeyi hatırlayan ve 'thoughtful' (düşünceli) olan biri olabilir."
+    },
+    {
+        question: "What is the main drink at a party?",
+        options: ["Water", "Milk", "Beverages", "Tea"],
+        correctAnswer: "Beverages",
+        explanation: "Partideki ana içeceklere genel olarak 'beverages' (içecekler) denir."
+    },
+    {
+        question: "A person who is attractive is _______.",
+        options: ["ugly", "plain", "good-looking", "short"],
+        correctAnswer: "good-looking",
+        explanation: "Çekici bir kişiye 'good-looking' (yakışıklı/güzel) denir."
+    },
+    {
+        question: "He _______ at the age of 85.",
+        options: ["die", "dies", "died", "dying"],
+        correctAnswer: "died",
+        explanation: "Geçmişteki bir ölüm olayından bahsederken Simple Past Tense kullanılır."
+    },
+    {
+        question: "A _______ lives in cold places and is a great swimmer.",
+        options: ["polar bear", "penguin", "seal", "walrus"],
+        correctAnswer: "seal",
+        explanation: "'Seal' (fok), soğuk yerlerde yaşayan ve harika bir yüzücü olan bir hayvandır."
+    },
+    {
+        question: "In which sport do you hit a shuttlecock?",
+        options: ["Tennis", "Squash", "Badminton", "Table Tennis"],
+        correctAnswer: "Badminton",
+        explanation: "'Badminton' (badminton) sporunda tüylü bir topa vurursunuz."
+    },
+    {
+        question: "What is the opposite of 'honest'?",
+        options: ["Truthful", "Dishonest", "Sincere", "Frank"],
+        correctAnswer: "Dishonest",
+        explanation: "'Honest' (dürüst) kelimesinin zıttı 'dishonest' (dürüst olmayan) kelimesidir."
+    },
+    {
+        question: "What is a party to celebrate a new baby?",
+        options: ["A baby shower", "A birthday party", "A wedding", "A housewarming"],
+        correctAnswer: "A baby shower",
+        explanation: "Yeni bir bebeği kutlamak için yapılan partiye 'baby shower' denir."
+    },
+    {
+        question: "A person with a lot of hair on his face has a _______.",
+        options: ["moustache", "beard", "freckles", "wrinkles"],
+        correctAnswer: "beard",
+        explanation: "Yüzünde çok fazla kıl olan birinin 'beard' (sakalı) vardır."
+    },
+    {
+        question: "She _______ her first prize in 2020.",
+        options: ["receive", "receives", "received", "receiving"],
+        correctAnswer: "received",
+        explanation: "Geçmişteki bir olaydan bahsederken Simple Past Tense kullanılır."
+    },
+    {
+        question: "A _______ is an animal with a shell on its back.",
+        options: ["snail", "turtle", "crab", "lobster"],
+        correctAnswer: "turtle",
+        explanation: "'Turtle' (kaplumbağa), sırtında bir kabuk olan bir hayvandır."
+    },
+    {
+        question: "Which sport takes place in a ring?",
+        options: ["Wrestling", "Sumo", "Boxing", "Judo"],
+        correctAnswer: "Wrestling",
+        explanation: "'Wrestling' (güreş), bir ringde gerçekleşen bir spordur."
+    }
+
+
+
         ],
 
      
         intermediate: [
-            {
-                question: "What do you say to ask for directions?",
-                options: ["Where is this place?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Where is this place?",
-                explanation: "Yol tarifi sormak için 'Where is...?' (... nerede?) kalıbı kullanılır."
-            },
-            {
-                question: "What is a healthy habit?",
-                options: ["Eating candy", "Exercising", "Watching TV", "Sleeping late"],
-                correctAnswer: "Exercising",
-                explanation: "'Exercising' (egzersiz yapmak) sağlıklı bir alışkanlıktır."
-            },
-            {
-                question: "What do you need to play basketball?",
-                options: ["Racket", "Ball", "Notebook", "Desk"],
-                correctAnswer: "Ball",
-                explanation: "Basketbol oynamak için bir topa ('ball') ihtiyaç vardır."
-            },
-            {
-                question: "What is a natural resource?",
-                options: ["Car", "Water", "Book", "Pen"],
-                correctAnswer: "Water",
-                explanation: "'Water' (su) bir doğal kaynaktır."
-            },
-            {
-                question: "What do you do to save energy?",
-                options: ["Leave lights on", "Turn off lights", "Watch TV", "Play games"],
-                correctAnswer: "Turn off lights",
-                explanation: "Enerji tasarrufu için ışıkları kapatmak ('turn off lights') gerekir."
-            },
-            {
-                question: "What is a type of music?",
-                options: ["Pop", "Book", "Car", "Tree"],
-                correctAnswer: "Pop",
-                explanation: "'Pop' bir müzik türüdür."
-            },
-            {
-                question: "What do you say to invite a friend?",
-                options: ["Come over!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "Come over!",
-                explanation: "Bir arkadaşınızı davet etmek için 'Come over!' (Bize gel!) diyebilirsiniz."
-            },
-            {
-                question: "What is a place to see art?",
-                options: ["Gym", "Museum", "Park", "Kitchen"],
-                correctAnswer: "Museum",
-                explanation: "'Museum' (müze), sanat eserlerini görmek için bir yerdir."
-            },
-            {
-                question: "What do you need to cook pasta?",
-                options: ["Spoon", "Pot", "Book", "Shoe"],
-                correctAnswer: "Pot",
-                explanation: "Makarna pişirmek için bir tencereye ('pot') ihtiyaç vardır."
-            },
-            {
-                question: "What is a type of job?",
-                options: ["Doctor", "Book", "Car", "Tree"],
-                correctAnswer: "Doctor",
-                explanation: "'Doctor' (doktor) bir meslek türüdür."
-            },
-            {
-                question: "What do you do to stay hydrated?",
-                options: ["Eat candy", "Drink water", "Watch TV", "Sleep"],
-                correctAnswer: "Drink water",
-                explanation: "Sıvı ihtiyacını karşılamak ('stay hydrated') için su içmek ('drink water') önemlidir."
-            },
-            {
-                question: "What is a type of dance?",
-                options: ["Ballet", "Book", "Car", "Tree"],
-                correctAnswer: "Ballet",
-                explanation: "'Ballet' (bale) bir dans türüdür."
-            },
-            {
-                question: "What do you say to thank a teacher?",
-                options: ["Go away!", "Thank you!", "I’m tired!", "No way!"],
-                correctAnswer: "Thank you!",
-                explanation: "Bir öğretmene teşekkür etmek için 'Thank you!' (Teşekkür ederim!) denir."
-            },
-            {
-                question: "What is a place to see a concert?",
-                options: ["Library", "Stadium", "School", "Kitchen"],
-                correctAnswer: "Stadium",
-                explanation: "Büyük konserler genellikle bir stadyumda ('stadium') yapılır."
-            },
-            {
-                question: "What do you need to paint a picture?",
-                options: ["Spoon", "Brush", "Book", "Shoe"],
-                correctAnswer: "Brush",
-                explanation: "Resim yapmak için bir fırçaya ('brush') ihtiyaç vardır."
-            },
-            {
-                question: "What is a type of vehicle?",
-                options: ["Car", "Book", "Tree", "Pen"],
-                correctAnswer: "Car",
-                explanation: "'Car' (araba) bir taşıt ('vehicle') türüdür."
-            },
-            {
-                question: "What do you do to recycle?",
-                options: ["Throw away everything", "Sort trash", "Watch TV", "Sleep"],
-                correctAnswer: "Sort trash",
-                explanation: "Geri dönüşüm yapmak için çöpleri ayırmak ('sort trash') gerekir."
-            },
-            {
-                question: "What is a type of movie?",
-                options: ["Comedy", "Book", "Car", "Tree"],
-                correctAnswer: "Comedy",
-                explanation: "'Comedy' (komedi) bir film türüdür."
-            },
-            {
-                question: "What do you say to ask for help?",
-                options: ["Can you help me?", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Can you help me?",
-                explanation: "Yardım istemek için 'Can you help me?' (Bana yardım edebilir misin?) denir."
-            },
-            {
-                question: "What is a place to see history?",
-                options: ["Gym", "Museum", "Park", "Kitchen"],
-                correctAnswer: "Museum",
-                explanation: "'Museum' (müze), tarihi eserleri görmek için bir yerdir."
-            },
-            {
-                question: "What do you need to play tennis?",
-                options: ["Ball", "Racket", "Book", "Shoe"],
-                correctAnswer: "Racket",
-                explanation: "Tenis oynamak için bir rakete ('racket') ihtiyaç vardır."
-            },
-            {
-                question: "What is a type of weather event?",
-                options: ["Storm", "Book", "Car", "Tree"],
-                correctAnswer: "Storm",
-                explanation: "'Storm' (fırtına) bir hava olayıdır."
-            },
-            {
-                question: "What do you do to stay safe in traffic?",
-                options: ["Run across the road", "Follow rules", "Play games", "Sleep"],
-                correctAnswer: "Follow rules",
-                explanation: "Trafikte güvende kalmak için kurallara uymak ('follow rules') gerekir."
-            },
+  
     {
         question: "My friend is very _______. She never changes her mind.",
         options: ["easy-going", "stubborn", "thoughtful", "generous"],
@@ -7653,766 +7885,554 @@ const questionsByGrade = {
         correctAnswer: "respond to",
         explanation: "Gelip gelmeyeceğinizi bilmeleri için davetiyeye 'respond to' (cevap vermek) önemlidir."
     },
-{
-                question: "What is a type of book?",
-                options: ["Novel", "Book", "Car", "Tree"],
-                correctAnswer: "Novel",
-                explanation: "'Novel' (roman) bir kitap türüdür."
-            },
-            {
-                question: "What do you say to congratulate someone?",
-                options: ["Well done!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "Well done!",
-                explanation: "Birini tebrik etmek için 'Well done!' (Harika iş!) denir."
-            },
-            {
-                question: "What is a place to see a play?",
-                options: ["Theater", "Gym", "Park", "Kitchen"],
-                correctAnswer: "Theater",
-                explanation: "Bir tiyatro oyunu izlemek için tiyatroya ('theater') gidilir."
-            },
-            {
-                question: "What do you need to bake bread?",
-                options: ["Spoon", "Oven", "Book", "Shoe"],
-                correctAnswer: "Oven",
-                explanation: "Ekmek pişirmek için bir fırına ('oven') ihtiyaç vardır."
-            },
-            {
-                question: "What is a type of profession?",
-                options: ["Engineer", "Book", "Car", "Tree"],
-                correctAnswer: "Engineer",
-                explanation: "'Engineer' (mühendis) bir meslek türüdür."
-            },
-            {
-                question: "What do you do to stay organized?",
-                options: ["Make a mess", "Use a planner", "Watch TV", "Sleep"],
-                correctAnswer: "Use a planner",
-                explanation: "Düzenli kalmak için bir planlayıcı kullanmak ('use a planner') yardımcı olur."
-            },
-            {
-                question: "What is a type of instrument?",
-                options: ["Guitar", "Book", "Car", "Tree"],
-                correctAnswer: "Guitar",
-                explanation: "'Guitar' (gitar) bir müzik enstrümanıdır."
-            },
-            {
-                question: "What do you say to apologize?",
-                options: ["Sorry!", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Sorry!",
-                explanation: "Özür dilemek için 'Sorry!' (Üzgünüm!) denir."
-            },
-            {
-                question: "What is a place to see stars?",
-                options: ["Observatory", "Gym", "Park", "Kitchen"],
-                correctAnswer: "Observatory",
-                explanation: "'Observatory' (gözlemevi), yıldızları izlemek için bir yerdir."
-            },
-            {
-                question: "What do you need to play soccer?",
-                options: ["Racket", "Ball", "Book", "Shoe"],
-                correctAnswer: "Ball",
-                explanation: "Futbol oynamak için bir topa ('ball') ihtiyaç vardır."
-            },
-            {
-                question: "What is a type of disaster?",
-                options: ["Flood", "Book", "Car", "Tree"],
-                correctAnswer: "Flood",
-                explanation: "'Flood' (sel) bir doğal afet türüdür."
-            },
-            {
-                question: "What do you do to stay warm?",
-                options: ["Wear a T-shirt", "Wear a jacket", "Play games", "Sleep"],
-                correctAnswer: "Wear a jacket",
-                explanation: "Sıcak kalmak için bir ceket giyersiniz ('wear a jacket')."
-            },
-            {
-                question: "What is a type of art?",
-                options: ["Painting", "Book", "Car", "Tree"],
-                correctAnswer: "Painting",
-                explanation: "'Painting' (resim) bir sanat türüdür."
-            },
-            {
-                question: "What do you say to offer help?",
-                options: ["Can I help you?", "Go away!", "I’m fine!", "No way!"],
-                correctAnswer: "Can I help you?",
-                explanation: "Yardım teklif etmek için 'Can I help you?' (Yardımcı olabilir miyim?) denir."
-            },
-            {
-                question: "What is a place to see animals?",
-                options: ["Zoo", "Library", "Market", "School"],
-                correctAnswer: "Zoo",
-                explanation: "'Zoo' (hayvanat bahçesi), hayvanları görmek için bir yerdir."
-            },
-            {
-                question: "What do you need to play volleyball?",
-                options: ["Racket", "Ball", "Book", "Shoe"],
-                correctAnswer: "Ball",
-                explanation: "Voleybol oynamak için bir topa ('ball') ihtiyaç vardır."
-            },
-            {
-                question: "How do you describe a tall person?",
-                options: ["They are short", "They are tall", "They are funny", "They are kind"],
-                correctAnswer: "They are tall",
-                explanation: "Uzun boylu birini 'They are tall' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need to play tennis?",
-                options: ["Ball", "Racket", "Board", "Bat"],
-                correctAnswer: "Racket",
-                explanation: "Tenis oynamak için bir rakete ('racket') ihtiyaç vardır."
-            },
-            {
-                question: "What is a biography about?",
-                options: ["A car’s history", "A person’s life", "A book’s story", "A game’s rules"],
-                correctAnswer: "A person’s life",
-                explanation: "Bir biyografi bir kişinin hayatı hakkındadır."
-            },
-            {
-                question: "What do you do to stay healthy?",
-                options: ["Watch TV", "Exercise", "Eat candy", "Sleep"],
-                correctAnswer: "Exercise",
-                explanation: "Sağlıklı kalmak için egzersiz yaparsınız ('exercise')."
-            },
-            {
-                question: "What causes pollution?",
-                options: ["Recycling", "Planting trees", "Throwing trash", "Saving water"],
-                correctAnswer: "Throwing trash",
-                explanation: "Çöp atmak ('throwing trash') kirliliğe neden olur."
-            },
-            {
-                question: "What is an adventure?",
-                options: ["Something boring", "Something exciting", "Something you eat", "Something you wear"],
-                correctAnswer: "Something exciting",
-                explanation: "Bir macera ('adventure') heyecan verici bir şeydir."
-            },
-            {
-                question: "What is a famous invention?",
-                options: ["Book", "Telephone", "Pen", "Shoe"],
-                correctAnswer: "Telephone",
-                explanation: "'Telephone' (telefon) ünlü bir icattır."
-            },
-            {
-                question: "What is a dream job?",
-                options: ["Something you hate", "Something you love", "Something you eat", "Something you wear"],
-                correctAnswer: "Something you love",
-                explanation: "Hayalinizdeki iş ('dream job') yapmayı sevdiğiniz bir iştir."
-            },
-            {
-                question: "What does a mayor do?",
-                options: ["Cooks food", "Manages a city", "Sings songs", "Drives cars"],
-                correctAnswer: "Manages a city",
-                explanation: "Bir belediye başkanı ('mayor') bir şehri yönetir ('manages a city')."
-            },
-            {
-                question: "What do you say to describe a kind person?",
-                options: ["They are mean", "They are kind", "They are lazy", "They are shy"],
-                correctAnswer: "They are kind",
-                explanation: "Kibar birini 'They are kind' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for basketball?",
-                options: ["Racket", "Ball", "Board", "Bat"],
-                correctAnswer: "Ball",
-                explanation: "Basketbol için bir topa ('ball') ihtiyaç vardır."
-            },
-            {
-                question: "What did a famous person achieve?",
-                options: ["Ate food", "Won a prize", "Slept", "Ran"],
-                correctAnswer: "Won a prize",
-                explanation: "Ünlü bir kişi bir ödül kazanmış ('won a prize') olabilir."
-            },
-            {
-                question: "What is a healthy snack?",
-                options: ["Chips", "Candy", "Fruit", "Soda"],
-                correctAnswer: "Fruit",
-                explanation: "'Fruit' (meyve) sağlıklı bir atıştırmalıktır."
-            },
-            {
-                question: "What can you do to save water?",
-                options: ["Drink soda", "Turn off the tap", "Eat candy", "Watch TV"],
-                correctAnswer: "Turn off the tap",
-                explanation: "Suyu korumak için musluğu kapatabilirsiniz ('turn off the tap')."
-            },
-            {
-                question: "What is a dangerous adventure?",
-                options: ["Reading a book", "Climbing a mountain", "Eating lunch", "Sleeping"],
-                correctAnswer: "Climbing a mountain",
-                explanation: "Bir dağa tırmanmak ('climbing a mountain') tehlikeli bir macera olabilir."
-            },
-            {
-                question: "What is a modern technology?",
-                options: ["Book", "Smartphone", "Pen", "Shoe"],
-                correctAnswer: "Smartphone",
-                explanation: "'Smartphone' (akıllı telefon) modern bir teknolojidir."
-            },
-            {
-                question: "What do you dream about?",
-                options: ["Eating food", "Your future", "Sleeping", "Running"],
-                correctAnswer: "Your future",
-                explanation: "Geleceğiniz ('your future') hakkında hayal kurabilirsiniz."
-            },
-            {
-                question: "What does a firefighter do?",
-                options: ["Cooks food", "Puts out fires", "Sings songs", "Drives cars"],
-                correctAnswer: "Puts out fires",
-                explanation: "Bir itfaiyeci ('firefighter') yangınları söndürür."
-            },
-            {
-                question: "How do you describe a funny person?",
-                options: ["They are serious", "They are funny", "They are tall", "They are shy"],
-                correctAnswer: "They are funny",
-                explanation: "Komik birini 'They are funny' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for swimming?",
-                options: ["Racket", "Ball", "Swimsuit", "Bat"],
-                correctAnswer: "Swimsuit",
-                explanation: "Yüzmek için bir mayoya ('swimsuit') ihtiyaç vardır."
-            },
-            {
-                question: "What is a biography?",
-                options: ["A person’s life story", "A car’s history", "A book’s plot", "A game’s rules"],
-                correctAnswer: "A person’s life story",
-                explanation: "Bir biyografi bir kişinin hayat hikayesidir."
-            },
-            {
-                question: "What is good for your health?",
-                options: ["Eating candy", "Drinking soda", "Eating vegetables", "Watching TV"],
-                correctAnswer: "Eating vegetables",
-                explanation: "Sebze yemek ('eating vegetables') sağlığınız için iyidir."
-            },
-            {
-                question: "What is bad for the environment?",
-                options: ["Recycling", "Saving water", "Pollution", "Planting trees"],
-                correctAnswer: "Pollution",
-                explanation: "'Pollution' (kirlilik) çevre için kötüdür."
-            },
-            {
-                question: "What is a fun adventure?",
-                options: ["Doing homework", "Exploring a forest", "Eating lunch", "Sleeping"],
-                correctAnswer: "Exploring a forest",
-                explanation: "Bir ormanı keşfetmek ('exploring a forest') eğlenceli bir maceradır."
-            },
-            {
-                question: "What is a useful invention?",
-                options: ["Book", "Light bulb", "Pen", "Shoe"],
-                correctAnswer: "Light bulb",
-                explanation: "Ampul ('light bulb') faydalı bir icattır."
-            },
-            {
-                question: "What do you want to be in the future?",
-                options: ["A student", "A teacher", "A child", "A baby"],
-                correctAnswer: "A teacher",
-                explanation: "Gelecekte ne olmak istediğiniz sorusuna 'a teacher' (bir öğretmen) gibi cevaplar verilebilir."
-            },
-            {
-                question: "What does a police officer do?",
-                options: ["Cooks food", "Keeps people safe", "Sings songs", "Drives cars"],
-                correctAnswer: "Keeps people safe",
-                explanation: "Bir polis memuru ('police officer') insanları güvende tutar."
-            },
-            {
-                question: "How do you describe a shy person?",
-                options: ["They are talkative", "They are shy", "They are tall", "They are funny"],
-                correctAnswer: "They are shy",
-                explanation: "Utangaç birini 'They are shy' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for cycling?",
-                options: ["Racket", "Bicycle", "Ball", "Bat"],
-                correctAnswer: "Bicycle",
-                explanation: "Bisiklet sürmek için bir bisiklete ('bicycle') ihtiyaç vardır."
-            },
-            {
-                question: "What did a scientist invent?",
-                options: ["Ate food", "Slept", "Made a discovery", "Ran"],
-                correctAnswer: "Made a discovery",
-                explanation: "Bir bilim insanı bir keşif yapmış ('made a discovery') olabilir."
-            },
-            {
-                question: "What is a healthy breakfast?",
-                options: ["Chips", "Candy", "Yogurt", "Soda"],
-                correctAnswer: "Yogurt",
-                explanation: "'Yogurt' (yoğurt) sağlıklı bir kahvaltıdır."
-            },
-            {
-                question: "What can you do to save energy?",
-                options: ["Watch TV", "Turn off lights", "Eat candy", "Sleep"],
-                correctAnswer: "Turn off lights",
-                explanation: "Enerji tasarrufu için ışıkları kapatabilirsiniz ('turn off lights')."
-            },
-            {
-                question: "What is an exciting adventure?",
-                options: ["Reading a book", "Sailing a boat", "Eating lunch", "Sleeping"],
-                correctAnswer: "Sailing a boat",
-                explanation: "Bir tekneyle yelken açmak ('sailing a boat') heyecan verici bir maceradır."
-            },
-            {
-                question: "What is a common technology?",
-                options: ["Book", "Computer", "Pen", "Shoe"],
-                correctAnswer: "Computer",
-                explanation: "'Computer' (bilgisayar) yaygın bir teknolojidir."
-            },
-            {
-                question: "What is a dream goal?",
-                options: ["Eating food", "Achieving success", "Sleeping", "Running"],
-                correctAnswer: "Achieving success",
-                explanation: "Başarıya ulaşmak ('achieving success') hayal edilen bir hedeftir."
-            },
-            {
-                question: "What does a doctor do?",
-                options: ["Cooks food", "Helps sick people", "Sings songs", "Drives cars"],
-                correctAnswer: "Helps sick people",
-                explanation: "Bir doktor ('doctor') hasta insanlara yardım eder."
-            },
-            {
-                question: "How do you describe a clever person?",
-                options: ["They are lazy", "They are clever", "They are tall", "They are shy"],
-                correctAnswer: "They are clever",
-                explanation: "Zeki birini 'They are clever' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for volleyball?",
-                options: ["Racket", "Ball", "Board", "Bat"],
-                correctAnswer: "Ball",
-                explanation: "Voleybol için bir topa ('ball') ihtiyaç vardır."
-            },
-            {
-                question: "What did a famous person do?",
-                options: ["Ate food", "Changed history", "Slept", "Ran"],
-                correctAnswer: "Changed history",
-                explanation: "Ünlü bir kişi tarihi değiştirmiş ('changed history') olabilir."
-            },
-            {
-                question: "What is a healthy drink?",
-                options: ["Soda", "Juice", "Coffee", "Tea"],
-                correctAnswer: "Juice",
-                explanation: "Meyve suyu ('juice') sağlıklı bir içecek olabilir."
-            },
-            {
-                question: "What can you do to help animals?",
-                options: ["Throw trash", "Feed them", "Eat candy", "Sleep"],
-                correctAnswer: "Feed them",
-                explanation: "Hayvanlara yardım etmek için onları besleyebilirsiniz ('feed them')."
-            },
-            {
-                question: "What is a thrilling adventure?",
-                options: ["Doing homework", "Skydiving", "Eating lunch", "Sleeping"],
-                correctAnswer: "Skydiving",
-                explanation: "Hava dalışı ('skydiving') heyecan verici bir maceradır."
-            },
-            {
-                question: "What is an important invention?",
-                options: ["Book", "Internet", "Pen", "Shoe"],
-                correctAnswer: "Internet",
-                explanation: "'Internet' önemli bir icattır."
-            },
-            {
-                question: "What is a dream vacation?",
-                options: ["Going to school", "Traveling abroad", "Doing homework", "Sleeping"],
-                correctAnswer: "Traveling abroad",
-                explanation: "Yurtdışına seyahat etmek ('traveling abroad') hayal edilen bir tatildir."
-            },
-            {
-                question: "What does a nurse do?",
-                options: ["Cooks food", "Helps doctors", "Sings songs", "Drives cars"],
-                correctAnswer: "Helps doctors",
-                explanation: "Bir hemşire ('nurse') doktorlara yardım eder."
-            },
-            {
-                question: "How do you describe a generous person?",
-                options: ["They are selfish", "They are generous", "They are tall", "They are shy"],
-                correctAnswer: "They are generous",
-                explanation: "Cömert birini 'They are generous' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for skateboarding?",
-                options: ["Racket", "Ball", "Skateboard", "Bat"],
-                correctAnswer: "Skateboard",
-                explanation: "Kaykay yapmak için bir kaykaya ('skateboard') ihtiyaç vardır."
-            },
-            {
-                question: "What is a biography for?",
-                options: ["Learning about cars", "Learning about people", "Learning about books", "Learning about games"],
-                correctAnswer: "Learning about people",
-                explanation: "Bir biyografi insanlar hakkında öğrenmek içindir."
-            },
-            {
-                question: "What is a healthy lunch?",
-                options: ["Chips", "Candy", "Salad", "Soda"],
-                correctAnswer: "Salad",
-                explanation: "'Salad' (salata) sağlıklı bir öğle yemeğidir."
-            },
-            {
-                question: "What can you do to reduce waste?",
-                options: ["Throw trash", "Reuse bags", "Eat candy", "Sleep"],
-                correctAnswer: "Reuse bags",
-                explanation: "Atığı azaltmak için poşetleri yeniden kullanabilirsiniz ('reuse bags')."
-            },
-            {
-                question: "What is a challenging adventure?",
-                options: ["Reading a book", "Hiking a mountain", "Eating lunch", "Sleeping"],
-                correctAnswer: "Hiking a mountain",
-                explanation: "Bir dağda yürüyüş yapmak ('hiking a mountain') zorlu bir maceradır."
-            },
-            {
-                question: "What is a helpful technology?",
-                options: ["Book", "Tablet", "Pen", "Shoe"],
-                correctAnswer: "Tablet",
-                explanation: "'Tablet' faydalı bir teknolojidir."
-            },
-            {
-                question: "What is a dream for the future?",
-                options: ["Eating food", "Helping others", "Sleeping", "Running"],
-                correctAnswer: "Helping others",
-                explanation: "Başkalarına yardım etmek ('helping others') gelecek için bir hayaldir."
-            },
-            {
-                question: "What does a teacher do?",
-                options: ["Cooks food", "Teaches students", "Sings songs", "Drives cars"],
-                correctAnswer: "Teaches students",
-                explanation: "Bir öğretmen ('teacher') öğrencilere ders anlatır."
-            },
-            {
-                question: "How do you describe a rude person?",
-                options: ["They are polite", "They are rude", "They are tall", "They are shy"],
-                correctAnswer: "They are rude",
-                explanation: "Kaba birini 'They are rude' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for horse riding?",
-                options: ["Racket", "Horse", "Ball", "Bat"],
-                correctAnswer: "Horse",
-                explanation: "Binicilik için bir ata ('horse') ihtiyaç vardır."
-            },
-            {
-                question: "What did an inventor create?",
-                options: ["Ate food", "Made a machine", "Slept", "Ran"],
-                correctAnswer: "Made a machine",
-                explanation: "Bir mucit bir makine yapmış ('made a machine') olabilir."
-            },
-            {
-                question: "What is a healthy dinner?",
-                options: ["Chips", "Candy", "Fish", "Soda"],
-                correctAnswer: "Fish",
-                explanation: "'Fish' (balık) sağlıklı bir akşam yemeğidir."
-            },
-            {
-                question: "What can you do to save trees?",
-                options: ["Cut them", "Plant them", "Eat candy", "Sleep"],
-                correctAnswer: "Plant them",
-                explanation: "Ağaçları kurtarmak için onları dikebilirsiniz ('plant them')."
-            },
-            {
-                question: "What is an extreme adventure?",
-                options: ["Reading a book", "Bungee jumping", "Eating lunch", "Sleeping"],
-                correctAnswer: "Bungee jumping",
-                explanation: "'Bungee jumping' ekstrem bir maceradır."
-            },
-            {
-                question: "What is a new technology?",
-                options: ["Book", "Smartwatch", "Pen", "Shoe"],
-                correctAnswer: "Smartwatch",
-                explanation: "'Smartwatch' (akıllı saat) yeni bir teknolojidir."
-            },
-            {
-                question: "What is a dream house?",
-                options: ["A small tent", "A big villa", "A school", "A hospital"],
-                correctAnswer: "A big villa",
-                explanation: "Büyük bir villa ('a big villa') hayal edilen bir ev olabilir."
-            },
-            {
-                question: "What does a librarian do?",
-                options: ["Cooks food", "Manages books", "Sings songs", "Drives cars"],
-                correctAnswer: "Manages books",
-                explanation: "Bir kütüphaneci ('librarian') kitapları yönetir."
-            },
-            {
-                question: "How do you describe a cheerful person?",
-                options: ["They are sad", "They are cheerful", "They are tall", "They are shy"],
-                correctAnswer: "They are cheerful",
-                explanation: "Neşeli birini 'They are cheerful' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for skiing?",
-                options: ["Racket", "Skis", "Ball", "Bat"],
-                correctAnswer: "Skis",
-                explanation: "Kayak yapmak için kayaklara ('skis') ihtiyaç vardır."
-            },
-            {
-                question: "What is a famous person’s story?",
-                options: ["A car’s history", "A biography", "A book’s plot", "A game’s rules"],
-                correctAnswer: "A biography",
-                explanation: "Ünlü bir kişinin hikayesi bir biyografidir."
-            },
-            {
-                question: "What is a healthy drink?",
-                options: ["Soda", "Water", "Coffee", "Tea"],
-                correctAnswer: "Water",
-                explanation: "'Water' (su) en sağlıklı içecektir."
-            },
-            {
-                question: "What can you do to help the environment?",
-                options: ["Throw trash", "Use less plastic", "Eat candy", "Sleep"],
-                correctAnswer: "Use less plastic",
-                explanation: "Çevreye yardım etmek için daha az plastik kullanabilirsiniz ('use less plastic')."
-            },
-            {
-                question: "What is a relaxing adventure?",
-                options: ["Reading a book", "Camping", "Eating lunch", "Sleeping"],
-                correctAnswer: "Camping",
-                explanation: "Kamp yapmak ('camping') rahatlatıcı bir maceradır."
-            },
-            {
-                question: "What is an old invention?",
-                options: ["Book", "Wheel", "Pen", "Shoe"],
-                correctAnswer: "Wheel",
-                explanation: "Tekerlek ('wheel') eski bir icattır."
-            },
-            {
-                question: "What is a dream career?",
-                options: ["Doing homework", "Being a doctor", "Eating food", "Sleeping"],
-                correctAnswer: "Being a doctor",
-                explanation: "Doktor olmak ('being a doctor') hayal edilen bir kariyerdir."
-            },
-            {
-                question: "What does a pilot do?",
-                options: ["Cooks food", "Flies planes", "Sings songs", "Drives cars"],
-                correctAnswer: "Flies planes",
-                explanation: "Bir pilot ('pilot') uçakları uçurur."
-            },
-            {
-                question: "How do you describe a talkative person?",
-                options: ["They are quiet", "They are talkative", "They are tall", "They are shy"],
-                correctAnswer: "They are talkative",
-                explanation: "Çok konuşan birini 'They are talkative' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for baseball?",
-                options: ["Racket", "Ball", "Board", "Bat"],
-                correctAnswer: "Bat",
-                explanation: "Beyzbol için bir sopaya ('bat') ihtiyaç vardır."
-            },
-            {
-                question: "What did a leader do in history?",
-                options: ["Ate food", "Led people", "Slept", "Ran"],
-                correctAnswer: "Led people",
-                explanation: "Tarihteki bir lider insanlara önderlik etmiştir ('led people')."
-            },
-            {
-                question: "What is a healthy breakfast drink?",
-                options: ["Soda", "Milk", "Coffee", "Tea"],
-                correctAnswer: "Milk",
-                explanation: "'Milk' (süt) sağlıklı bir kahvaltı içeceğidir."
-            },
-            {
-                question: "What can you do to save animals?",
-                options: ["Throw trash", "Protect them", "Eat candy", "Sleep"],
-                correctAnswer: "Protect them",
-                explanation: "Hayvanları kurtarmak için onları koruyabilirsiniz ('protect them')."
-            },
-            {
-                question: "What is a cultural adventure?",
-                options: ["Reading a book", "Visiting a museum", "Eating lunch", "Sleeping"],
-                correctAnswer: "Visiting a museum",
-                explanation: "Bir müzeyi ziyaret etmek ('visiting a museum') kültürel bir maceradır."
-            },
-            {
-                question: "What is a useful technology?",
-                options: ["Book", "Printer", "Pen", "Shoe"],
-                correctAnswer: "Printer",
-                explanation: "'Printer' (yazıcı) faydalı bir teknolojidir."
-            },
-            {
-                question: "What is a dream for a better world?",
-                options: ["Eating food", "World peace", "Sleeping", "Running"],
-                correctAnswer: "World peace",
-                explanation: "Daha iyi bir dünya için bir hayal dünya barışıdır ('world peace')."
-            },
-            {
-                question: "What does a vet do?",
-                options: ["Cooks food", "Treats animals", "Sings songs", "Drives cars"],
-                correctAnswer: "Treats animals",
-                explanation: "Bir veteriner ('vet') hayvanları tedavi eder."
-            },
-            {
-                question: "How do you describe a lazy person?",
-                options: ["They are active", "They are lazy", "They are tall", "They are shy"],
-                correctAnswer: "They are lazy",
-                explanation: "Tembel birini 'They are lazy' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for surfing?",
-                options: ["Racket", "Surfboard", "Ball", "Bat"],
-                correctAnswer: "Surfboard",
-                explanation: "Sörf yapmak için bir sörf tahtasına ('surfboard') ihtiyaç vardır."
-            },
-            {
-                question: "What is a historical figure’s story?",
-                options: ["A car’s history", "A biography", "A book’s plot", "A game’s rules"],
-                correctAnswer: "A biography",
-                explanation: "Tarihi bir figürün hikayesi bir biyografidir."
-            },
-            {
-                question: "What is a healthy snack?",
-                options: ["Chips", "Candy", "Nuts", "Soda"],
-                correctAnswer: "Nuts",
-                explanation: "Kuruyemişler ('nuts') sağlıklı bir atıştırmalıktır."
-            },
-            {
-                question: "What can you do to reduce pollution?",
-                options: ["Throw trash", "Use public transport", "Eat candy", "Sleep"],
-                correctAnswer: "Use public transport",
-                explanation: "Kirliliği azaltmak için toplu taşıma kullanabilirsiniz ('use public transport')."
-            },
-            {
-                question: "What is a group adventure?",
-                options: ["Reading a book", "Team hiking", "Eating lunch", "Sleeping"],
-                correctAnswer: "Team hiking",
-                explanation: "Takım halinde yürüyüş yapmak ('team hiking') bir grup macerasıdır."
-            },
-            {
-                question: "What is a scientific invention?",
-                options: ["Book", "Microscope", "Pen", "Shoe"],
-                correctAnswer: "Microscope",
-                explanation: "'Microscope' (mikroskop) bilimsel bir icattır."
-            },
-            {
-                question: "What is a dream for children?",
-                options: ["Doing homework", "Better schools", "Eating food", "Sleeping"],
-                correctAnswer: "Better schools",
-                explanation: "Çocuklar için bir hayal daha iyi okullardır ('better schools')."
-            },
-            {
-                question: "What does a scientist do?",
-                options: ["Cooks food", "Conducts experiments", "Sings songs", "Drives cars"],
-                correctAnswer: "Conducts experiments",
-                explanation: "Bir bilim insanı ('scientist') deneyler yapar."
-            },
-            {
-                question: "How do you describe a polite person?",
-                options: ["They are rude", "They are polite", "They are tall", "They are shy"],
-                correctAnswer: "They are polite",
-                explanation: "Kibar birini 'They are polite' diye tarif edersiniz."
-            },
-            {
-                question: "What do you need for football?",
-                options: ["Racket", "Ball", "Board", "Bat"],
-                correctAnswer: "Ball",
-                explanation: "Futbol için bir topa ('ball') ihtiyaç vardır."
-            },
-            {
-                question: "What did an artist create?",
-                options: ["Ate food", "Made a painting", "Slept", "Ran"],
-                correctAnswer: "Made a painting",
-                explanation: "Bir sanatçı bir resim yapmış ('made a painting') olabilir."
-            },
-            {
-                question: "What is a healthy lunch drink?",
-                options: ["Soda", "Water", "Coffee", "Tea"],
-                correctAnswer: "Water",
-                explanation: "'Water' (su) sağlıklı bir öğle yemeği içeceğidir."
-            },
-            {
-                question: "What can you do to save energy?",
-                options: ["Watch TV", "Use solar power", "Eat candy", "Sleep"],
-                correctAnswer: "Use solar power",
-                explanation: "Enerji tasarrufu için güneş enerjisi kullanabilirsiniz ('use solar power')."
-            },
-            {
-                question: "What is a solo adventure?",
-                options: ["Reading a book", "Traveling alone", "Eating lunch", "Sleeping"],
-                correctAnswer: "Traveling alone",
-                explanation: "Tek başına seyahat etmek ('traveling alone') bir solo maceradır."
-            },
-            {
-                question: "What is a digital technology?",
-                options: ["Book", "Laptop", "Pen", "Shoe"],
-                correctAnswer: "Laptop",
-                explanation: "'Laptop' (dizüstü bilgisayar) bir dijital teknolojidir."
-            },
-            {
-                question: "What is a dream for the planet?",
-                options: ["Eating food", "Clean oceans", "Sleeping", "Running"],
-                correctAnswer: "Clean oceans",
-                explanation: "Gezegen için bir hayal temiz okyanuslardır ('clean oceans')."
-            },
-            {
-                question: "What does a journalist do?",
-                options: ["Cooks food", "Writes news", "Sings songs", "Drives cars"],
-                correctAnswer: "Writes news",
-                explanation: "Bir gazeteci ('journalist') haber yazar."
-            }
+    {
+        question: "A person who is _______ is not easily annoyed and is relaxed in their attitude.",
+        options: ["stubborn", "easy-going", "moody", "bossy"],
+        correctAnswer: "easy-going",
+        explanation: "Kolayca sinirlenmeyen ve tavırlarında rahat olan kişiye 'easy-going' (uyumlu, geçimli) denir."
+    },
+    {
+        question: "He _______ about his travel plans when I asked him for help.",
+        options: ["was talking", "talked", "is talking", "talks"],
+        correctAnswer: "was talking",
+        explanation: "Geçmişte bir eylem devam ederken (konuşmak) başka bir eylemin (yardım istemek) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "Elephants are _______ than any other land animal.",
+        options: ["heavy", "heavier", "the heaviest", "more heavy"],
+        correctAnswer: "heavier",
+        explanation: "İki şeyi karşılaştırırken ve sıfat 'y' ile bitiyorsa, 'y' düşer ve '-ier' eklenir."
+    },
+    {
+        question: "You _______ destroy plants or animals' habitats. It's our duty to protect them.",
+        options: ["mustn't", "don't have to", "can", "should"],
+        correctAnswer: "mustn't",
+        explanation: "Güçlü bir yasaklamayı veya yapılmaması gereken bir görevi belirtmek için 'mustn't' kullanılır."
+    },
+    {
+        question: "I would rather stay in and read a book _______ go to a crowded party.",
+        options: ["to", "from", "than", "for"],
+        correctAnswer: "than",
+        explanation: "'Would rather + V1 + than + V1' kalıbı, iki eylem arasında tercih belirtmek için kullanılır."
+    },
+    {
+        question: "She is having a _______ party because she is moving to another city.",
+        options: ["welcome", "farewell", "graduation", "slumber"],
+        correctAnswer: "farewell",
+        explanation: "Başka bir şehre taşındığı için bir 'farewell party' (veda partisi) veriyor."
+    },
+    {
+        question: "A person who is _______ often has accidents because they are not careful.",
+        options: ["graceful", "clumsy", "thoughtful", "punctual"],
+        correctAnswer: "clumsy",
+        explanation: "Dikkatli olmadığı için sık sık kaza yapan kişiye 'clumsy' (sakar) denir."
+    },
+    {
+        question: "She _______ married to a famous musician and had two children.",
+        options: ["get", "got", "gets", "is getting"],
+        correctAnswer: "got",
+        explanation: "Geçmişte olmuş ve bitmiş bir olayı anlatırken fiilin ikinci hali (got) kullanılır."
+    },
+    {
+        question: "Many species are _______ because of illegal hunting and pollution.",
+        options: ["extinct", "protected", "endangered", "safe"],
+        correctAnswer: "endangered",
+        explanation: "Yasadışı avlanma ve kirlilik nedeniyle birçok tür 'endangered' (nesli tükenmekte olan) durumdadır."
+    },
+    {
+        question: "In individual sports, you compete against other _______.",
+        options: ["teams", "spectators", "opponents", "referees"],
+        correctAnswer: "opponents",
+        explanation: "Bireysel sporlarda diğer 'opponents' (rakipler) e karşı yarışırsınız."
+    },
+    {
+        question: "I'm not keen _______ watching talk shows. I find them quite boring.",
+        options: ["in", "at", "on", "of"],
+        correctAnswer: "on",
+        explanation: "'Keen on' (-e meraklı olmak) kalıbında 'on' edatı kullanılır."
+    },
+    {
+        question: "To have a successful party, you need to choose good music and provide delicious _______.",
+        options: ["guests", "presents", "refreshments", "decorations"],
+        correctAnswer: "refreshments",
+        explanation: "Başarılı bir parti için iyi müzik seçmeli ve lezzetli 'refreshments' (içecekler ve hafif yiyecekler) sunmalısınız."
+    },
+    {
+        question: "A person who is _______ always considers the needs of other people.",
+        options: ["selfish", "self-centered", "thoughtful", "arrogant"],
+        correctAnswer: "thoughtful",
+        explanation: "Her zaman diğer insanların ihtiyaçlarını düşünen kişiye 'thoughtful' (düşünceli) denir."
+    },
+    {
+        question: "What _______ you doing when the earthquake happened?",
+        options: ["was", "were", "did", "do"],
+        correctAnswer: "were",
+        explanation: "Geçmişte bir olay olduğunda ne yapıldığını sormak için Past Continuous Tense ('...you were doing') kullanılır."
+    },
+    {
+        question: "The blue whale is the _______ animal on Earth.",
+        options: ["large", "larger", "largest", "more large"],
+        correctAnswer: "largest",
+        explanation: "Bir grup içindeki en üstünlüğü belirtmek için 'superlative' (-est takısı) yapısı kullanılır."
+    },
+    {
+        question: "The team's _______ was disappointed after they lost the final match.",
+        options: ["supporter", "player", "coach", "opponent"],
+        correctAnswer: "coach",
+        explanation: "Takımın 'coach' (antrenörü), final maçını kaybettikten sonra hayal kırıklığına uğradı."
+    },
+    {
+        question: "I prefer _______ to a live concert to listening to CDs.",
+        options: ["going", "to go", "went", "go"],
+        correctAnswer: "going",
+        explanation: "'Prefer + V-ing + to + V-ing' kalıbı, bir aktiviteyi diğerine tercih ettiğini belirtir."
+    },
+    {
+        question: "The opposite of 'accept' an invitation is to _______ it.",
+        options: ["take", "refuse", "get", "bring"],
+        correctAnswer: "refuse",
+        explanation: "Bir davetiyeyi 'accept' (kabul etmek) eyleminin zıttı onu 'refuse' (reddetmek) tir."
+    },
+    {
+        question: "A person who is _______ can be trusted and depended on.",
+        options: ["unreliable", "dishonest", "dependable", "stubborn"],
+        correctAnswer: "dependable",
+        explanation: "Güvenilebilen ve bel bağlanabilen kişiye 'dependable' (güvenilir) denir."
+    },
+    {
+        question: "He _______ a lot of awards for his scientific research.",
+        options: ["received", "receives", "is receiving", "receive"],
+        correctAnswer: "received",
+        explanation: "Bilimsel araştırmaları için birçok ödül 'received' (aldı)."
+    },
+    {
+        question: "We must protect the _______ of endangered animals.",
+        options: ["habitats", "zoos", "cages", "farms"],
+        correctAnswer: "habitats",
+        explanation: "Nesli tükenmekte olan hayvanların 'habitats' (doğal yaşam alanları) nı korumalıyız."
+    },
+    {
+        question: "The _______ is the person who makes sure the rules are followed in a game.",
+        options: ["spectator", "player", "captain", "referee"],
+        correctAnswer: "referee",
+        explanation: "Bir oyunda kurallara uyulmasını sağlayan kişi 'referee' (hakem) dir."
+    },
+    {
+        question: "This discussion is about a very _______ topic.",
+        options: ["funny", "serious", "silly", "boring"],
+        correctAnswer: "serious",
+        explanation: "Bu tartışma çok 'serious' (ciddi) bir konu hakkındadır."
+    },
+    {
+        question: "A party to welcome someone to a new home is a _______ party.",
+        options: ["housewarming", "farewell", "slumber", "fancy dress"],
+        correctAnswer: "housewarming",
+        explanation: "Birini yeni bir evde karşılamak için yapılan partiye 'housewarming party' (yeni ev partisi) denir."
+    },
+    {
+        question: "The opposite of 'plump' is _______.",
+        options: ["fat", "overweight", "slim", "large"],
+        correctAnswer: "slim",
+        explanation: "'Plump' (balık etli) kelimesinin zıttı 'slim' (ince, zayıf) kelimesidir."
+    },
+    {
+        question: "She met her husband while she _______ in Italy.",
+        options: ["was travelling", "travelled", "is travelling", "travels"],
+        correctAnswer: "was travelling",
+        explanation: "Geçmişte bir eylem devam ederken (seyahat etmek) başka bir olayın (eş-iyle tanışmak) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "A _______ is an animal that is hunted and eaten by another animal.",
+        options: ["predator", "prey", "herbivore", "carnivore"],
+        correctAnswer: "prey",
+        explanation: "Başka bir hayvan tarafından avlanan ve yenen hayvana 'prey' (av) denir."
+    },
+    {
+        question: "He has been doing martial arts since he was a child. He is very _______.",
+        options: ["fit", "weak", "unhealthy", "slow"],
+        correctAnswer: "fit",
+        explanation: "Çocukluğundan beri dövüş sanatları yapan biri çok 'fit' (formda) olur."
+    },
+    {
+        question: "I prefer watching series _______ they have a continuing story.",
+        options: ["but", "so", "because", "or"],
+        correctAnswer: "because",
+        explanation: "Dizileri tercih etme nedenini belirtmek için 'because' (çünkü) bağlacı kullanılır."
+    },
+    {
+        question: "It's a good idea to create a _______ for your party so you don't forget anything.",
+        options: ["guest list", "shopping list", "to-do list", "playlist"],
+        correctAnswer: "to-do list",
+        explanation: "Bir şeyi unutmamak için parti öncesi bir 'to-do list' (yapılacaklar listesi) oluşturmak iyi bir fikirdir."
+    },
+    {
+        question: "A person who is _______ always wants what other people have.",
+        options: ["generous", "envious", "caring", "supportive"],
+        correctAnswer: "envious",
+        explanation: "Her zaman başkalarının sahip olduklarını isteyen kişiye 'envious' (kıskanç) denir."
+    },
+    {
+        question: "He _______ a degree in engineering from a famous university.",
+        options: ["got", "made", "did", "took"],
+        correctAnswer: "got",
+        explanation: "Üniversiteden mezun olup diploma almak 'get a degree' ifadesiyle kullanılır."
+    },
+    {
+        question: "The _______ of some animals helps them to hide from predators.",
+        options: ["camouflage", "color", "skin", "fur"],
+        correctAnswer: "camouflage",
+        explanation: "Bazı hayvanların 'camouflage' (kamuflaj) özelliği, avcılardan saklanmalarına yardımcı olur."
+    },
+    {
+        question: "You need a lot of _______ to be a successful athlete.",
+        options: ["luck", "talent", "training", "money"],
+        correctAnswer: "training",
+        explanation: "Başarılı bir atlet olmak için çok fazla 'training' (antrenman) gerekir."
+    },
+    {
+        question: "I find _______ shows very unrealistic. I prefer programmes about real life.",
+        options: ["reality", "quiz", "game", "chat"],
+        correctAnswer: "reality",
+        explanation: "Gerçek hayatla ilgili programları tercih eden biri, 'reality' şovları gerçek dışı bulabilir."
+    },
+    {
+        question: "The opposite of 'well-behaved' is _______.",
+        options: ["polite", "good", "naughty", "kind"],
+        correctAnswer: "naughty",
+        explanation: "'Well-behaved' (uslu, terbiyeli) kelimesinin zıttı 'naughty' (yaramaz) kelimesidir."
+    },
+    {
+        question: "A person who is not afraid of anything is _______.",
+        options: ["scared", "fearless", "worried", "anxious"],
+        correctAnswer: "fearless",
+        explanation: "Hiçbir şeyden korkmayan kişiye 'fearless' (korkusuz) denir."
+    },
+    {
+        question: "What were you _______ about when I came in?",
+        options: ["thinking", "thought", "think", "thinks"],
+        correctAnswer: "thinking",
+        explanation: "Past Continuous Tense ile soru sorarken ana fiil -ing takısı alır."
+    },
+    {
+        question: "We should avoid buying products made from _______ animals.",
+        options: ["domestic", "farm", "endangered", "wild"],
+        correctAnswer: "endangered",
+        explanation: "Nesli tükenmekte olan hayvanlardan yapılan ürünleri almaktan kaçınmalıyız."
+    },
+    {
+        question: "The spectators cheered loudly when their team scored a _______.",
+        options: ["point", "goal", "basket", "run"],
+        correctAnswer: "goal",
+        explanation: "Futbol gibi oyunlarda sayıya 'goal' (gol) denir."
+    },
+    {
+        question: "The opposite of 'generous' is _______.",
+        options: ["kind", "mean", "friendly", "honest"],
+        correctAnswer: "mean",
+        explanation: "'Generous' (cömert) kelimesinin zıtlarından biri 'mean' (cimri) kelimesidir."
+    },
+    {
+        question: "He is a very _______ person; he never changes his mind.",
+        options: ["easy-going", "flexible", "stubborn", "open-minded"],
+        correctAnswer: "stubborn",
+        explanation: "Fikrini asla değiştirmeyen kişiye 'stubborn' (inatçı) denir."
+    },
+    {
+        question: "She _______ her first story at the age of ten.",
+        options: ["was writing", "wrote", "writes", "is writing"],
+        correctAnswer: "wrote",
+        explanation: "Geçmişte belirli bir yaşta tamamlanmış bir eylem için Simple Past Tense kullanılır."
+    },
+    {
+        question: "_______ is the illegal hunting or capturing of wild animals.",
+        options: ["Poaching", "Fishing", "Farming", "Protecting"],
+        correctAnswer: "Poaching",
+        explanation: "Vahşi hayvanların yasadışı avlanmasına veya yakalanmasına 'poaching' (kaçak avcılık) denir."
+    },
+    {
+        question: "You need a lot of special _______ for sports like climbing.",
+        options: ["clothes", "shoes", "equipment", "food"],
+        correctAnswer: "equipment",
+        explanation: "Tırmanış gibi sporlar için çok sayıda özel 'equipment' (ekipman) gerekir."
+    },
+    {
+        question: "The _______ of this TV series is very complicated.",
+        options: ["actor", "character", "plot", "channel"],
+        correctAnswer: "plot",
+        explanation: "Bu dizinin 'plot' (konusu, olay örgüsü) çok karmaşık."
+    },
+    {
+        question: "A person with a lot of energy is _______.",
+        options: ["lazy", "tired", "energetic", "bored"],
+        correctAnswer: "energetic",
+        explanation: "Çok fazla enerjisi olan kişiye 'energetic' (enerjik) denir."
+    },
+    {
+        question: "He _______ a lot of important discoveries during his career.",
+        options: ["made", "did", "got", "took"],
+        correctAnswer: "made",
+        explanation: "Keşif yapmak için 'make discoveries' kalıbı kullanılır."
+    },
+    {
+        question: "The opposite of 'carnivore' is _______.",
+        options: ["predator", "herbivore", "omnivore", "mammal"],
+        correctAnswer: "herbivore",
+        explanation: "Etoburun zıttı 'herbivore' (otobur) dur."
+    },
+    {
+        question: "The team celebrated their _______ after the final match.",
+        options: ["defeat", "loss", "victory", "draw"],
+        correctAnswer: "victory",
+        explanation: "Takım, final maçından sonra 'victory' (zafer) lerini kutladı."
+    },
+    {
+        question: "I would rather go cycling _______ play computer games.",
+        options: ["to", "than", "from", "for"],
+        correctAnswer: "than",
+        explanation: "'Would rather' kalıbı ile iki seçenek arasında tercih belirtilirken 'than' kullanılır."
+    },
+    {
+        question: "A person who is _______ is friendly and enjoys being with others.",
+        options: ["shy", "sociable", "reserved", "quiet"],
+        correctAnswer: "sociable",
+        explanation: "Arkadaş canlısı ve başkalarıyla birlikte olmaktan hoşlanan kişiye 'sociable' (sosyal) denir."
+    },
+    {
+        question: "He _______ his own company when he was 25.",
+        options: ["was starting", "started", "starts", "is starting"],
+        correctAnswer: "started",
+        explanation: "Geçmişte belirli bir yaşta olan bir olay için Simple Past Tense kullanılır."
+    },
+    {
+        question: "We should try to _______ pollution to protect our planet.",
+        options: ["increase", "reduce", "create", "cause"],
+        correctAnswer: "reduce",
+        explanation: "Gezegenimizi korumak için kirliliği 'reduce' (azaltmak) etmeye çalışmalıyız."
+    },
+    {
+        question: "You need to be physically _______ to do extreme sports.",
+        options: ["weak", "strong", "short", "slim"],
+        correctAnswer: "strong",
+        explanation: "Ekstrem sporlar yapmak için fiziksel olarak 'strong' (güçlü) olmanız gerekir."
+    },
+    {
+        question: "The opposite of 'thoughtful' is _______.",
+        options: ["caring", "inconsiderate", "kind", "helpful"],
+        correctAnswer: "inconsiderate",
+        explanation: "'Thoughtful' (düşünceli) kelimesinin zıttı 'inconsiderate' (düşüncesiz) kelimesidir."
+    },
+    {
+        question: "What were you doing at this time yesterday?",
+        options: ["I was watching TV.", "I watch TV.", "I watched TV.", "I am watching TV."],
+        correctAnswer: "I was watching TV.",
+        explanation: "Past Continuous Tense ile sorulan bir soruya yine aynı tense ile cevap verilir."
+    },
+    {
+        question: "A person who is _______ always wants to be successful.",
+        options: ["lazy", "ambitious", "careless", "modest"],
+        correctAnswer: "ambitious",
+        explanation: "Her zaman başarılı olmak isteyen kişiye 'ambitious' (hırslı) denir."
+    },
+    {
+        question: "The government took _______ to protect the endangered birds.",
+        options: ["measures", "risks", "chances", "problems"],
+        correctAnswer: "measures",
+        explanation: "Hükümet, nesli tükenmekte olan kuşları korumak için 'measures' (önlemler) aldı."
+    },
+    {
+        question: "The opposite of 'individual' is _______.",
+        options: ["single", "team", "personal", "solo"],
+        correctAnswer: "team",
+        explanation: "Bireysel sporun zıttı 'team' (takım) sporudur."
+    },
+    {
+        question: "A person with good manners is _______.",
+        options: ["rude", "impolite", "well-mannered", "naughty"],
+        correctAnswer: "well-mannered",
+        explanation: "Görgü kuralları iyi olan kişiye 'well-mannered' (görgülü, terbiyeli) denir."
+    },
+    {
+        question: "He became famous after he _______ in a popular film.",
+        options: ["was appearing", "appeared", "appears", "is appearing"],
+        correctAnswer: "appeared",
+        explanation: "Geçmişte tamamlanmış bir olayı anlatmak için Simple Past Tense kullanılır."
+    },
+    {
+        question: "The extinction of dinosaurs is a famous _______ from the past.",
+        options: ["event", "story", "mystery", "legend"],
+        correctAnswer: "event",
+        explanation: "Dinozorların yok oluşu, geçmişten ünlü bir 'event' (olay) dır."
+    },
+    {
+        question: "To be a good team player, you need to _______ with others.",
+        options: ["argue", "compete", "cooperate", "fight"],
+        correctAnswer: "cooperate",
+        explanation: "İyi bir takım oyuncusu olmak için başkalarıyla 'cooperate' (işbirliği yapmak) gerekir."
+    },
+    {
+        question: "The opposite of 'outgoing' is _______.",
+        options: ["friendly", "sociable", "reserved", "talkative"],
+        correctAnswer: "reserved",
+        explanation: "'Outgoing' (dışa dönük) kelimesinin zıttı 'reserved' (çekingen, içine kapanık) kelimesidir."
+    },
+    {
+        question: "A person who is _______ is able to be trusted.",
+        options: ["reliable", "unreliable", "dishonest", "deceitful"],
+        correctAnswer: "reliable",
+        explanation: "Güvenilebilen kişiye 'reliable' (güvenilir) denir."
+    },
+    {
+        question: "She grew up in a small village, so she is not used to the _______ of the city.",
+        options: ["quiet", "peace", "hustle and bustle", "calm"],
+        correctAnswer: "hustle and bustle",
+        explanation: "Şehrin 'hustle and bustle' (koşuşturmaca, telaşı) na alışkın değil."
+    },
+    {
+        question: "Deforestation has a negative _______ on the environment.",
+        options: ["effect", "cause", "reason", "result"],
+        correctAnswer: "effect",
+        explanation: "Ormansızlaşmanın çevre üzerinde olumsuz bir 'effect' (etki) si vardır."
+    },
+    {
+        question: "The opposite of 'defeat' is _______.",
+        options: ["loss", "failure", "victory", "draw"],
+        correctAnswer: "victory",
+        explanation: "'Defeat' (yenilgi) kelimesinin zıttı 'victory' (zafer) kelimesidir."
+    },
+    {
+        question: "A person who has a lot of experience is _______.",
+        options: ["inexperienced", "experienced", "new", "young"],
+        correctAnswer: "experienced",
+        explanation: "Çok fazla tecrübesi olan kişiye 'experienced' (deneyimli) denir."
+    },
+    {
+        question: "He _______ his company in 2005.",
+        options: ["was founding", "founded", "founds", "is founding"],
+        correctAnswer: "founded",
+        explanation: "Geçmişte belirli bir tarihte olan bir olay için Simple Past Tense kullanılır."
+    },
+    {
+        question: "We should use _______ bags instead of plastic ones.",
+        options: ["disposable", "reusable", "single-use", "new"],
+        correctAnswer: "reusable",
+        explanation: "Plastik poşetler yerine 'reusable' (yeniden kullanılabilir) çantalar kullanmalıyız."
+    },
+    {
+        question: "The _______ for the match was sold out.",
+        options: ["tickets", "seats", "stadium", "crowd"],
+        correctAnswer: "tickets",
+        explanation: "Maç için 'tickets' (biletler) tükenmişti."
+    },
+    {
+        question: "The opposite of 'permanent' is _______.",
+        options: ["long", "temporary", "lasting", "eternal"],
+        correctAnswer: "temporary",
+        explanation: "'Permanent' (kalıcı) kelimesinin zıttı 'temporary' (geçici) kelimesidir."
+    },
+    {
+        question: "A person who is _______ can do many things well.",
+        options: ["talented", "untalented", "bad", "weak"],
+        correctAnswer: "talented",
+        explanation: "Birçok şeyi iyi yapabilen kişiye 'talented' (yetenekli) denir."
+    },
+    {
+        question: "I _______ when my mom entered the room.",
+        options: ["was sleeping", "slept", "am sleeping", "sleep"],
+        correctAnswer: "was sleeping",
+        explanation: "Geçmişte bir eylem devam ederken başka bir eylemin olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The illegal trade of animals is a threat to _______.",
+        options: ["biodiversity", "pollution", "deforestation", "climate change"],
+        correctAnswer: "biodiversity",
+        explanation: "Yasadışı hayvan ticareti, 'biodiversity' (biyoçeşitlilik) için bir tehdittir."
+    },
+    {
+        question: "You need a lot of _______ to climb a high mountain.",
+        options: ["courage", "fear", "luck", "money"],
+        correctAnswer: "courage",
+        explanation: "Yüksek bir dağa tırmanmak için çok fazla 'courage' (cesaret) gerekir."
+    },
+    {
+        question: "The opposite of 'modest' is _______.",
+        options: ["humble", "boastful", "shy", "quiet"],
+        correctAnswer: "boastful",
+        explanation: "'Modest' (mütevazı) kelimesinin zıttı 'boastful' (övünen, kibirli) kelimesidir."
+    },
+    {
+        question: "A person who is _______ is always happy and positive.",
+        options: ["miserable", "cheerful", "grumpy", "sad"],
+        correctAnswer: "cheerful",
+        explanation: "Her zaman mutlu ve pozitif olan kişiye 'cheerful' (neşeli) denir."
+    },
+    {
+        question: "He lived a very simple life and _______ away peacefully at an old age.",
+        options: ["passed", "went", "came", "got"],
+        correctAnswer: "passed",
+        explanation: "Ölmek eylemini daha kibar bir şekilde ifade etmek için 'pass away' deyimi kullanılır."
+    },
+    {
+        question: "Many animals _______ to warmer places in winter.",
+        options: ["migrate", "hibernate", "live", "stay"],
+        correctAnswer: "migrate",
+        explanation: "Birçok hayvan kışın daha sıcak yerlere 'migrate' (göç etmek) eder."
+    },
+    {
+        question: "The _______ of the game is to score more points than the other team.",
+        options: ["rule", "objective", "player", "equipment"],
+        correctAnswer: "objective",
+        explanation: "Oyunun 'objective' (amacı), diğer takımdan daha fazla puan almaktır."
+    },
+    {
+        question: "The opposite of 'patient' is _______.",
+        options: ["calm", "impatient", "tolerant", "quiet"],
+        correctAnswer: "impatient",
+        explanation: "'Patient' (sabırlı) kelimesinin zıttı 'impatient' (sabırsız) kelimesidir."
+    },
+    {
+        question: "A person who is _______ has a good imagination.",
+        options: ["dull", "creative", "boring", "plain"],
+        correctAnswer: "creative",
+        explanation: "İyi bir hayal gücüne sahip kişiye 'creative' (yaratıcı) denir."
+    },
+    {
+        question: "He _______ his first poem when he was only eight years old.",
+        options: ["composed", "wrote", "drew", "painted"],
+        correctAnswer: "composed",
+        explanation: "Şiir veya müzik eseri yaratmak için 'compose' (bestelemek, yazmak) fiili kullanılır."
+    },
+    {
+        question: "We should _______ our old clothes to charity.",
+        options: ["sell", "throw away", "donate", "keep"],
+        correctAnswer: "donate",
+        explanation: "Eski kıyafetlerimizi hayır kurumlarına 'donate' (bağışlamak) yapmalıyız."
+    },
+    {
+        question: "You need to be a good _______ to play team sports.",
+        options: ["communicator", "leader", "follower", "individual"],
+        correctAnswer: "communicator",
+        explanation: "Takım sporları oynamak için iyi bir 'communicator' (iletişimci) olmanız gerekir."
+    },
+    {
+        question: "The opposite of 'tidy' is _______.",
+        options: ["clean", "neat", "messy", "organized"],
+        correctAnswer: "messy",
+        explanation: "'Tidy' (düzenli) kelimesinin zıttı 'messy' (dağınık) kelimesidir."
+    },
+    {
+        question: "A person who can do things without help is _______.",
+        options: ["dependent", "independent", "helpless", "weak"],
+        correctAnswer: "independent",
+        explanation: "Yardım almadan bir şeyler yapabilen kişiye 'independent' (bağımsız) denir."
+    }
+
+    
         ],
 
 
         advanced: [
-            {
-                question: "What do you say to persuade a friend?",
-                options: ["It’s a great idea!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "It’s a great idea!",
-                explanation: "Bir arkadaşınızı ikna etmek için 'It’s a great idea!' (Bu harika bir fikir!) diyebilirsiniz."
-            },
-            {
-                question: "What is a renewable energy source?",
-                options: ["Coal", "Solar power", "Oil", "Gas"],
-                correctAnswer: "Solar power",
-                explanation: "Güneş enerjisi ('solar power') yenilenebilir bir enerji kaynağıdır."
-            },
-            {
-                question: "What do you need for a research project?",
-                options: ["Spoon", "Sources", "Notebook", "Shoe"],
-                correctAnswer: "Sources",
-                explanation: "Bir araştırma projesi için kaynaklara ('sources') ihtiyaç duyarsınız."
-            },
-            {
-                question: "What is a natural disaster with lava?",
-                options: ["Flood", "Volcano", "Tornado", "Earthquake"],
-                correctAnswer: "Volcano",
-                explanation: "Lav püskürten doğal afet volkandır ('volcano')."
-            },
-            {
-                question: "What do you do to prevent cyberbullying?",
-                options: ["Share everything", "Be respectful online", "Click all links", "Post daily"],
-                correctAnswer: "Be respectful online",
-                explanation: "Siber zorbalığı önlemek için çevrimiçi ortamda saygılı olmalısınız ('be respectful online')."
-            },
-            {
-                question: "What do teens learn in science class?",
-                options: ["Cooking", "Experiments", "Dancing", "Painting"],
-                correctAnswer: "Experiments",
-                explanation: "Gençler fen dersinde deneyler ('experiments') yapmayı öğrenirler."
-            },
-            {
-                question: "What is an autobiography?",
-                options: ["A fictional story", "A person’s own life story", "A game’s rules", "A car’s history"],
-                correctAnswer: "A person’s own life story",
-                explanation: "Bir otobiyografi, bir kişinin kendi hayat hikayesidir."
-            },
-            {
-                question: "What do you need for a school debate?",
-                options: ["Spoon", "Arguments", "Book", "Shoe"],
-                correctAnswer: "Arguments",
-                explanation: "Okul münazarası için argümanlara ('arguments') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to resolve a disagreement?",
-                options: ["Let’s find a solution", "I’m always right!", "Go away!", "No way!"],
-                correctAnswer: "Let’s find a solution",
-                explanation: "Bir anlaşmazlığı çözmek için 'Let’s find a solution' (Bir çözüm bulalım) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with fire?",
-                options: ["Wildfire", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Wildfire",
-                explanation: "Orman yangını ('wildfire') ateşle ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to secure your digital identity?",
-                options: ["Share passwords", "Use encryption", "Click all links", "Post everything"],
-                correctAnswer: "Use encryption",
-                explanation: "Dijital kimliğinizi güvence altına almak için şifreleme ('encryption') kullanabilirsiniz."
-            },
+
+            
 
     {
         question: "He is so _______. One minute he is happy, and the next minute he is sad.",
@@ -8597,78 +8617,6 @@ const questionsByGrade = {
         explanation: "Parti başarılıysa, 'Everybody' (herkes) harika zaman geçirmiş demektir."
     },
 {
-                question: "What do teens learn in chemistry class?",
-                options: ["Cooking", "Reactions", "Dancing", "Painting"],
-                correctAnswer: "Reactions",
-                explanation: "Gençler kimya dersinde reaksiyonları ('reactions') öğrenirler."
-            },
-            {
-                question: "What is an editorial?",
-                options: ["A fictional story", "An opinion piece", "A game’s rules", "A car’s history"],
-                correctAnswer: "An opinion piece",
-                explanation: "Bir başyazı ('editorial'), bir fikir yazısıdır."
-            },
-            {
-                question: "What do you need for a school campaign?",
-                options: ["Spoon", "Posters", "Book", "Pen"],
-                correctAnswer: "Posters",
-                explanation: "Bir okul kampanyası için posterlere ('posters') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to encourage teamwork?",
-                options: ["Let’s work together!", "Do it alone!", "I’m tired!", "No way!"],
-                correctAnswer: "Let’s work together!",
-                explanation: "Takım çalışmasını teşvik etmek için 'Let’s work together!' (Birlikte çalışalım!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with snow?",
-                options: ["Blizzard", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Blizzard",
-                explanation: "Kar fırtınası ('blizzard') karla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to avoid online scams?",
-                options: ["Click all links", "Check website safety", "Share passwords", "Post everything"],
-                correctAnswer: "Check website safety",
-                explanation: "Çevrimiçi dolandırıcılıklardan kaçınmak için web sitesi güvenliğini kontrol etmelisiniz ('check website safety')."
-            },
-            {
-                question: "What do teens learn in physics class?",
-                options: ["Cooking", "Motion", "Dancing", "Painting"],
-                correctAnswer: "Motion",
-                explanation: "Gençler fizik dersinde hareketi ('motion') öğrenirler."
-            },
-            {
-                question: "What is a feature article?",
-                options: ["A fictional story", "An in-depth story", "A game’s rules", "A car’s history"],
-                correctAnswer: "An in-depth story",
-                explanation: "Özel bir makale ('feature article'), derinlemesine bir hikayedir."
-            },
-            {
-                question: "What do you need for a debate competition?",
-                options: ["Spoon", "Evidence", "Book", "Pen"],
-                correctAnswer: "Evidence",
-                explanation: "Bir münazara yarışması için kanıtlara ('evidence') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to propose a project?",
-                options: ["I have an idea!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "I have an idea!",
-                explanation: "Bir proje önermek için 'I have an idea!' (Bir fikrim var!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with wind?",
-                options: ["Hurricane", "Flood", "Earthquake", "Wildfire"],
-                correctAnswer: "Hurricane",
-                explanation: "Kasırga ('hurricane') rüzgarla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to protect your privacy online?",
-                options: ["Share everything", "Limit personal info", "Click all links", "Post daily"],
-                correctAnswer: "Limit personal info",
-                explanation: "Çevrimiçi gizliliğinizi korumak için kişisel bilgileri sınırlamalısınız ('limit personal info')."
-            },
-{
         question: "A person who is able to make good decisions and give good advice is considered _______.",
         options: ["wise", "foolish", "naive", "immature"],
         correctAnswer: "wise",
@@ -8788,793 +8736,582 @@ const questionsByGrade = {
         correctAnswer: "theory",
         explanation: "Bilim insanının 'theory' (teorisi) çığır açıcıydı ve fizik anlayışımızı değiştirdi."
     },
-            {
-                question: "What do teens learn in social studies?",
-                options: ["Cooking", "Civics", "Dancing", "Painting"],
-                correctAnswer: "Civics",
-                explanation: "Gençler sosyal bilgiler dersinde yurttaşlık bilgisini ('civics') öğrenirler."
-            },
-            {
-                question: "What is a TED Talk?",
-                options: ["A fictional story", "An inspiring speech", "A game’s rules", "A car’s history"],
-                correctAnswer: "An inspiring speech",
-                explanation: "Bir TED Konuşması, ilham verici bir konuşmadır ('an inspiring speech')."
-            },
-            {
-                question: "What do you need for a volunteering event?",
-                options: ["Spoon", "Commitment", "Book", "Pen"],
-                correctAnswer: "Commitment",
-                explanation: "Bir gönüllülük etkinliği için bağlılığa ('commitment') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to express disagreement?",
-                options: ["I see your point, but…", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "I see your point, but…",
-                explanation: "Fikrinizi belirtmek için kibarca 'I see your point, but…' (Senin açını anlıyorum, ama…) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with earth?",
-                options: ["Earthquake", "Flood", "Tornado", "Wildfire"],
-                correctAnswer: "Earthquake",
-                explanation: "Deprem ('earthquake') yer kabuğuyla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to stay safe from hackers?",
-                options: ["Share passwords", "Update software", "Click all links", "Post everything"],
-                correctAnswer: "Update software",
-                explanation: "Bilgisayar korsanlarından güvende kalmak için yazılımınızı güncellemelisiniz ('update software')."
-            },
-            {
-                question: "What do teens learn in language arts?",
-                options: ["Cooking", "Writing", "Dancing", "Painting"],
-                correctAnswer: "Writing",
-                explanation: "Gençler dil sanatları dersinde yazmayı ('writing') öğrenirler."
-            },
-            {
-                question: "What is a webinar?",
-                options: ["A fictional story", "An online seminar", "A game’s rules", "A car’s history"],
-                correctAnswer: "An online seminar",
-                explanation: "Bir webinar, çevrimiçi bir seminerdir."
-            },
-            {
-                question: "What do you need for a school festival?",
-                options: ["Spoon", "Planning", "Book", "Pen"],
-                correctAnswer: "Planning",
-                explanation: "Bir okul festivali için planlama ('planning') yapmanız gerekir."
-            },
-            {
-                question: "What do you say to ask for clarification?",
-                options: ["Can you explain?", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "Can you explain?",
-                explanation: "Açıklama istemek için 'Can you explain?' (Açıklayabilir misin?) diye sorabilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with heat?",
-                options: ["Heatwave", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Heatwave",
-                explanation: "Sıcak hava dalgası ('heatwave') ısıyla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to promote digital citizenship?",
-                options: ["Share everything", "Be ethical online", "Click all links", "Post daily"],
-                correctAnswer: "Be ethical online",
-                explanation: "Dijital vatandaşlığı teşvik etmek için çevrimiçi ortamda etik olmalısınız ('be ethical online')."
-            },
-            {
-                question: "What do teens learn in computer class?",
-                options: ["Cooking", "Programming", "Dancing", "Painting"],
-                correctAnswer: "Programming",
-                explanation: "Gençler bilgisayar dersinde programlama ('programming') öğrenirler."
-            },
-            {
-                question: "What is a case study?",
-                options: ["A fictional story", "A detailed analysis", "A game’s rules", "A car’s history"],
-                correctAnswer: "A detailed analysis",
-                explanation: "Bir vaka çalışması ('case study'), detaylı bir analizdir."
-            },
-            {
-                question: "What do you need for a leadership role?",
-                options: ["Spoon", "Responsibility", "Book", "Pen"],
-                correctAnswer: "Responsibility",
-                explanation: "Bir liderlik rolü için sorumluluğa ('responsibility') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to motivate a group?",
-                options: ["We can do this!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "We can do this!",
-                explanation: "Bir grubu motive etmek için 'We can do this!' (Bunu yapabiliriz!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with mud?",
-                options: ["Landslide", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Landslide",
-                explanation: "Heyelan ('landslide') çamurla ilgili bir doğal afettir."
-            },
-            {
-                question: "What adjective describes a friend who helps others?",
-                options: ["Selfish", "Helpful", "Lazy", "Rude"],
-                correctAnswer: "Helpful",
-                explanation: "Başkalarına yardım eden bir arkadaşı 'helpful' (yardımsever) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport requires a high level of teamwork?",
-                options: ["Running", "Swimming", "Football", "Skiing"],
-                correctAnswer: "Football",
-                explanation: "Futbol ('football') yüksek düzeyde takım çalışması gerektirir."
-            },
-            {
-                question: "What is the main purpose of a biography?",
-                options: ["To sell cars", "To tell a person’s life story", "To teach math", "To play games"],
-                correctAnswer: "To tell a person’s life story",
-                explanation: "Bir biyografinin ana amacı bir kişinin hayat hikayesini anlatmaktır."
-            },
-            {
-                question: "What is the healthiest way to stay active?",
-                options: ["Watching TV", "Playing video games", "Exercising regularly", "Eating candy"],
-                correctAnswer: "Exercising regularly",
-                explanation: "Aktif kalmanın en sağlıklı yolu düzenli egzersiz yapmaktır ('exercising regularly')."
-            },
-            {
-                question: "What is a major cause of environmental pollution?",
-                options: ["Recycling", "Planting trees", "Burning fossil fuels", "Saving water"],
-                correctAnswer: "Burning fossil fuels",
-                explanation: "Fosil yakıtların yakılması ('burning fossil fuels') çevre kirliliğinin önemli bir nedenidir."
-            },
-            {
-                question: "What defines an extreme adventure?",
-                options: ["Reading quietly", "Bungee jumping", "Eating lunch", "Sleeping"],
-                correctAnswer: "Bungee jumping",
-                explanation: "'Bungee jumping' ekstrem bir macera olarak tanımlanır."
-            },
-            {
-                question: "Which invention changed communication?",
-                options: ["Wheel", "Telephone", "Pen", "Shoe"],
-                correctAnswer: "Telephone",
-                explanation: "Telefon ('telephone') iletişimi değiştiren bir icattır."
-            },
-            {
-                question: "What is a common dream for the future?",
-                options: ["Eating more candy", "Achieving world peace", "Watching TV", "Sleeping"],
-                correctAnswer: "Achieving world peace",
-                explanation: "Gelecek için yaygın bir hayal dünya barışını sağlamaktır ('achieving world peace')."
-            },
-            {
-                question: "What does a governor do?",
-                options: ["Cooks food", "Manages a region", "Sings songs", "Drives cars"],
-                correctAnswer: "Manages a region",
-                explanation: "Bir vali ('governor') bir bölgeyi yönetir ('manages a region')."
-            },
-            {
-                question: "What adjective describes a person who makes others laugh?",
-                options: ["Serious", "Funny", "Lazy", "Rude"],
-                correctAnswer: "Funny",
-                explanation: "Başkalarını güldüren birini 'funny' (komik) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport is played individually?",
-                options: ["Football", "Volleyball", "Tennis", "Basketball"],
-                correctAnswer: "Tennis",
-                explanation: "Tenis ('tennis') bireysel olarak oynanan bir spordur."
-            },
-            {
-                question: "What is a key element of a biography?",
-                options: ["A car’s history", "A person’s achievements", "A book’s plot", "A game’s rules"],
-                correctAnswer: "A person’s achievements",
-                explanation: "Bir biyografinin kilit unsurlarından biri kişinin başarılarıdır ('achievements')."
-            },
-            {
-                question: "What is the healthiest food choice?",
-                options: ["Chips", "Candy", "Vegetables", "Soda"],
-                correctAnswer: "Vegetables",
-                explanation: "En sağlıklı yiyecek seçimi sebzelerdir ('vegetables')."
-            },
-            {
-                question: "What can reduce air pollution?",
-                options: ["Driving more cars", "Using public transport", "Burning trash", "Cutting trees"],
-                correctAnswer: "Using public transport",
-                explanation: "Toplu taşıma kullanmak ('using public transport') hava kirliliğini azaltabilir."
-            },
-            {
-                question: "What is a cultural adventure?",
-                options: ["Doing homework", "Visiting historical sites", "Eating lunch", "Sleeping"],
-                correctAnswer: "Visiting historical sites",
-                explanation: "Tarihi yerleri ziyaret etmek ('visiting historical sites') kültürel bir maceradır."
-            },
-            {
-                question: "Which invention helps with scientific research?",
-                options: ["Wheel", "Microscope", "Pen", "Shoe"],
-                correctAnswer: "Microscope",
-                explanation: "Mikroskop ('microscope') bilimsel araştırmalara yardımcı olan bir icattır."
-            },
-            {
-                question: "What is a dream career for many?",
-                options: ["Doing homework", "Being a scientist", "Eating food", "Sleeping"],
-                correctAnswer: "Being a scientist",
-                explanation: "Bilim insanı olmak ('being a scientist') birçok kişi için hayal edilen bir kariyerdir."
-            },
-            {
-                question: "What does a paramedic do?",
-                options: ["Cooks food", "Provides emergency care", "Sings songs", "Drives cars"],
-                correctAnswer: "Provides emergency care",
-                explanation: "Bir paramedik acil bakım sağlar ('provides emergency care')."
-            },
-            {
-                question: "What adjective describes a person who doesn’t talk much?",
-                options: ["Talkative", "Quiet", "Tall", "Rude"],
-                correctAnswer: "Quiet",
-                explanation: "Fazla konuşmayan birini 'quiet' (sessiz) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport requires endurance?",
-                options: ["Football", "Running", "Tennis", "Basketball"],
-                correctAnswer: "Running",
-                explanation: "Koşu ('running') dayanıklılık gerektiren bir spordur."
-            },
-            {
-                question: "What did a historical figure accomplish?",
-                options: ["Ate food", "Changed society", "Slept", "Ran"],
-                correctAnswer: "Changed society",
-                explanation: "Tarihi bir figür toplumu değiştirmiş ('changed society') olabilir."
-            },
-            {
-                question: "What is the healthiest drink choice?",
-                options: ["Soda", "Coffee", "Water", "Tea"],
-                correctAnswer: "Water",
-                explanation: "En sağlıklı içecek seçimi sudur ('water')."
-            },
-            {
-                question: "What can protect endangered animals?",
-                options: ["Hunting", "Creating sanctuaries", "Cutting trees", "Burning trash"],
-                correctAnswer: "Creating sanctuaries",
-                explanation: "Nesli tükenmekte olan hayvanları korumak için sığınaklar oluşturmak ('creating sanctuaries') gerekir."
-            },
-            {
-                question: "What is a thrilling group adventure?",
-                options: ["Reading quietly", "White-water rafting", "Eating lunch", "Sleeping"],
-                correctAnswer: "White-water rafting",
-                explanation: "'White-water rafting' heyecan verici bir grup macerasıdır."
-            },
-            {
-                question: "Which invention connects the world?",
-                options: ["Wheel", "Internet", "Pen", "Shoe"],
-                correctAnswer: "Internet",
-                explanation: "İnternet dünyayı birbirine bağlayan bir icattır."
-            },
-            {
-                question: "What is a dream for a better planet?",
-                options: ["More pollution", "Clean energy", "Watching TV", "Sleeping"],
-                correctAnswer: "Clean energy",
-                explanation: "Daha iyi bir gezegen için bir hayal temiz enerjidir ('clean energy')."
-            },
-            {
-                question: "What does a city planner do?",
-                options: ["Cooks food", "Designs cities", "Sings songs", "Drives cars"],
-                correctAnswer: "Designs cities",
-                explanation: "Bir şehir plancısı ('city planner') şehirleri tasarlar."
-            },
-            {
-                question: "What adjective describes a person who shares a lot?",
-                options: ["Selfish", "Generous", "Lazy", "Rude"],
-                correctAnswer: "Generous",
-                explanation: "Çok paylaşan birini 'generous' (cömert) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport is played on ice?",
-                options: ["Football", "Ice hockey", "Tennis", "Basketball"],
-                correctAnswer: "Ice hockey",
-                explanation: "Buz hokeyi ('ice hockey') buz üzerinde oynanır."
-            },
-            {
-                question: "What is a biography’s focus?",
-                options: ["A car’s history", "A person’s life events", "A book’s plot", "A game’s rules"],
-                correctAnswer: "A person’s life events",
-                explanation: "Bir biyografinin odak noktası bir kişinin hayat olaylarıdır."
-            },
-            {
-                question: "What is the healthiest lifestyle choice?",
-                options: ["Eating junk food", "Regular exercise", "Watching TV", "Sleeping late"],
-                correctAnswer: "Regular exercise",
-                explanation: "En sağlıklı yaşam tarzı seçimi düzenli egzersizdir ('regular exercise')."
-            },
-            {
-                question: "What can reduce water pollution?",
-                options: ["Dumping waste", "Cleaning rivers", "Burning trash", "Cutting trees"],
-                correctAnswer: "Cleaning rivers",
-                explanation: "Nehirleri temizlemek ('cleaning rivers') su kirliliğini azaltabilir."
-            },
-            {
-                question: "What is a solo adventure?",
-                options: ["Team sports", "Solo hiking", "Group camping", "Eating lunch"],
-                correctAnswer: "Solo hiking",
-                explanation: "Tek başına yürüyüş yapmak ('solo hiking') bir solo maceradır."
-            },
-            {
-                question: "Which invention aids medical treatment?",
-                options: ["Wheel", "X-ray machine", "Pen", "Shoe"],
-                correctAnswer: "X-ray machine",
-                explanation: "X-ray cihazı ('X-ray machine') tıbbi tedaviye yardımcı olan bir icattır."
-            },
-            {
-                question: "What is a dream for education?",
-                options: ["More homework", "Better schools", "Watching TV", "Sleeping"],
-                correctAnswer: "Better schools",
-                explanation: "Eğitim için bir hayal daha iyi okullardır ('better schools')."
-            },
-            {
-                question: "What does an environmentalist do?",
-                options: ["Cooks food", "Protects nature", "Sings songs", "Drives cars"],
-                correctAnswer: "Protects nature",
-                explanation: "Bir çevreci ('environmentalist') doğayı korur."
-            },
-            {
-                question: "What adjective describes a person who is well-mannered?",
-                options: ["Rude", "Polite", "Lazy", "Tall"],
-                correctAnswer: "Polite",
-                explanation: "Görgü kurallarına uyan birini 'polite' (kibar) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport requires precision?",
-                options: ["Football", "Archery", "Tennis", "Basketball"],
-                correctAnswer: "Archery",
-                explanation: "Okçuluk ('archery') hassasiyet gerektiren bir spordur."
-            },
-            {
-                question: "What did an inventor contribute?",
-                options: ["Ate food", "Created a new device", "Slept", "Ran"],
-                correctAnswer: "Created a new device",
-                explanation: "Bir mucit yeni bir cihaz yaratmış ('created a new device') olabilir."
-            },
-            {
-                question: "What is the healthiest breakfast choice?",
-                options: ["Chips", "Candy", "Oatmeal", "Soda"],
-                correctAnswer: "Oatmeal",
-                explanation: "En sağlıklı kahvaltı seçimi yulaf ezmesidir ('oatmeal')."
-            },
-            {
-                question: "What can combat climate change?",
-                options: ["Burning fossil fuels", "Planting trees", "Dumping waste", "Cutting forests"],
-                correctAnswer: "Planting trees",
-                explanation: "Ağaç dikmek ('planting trees') iklim değişikliğiyle mücadele edebilir."
-            },
-            {
-                question: "What is a historical adventure?",
-                options: ["Watching TV", "Exploring ancient ruins", "Eating lunch", "Sleeping"],
-                correctAnswer: "Exploring ancient ruins",
-                explanation: "Antik kalıntıları keşfetmek ('exploring ancient ruins') tarihi bir maceradır."
-            },
-            {
-                question: "Which invention revolutionized transportation?",
-                options: ["Wheel", "Airplane", "Pen", "Shoe"],
-                correctAnswer: "Airplane",
-                explanation: "Uçak ('airplane') ulaşımda devrim yaratan bir icattır."
-            },
-            {
-                question: "What is a dream for global health?",
-                options: ["More diseases", "Access to medicine", "Watching TV", "Sleeping"],
-                correctAnswer: "Access to medicine",
-                explanation: "Küresel sağlık için bir hayal ilaca erişimdir ('access to medicine')."
-            },
-            {
-                question: "What does a social worker do?",
-                options: ["Cooks food", "Helps communities", "Sings songs", "Drives cars"],
-                correctAnswer: "Helps communities",
-                explanation: "Bir sosyal hizmet uzmanı ('social worker') topluluklara yardım eder."
-            },
-            {
-                question: "What adjective describes a person who thinks fast?",
-                options: ["Slow", "Clever", "Lazy", "Rude"],
-                correctAnswer: "Clever",
-                explanation: "Hızlı düşünen birini 'clever' (zeki) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport is played with a shuttlecock?",
-                options: ["Football", "Badminton", "Tennis", "Basketball"],
-                correctAnswer: "Badminton",
-                explanation: "Badminton, tüylü topla ('shuttlecock') oynanan bir spordur."
-            },
-            {
-                question: "What is a biography’s purpose?",
-                options: ["To sell products", "To inspire with a life story", "To teach math", "To play games"],
-                correctAnswer: "To inspire with a life story",
-                explanation: "Bir biyografinin amacı bir hayat hikayesiyle ilham vermektir."
-            },
-            {
-                question: "What is the healthiest dinner choice?",
-                options: ["Chips", "Candy", "Grilled chicken", "Soda"],
-                correctAnswer: "Grilled chicken",
-                explanation: "En sağlıklı akşam yemeği seçimi ızgara tavuktur ('grilled chicken')."
-            },
-            {
-                question: "What can promote recycling?",
-                options: ["Dumping waste", "Using bins", "Burning trash", "Cutting trees"],
-                correctAnswer: "Using bins",
-                explanation: "Geri dönüşüm kutuları kullanmak ('using bins') geri dönüşümü teşvik edebilir."
-            },
-            {
-                question: "What is a nature adventure?",
-                options: ["Watching TV", "Camping in a forest", "Eating lunch", "Sleeping"],
-                correctAnswer: "Camping in a forest",
-                explanation: "Bir ormanda kamp yapmak ('camping in a forest') bir doğa macerasıdır."
-            },
-            {
-                question: "Which invention helps navigation?",
-                options: ["Wheel", "GPS", "Pen", "Shoe"],
-                correctAnswer: "GPS",
-                explanation: "GPS navigasyona yardımcı olan bir icattır."
-            },
-            {
-                question: "What is a dream for equality?",
-                options: ["More division", "Fair opportunities", "Watching TV", "Sleeping"],
-                correctAnswer: "Fair opportunities",
-                explanation: "Eşitlik için bir hayal adil fırsatlardır ('fair opportunities')."
-            },
-            {
-                question: "What does a lawyer do?",
-                options: ["Cooks food", "Defends people in court", "Sings songs", "Drives cars"],
-                correctAnswer: "Defends people in court",
-                explanation: "Bir avukat ('lawyer') mahkemede insanları savunur."
-            },
-            {
-                question: "What adjective describes a person who doesn’t share?",
-                options: ["Generous", "Selfish", "Lazy", "Tall"],
-                correctAnswer: "Selfish",
-                explanation: "Paylaşmayan birini 'selfish' (bencil) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport requires balance?",
-                options: ["Football", "Gymnastics", "Tennis", "Basketball"],
-                correctAnswer: "Gymnastics",
-                explanation: "Jimnastik ('gymnastics') denge gerektiren bir spordur."
-            },
-            {
-                question: "What did a scientist discover?",
-                options: ["Ate food", "Found a new theory", "Slept", "Ran"],
-                correctAnswer: "Found a new theory",
-                explanation: "Bir bilim insanı yeni bir teori bulmuş ('found a new theory') olabilir."
-            },
-            {
-                question: "What is the healthiest snack choice?",
-                options: ["Chips", "Candy", "Nuts", "Soda"],
-                correctAnswer: "Nuts",
-                explanation: "En sağlıklı atıştırmalık seçimi kuruyemiştir ('nuts')."
-            },
-            {
-                question: "What can reduce deforestation?",
-                options: ["Cutting trees", "Protecting forests", "Burning trash", "Dumping waste"],
-                correctAnswer: "Protecting forests",
-                explanation: "Ormanları korumak ('protecting forests') ormansızlaşmayı azaltabilir."
-            },
-            {
-                question: "What is a space adventure?",
-                options: ["Watching TV", "Visiting a planet", "Eating lunch", "Sleeping"],
-                correctAnswer: "Visiting a planet",
-                explanation: "Bir gezegeni ziyaret etmek ('visiting a planet') bir uzay macerasıdır."
-            },
-            {
-                question: "Which invention stores information?",
-                options: ["Wheel", "Computer", "Pen", "Shoe"],
-                correctAnswer: "Computer",
-                explanation: "Bilgisayar ('computer') bilgi depolayan bir icattır."
-            },
-            {
-                question: "What is a dream for technology?",
-                options: ["Broken devices", "Smarter AI", "Watching TV", "Sleeping"],
-                correctAnswer: "Smarter AI",
-                explanation: "Teknoloji için bir hayal daha akıllı yapay zekadır ('smarter AI')."
-            },
-            {
-                question: "What does an architect do?",
-                options: ["Cooks food", "Designs buildings", "Sings songs", "Drives cars"],
-                correctAnswer: "Designs buildings",
-                explanation: "Bir mimar ('architect') binalar tasarlar."
-            },
-            {
-                question: "What adjective describes a person who works hard?",
-                options: ["Lazy", "Hardworking", "Tall", "Rude"],
-                correctAnswer: "Hardworking",
-                explanation: "Çok çalışan birini 'hardworking' (çalışkan) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport is played underwater?",
-                options: ["Football", "Synchronized swimming", "Tennis", "Basketball"],
-                correctAnswer: "Synchronized swimming",
-                explanation: "Senkronize yüzme ('synchronized swimming') su altında oynanan bir spordur."
-            },
-            {
-                question: "What is a biography’s value?",
-                options: ["To sell cars", "To learn from others’ lives", "To teach math", "To play games"],
-                correctAnswer: "To learn from others’ lives",
-                explanation: "Bir biyografinin değeri başkalarının hayatlarından öğrenmektir."
-            },
-            {
-                question: "What is the healthiest lunch choice?",
-                options: ["Chips", "Candy", "Salad", "Soda"],
-                correctAnswer: "Salad",
-                explanation: "En sağlıklı öğle yemeği seçimi salatadır ('salad')."
-            },
-            {
-                question: "What can improve ocean health?",
-                options: ["Dumping plastic", "Cleaning beaches", "Burning trash", "Cutting trees"],
-                correctAnswer: "Cleaning beaches",
-                explanation: "Plajları temizlemek ('cleaning beaches') okyanus sağlığını iyileştirebilir."
-            },
-            {
-                question: "What is an urban adventure?",
-                options: ["Watching TV", "Exploring a city", "Eating lunch", "Sleeping"],
-                correctAnswer: "Exploring a city",
-                explanation: "Bir şehri keşfetmek ('exploring a city') bir şehir macerasıdır."
-            },
-            {
-                question: "Which invention powers homes?",
-                options: ["Wheel", "Solar panel", "Pen", "Shoe"],
-                correctAnswer: "Solar panel",
-                explanation: "Güneş paneli ('solar panel') evlere güç veren bir icattır."
-            },
-            {
-                question: "What is a dream for communities?",
-                options: ["More conflict", "Stronger unity", "Watching TV", "Sleeping"],
-                correctAnswer: "Stronger unity",
-                explanation: "Topluluklar için bir hayal daha güçlü birlikteliktir ('stronger unity')."
-            },
-            {
-                question: "What does a teacher do?",
-                options: ["Cooks food", "Educates students", "Sings songs", "Drives cars"],
-                correctAnswer: "Educates students",
-                explanation: "Bir öğretmen ('teacher') öğrencileri eğitir."
-            },
-            {
-                question: "What adjective describes a person who loves new ideas?",
-                options: ["Boring", "Creative", "Lazy", "Rude"],
-                correctAnswer: "Creative",
-                explanation: "Yeni fikirleri seven birini 'creative' (yaratıcı) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport requires climbing?",
-                options: ["Football", "Rock climbing", "Tennis", "Basketball"],
-                correctAnswer: "Rock climbing",
-                explanation: "Kaya tırmanışı ('rock climbing') tırmanma gerektiren bir spordur."
-            },
-            {
-                question: "What did an explorer discover?",
-                options: ["Ate food", "Found a new land", "Slept", "Ran"],
-                correctAnswer: "Found a new land",
-                explanation: "Bir kaşif yeni bir yer bulmuş ('found a new land') olabilir."
-            },
-            {
-                question: "What is the healthiest breakfast drink?",
-                options: ["Soda", "Coffee", "Milk", "Tea"],
-                correctAnswer: "Milk",
-                explanation: "En sağlıklı kahvaltı içeceği süttür ('milk')."
-            },
-            {
-                question: "What can promote sustainability?",
-                options: ["Using fossil fuels", "Renewable energy", "Dumping waste", "Cutting trees"],
-                correctAnswer: "Renewable energy",
-                explanation: "Yenilenebilir enerji ('renewable energy') sürdürülebilirliği teşvik edebilir."
-            },
-            {
-                question: "What is a wildlife adventure?",
-                options: ["Watching TV", "Safari tour", "Eating lunch", "Sleeping"],
-                correctAnswer: "Safari tour",
-                explanation: "Safari turu ('safari tour') bir yaban hayatı macerasıdır."
-            },
-            {
-                question: "Which invention improves education?",
-                options: ["Wheel", "Tablet", "Pen", "Shoe"],
-                correctAnswer: "Tablet",
-                explanation: "Tablet eğitimi geliştiren bir icattır."
-            },
-            {
-                question: "What is a dream for innovation?",
-                options: ["Old machines", "New solutions", "Watching TV", "Sleeping"],
-                correctAnswer: "New solutions",
-                explanation: "İnovasyon için bir hayal yeni çözümlerdir ('new solutions')."
-            },
-            {
-                question: "What does a vet do?",
-                options: ["Cooks food", "Treats animals", "Sings songs", "Drives cars"],
-                correctAnswer: "Treats animals",
-                explanation: "Bir veteriner ('vet') hayvanları tedavi eder."
-            },
-            {
-                question: "What adjective describes a person who is always late?",
-                options: ["Punctual", "Late", "Lazy", "Tall"],
-                correctAnswer: "Late",
-                explanation: "Her zaman geç kalan birini 'late' (geç kalan) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport is played with a bow?",
-                options: ["Football", "Archery", "Tennis", "Basketball"],
-                correctAnswer: "Archery",
-                explanation: "Okçuluk ('archery') yayla oynanan bir spordur."
-            },
-            {
-                question: "What is a biography’s impact?",
-                options: ["To confuse readers", "To inspire people", "To teach math", "To play games"],
-                correctAnswer: "To inspire people",
-                explanation: "Bir biyografinin etkisi insanlara ilham vermektir ('to inspire people')."
-            },
-            {
-                question: "What is the healthiest dinner drink?",
-                options: ["Soda", "Coffee", "Water", "Tea"],
-                correctAnswer: "Water",
-                explanation: "En sağlıklı akşam yemeği içeceği sudur ('water')."
-            },
-            {
-                question: "What can reduce global warming?",
-                options: ["Burning coal", "Using wind energy", "Dumping waste", "Cutting trees"],
-                correctAnswer: "Using wind energy",
-                explanation: "Rüzgar enerjisi kullanmak ('using wind energy') küresel ısınmayı azaltabilir."
-            },
-            {
-                question: "What is a culinary adventure?",
-                options: ["Watching TV", "Trying new foods", "Eating lunch", "Sleeping"],
-                correctAnswer: "Trying new foods",
-                explanation: "Yeni yiyecekler denemek ('trying new foods') bir mutfak macerasıdır."
-            },
-            {
-                question: "Which invention enhances safety?",
-                options: ["Wheel", "Seatbelt", "Pen", "Shoe"],
-                correctAnswer: "Seatbelt",
-                explanation: "Emniyet kemeri ('seatbelt') güvenliği artıran bir icattır."
-            },
-            {
-                question: "What is a dream for humanity?",
-                options: ["More wars", "Global cooperation", "Watching TV", "Sleeping"],
-                correctAnswer: "Global cooperation",
-                explanation: "İnsanlık için bir hayal küresel işbirliğidir ('global cooperation')."
-            },
-            {
-                question: "What does a scientist do?",
-                options: ["Cooks food", "Researches new ideas", "Sings songs", "Drives cars"],
-                correctAnswer: "Researches new ideas",
-                explanation: "Bir bilim insanı ('scientist') yeni fikirler araştırır."
-            },
-            {
-                question: "What adjective describes a person who loves adventure?",
-                options: ["Boring", "Adventurous", "Lazy", "Rude"],
-                correctAnswer: "Adventurous",
-                explanation: "Macerayı seven birini 'adventurous' (maceracı) olarak tanımlarsınız."
-            },
-            {
-                question: "Which sport is played on a court?",
-                options: ["Football", "Basketball", "Swimming", "Skiing"],
-                correctAnswer: "Basketball",
-                explanation: "Basketbol ('basketball') bir sahada ('court') oynanır."
-            },
-            {
-                question: "What did a leader inspire?",
-                options: ["Ate food", "Positive change", "Slept", "Ran"],
-                correctAnswer: "Positive change",
-                explanation: "Bir lider pozitif değişime ilham vermiş ('inspired positive change') olabilir."
-            },
-            {
-                question: "What is the healthiest snack drink?",
-                options: ["Soda", "Coffee", "Juice", "Tea"],
-                correctAnswer: "Juice",
-                explanation: "En sağlıklı atıştırmalık içeceği meyve suyudur ('juice')."
-            },
-            {
-                question: "What can save endangered species?",
-                options: ["Hunting", "Conservation programs", "Dumping waste", "Cutting trees"],
-                correctAnswer: "Conservation programs",
-                explanation: "Koruma programları ('conservation programs') nesli tükenmekte olan türleri kurtarabilir."
-            },
-            {
-                question: "What is a virtual adventure?",
-                options: ["Watching TV", "Virtual reality tour", "Eating lunch", "Sleeping"],
-                correctAnswer: "Virtual reality tour",
-                explanation: "Sanal gerçeklik turu ('virtual reality tour') bir sanal maceradır."
-            },
-            {
-                question: "Which invention supports health?",
-                options: ["Wheel", "Vaccine", "Pen", "Shoe"],
-                correctAnswer: "Vaccine",
-                explanation: "Aşı ('vaccine') sağlığı destekleyen bir icattır."
-            },
-            {
-                question: "What is a dream for exploration?",
-                options: ["Staying home", "Discovering space", "Watching TV", "Sleeping"],
-                correctAnswer: "Discovering space",
-                explanation: "Keşif için bir hayal uzayı keşfetmektir ('discovering space')."
-            },
-            {
-                question: "What does a journalist do?",
-                options: ["Cooks food", "Reports news", "Sings songs", "Drives cars"],
-                correctAnswer: "Reports news",
-                explanation: "Bir gazeteci ('journalist') haberleri bildirir."
-            }
+    {
+        question: "A person who is _______ has a tendency to see the worst aspect of things or believe that the worst will happen.",
+        options: ["optimistic", "pessimistic", "cheerful", "hopeful"],
+        correctAnswer: "pessimistic",
+        explanation: "Olayların en kötü yönünü görme veya en kötüsünün olacağına inanma eğiliminde olan kişiye 'pessimistic' (kötümser) denir."
+    },
+    {
+        question: "While the diplomat _______ the terms of the treaty, a protest was forming outside.",
+        options: ["was negotiating", "negotiated", "negotiates", "is negotiating"],
+        correctAnswer: "was negotiating",
+        explanation: "Geçmişte bir eylem devam ederken (müzakere etmek) başka bir eylemin (protestonun oluşması) olduğunu belirtmek için Past Continuous Tense kullanılır."
+    },
+    {
+        question: "The _______ of the novel is a young orphan's journey to find his family.",
+        options: ["protagonist", "antagonist", "narrative", "setting"],
+        correctAnswer: "narrative",
+        explanation: "Romanın 'narrative' (anlatısı, hikayesi), genç bir yetimin ailesini bulma yolculuğudur."
+    },
+    {
+        question: "You _______ have bought so much food; we already have plenty.",
+        options: ["mustn't", "shouldn't", "needn't", "couldn't"],
+        correctAnswer: "needn't",
+        explanation: "Geçmişte yapılmış ama gereksiz olan bir eylemi ifade etmek için 'needn't have + V3' yapısı kullanılır."
+    },
+    {
+        question: "His _______ lifestyle, filled with expensive cars and parties, was funded by his inheritance.",
+        options: ["frugal", "modest", "extravagant", "simple"],
+        correctAnswer: "extravagant",
+        explanation: "Pahalı arabalar ve partilerle dolu 'extravagant' (müsrif, savurgan) yaşam tarzı, mirasıyla finanse ediliyordu."
+    },
+    {
+        question: "A person who is _______ shows great attention to detail.",
+        options: ["careless", "meticulous", "sloppy", "hasty"],
+        correctAnswer: "meticulous",
+        explanation: "Detaylara büyük özen gösteren kişiye 'meticulous' (titiz, kılı kırk yaran) denir."
+    },
+    {
+        question: "The invention of the printing press was a _______ moment in human history.",
+        options: ["trivial", "watershed", "minor", "insignificant"],
+        correctAnswer: "watershed",
+        explanation: "Matbaanın icadı, insanlık tarihinde bir 'watershed' (dönüm noktası) anıydı."
+    },
+    {
+        question: "The politician's speech was full of _______, promising things that were impossible to achieve.",
+        options: ["facts", "realism", "hyperbole", "truths"],
+        correctAnswer: "hyperbole",
+        explanation: "Politikacının konuşması, ulaşılması imkansız şeyler vaat eden 'hyperbole' (abartı, mübalağa) ile doluydu."
+    },
+    {
+        question: "We must find a _______ solution to this problem, not just a temporary fix.",
+        options: ["sustainable", "short-term", "ephemeral", "transient"],
+        correctAnswer: "sustainable",
+        explanation: "Bu soruna sadece geçici bir çözüm değil, 'sustainable' (sürdürülebilir) bir çözüm bulmalıyız."
+    },
+    {
+        question: "A person who can do something skilfully and easily is _______.",
+        options: ["inept", "adept", "clumsy", "awkward"],
+        correctAnswer: "adept",
+        explanation: "Bir şeyi ustaca ve kolayca yapabilen kişiye 'adept' (usta, mahir) denir."
+    },
+    {
+        question: "The _______ between the two characters drives the plot of the story.",
+        options: ["harmony", "conflict", "agreement", "friendship"],
+        correctAnswer: "conflict",
+        explanation: "İki karakter arasındaki 'conflict' (çatışma), hikayenin konusunu yönlendirir."
+    },
+    {
+        question: "She showed remarkable _______, recovering quickly from her illness.",
+        options: ["fragility", "weakness", "vulnerability", "resilience"],
+        correctAnswer: "resilience",
+        explanation: "Hastalığından hızla kurtularak dikkate değer bir 'resilience' (direnç, dayanıklılık) gösterdi."
+    },
+    {
+        question: "The film was a _______ of a classic novel, but it failed to capture the spirit of the book.",
+        options: ["masterpiece", "parody", "adaptation", "sequel"],
+        correctAnswer: "adaptation",
+        explanation: "Film, klasik bir romanın 'adaptation' (uyarlaması) idi, ancak kitabın ruhunu yakalayamadı."
+    },
+    {
+        question: "A person who is _______ is excessively proud of themselves.",
+        options: ["humble", "modest", "vain", "shy"],
+        correctAnswer: "vain",
+        explanation: "Kendisiyle aşırı gurur duyan kişiye 'vain' (kibirli, kendini beğenmiş) denir."
+    },
+    {
+        question: "The _______ of the witnesses were inconsistent with each other.",
+        options: ["testimonies", "truths", "facts", "certainties"],
+        correctAnswer: "testimonies",
+        explanation: "Tanıkların 'testimonies' (ifadeleri) birbiriyle tutarsızdı."
+    },
+    {
+        question: "The treaty was meant to _______ friendly relations between the countries.",
+        options: ["damage", "foster", "disrupt", "weaken"],
+        correctAnswer: "foster",
+        explanation: "Antlaşma, ülkeler arasında dostane ilişkileri 'foster' (geliştirmek, teşvik etmek) amacını taşıyordu."
+    },
+    {
+        question: "A _______ is a situation where progress is impossible, especially because of disagreement.",
+        options: ["breakthrough", "deadlock", "success", "agreement"],
+        correctAnswer: "deadlock",
+        explanation: "Özellikle anlaşmazlık nedeniyle ilerlemenin imkansız olduğu duruma 'deadlock' (çıkmaz, kilitlenme) denir."
+    },
+    {
+        question: "His _______ for playing the piano was evident from a very young age.",
+        options: ["dislike", "aversion", "aptitude", "inability"],
+        correctAnswer: "aptitude",
+        explanation: "Piyano çalmaya olan 'aptitude' (yetenek, yatkınlık) ü çok küçük yaşlardan belliydi."
+    },
+    {
+        question: "The company's new environmental policy was seen as a _______ attempt to improve its image.",
+        options: ["genuine", "sincere", "superficial", "profound"],
+        correctAnswer: "superficial",
+        explanation: "Şirketin yeni çevre politikası, imajını düzeltmek için 'superficial' (yüzeysel) bir girişim olarak görüldü."
+    },
+    {
+        question: "A person who is _______ is showing a casual lack of concern.",
+        options: ["anxious", "worried", "concerned", "nonchalant"],
+        correctAnswer: "nonchalant",
+        explanation: "Gündelik bir endişesizlik gösteren kişiye 'nonchalant' (kayıtsız, umursamaz) denir."
+    },
+    {
+        question: "The _______ of the issue requires a careful and considered response.",
+        options: ["simplicity", "complexity", "triviality", "ease"],
+        correctAnswer: "complexity",
+        explanation: "Meselenin 'complexity' (karmaşıklığı), dikkatli ve düşünülmüş bir yanıt gerektiriyor."
+    },
+    {
+        question: "His speech was _______ and failed to inspire the audience.",
+        options: ["eloquent", "passionate", "lackluster", "moving"],
+        correctAnswer: "lackluster",
+        explanation: "Konuşması 'lackluster' (sönük, cansız) idi ve dinleyicilere ilham veremedi."
+    },
+    {
+        question: "A _______ is a person who has an irrational belief in the superiority of their own group.",
+        options: ["patriot", "humanist", "chauvinist", "liberal"],
+        correctAnswer: "chauvinist",
+        explanation: "Kendi grubunun üstünlüğüne dair mantıksız bir inanca sahip kişiye 'chauvinist' (şovenist) denir."
+    },
+    {
+        question: "The government's response to the crisis was widely criticized as _______.",
+        options: ["adequate", "effective", "timely", "inept"],
+        correctAnswer: "inept",
+        explanation: "Hükümetin krize tepkisi, 'inept' (beceriksiz, yeteneksiz) olduğu için geniş çapta eleştirildi."
+    },
+    {
+        question: "The _______ of his argument was that technology is not always beneficial.",
+        options: ["thesis", "digression", "summary", "conclusion"],
+        correctAnswer: "thesis",
+        explanation: "Argümanının 'thesis' (tezi, ana fikri), teknolojinin her zaman faydalı olmadığıydı."
+    },
+    {
+        question: "A person who is _______ is friendly, good-natured, and easy to talk to.",
+        options: ["hostile", "amiable", "reserved", "unfriendly"],
+        correctAnswer: "amiable",
+        explanation: "Arkadaş canlısı, iyi huylu ve konuşması kolay olan kişiye 'amiable' (cana yakın, sevimli) denir."
+    },
+    {
+        question: "The discovery of penicillin was a _______ event in the history of medicine.",
+        options: ["minor", "serendipitous", "planned", "expected"],
+        correctAnswer: "serendipitous",
+        explanation: "Penisilinin keşfi, tıp tarihinde 'serendipitous' (tesadüfi ve mutlu) bir olaydı."
+    },
+    {
+        question: "The _______ of the ancient city are now a popular tourist destination.",
+        options: ["remains", "foundations", "skyscrapers", "factories"],
+        correctAnswer: "remains",
+        explanation: "Antik kentin 'remains' (kalıntıları), şimdi popüler bir turistik yerdir."
+    },
+    {
+        question: "A person who is _______ is having or showing a strong desire and determination to succeed.",
+        options: ["apathetic", "ambitious", "lazy", "indifferent"],
+        correctAnswer: "ambitious",
+        explanation: "Başarılı olmak için güçlü bir arzu ve kararlılık gösteren kişiye 'ambitious' (hırslı) denir."
+    },
+    {
+        question: "The artist's style is _______; it cannot be easily categorized.",
+        options: ["conventional", "eclectic", "uniform", "simple"],
+        correctAnswer: "eclectic",
+        explanation: "Sanatçının tarzı 'eclectic' (seçmeci, farklı kaynaklardan derlenmiş); kolayca kategorize edilemez."
+    },
+    {
+        question: "The team's _______ was shattered after a series of defeats.",
+        options: ["morale", "skill", "strategy", "strength"],
+        correctAnswer: "morale",
+        explanation: "Bir dizi yenilgiden sonra takımın 'morale' (morali) sarsıldı."
+    },
+    {
+        question: "A _______ is a person who is new to and has little experience in a skill or situation.",
+        options: ["veteran", "expert", "novice", "master"],
+        correctAnswer: "novice",
+        explanation: "Bir beceri veya durumda yeni olan ve az deneyimi olan kişiye 'novice' (acemi, çaylak) denir."
+    },
+    {
+        question: "His _______ for punctuality is well-known among his colleagues.",
+        options: ["disregard", "disdain", "penchant", "aversion"],
+        correctAnswer: "penchant",
+        explanation: "Onun dakikliğe olan 'penchant' (eğilimi, meyli) meslektaşları arasında iyi bilinir."
+    },
+    {
+        question: "A person who is _______ is showing a deliberate and stubborn refusal to change their opinion.",
+        options: ["compliant", "flexible", "obstinate", "agreeable"],
+        correctAnswer: "obstinate",
+        explanation: "Fikrini değiştirmeyi kasıtlı ve inatçı bir şekilde reddeden kişiye 'obstinate' (inatçı, dik kafalı) denir."
+    },
+    {
+        question: "The _______ of the evidence was questionable, as it came from an unreliable source.",
+        options: ["veracity", "falsehood", "strength", "clarity"],
+        correctAnswer: "veracity",
+        explanation: "Kanıtın 'veracity' (doğruluğu, gerçekliği), güvenilmez bir kaynaktan geldiği için şüpheliydi."
+    },
+    {
+        question: "A _______ is a person who is skilled in telling stories.",
+        options: ["scientist", "mathematician", "raconteur", "athlete"],
+        correctAnswer: "raconteur",
+        explanation: "Hikaye anlatmada yetenekli olan kişiye 'raconteur' (hoşsohbet hikayeci) denir."
+    },
+    {
+        question: "The city's _______ transport system is efficient and affordable.",
+        options: ["urban", "rural", "private", "suburban"],
+        correctAnswer: "urban",
+        explanation: "Şehrin 'urban' (kentsel) ulaşım sistemi verimli ve uygun fiyatlıdır."
+    },
+    {
+        question: "A person who is _______ is lacking in energy or enthusiasm.",
+        options: ["energetic", "vibrant", "lethargic", "lively"],
+        correctAnswer: "lethargic",
+        explanation: "Enerji veya coşku eksikliği olan kişiye 'lethargic' (uyuşuk, miskin) denir."
+    },
+    {
+        question: "The _______ of the two companies will create a powerful new entity.",
+        options: ["merger", "division", "separation", "conflict"],
+        correctAnswer: "merger",
+        explanation: "İki şirketin 'merger' (birleşmesi), güçlü yeni bir varlık yaratacaktır."
+    },
+    {
+        question: "His _______ explanation only served to confuse the students further.",
+        options: ["lucid", "clear", "simple", "convoluted"],
+        correctAnswer: "convoluted",
+        explanation: "Onun 'convoluted' (karmaşık, dolambaçlı) açıklaması öğrencilerin kafasını daha da karıştırmaya yaradı."
+    },
+    {
+        question: "A person who is _______ has a strong sense of duty.",
+        options: ["irresponsible", "negligent", "conscientious", "careless"],
+        correctAnswer: "conscientious",
+        explanation: "Güçlü bir görev duygusuna sahip olan kişiye 'conscientious' (vicdanlı, özenli) denir."
+    },
+    {
+        question: "The _______ of the situation demanded a calm and rational approach.",
+        options: ["gravity", "levity", "humor", "triviality"],
+        correctAnswer: "gravity",
+        explanation: "Durumun 'gravity' (ciddiyeti, vehameti), sakin ve rasyonel bir yaklaşım gerektiriyordu."
+    },
+    {
+        question: "A _______ is a temporary stay in a place.",
+        options: ["residence", "sojourn", "migration", "journey"],
+        correctAnswer: "sojourn",
+        explanation: "Bir yerde geçici bir kalışa 'sojourn' (kısa süreli ikamet) denir."
+    },
+    {
+        question: "A person who is _______ is able to be seen through.",
+        options: ["opaque", "solid", "transparent", "dense"],
+        correctAnswer: "transparent",
+        explanation: "İçinden görülebilen bir nesne veya dürüst ve açık bir kişi için 'transparent' (şeffaf) kelimesi kullanılır."
+    },
+    {
+        question: "The _______ of the president's speech was national unity.",
+        options: ["theme", "plot", "character", "setting"],
+        correctAnswer: "theme",
+        explanation: "Başkanın konuşmasının 'theme' (teması), ulusal birlikti."
+    },
+    {
+        question: "A _______ is a person who is excessively eager to please others.",
+        options: ["leader", "sycophant", "critic", "rebel"],
+        correctAnswer: "sycophant",
+        explanation: "Başkalarını memnun etmeye aşırı hevesli olan kişiye 'sycophant' (dalkavuk, yağcı) denir."
+    },
+    {
+        question: "The project was _______ with difficulties from the very beginning.",
+        options: ["free from", "beset", "blessed", "eased"],
+        correctAnswer: "beset",
+        explanation: "Proje, en başından beri zorluklarla 'beset' (kuşatılmış, çevrilmiş) idi."
+    },
+    {
+        question: "A person who is _______ is having or showing a feeling of vague or regretful longing.",
+        options: ["joyful", "ecstatic", "wistful", "content"],
+        correctAnswer: "wistful",
+        explanation: "Belirsiz veya pişmanlık dolu bir özlem duygusu gösteren kişiye 'wistful' (hasret dolu, özlemli) denir."
+    },
+    {
+        question: "The _______ of the city is a blend of old and new.",
+        options: ["architecture", "population", "climate", "geography"],
+        correctAnswer: "architecture",
+        explanation: "Şehrin 'architecture' (mimarisi), eski ve yeninin bir karışımıdır."
+    },
+    {
+        question: "A person who is _______ is showing no interest or enthusiasm.",
+        options: ["passionate", "eager", "apathetic", "keen"],
+        correctAnswer: "apathetic",
+        explanation: "Hiç ilgi veya coşku göstermeyen kişiye 'apathetic' (ilgisiz, kayıtsız) denir."
+    },
+    {
+        question: "The _______ of the evidence was not strong enough to support his claim.",
+        options: ["credibility", "strength", "weakness", "validity"],
+        correctAnswer: "credibility",
+        explanation: "Kanıtın 'credibility' (inanılırlığı, güvenilirliği), onun iddiasını destekleyecek kadar güçlü değildi."
+    },
+    {
+        question: "A _______ is a long and adventurous journey.",
+        options: ["stroll", "commute", "odyssey", "walk"],
+        correctAnswer: "odyssey",
+        explanation: "Uzun ve maceralı bir yolculuğa 'odyssey' (zorlu ve maceralı yolculuk) denir."
+    },
+    {
+        question: "A person who is _______ is behaving in a way that is intended to attract attention.",
+        options: ["modest", "humble", "ostentatious", "reserved"],
+        correctAnswer: "ostentatious",
+        explanation: "Dikkat çekmek amacıyla davranan kişiye 'ostentatious' (gösterişli, şatafatlı) denir."
+    },
+    {
+        question: "The _______ of the economic crisis were felt worldwide.",
+        options: ["reverberations", "causes", "beginnings", "sources"],
+        correctAnswer: "reverberations",
+        explanation: "Ekonomik krizin 'reverberations' (yankıları, artçı etkileri) dünya çapında hissedildi."
+    },
+    {
+        question: "A person who is _______ is having or showing an excessive willingness to serve or please others.",
+        options: ["dominant", "assertive", "obsequious", "independent"],
+        correctAnswer: "obsequious",
+        explanation: "Başkalarına hizmet etme veya onları memnun etme konusunda aşırı bir isteklilik gösteren kişiye 'obsequious' (yağcı, dalkavuk) denir."
+    },
+    {
+        question: "The _______ of his argument was flawed, so his conclusion was incorrect.",
+        options: ["logic", "emotion", "feeling", "opinion"],
+        correctAnswer: "logic",
+        explanation: "Argümanının 'logic' (mantığı) kusurluydu, bu yüzden vardığı sonuç yanlıştı."
+    },
+    {
+        question: "A _______ is a person who has a special skill or knowledge in a particular field.",
+        options: ["connoisseur", "amateur", "beginner", "novice"],
+        correctAnswer: "connoisseur",
+        explanation: "Belirli bir alanda özel bir becerisi veya bilgisi olan kişiye, özellikle sanat veya yemek gibi konularda, 'connoisseur' (bilirkişi, uzman) denir."
+    },
+    {
+        question: "The _______ of the two political parties was necessary to form a government.",
+        options: ["coalition", "conflict", "rivalry", "opposition"],
+        correctAnswer: "coalition",
+        explanation: "İki siyasi partinin 'coalition' (koalisyon) kurması, bir hükümet oluşturmak için gerekliydi."
+    },
+    {
+        question: "A person who is _______ is very generous or forgiving, especially towards a rival or someone less powerful.",
+        options: ["petty", "vindictive", "magnanimous", "mean"],
+        correctAnswer: "magnanimous",
+        explanation: "Özellikle bir rakibe veya daha az güçlü birine karşı çok cömert veya bağışlayıcı olan kişiye 'magnanimous' (yüce gönüllü, alicenap) denir."
+    },
+    {
+        question: "The movie was a _______, a film that is a great commercial success.",
+        options: ["flop", "blockbuster", "documentary", "short"],
+        correctAnswer: "blockbuster",
+        explanation: "Film, büyük bir ticari başarı olan bir 'blockbuster' (gişe rekorları kıran film) idi."
+    },
+    {
+        question: "A _______ is a thing that is composed of two or more separate elements; a mixture.",
+        options: ["component", "composite", "element", "unit"],
+        correctAnswer: "composite",
+        explanation: "İki veya daha fazla ayrı elementten oluşan şeye; bir karışıma 'composite' (bileşik, karma) denir."
+    },
+    {
+        question: "A person who is _______ is having or showing a feeling of deep sympathy and sorrow for another who is stricken by misfortune.",
+        options: ["indifferent", "apathetic", "compassionate", "callous"],
+        correctAnswer: "compassionate",
+        explanation: "Talihsizliğe uğramış bir başkası için derin bir sempati ve üzüntü duyan kişiye 'compassionate' (merhametli, şefkatli) denir."
+    },
+    {
+        question: "The _______ of the problem lies in the lack of funding.",
+        options: ["root", "surface", "branch", "leaf"],
+        correctAnswer: "root",
+        explanation: "Sorunun 'root' (kökü, temeli), finansman eksikliğinde yatmaktadır."
+    },
+    {
+        question: "A _______ is a person who is extravagantly and tastelessly luxurious.",
+        options: ["minimalist", "ascetic", "kitsch", "simple"],
+        correctAnswer: "kitsch",
+        explanation: "Abartılı ve zevksiz bir şekilde lüks olan şeyler veya bu tarzı benimseyen kişiler için 'kitsch' (zevksiz, bayağı) kelimesi kullanılır."
+    },
+    {
+        question: "The _______ of the mountain was covered in snow.",
+        options: ["base", "foot", "summit", "side"],
+        correctAnswer: "summit",
+        explanation: "Dağın 'summit' (zirvesi) karla kaplıydı."
+    },
+    {
+        question: "A person who is _______ is having or revealing an obstinate belief in the correctness of one's own opinions.",
+        options: ["open-minded", "dogmatic", "flexible", "receptive"],
+        correctAnswer: "dogmatic",
+        explanation: "Kendi görüşlerinin doğruluğuna dair inatçı bir inanç gösteren kişiye 'dogmatic' (dogmatik, değişmez fikirli) denir."
+    },
+    {
+        question: "The _______ of his travels was a small, remote village in the Himalayas.",
+        options: ["beginning", "start", "culmination", "origin"],
+        correctAnswer: "culmination",
+        explanation: "Seyahatlerinin 'culmination' (zirve noktası, doruğu), Himalayalar'da küçük, ücra bir köydü."
+    },
+    {
+        question: "A _______ is a short period of rest or relief from something difficult or unpleasant.",
+        options: ["continuation", "respite", "struggle", "ordeal"],
+        correctAnswer: "respite",
+        explanation: "Zor veya nahoş bir şeyden kısa bir dinlenme veya rahatlama dönemine 'respite' (mola, erteleme) denir."
+    },
+    {
+        question: "A person who is _______ is showing a strong and unreasonable belief in their own country.",
+        options: ["patriotic", "cosmopolitan", "chauvinistic", "internationalist"],
+        correctAnswer: "chauvinistic",
+        explanation: "Kendi ülkesine karşı güçlü ve mantıksız bir inanç gösteren kişiye 'chauvinistic' (şovenist) denir."
+    },
+    {
+        question: "The _______ of the evidence was undeniable.",
+        options: ["paucity", "weight", "scarcity", "lack"],
+        correctAnswer: "weight",
+        explanation: "Kanıtın 'weight' (ağırlığı, önemi) inkar edilemezdi."
+    },
+    {
+        question: "A _______ is a person who has a strong interest in a particular subject.",
+        options: ["dilettante", "aficionado", "amateur", "novice"],
+        correctAnswer: "aficionado",
+        explanation: "Belirli bir konuya güçlü bir ilgisi olan kişiye 'aficionado' (meraklısı, tutkunu) denir."
+    },
+    {
+        question: "The _______ tone of his voice suggested that he was not taking the matter seriously.",
+        options: ["serious", "grave", "solemn", "facetious"],
+        correctAnswer: "facetious",
+        explanation: "Sesindeki 'facetious' (şakacı, alaycı) ton, konuyu ciddiye almadığını gösteriyordu."
+    },
+    {
+        question: "A person who is _______ is characterized by pompous or extravagant language.",
+        options: ["concise", "terse", "succinct", "bombastic"],
+        correctAnswer: "bombastic",
+        explanation: "Görkemli veya abartılı bir dille karakterize olan kişiye 'bombastic' (tumturaklı, cafcaflı) denir."
+    },
+    {
+        question: "The _______ of the two styles created a unique and interesting design.",
+        options: ["synthesis", "separation", "analysis", "division"],
+        correctAnswer: "synthesis",
+        explanation: "İki stilin 'synthesis' (sentezi, birleşimi), eşsiz ve ilginç bir tasarım yarattı."
+    },
+    {
+        question: "A _______ is a person who is very careful and precise.",
+        options: ["punctilious", "careless", "sloppy", "negligent"],
+        correctAnswer: "punctilious",
+        explanation: "Çok dikkatli ve hassas olan kişiye 'punctilious' (titiz, kılı kırk yaran) denir."
+    },
+    {
+        question: "The _______ of the problem was not immediately obvious.",
+        options: ["simplicity", "nuance", "clarity", "obviousness"],
+        correctAnswer: "nuance",
+        explanation: "Sorunun 'nuance' (ince ayrımı, detayı) hemen belirgin değildi."
+    },
+    {
+        question: "A person who is _______ is tending to talk a great deal.",
+        options: ["taciturn", "reticent", "garrulous", "silent"],
+        correctAnswer: "garrulous",
+        explanation: "Çok fazla konuşma eğiliminde olan kişiye 'garrulous' (geveze, konuşkan) denir."
+    },
+    {
+        question: "The _______ of the argument was that freedom of speech should be protected.",
+        options: ["tenet", "fallacy", "lie", "misconception"],
+        correctAnswer: "tenet",
+        explanation: "Argümanın 'tenet' (temel ilkesi, doktrini), ifade özgürlüğünün korunması gerektiğiydi."
+    },
+    {
+        question: "A _______ is a person who is a skilled public speaker.",
+        options: ["misanthrope", "orator", "recluse", "novice"],
+        correctAnswer: "orator",
+        explanation: "Yetenekli bir topluluk önünde konuşmacıya 'orator' (hatip) denir."
+    },
+    {
+        question: "The _______ of the evidence was crucial in solving the case.",
+        options: ["corroboration", "contradiction", "refutation", "denial"],
+        correctAnswer: "corroboration",
+        explanation: "Kanıtın 'corroboration' (doğrulanması, teyidi), davayı çözmede çok önemliydi."
+    },
+    {
+        question: "A person who is _______ is showing a lack of experience, wisdom, or judgment.",
+        options: ["sophisticated", "experienced", "naive", "worldly"],
+        correctAnswer: "naive",
+        explanation: "Deneyim, bilgelik veya muhakeme eksikliği gösteren kişiye 'naive' (saf, toy) denir."
+    },
+    {
+        question: "The _______ of the forest was a welcome relief from the heat of the city.",
+        options: ["verdure", "aridity", "barrenness", "dryness"],
+        correctAnswer: "verdure",
+        explanation: "Ormanın 'verdure' (yeşilliği, tazeliği), şehrin sıcağından hoş bir rahatlamaydı."
+    },
+    {
+        question: "A _______ is a state of perfect happiness.",
+        options: ["nirvana", "hell", "purgatory", "abyss"],
+        correctAnswer: "nirvana",
+        explanation: "Mükemmel bir mutluluk durumuna 'nirvana' denir."
+    },
+    {
+        question: "A person who is _______ is hard-working and persistent.",
+        options: ["indolent", "sedulous", "lazy", "slothful"],
+        correctAnswer: "sedulous",
+        explanation: "Çalışkan ve azimli olan kişiye 'sedulous' (çalışkan, gayretli) denir."
+    },
+    {
+        question: "The _______ of the two cultures was a long and complex process.",
+        options: ["amalgamation", "separation", "division", "distinction"],
+        correctAnswer: "amalgamation",
+        explanation: "İki kültürün 'amalgamation' (birleşmesi, kaynaşması), uzun ve karmaşık bir süreçti."
+    },
+    {
+        question: "A person who is _______ is showing a casual and cheerful indifference considered to be improper.",
+        options: ["grave", "somber", "blithe", "serious"],
+        correctAnswer: "blithe",
+        explanation: "Uygunsuz kabul edilen gündelik ve neşeli bir kayıtsızlık gösteren kişiye 'blithe' (kaygısız, gamsız) denir."
+    },
+    {
+        question: "The _______ of the book is its exploration of human relationships.",
+        options: ["quintessence", "surface", "exterior", "periphery"],
+        correctAnswer: "quintessence",
+        explanation: "Kitabın 'quintessence' (özü, en mükemmel örneği), insan ilişkilerini keşfetmesidir."
+    },
+    {
+        question: "A _______ is a person who is bad-tempered and unfriendly.",
+        options: ["amiable", "congenial", "surly", "cordial"],
+        correctAnswer: "surly",
+        explanation: "Huysuz ve sevimsiz olan kişiye 'surly' (aksi, huysuz) denir."
+    },
+    {
+        question: "The _______ of the evidence was not enough to make a decision.",
+        options: ["paucity", "abundance", "plethora", "surplus"],
+        correctAnswer: "paucity",
+        explanation: "Kanıtın 'paucity' (azlığı, kıtlığı), bir karar vermek için yeterli değildi."
+    },
+    {
+        question: "A person who is _______ is having or showing high moral standards.",
+        options: ["unscrupulous", "unprincipled", "upright", "dishonest"],
+        correctAnswer: "upright",
+        explanation: "Yüksek ahlaki standartlara sahip olan kişiye 'upright' (dürüst, namuslu) denir."
+    },
+    {
+        question: "The _______ of the situation was clear to everyone involved.",
+        options: ["ambiguity", "enormity", "triviality", "insignificance"],
+        correctAnswer: "enormity",
+        explanation: "Durumun 'enormity' (büyüklüğü, vahameti), ilgili herkes için açıktı."
+    },
+    {
+        question: "A _______ is a person who is skilled in a particular activity.",
+        options: ["dabbler", "maven", "amateur", "beginner"],
+        correctAnswer: "maven",
+        explanation: "Belirli bir aktivitede yetenekli olan kişiye 'maven' (uzman, bilirkişi) denir."
+    },
+    {
+        question: "The _______ of the two arguments was that both sides had valid points.",
+        options: ["synthesis", "antithesis", "conflict", "disagreement"],
+        correctAnswer: "synthesis",
+        explanation: "İki argümanın 'synthesis' (sentezi, birleşimi), her iki tarafın da geçerli noktaları olduğu yönündeydi."
+    },
+    {
+        question: "A person who is _______ is tending to find fault with others.",
+        options: ["complimentary", "laudatory", "captious", "forgiving"],
+        correctAnswer: "captious",
+        explanation: "Başkalarında kusur bulma eğiliminde olan kişiye 'captious' (alıngan, kusur bulucu) denir."
+    }
+
+            
+    
 
         ]    },
         
 
         8: {
         beginner: [
-            {
-                question: "What do you say to greet a friend?",
-                options: ["See you!", "Hi!", "Sorry!", "Thank you!"],
-                correctAnswer: "Hi!",
-                explanation: "Bir arkadaşı selamlarken samimi bir ifade olan 'Hi!' (Selam!) kullanılır."
-            },
-            {
-                question: "What is a place to watch movies?",
-                options: ["Cinema", "Library", "Park", "Kitchen"],
-                correctAnswer: "Cinema",
-                explanation: "'Cinema' (sinema), film izlemek için gidilen bir yerdir."
-            },
-            {
-                question: "What is the opposite of 'fast'?",
-                options: ["Slow", "Big", "High", "Long"],
-                correctAnswer: "Slow",
-                explanation: "'Fast' (hızlı) kelimesinin zıttı 'slow' (yavaş) kelimesidir."
-            },
-            {
-                question: "What do you eat for a snack?",
-                options: ["Fruit", "Book", "Pen", "Shoe"],
-                correctAnswer: "Fruit",
-                explanation: "Atıştırmalık olarak 'fruit' (meyve) sağlıklı bir seçenektir."
-            },
-            {
-                question: "What is a type of weather?",
-                options: ["Sunny", "Car", "Book", "Desk"],
-                correctAnswer: "Sunny",
-                explanation: "'Sunny' (güneşli), bir hava durumu türüdür."
-            },
-            {
-                question: "What do you wear in rainy weather?",
-                options: ["T-shirt", "Raincoat", "Shorts", "Sunglasses"],
-                correctAnswer: "Raincoat",
-                explanation: "Yağmurlu havada ıslanmamak için 'raincoat' (yağmurluk) giyilir."
-            },
-            {
-                question: "What is a place to study?",
-                options: ["Kitchen", "Library", "Gym", "Mall"],
-                correctAnswer: "Library",
-                explanation: "'Library' (kütüphane), ders çalışmak için uygun bir yerdir."
-            },
-            {
-                question: "What do you use to take photos?",
-                options: ["Spoon", "Camera", "Ball", "Pen"],
-                correctAnswer: "Camera",
-                explanation: "Fotoğraf çekmek için 'camera' (kamera) kullanılır."
-            },
-            {
-                question: "What is a type of dessert?",
-                options: ["Cake", "Car", "Book", "Shoe"],
-                correctAnswer: "Cake",
-                explanation: "'Cake' (pasta), bir tatlı türüdür."
-            },
-            {
-                question: "What do you do at a beach?",
-                options: ["Study", "Swim", "Cook", "Sleep"],
-                correctAnswer: "Swim",
-                explanation: "Plajda ('beach') yüzmek ('swim') yaygın bir aktivitedir."
-            },
-            {
-                question: "What is the opposite of 'loud'?",
-                options: ["Quiet", "Fast", "Big", "Tall"],
-                correctAnswer: "Quiet",
-                explanation: "'Loud' (yüksek sesli) kelimesinin zıttı 'quiet' (sessiz) kelimesidir."
-            },
-            {
-                question: "What do you drink when you’re thirsty?",
-                options: ["Water", "Soda", "Ice cream", "Soup"],
-                correctAnswer: "Water",
-                explanation: "Susadığınızda 'water' (su) içersiniz."
-            },
-            {
-                question: "What is a place to play sports?",
-                options: ["Field", "Library", "Kitchen", "Mall"],
-                correctAnswer: "Field",
-                explanation: "'Field' (saha), spor yapmak için bir alandır."
-            },
-            {
-                question: "What do you wear in winter?",
-                options: ["Swimsuit", "Scarf", "T-shirt", "Shorts"],
-                correctAnswer: "Scarf",
-                explanation: "Kışın boynunuza 'scarf' (atkı) takarsınız."
-            },
-{
+            
+            
+    {
         question: "A person who supports you and is always there for you is a _______ friend.",
         options: ["bad", "true", "new", "old"],
         correctAnswer: "true",
@@ -9850,127 +9587,7 @@ const questionsByGrade = {
         correctAnswer: "rafting",
         explanation: "Rafting yaparken güvenlik için can yeleği giymelisiniz."
     },
-{
-                question: "What is a type of drink?",
-                options: ["Juice", "Book", "Pen", "Shoe"],
-                correctAnswer: "Juice",
-                explanation: "'Juice' (meyve suyu) bir içecek türüdür."
-            },
-            {
-                question: "What do you do at a picnic?",
-                options: ["Work", "Eat", "Study", "Sleep"],
-                correctAnswer: "Eat",
-                explanation: "Piknikte temel aktivite yemek yemektir ('eat')."
-            },
-            {
-                question: "What is the opposite of 'happy'?",
-                options: ["Sad", "Big", "Fast", "Tall"],
-                correctAnswer: "Sad",
-                explanation: "'Happy' (mutlu) kelimesinin zıttı 'sad' (üzgün) kelimesidir."
-            },
-            {
-                question: "What do you eat for lunch?",
-                options: ["Soup", "Book", "Pen", "Shoe"],
-                correctAnswer: "Soup",
-                explanation: "Öğle yemeğinde 'soup' (çorba) içilebilir."
-            },
-            {
-                question: "What is a place to buy food?",
-                options: ["Market", "Zoo", "Park", "Gym"],
-                correctAnswer: "Market",
-                explanation: "'Market', yiyecek satın alabileceğiniz bir yerdir."
-            },
-            {
-                question: "What do you use to listen to music?",
-                options: ["Spoon", "Headphones", "Ball", "Pen"],
-                correctAnswer: "Headphones",
-                explanation: "Müzik dinlemek için 'headphones' (kulaklık) kullanılır."
-            },
-            {
-                question: "What is a type of pet?",
-                options: ["Dog", "Book", "Car", "Tree"],
-                correctAnswer: "Dog",
-                explanation: "'Dog' (köpek) bir evcil hayvan ('pet') türüdür."
-            },
-            {
-                question: "What do you do at a concert?",
-                options: ["Work", "Listen to music", "Study", "Sleep"],
-                correctAnswer: "Listen to music",
-                explanation: "Konserde müzik dinlenir ('listen to music')."
-            },
-            {
-                question: "What is the opposite of 'long'?",
-                options: ["Short", "Fast", "High", "Big"],
-                correctAnswer: "Short",
-                explanation: "'Long' (uzun) kelimesinin zıttı 'short' (kısa) kelimesidir."
-            },
-            {
-                question: "What do you drink after exercise?",
-                options: ["Water", "Soda", "Ice cream", "Soup"],
-                correctAnswer: "Water",
-                explanation: "Egzersiz sonrası vücudun su ihtiyacını karşılamak için 'water' (su) içilir."
-            },
-            {
-                question: "What is a place to relax?",
-                options: ["Park", "Library", "Market", "School"],
-                correctAnswer: "Park",
-                explanation: "'Park', dinlenmek ve rahatlamak için gidilen bir yerdir."
-            },
-            {
-                question: "What do you wear on your hands?",
-                options: ["Hat", "Gloves", "Shoes", "Jacket"],
-                correctAnswer: "Gloves",
-                explanation: "Ellerimize 'gloves' (eldiven) takarız."
-            },
-            {
-                question: "What is a type of meal?",
-                options: ["Breakfast", "Book", "Pen", "Shoe"],
-                correctAnswer: "Breakfast",
-                explanation: "'Breakfast' (kahvaltı) bir öğün türüdür."
-            },
-            {
-                question: "What do you do at a museum?",
-                options: ["Cook", "See exhibits", "Study", "Sleep"],
-                correctAnswer: "See exhibits",
-                explanation: "Müzede sergilenen eserleri görürsünüz ('see exhibits')."
-            },
-            {
-                question: "What is the opposite of 'bright'?",
-                options: ["Dark", "Big", "Fast", "Tall"],
-                correctAnswer: "Dark",
-                explanation: "'Bright' (parlak) kelimesinin zıttı 'dark' (karanlık) kelimesidir."
-            },
-            {
-                question: "What do you eat for dinner?",
-                options: ["Rice", "Book", "Pen", "Shoe"],
-                correctAnswer: "Rice",
-                explanation: "Akşam yemeğinde 'rice' (pilav) yenebilir."
-            },
-            {
-                question: "What is a place to hike?",
-                options: ["Mountain", "Library", "Mall", "School"],
-                correctAnswer: "Mountain",
-                explanation: "'Mountain' (dağ), doğa yürüyüşü ('hike') için uygun bir yerdir."
-            },
-            {
-                question: "What do you use to read books?",
-                options: ["Spoon", "Glasses", "Ball", "Pen"],
-                correctAnswer: "Glasses",
-                explanation: "Gözleri iyi görmeyenler kitap okumak için 'glasses' (gözlük) kullanır."
-            },
-            {
-                question: "What is a type of tree?",
-                options: ["Oak", "Book", "Car", "Shoe"],
-                correctAnswer: "Oak",
-                explanation: "'Oak' (meşe) bir ağaç türüdür."
-            },
-            {
-                question: "What do you do at a party?",
-                options: ["Work", "Dance", "Study", "Sleep"],
-                correctAnswer: "Dance",
-                explanation: "Partilerde genellikle dans edilir ('dance')."
-            },
-{
+    {
         question: "A good friend always tells the truth. He or she is _______.",
         options: ["honest", "selfish", "jealous", "unreliable"],
         correctAnswer: "honest",
@@ -10090,690 +9707,608 @@ const questionsByGrade = {
         correctAnswer: "earthquake",
         explanation: "Yerin ani şekilde sallanmasına 'earthquake' (deprem) denir."
     },
-{
-                question: "What is the opposite of 'wet'?",
-                options: ["Dry", "Big", "Fast", "Tall"],
-                correctAnswer: "Dry",
-                explanation: "'Wet' (ıslak) kelimesinin zıttı 'dry' (kuru) kelimesidir."
-            },
-            {
-                question: "What do you eat for breakfast?",
-                options: ["Eggs", "Book", "Pen", "Shoe"],
-                correctAnswer: "Eggs",
-                explanation: "Kahvaltıda 'eggs' (yumurta) yaygın bir seçenektir."
-            },
-            {
-                question: "What is a place to fish?",
-                options: ["River", "Library", "Gym", "Mall"],
-                correctAnswer: "River",
-                explanation: "'River' (nehir), balık tutmak ('fish') için bir yerdir."
-            },
-            {
-                question: "What do you wear on sunny days?",
-                options: ["Coat", "Sunglasses", "Gloves", "Scarf"],
-                correctAnswer: "Sunglasses",
-                explanation: "Güneşli günlerde gözleri korumak için 'sunglasses' (güneş gözlüğü) takılır."
-            },
-            {
-                question: "What is a type of fish?",
-                options: ["Salmon", "Book", "Car", "Tree"],
-                correctAnswer: "Salmon",
-                explanation: "'Salmon' (somon) bir balık türüdür."
-            },
-            {
-                question: "What do you do at a fair?",
-                options: ["Work", "Play games", "Study", "Sleep"],
-                correctAnswer: "Play games",
-                explanation: "Panayırlarda ('fair') oyun oynamak ('play games') eğlencelidir."
-            },
-            {
-                question: "What is a good friend like?",
-                options: ["Mean", "Kind", "Lazy", "Rude"],
-                correctAnswer: "Kind",
-                explanation: "İyi bir arkadaş 'kind' (nazik, kibar) olur."
-            },
-            {
-                question: "What do teens like to do?",
-                options: ["Sleep all day", "Hang out with friends", "Work all day", "Eat books"],
-                correctAnswer: "Hang out with friends",
-                explanation: "Gençler arkadaşlarıyla takılmayı sever ('hang out with friends')."
-            },
-            {
-                question: "What do you use in the kitchen?",
-                options: ["Pen", "Knife", "Book", "Shoe"],
-                correctAnswer: "Knife",
-                explanation: "Mutfakta 'knife' (bıçak) kullanılan bir alettir."
-            },
-            {
-                question: "What do you say on the phone to greet someone?",
-                options: ["Goodbye", "Hello", "Sorry", "Thank you"],
-                correctAnswer: "Hello",
-                explanation: "Telefonda birini selamlarken 'Hello' (Merhaba) denir."
-            },
-            {
-                question: "What is a fun adventure?",
-                options: ["Doing homework", "Camping", "Sleeping", "Eating"],
-                correctAnswer: "Camping",
-                explanation: "'Camping' (kamp yapmak) eğlenceli bir maceradır."
-            },
-            {
-                question: "What is a chore at home?",
-                options: ["Playing games", "Cleaning the room", "Watching TV", "Reading books"],
-                correctAnswer: "Cleaning the room",
-                explanation: "Odayı temizlemek ('cleaning the room') bir ev işidir ('chore')."
-            },
-            {
-                question: "What is a 'scientist'?",
-                options: ["Person who cooks", "Person who experiments", "Person who sings", "Person who drives"],
-                correctAnswer: "Person who experiments",
-                explanation: "'Scientist' (bilim insanı), deneyler yapan kişidir."
-            },
-            {
-                question: "What do you use to access the internet?",
-                options: ["Spoon", "Computer", "Ball", "Pen"],
-                correctAnswer: "Computer",
-                explanation: "İnternete erişmek için 'computer' (bilgisayar) kullanılır."
-            },
-            {
-                question: "What is a natural disaster?",
-                options: ["Party", "Earthquake", "Concert", "Game"],
-                correctAnswer: "Earthquake",
-                explanation: "'Earthquake' (deprem) bir doğal afettir."
-            },
-            {
-                question: "What do you call a helpful friend?",
-                options: ["Selfish", "Helpful", "Rude", "Lazy"],
-                correctAnswer: "Helpful",
-                explanation: "Yardımsever bir arkadaşa 'helpful' denir."
-            },
-            {
-                question: "What do teens use to chat?",
-                options: ["Books", "Smartphones", "Shoes", "Pens"],
-                correctAnswer: "Smartphones",
-                explanation: "Gençler sohbet etmek için 'smartphones' (akıllı telefonlar) kullanır."
-            },
-            {
-                question: "What is a kitchen tool?",
-                options: ["Fork", "Book", "Shoe", "Pen"],
-                correctAnswer: "Fork",
-                explanation: "'Fork' (çatal) bir mutfak aletidir."
-            },
-            {
-                question: "What do you say to end a phone call?",
-                options: ["Hello", "Goodbye", "Sorry", "Thank you"],
-                correctAnswer: "Goodbye",
-                explanation: "Bir telefon görüşmesini bitirirken 'Goodbye' (Hoşça kal) denir."
-            },
-            {
-                question: "What is an outdoor adventure?",
-                options: ["Watching TV", "Hiking", "Sleeping", "Cooking"],
-                correctAnswer: "Hiking",
-                explanation: "'Hiking' (doğa yürüyüşü) bir açık hava macerasıdır."
-            },
-            {
-                question: "What is a household chore?",
-                options: ["Playing games", "Washing dishes", "Reading books", "Watching TV"],
-                correctAnswer: "Washing dishes",
-                explanation: "Bulaşıkları yıkamak ('washing dishes') bir ev işidir."
-            },
-            {
-                question: "What is a 'robot'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Robot' bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do online?",
-                options: ["Eat food", "Browse the internet", "Sleep", "Run"],
-                correctAnswer: "Browse the internet",
-                explanation: "İnternette gezinmek ('browse the internet') çevrimiçi yapılan bir aktivitedir."
-            },
-            {
-                question: "What is a 'flood'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Flood' (sel) bir doğal afettir."
-            },
-            {
-                question: "What do you call a funny friend?",
-                options: ["Serious", "Funny", "Rude", "Lazy"],
-                correctAnswer: "Funny",
-                explanation: "Komik bir arkadaşa 'funny' denir."
-            },
-            {
-                question: "What do teens enjoy?",
-                options: ["Working all day", "Listening to music", "Sleeping all day", "Eating books"],
-                correctAnswer: "Listening to music",
-                explanation: "Gençler müzik dinlemekten ('listening to music') hoşlanır."
-            },
-            {
-                question: "What do you use to cook?",
-                options: ["Pen", "Pan", "Book", "Shoe"],
-                correctAnswer: "Pan",
-                explanation: "Yemek pişirmek için 'pan' (tava) kullanılır."
-            },
-            {
-                question: "What do you say to apologize on the phone?",
-                options: ["Hello", "Sorry", "Goodbye", "Thank you"],
-                correctAnswer: "Sorry",
-                explanation: "Telefonda özür dilemek için 'Sorry' (Üzgünüm) denir."
-            },
-            {
-                question: "What is a water adventure?",
-                options: ["Reading books", "Swimming", "Sleeping", "Cooking"],
-                correctAnswer: "Swimming",
-                explanation: "'Swimming' (yüzme) bir su macerasıdır."
-            },
-            {
-                question: "What is a chore in the kitchen?",
-                options: ["Playing games", "Wiping the counter", "Watching TV", "Reading books"],
-                correctAnswer: "Wiping the counter",
-                explanation: "Tezgahı silmek ('wiping the counter') bir mutfak işidir."
-            },
-            {
-                question: "What is a 'computer'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Computer' (bilgisayar) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What is a social media platform?",
-                options: ["Book", "Instagram", "Pen", "Shoe"],
-                correctAnswer: "Instagram",
-                explanation: "'Instagram' bir sosyal medya platformudur."
-            },
-            {
-                question: "What is a 'tornado'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Tornado' (hortum) bir doğal afettir."
-            },
-            {
-                question: "What do you call a shy friend?",
-                options: ["Talkative", "Shy", "Rude", "Funny"],
-                correctAnswer: "Shy",
-                explanation: "Utangaç bir arkadaşa 'shy' denir."
-            },
-            {
-                question: "What do teens do after school?",
-                options: ["Work all day", "Do homework", "Sleep all day", "Eat books"],
-                correctAnswer: "Do homework",
-                explanation: "Gençler okuldan sonra ödev yapar ('do homework')."
-            },
-            {
-                question: "What is a kitchen appliance?",
-                options: ["Oven", "Book", "Shoe", "Pen"],
-                correctAnswer: "Oven",
-                explanation: "'Oven' (fırın) bir mutfak aletidir."
-            },
-            {
-                question: "What do you say to thank someone on the phone?",
-                options: ["Hello", "Sorry", "Thank you", "Goodbye"],
-                correctAnswer: "Thank you",
-                explanation: "Telefonda birine teşekkür etmek için 'Thank you' (Teşekkür ederim) denir."
-            },
-            {
-                question: "What is a mountain adventure?",
-                options: ["Watching TV", "Climbing", "Sleeping", "Cooking"],
-                correctAnswer: "Climbing",
-                explanation: "'Climbing' (tırmanma) bir dağ macerasıdır."
-            },
-            {
-                question: "What is a chore in the living room?",
-                options: ["Playing games", "Vacuuming", "Watching TV", "Reading books"],
-                correctAnswer: "Vacuuming",
-                explanation: "Elektrik süpürgesiyle temizlik yapmak ('vacuuming') bir oturma odası işidir."
-            },
-            {
-                question: "What is a 'tablet'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Tablet' bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do on the internet?",
-                options: ["Eat food", "Watch videos", "Sleep", "Run"],
-                correctAnswer: "Watch videos",
-                explanation: "İnternette video izlemek ('watch videos') yaygın bir aktivitedir."
-            },
-            {
-                question: "What is a 'volcano'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Volcano' (yanardağ) bir doğal afettir."
-            },
-            {
-                question: "What do you call a generous friend?",
-                options: ["Selfish", "Generous", "Rude", "Lazy"],
-                correctAnswer: "Generous",
-                explanation: "Cömert bir arkadaşa 'generous' denir."
-            },
-            {
-                question: "What do teens use for gaming?",
-                options: ["Books", "Consoles", "Shoes", "Pens"],
-                correctAnswer: "Consoles",
-                explanation: "Gençler oyun oynamak için 'consoles' (oyun konsolları) kullanır."
-            },
-            {
-                question: "What is a kitchen ingredient?",
-                options: ["Salt", "Book", "Shoe", "Pen"],
-                correctAnswer: "Salt",
-                explanation: "'Salt' (tuz) bir mutfak malzemesidir."
-            },
-            {
-                question: "What do you say to ask for help on the phone?",
-                options: ["Can you help me?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Can you help me?",
-                explanation: "Telefonda yardım istemek için 'Can you help me?' (Bana yardım edebilir misin?) denir."
-            },
-            {
-                question: "What is a forest adventure?",
-                options: ["Watching TV", "Camping", "Sleeping", "Cooking"],
-                correctAnswer: "Camping",
-                explanation: "'Camping' (kamp yapmak) bir orman macerasıdır."
-            },
-            {
-                question: "What is a chore in the bathroom?",
-                options: ["Playing games", "Cleaning the sink", "Watching TV", "Reading books"],
-                correctAnswer: "Cleaning the sink",
-                explanation: "Lavaboyu temizlemek ('cleaning the sink') bir banyo işidir."
-            },
-            {
-                question: "What is a 'smartphone'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Smartphone' (akıllı telefon) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you use to send emails?",
-                options: ["Spoon", "Computer", "Ball", "Pen"],
-                correctAnswer: "Computer",
-                explanation: "E-posta göndermek için 'computer' (bilgisayar) kullanılır."
-            },
-            {
-                question: "What is a 'hurricane'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Hurricane' (kasırga) bir doğal afettir."
-            },
-            {
-                question: "What do you call a polite friend?",
-                options: ["Rude", "Polite", "Lazy", "Funny"],
-                correctAnswer: "Polite",
-                explanation: "Kibar bir arkadaşa 'polite' denir."
-            },
-            {
-                question: "What do teens do on weekends?",
-                options: ["Work all day", "Meet friends", "Sleep all day", "Eat books"],
-                correctAnswer: "Meet friends",
-                explanation: "Gençler hafta sonları arkadaşlarıyla buluşur ('meet friends')."
-            },
-            {
-                question: "What is a kitchen utensil?",
-                options: ["Spoon", "Book", "Shoe", "Pen"],
-                correctAnswer: "Spoon",
-                explanation: "'Spoon' (kaşık) bir mutfak gerecidir."
-            },
-            {
-                question: "What do you say to invite someone on the phone?",
-                options: ["Come over!", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Come over!",
-                explanation: "Telefonda birini davet etmek için 'Come over!' (Bize gel!) diyebilirsiniz."
-            },
-            {
-                question: "What is a beach adventure?",
-                options: ["Watching TV", "Surfing", "Sleeping", "Cooking"],
-                correctAnswer: "Surfing",
-                explanation: "'Surfing' (sörf yapmak) bir plaj macerasıdır."
-            },
-            {
-                question: "What is a chore in the garden?",
-                options: ["Playing games", "Watering plants", "Watching TV", "Reading books"],
-                correctAnswer: "Watering plants",
-                explanation: "Bitkileri sulamak ('watering plants') bir bahçe işidir."
-            },
-            {
-                question: "What is a 'laptop'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Laptop' (dizüstü bilgisayar) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do on social media?",
-                options: ["Eat food", "Share photos", "Sleep", "Run"],
-                correctAnswer: "Share photos",
-                explanation: "Sosyal medyada fotoğraf paylaşmak ('share photos') yaygındır."
-            },
-            {
-                question: "What is a 'tsunami'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Tsunami' bir doğal afettir."
-            },
-            {
-                question: "What do you call a cheerful friend?",
-                options: ["Sad", "Cheerful", "Rude", "Lazy"],
-                correctAnswer: "Cheerful",
-                explanation: "Neşeli bir arkadaşa 'cheerful' denir."
-            },
-            {
-                question: "What do teens wear?",
-                options: ["Uniforms only", "Casual clothes", "Suits", "Pajamas"],
-                correctAnswer: "Casual clothes",
-                explanation: "Gençler genellikle günlük kıyafetler ('casual clothes') giyer."
-            },
-            {
-                question: "What is a kitchen appliance?",
-                options: ["Microwave", "Book", "Shoe", "Pen"],
-                correctAnswer: "Microwave",
-                explanation: "'Microwave' (mikrodalga fırın) bir mutfak aletidir."
-            },
-            {
-                question: "What do you say to ask the time on the phone?",
-                options: ["What time is it?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "What time is it?",
-                explanation: "Telefonda saati sormak için 'What time is it?' (Saat kaç?) denir."
-            },
-            {
-                question: "What is a city adventure?",
-                options: ["Watching TV", "Exploring streets", "Sleeping", "Cooking"],
-                correctAnswer: "Exploring streets",
-                explanation: "Sokakları keşfetmek ('exploring streets') bir şehir macerasıdır."
-            },
-            {
-                question: "What is a chore in the bedroom?",
-                options: ["Playing games", "Making the bed", "Watching TV", "Reading books"],
-                correctAnswer: "Making the bed",
-                explanation: "Yatağı yapmak ('making the bed') bir yatak odası işidir."
-            },
-            {
-                question: "What is a 'camera'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Camera' (kamera) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you use to video call?",
-                options: ["Spoon", "Smartphone", "Ball", "Pen"],
-                correctAnswer: "Smartphone",
-                explanation: "Görüntülü arama yapmak için 'smartphone' (akıllı telefon) kullanılır."
-            },
-            {
-                question: "What is a 'wildfire'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Wildfire' (orman yangını) bir doğal afettir."
-            },
-            {
-                question: "What do you call a talkative friend?",
-                options: ["Quiet", "Talkative", "Rude", "Lazy"],
-                correctAnswer: "Talkative",
-                explanation: "Çok konuşan bir arkadaşa 'talkative' denir."
-            },
-            {
-                question: "What do teens do online?",
-                options: ["Work all day", "Play games", "Sleep all day", "Eat books"],
-                correctAnswer: "Play games",
-                explanation: "Gençler çevrimiçi ortamda oyun oynar ('play games')."
-            },
-            {
-                question: "What is a kitchen tool?",
-                options: ["Whisk", "Book", "Shoe", "Pen"],
-                correctAnswer: "Whisk",
-                explanation: "'Whisk' (çırpıcı) bir mutfak aletidir."
-            },
-            {
-                question: "What do you say to offer help on the phone?",
-                options: ["Can I help you?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Can I help you?",
-                explanation: "Telefonda yardım teklif etmek için 'Can I help you?' (Yardım edebilir miyim?) denir."
-            },
-            {
-                question: "What is a desert adventure?",
-                options: ["Watching TV", "Camel riding", "Sleeping", "Cooking"],
-                correctAnswer: "Camel riding",
-                explanation: "Deveye binmek ('camel riding') bir çöl macerasıdır."
-            },
-            {
-                question: "What is a chore in the house?",
-                options: ["Playing games", "Taking out trash", "Watching TV", "Reading books"],
-                correctAnswer: "Taking out trash",
-                explanation: "Çöpü dışarı çıkarmak ('taking out trash') bir ev işidir."
-            },
-            {
-                question: "What is a 'television'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Television' (televizyon) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do on a website?",
-                options: ["Eat food", "Read articles", "Sleep", "Run"],
-                correctAnswer: "Read articles",
-                explanation: "Bir web sitesinde makale okuyabilirsiniz ('read articles')."
-            },
-            {
-                question: "What is a 'landslide'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Landslide' (heyelan) bir doğal afettir."
-            },
-            {
-                question: "What do you call a rude friend?",
-                options: ["Polite", "Rude", "Funny", "Lazy"],
-                correctAnswer: "Rude",
-                explanation: "Kaba bir arkadaşa 'rude' denir."
-            },
-            {
-                question: "What do teens do at school?",
-                options: ["Work all day", "Study", "Sleep all day", "Eat books"],
-                correctAnswer: "Study",
-                explanation: "Gençler okulda ders çalışır ('study')."
-            },
-            {
-                question: "What is a kitchen ingredient?",
-                options: ["Sugar", "Book", "Shoe", "Pen"],
-                correctAnswer: "Sugar",
-                explanation: "'Sugar' (şeker) bir mutfak malzemesidir."
-            },
-            {
-                question: "What do you say to suggest a plan on the phone?",
-                options: ["Let’s meet!", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Let’s meet!",
-                explanation: "Telefonda bir plan önermek için 'Let’s meet!' (Buluşalım!) diyebilirsiniz."
-            },
-            {
-                question: "What is a jungle adventure?",
-                options: ["Watching TV", "Trekking", "Sleeping", "Cooking"],
-                correctAnswer: "Trekking",
-                explanation: "'Trekking' (doğa yürüyüşü) bir orman macerasıdır."
-            },
-            {
-                question: "What is a chore in the yard?",
-                options: ["Playing games", "Mowing the lawn", "Watching TV", "Reading books"],
-                correctAnswer: "Mowing the lawn",
-                explanation: "Çimleri biçmek ('mowing the lawn') bir bahçe işidir."
-            },
-            {
-                question: "What is a 'printer'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Printer' (yazıcı) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you use to shop online?",
-                options: ["Spoon", "Computer", "Ball", "Pen"],
-                correctAnswer: "Computer",
-                explanation: "Çevrimiçi alışveriş yapmak için 'computer' (bilgisayar) kullanılır."
-            },
-            {
-                question: "What is a 'drought'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Drought' (kuraklık) bir doğal afettir."
-            },
-            {
-                question: "What do you call a lazy friend?",
-                options: ["Active", "Lazy", "Funny", "Polite"],
-                correctAnswer: "Lazy",
-                explanation: "Tembel bir arkadaşa 'lazy' denir."
-            },
-            {
-                question: "What do teens use for music?",
-                options: ["Books", "Headphones", "Shoes", "Pens"],
-                correctAnswer: "Headphones",
-                explanation: "Gençler müzik için 'headphones' (kulaklık) kullanır."
-            },
-            {
-                question: "What is a kitchen appliance?",
-                options: ["Blender", "Book", "Shoe", "Pen"],
-                correctAnswer: "Blender",
-                explanation: "'Blender' (karıştırıcı) bir mutfak aletidir."
-            },
-            {
-                question: "What do you say to confirm a plan on the phone?",
-                options: ["Sounds good!", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Sounds good!",
-                explanation: "Telefonda bir planı onaylamak için 'Sounds good!' (Kulağa hoş geliyor!) diyebilirsiniz."
-            },
-            {
-                question: "What is a sky adventure?",
-                options: ["Watching TV", "Paragliding", "Sleeping", "Cooking"],
-                correctAnswer: "Paragliding",
-                explanation: "'Paragliding' (yamaç paraşütü) bir gökyüzü macerasıdır."
-            },
-            {
-                question: "What is a chore in the garage?",
-                options: ["Playing games", "Organizing tools", "Watching TV", "Reading books"],
-                correctAnswer: "Organizing tools",
-                explanation: "Aletleri düzenlemek ('organizing tools') bir garaj işidir."
-            },
-            {
-                question: "What is a 'smartwatch'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Smartwatch' (akıllı saat) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do on a blog?",
-                options: ["Eat food", "Write posts", "Sleep", "Run"],
-                correctAnswer: "Write posts",
-                explanation: "Bir blogda gönderi yazarsınız ('write posts')."
-            },
-            {
-                question: "What is a 'blizzard'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Blizzard' (tipi) bir doğal afettir."
-            },
-            {
-                question: "What do you call a clever friend?",
-                options: ["Slow", "Clever", "Rude", "Lazy"],
-                correctAnswer: "Clever",
-                explanation: "Zeki bir arkadaşa 'clever' denir."
-            },
-            {
-                question: "What do teens do at a party?",
-                options: ["Work all day", "Dance", "Sleep all day", "Eat books"],
-                correctAnswer: "Dance",
-                explanation: "Gençler partide dans eder ('dance')."
-            },
-            {
-                question: "What is a kitchen tool?",
-                options: ["Ladle", "Book", "Shoe", "Pen"],
-                correctAnswer: "Ladle",
-                explanation: "'Ladle' (kepçe) bir mutfak aletidir."
-            },
-            {
-                question: "What do you say to ask for directions on the phone?",
-                options: ["Where is it?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Where is it?",
-                explanation: "Telefonda yol tarifi sormak için 'Where is it?' (Nerede?) diye sorabilirsiniz."
-            },
-            {
-                question: "What is a cave adventure?",
-                options: ["Watching TV", "Exploring caves", "Sleeping", "Cooking"],
-                correctAnswer: "Exploring caves",
-                explanation: "Mağaraları keşfetmek ('exploring caves') bir mağara macerasıdır."
-            },
-            {
-                question: "What is a chore in the laundry room?",
-                options: ["Playing games", "Washing clothes", "Watching TV", "Reading books"],
-                correctAnswer: "Washing clothes",
-                explanation: "Kıyafetleri yıkamak ('washing clothes') bir çamaşır odası işidir."
-            },
-            {
-                question: "What is a 'headphone'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Headphone' (kulaklık) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do on a forum?",
-                options: ["Eat food", "Discuss topics", "Sleep", "Run"],
-                correctAnswer: "Discuss topics",
-                explanation: "Bir forumda konuları tartışırsınız ('discuss topics')."
-            },
-            {
-                question: "What is an 'avalanche'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Avalanche' (çığ) bir doğal afettir."
-            },
-            {
-                question: "What do you call a supportive friend?",
-                options: ["Unhelpful", "Supportive", "Rude", "Lazy"],
-                correctAnswer: "Supportive",
-                explanation: "Destekleyici bir arkadaşa 'supportive' denir."
-            },
-            {
-                question: "What do teens do in their free time?",
-                options: ["Work all day", "Watch movies", "Sleep all day", "Eat books"],
-                correctAnswer: "Watch movies",
-                explanation: "Gençler boş zamanlarında film izler ('watch movies')."
-            },
-            {
-                question: "What is a kitchen ingredient?",
-                options: ["Flour", "Book", "Shoe", "Pen"],
-                correctAnswer: "Flour",
-                explanation: "'Flour' (un) bir mutfak malzemesidir."
-            },
-            {
-                question: "What do you say to cancel a plan on the phone?",
-                options: ["I can’t make it", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "I can’t make it",
-                explanation: "Telefonda bir planı iptal etmek için 'I can’t make it' (Gelemiyorum) diyebilirsiniz."
-            },
-            {
-                question: "What is an ocean adventure?",
-                options: ["Watching TV", "Diving", "Sleeping", "Cooking"],
-                correctAnswer: "Diving",
-                explanation: "'Diving' (dalış yapmak) bir okyanus macerasıdır."
-            },
-            {
-                question: "What is a chore in the dining room?",
-                options: ["Playing games", "Setting the table", "Watching TV", "Reading books"],
-                correctAnswer: "Setting the table",
-                explanation: "Masayı kurmak ('setting the table') bir yemek odası işidir."
-            },
-            {
-                question: "What is a 'speaker'?",
-                options: ["Food", "Technology", "Toy", "Cloth"],
-                correctAnswer: "Technology",
-                explanation: "'Speaker' (hoparlör) bir teknoloji ürünüdür."
-            },
-            {
-                question: "What do you do on a search engine?",
-                options: ["Eat food", "Look for information", "Sleep", "Run"],
-                correctAnswer: "Look for information",
-                explanation: "Bir arama motorunda bilgi ararsınız ('look for information')."
-            },
-            {
-                question: "What is a 'storm'?",
-                options: ["Party", "Natural disaster", "Concert", "Game"],
-                correctAnswer: "Natural disaster",
-                explanation: "'Storm' (fırtına) bir doğal afettir."
-            }
+    {
+        question: "A person you can always trust and share secrets with is a _______ friend.",
+        options: ["bad", "buddy", "new", "stranger"],
+        correctAnswer: "buddy",
+        explanation: "Her zaman güvenebileceğiniz ve sırlarınızı paylaşabileceğiniz bir arkadaş, 'buddy' (kanka, yakın arkadaş) olarak tanımlanır."
+    },
+    {
+        question: "She likes wearing _______ clothes like jeans and T-shirts on weekends.",
+        options: ["formal", "casual", "elegant", "official"],
+        correctAnswer: "casual",
+        explanation: "Kot pantolon ve tişört gibi rahat kıyafetler 'casual' (gündelik, spor) olarak adlandırılır."
+    },
+    {
+        question: "What is the first step in a recipe for making a cake?",
+        options: ["Bake it", "Eat it", "Mix the ingredients", "Decorate it"],
+        correctAnswer: "Mix the ingredients",
+        explanation: "Kek yapmak için bir tarifteki ilk adımlardan biri 'mix the ingredients' (malzemeleri karıştırmak) tır."
+    },
+    {
+        question: "What do you say when you want someone to wait on the phone?",
+        options: ["Hang up", "Call back", "Hold on", "Speak up"],
+        correctAnswer: "Hold on",
+        explanation: "Telefonda birini bekletmek istediğinizde 'Hold on' (Hatta kalın) dersiniz."
+    },
+    {
+        question: "You can send _______ to your friends using your smartphone.",
+        options: ["books", "letters", "text messages", "parcels"],
+        correctAnswer: "text messages",
+        explanation: "Akıllı telefonunuzu kullanarak arkadaşlarınıza 'text messages' (kısa mesajlar) gönderebilirsiniz."
+    },
+    {
+        question: "What kind of activity is going down a river on a raft?",
+        options: ["Hiking", "Caving", "Rafting", "Climbing"],
+        correctAnswer: "Rafting",
+        explanation: "Bir sal üzerinde nehirden aşağı inme aktivitesine 'rafting' denir."
+    },
+    {
+        question: "What do you call a place that is very popular with visitors?",
+        options: ["A hotel", "A restaurant", "A tourist attraction", "A shop"],
+        correctAnswer: "A tourist attraction",
+        explanation: "Ziyaretçiler arasında çok popüler olan bir yere 'tourist attraction' (turistik yer) denir."
+    },
+    {
+        question: "What is your _______ at home? I have to wash the dishes.",
+        options: ["hobby", "chore", "sport", "favourite activity"],
+        correctAnswer: "chore",
+        explanation: "Evde yapılması gereken görevlere 'chore' (ev işi) denir. Bulaşıkları yıkamak bir ev işidir."
+    },
+    {
+        question: "A person who works in a laboratory and does experiments is a _______.",
+        options: ["teacher", "doctor", "scientist", "artist"],
+        correctAnswer: "scientist",
+        explanation: "Laboratuvarda çalışan ve deneyler yapan kişiye 'scientist' (bilim insanı) denir."
+    },
+    {
+        question: "A strong shaking of the ground is called an _______.",
+        options: ["avalanche", "earthquake", "flood", "drought"],
+        correctAnswer: "earthquake",
+        explanation: "Yerin güçlü bir şekilde sallanmasına 'earthquake' (deprem) denir."
+    },
+    {
+        question: "A good friend always _______ you up when you have a problem.",
+        options: ["lets", "backs", "puts", "gets"],
+        correctAnswer: "backs",
+        explanation: "İyi bir arkadaş, bir problemin olduğunda sana 'backs up' (destek olur)."
+    },
+    {
+        question: "I can't stand listening to that music. I think it is _______.",
+        options: ["terrific", "unbearable", "great", "fantastic"],
+        correctAnswer: "unbearable",
+        explanation: "Katlanamadığınız bir müzik sizin için 'unbearable' (dayanılmaz) olabilir."
+    },
+    {
+        question: "To make an omelette, you first need to _______ the eggs.",
+        options: ["boil", "fry", "crack", "bake"],
+        correctAnswer: "crack",
+        explanation: "Omlet yapmak için önce yumurtaları 'crack' (kırmak) gerekir."
+    },
+    {
+        question: "If the line is busy, you should _______ later.",
+        options: ["hang up", "call back", "pick up", "hold on"],
+        correctAnswer: "call back",
+        explanation: "Hat meşgulse, daha sonra 'call back' (geri aramak) yapmalısınız."
+    },
+    {
+        question: "To use a website, you often need to create an _______.",
+        options: ["email", "account", "attachment", "comment"],
+        correctAnswer: "account",
+        explanation: "Bir web sitesini kullanmak için genellikle bir 'account' (hesap) oluşturmanız gerekir."
+    },
+    {
+        question: "You need a helmet and a rope for _______.",
+        options: ["caving", "sailing", "rock climbing", "kayaking"],
+        correctAnswer: "rock climbing",
+        explanation: "'Rock climbing' (kaya tırmanışı) için kask ve ipe ihtiyacınız vardır."
+    },
+    {
+        question: "What is the traditional food of a country called?",
+        options: ["Climate", "Cuisine", "Location", "Language"],
+        correctAnswer: "Cuisine",
+        explanation: "Bir ülkenin geleneksel yemeklerine o ülkenin 'cuisine' (mutfağı) denir."
+    },
+    {
+        question: "Who is responsible for _______ the dog in your family?",
+        options: ["making", "doing", "feeding", "setting"],
+        correctAnswer: "feeding",
+        explanation: "Köpeği beslemek için 'feeding the dog' ifadesi kullanılır."
+    },
+    {
+        question: "A _______ is used to see very small things like bacteria.",
+        options: ["telescope", "microscope", "camera", "magnifying glass"],
+        correctAnswer: "microscope",
+        explanation: "Bakteri gibi çok küçük şeyleri görmek için 'microscope' (mikroskop) kullanılır."
+    },
+    {
+        question: "A very large wave caused by an event under the sea is a _______.",
+        options: ["hurricane", "tornado", "tsunami", "blizzard"],
+        correctAnswer: "tsunami",
+        explanation: "Deniz altındaki bir olaydan kaynaklanan çok büyük bir dalgaya 'tsunami' denir."
+    },
+    {
+        question: "I _______ on my best friend for help when I need it.",
+        options: ["count", "get", "come", "let"],
+        correctAnswer: "count",
+        explanation: "Yardıma ihtiyacım olduğunda en iyi arkadaşıma 'count on' (güvenirim)."
+    },
+    {
+        question: "I think pop music is _______. The rhythm is great for dancing.",
+        options: ["awful", "boring", "terrific", "unbearable"],
+        correctAnswer: "terrific",
+        explanation: "Dans etmek için ritmi harika olan pop müziği 'terrific' (harika) olarak nitelendirebilirsiniz."
+    },
+    {
+        question: "What do you use to cut vegetables?",
+        options: ["A spoon", "A fork", "A knife", "A plate"],
+        correctAnswer: "A knife",
+        explanation: "Sebzeleri kesmek için 'knife' (bıçak) kullanılır."
+    },
+    {
+        question: "I couldn't hear you well. The _______ was bad.",
+        options: ["message", "connection", "call", "number"],
+        correctAnswer: "connection",
+        explanation: "İyi duyamadığınızda, telefon 'connection' (bağlantısı) kötü demektir."
+    },
+    {
+        question: "You should not share your personal _______ with strangers online.",
+        options: ["photos", "information", "friends", "hobbies"],
+        correctAnswer: "information",
+        explanation: "Çevrimiçi ortamda yabancılarla kişisel 'information' (bilgi) paylaşmamalısınız."
+    },
+    {
+        question: "Going into a cave to explore it is called _______.",
+        options: ["caving", "hiking", "sailing", "diving"],
+        correctAnswer: "caving",
+        explanation: "Bir mağarayı keşfetmek için içine girmeye 'caving' (mağaracılık) denir."
+    },
+    {
+        question: "The Eiffel Tower is a famous _______ in Paris.",
+        options: ["hotel", "restaurant", "landmark", "bridge"],
+        correctAnswer: "landmark",
+        explanation: "Eyfel Kulesi, Paris'te ünlü bir 'landmark' (sembol yapı, anıt) tır."
+    },
+    {
+        question: "It is my turn to _______ the table for dinner tonight.",
+        options: ["clear", "set", "wash", "cook"],
+        correctAnswer: "set",
+        explanation: "Akşam yemeği için masayı hazırlamaya 'set the table' (masayı kurmak) denir."
+    },
+    {
+        question: "A place where scientific tests are done is a _______.",
+        options: ["library", "laboratory", "classroom", "office"],
+        correctAnswer: "laboratory",
+        explanation: "Bilimsel testlerin yapıldığı yere 'laboratory' (laboratuvar) denir."
+    },
+    {
+        question: "A long period of time when there is no rain is a _______.",
+        options: ["flood", "drought", "storm", "winter"],
+        correctAnswer: "drought",
+        explanation: "Yağmurun olmadığı uzun bir zaman dilimine 'drought' (kuraklık) denir."
+    },
+    {
+        question: "A good friend is someone you can _______ with.",
+        options: ["argue", "fight", "get on well", "disagree"],
+        correctAnswer: "get on well",
+        explanation: "İyi bir arkadaş, 'get on well with' (iyi geçindiğin) biridir."
+    },
+    {
+        question: "I am not keen _______ classical music. I prefer rock.",
+        options: ["at", "in", "on", "of"],
+        correctAnswer: "on",
+        explanation: "'Keen on' (-e meraklı olmak) kalıbında 'on' edatı kullanılır."
+    },
+    {
+        question: "You should _______ the potatoes before boiling them.",
+        options: ["peel", "chop", "slice", "dice"],
+        correctAnswer: "peel",
+        explanation: "Patatesleri haşlamadan önce kabuklarını 'peel' (soymak) gerekir."
+    },
+    {
+        question: "Can you speak _______? I can't hear you.",
+        options: ["down", "up", "on", "off"],
+        correctAnswer: "up",
+        explanation: "Daha yüksek sesle konuşmasını istemek için 'speak up' denir."
+    },
+    {
+        question: "I need to _______ to the internet to check my emails.",
+        options: ["disconnect", "connect", "logout", "login"],
+        correctAnswer: "connect",
+        explanation: "E-postalarınızı kontrol etmek için internete 'connect' (bağlanmak) gerekir."
+    },
+    {
+        question: "What _______ do you need for scuba-diving?",
+        options: ["clothes", "equipment", "food", "money"],
+        correctAnswer: "equipment",
+        explanation: "Tüplü dalış gibi aktiviteler için özel 'equipment' (ekipman) gerekir."
+    },
+    {
+        question: "We stayed in an all-_______ hotel on our holiday.",
+        options: ["inclusive", "exclusive", "expensive", "cheap"],
+        correctAnswer: "inclusive",
+        explanation: "Her şey dahil otellere 'all-inclusive' denir."
+    },
+    {
+        question: "My brother is responsible for taking out the _______.",
+        options: ["dog", "dishes", "garbage", "laundry"],
+        correctAnswer: "garbage",
+        explanation: "Çöpü dışarı çıkarmak için 'take out the garbage' ifadesi kullanılır."
+    },
+    {
+        question: "Scientists _______ experiments to test their ideas.",
+        options: ["do", "make", "create", "have"],
+        correctAnswer: "do",
+        explanation: "Deney yapmak için 'do experiments' kalıbı kullanılır."
+    },
+    {
+        question: "An _______ is a large mass of snow falling down a mountain.",
+        options: ["earthquake", "avalanche", "landslide", "flood"],
+        correctAnswer: "avalanche",
+        explanation: "Dağdan aşağı düşen büyük bir kar kütlesine 'avalanche' (çığ) denir."
+    },
+    {
+        question: "A friend who never tells your secrets to others is _______.",
+        options: ["honest", "loyal", "generous", "kind"],
+        correctAnswer: "loyal",
+        explanation: "Sırlarınızı başkalarına asla anlatmayan bir arkadaş 'loyal' (sadık) biridir."
+    },
+    {
+        question: "She thinks horror movies are _______. She can't watch them.",
+        options: ["funny", "frightening", "exciting", "interesting"],
+        correctAnswer: "frightening",
+        explanation: "Korku filmlerini izleyemeyen biri onları 'frightening' (korkutucu) bulur."
+    },
+    {
+        question: "What do you use to mix eggs?",
+        options: ["A whisk", "A knife", "A grater", "A peeler"],
+        correctAnswer: "A whisk",
+        explanation: "Yumurtaları karıştırmak için 'whisk' (çırpıcı) kullanılır."
+    },
+    {
+        question: "I need to make a phone _______.",
+        options: ["message", "call", "number", "line"],
+        correctAnswer: "call",
+        explanation: "Telefon görüşmesi yapmak 'make a phone call' olarak ifade edilir."
+    },
+    {
+        question: "You can _______ photos and videos on social media.",
+        options: ["delete", "share", "download", "upload"],
+        correctAnswer: "share",
+        explanation: "Sosyal medyada fotoğraf ve video 'share' (paylaşmak) edebilirsiniz."
+    },
+    {
+        question: "What is an activity where you walk for a long distance in nature?",
+        options: ["Hiking", "Sailing", "Caving", "Rafting"],
+        correctAnswer: "Hiking",
+        explanation: "Doğada uzun mesafe yürüme aktivitesine 'hiking' (doğa yürüyüşü) denir."
+    },
+    {
+        question: "The _______ of Turkey is Ankara.",
+        options: ["city", "country", "capital", "town"],
+        correctAnswer: "capital",
+        explanation: "Türkiye'nin 'capital' (başkent) şehri Ankara'dır."
+    },
+    {
+        question: "It's my _______ to make my bed every morning.",
+        options: ["hobby", "duty", "choice", "fun"],
+        correctAnswer: "duty",
+        explanation: "Her sabah yatağımı yapmak benim 'duty' (görevim) dir."
+    },
+    {
+        question: "A _______ is a possible explanation for something.",
+        options: ["fact", "result", "theory", "proof"],
+        correctAnswer: "theory",
+        explanation: "Bir şey için olası bir açıklamaya 'theory' (teori, kuram) denir."
+    },
+    {
+        question: "A _______ is a fire in a forest that is not controlled.",
+        options: ["campfire", "bonfire", "wildfire", "fireplace"],
+        correctAnswer: "wildfire",
+        explanation: "Kontrol altında olmayan bir orman yangınına 'wildfire' denir."
+    },
+    {
+        question: "A person who is always there for you gives you _______.",
+        options: ["trouble", "problems", "support", "excuses"],
+        correctAnswer: "support",
+        explanation: "Her zaman yanınızda olan bir kişi size 'support' (destek) verir."
+    },
+    {
+        question: "She wears _______ clothes because she likes fashion.",
+        options: ["old", "casual", "trendy", "boring"],
+        correctAnswer: "trendy",
+        explanation: "Modayı sevdiği için 'trendy' (modaya uygun) kıyafetler giyer."
+    },
+    {
+        question: "Could you _______ the carrots for the salad?",
+        options: ["boil", "fry", "grate", "bake"],
+        correctAnswer: "grate",
+        explanation: "Salata için havuçları 'grate' (rendelemek) edebilir misin?"
+    },
+    {
+        question: "I left a _______ on your voicemail.",
+        options: ["call", "message", "text", "note"],
+        correctAnswer: "message",
+        explanation: "Sesli postanıza bir 'message' (mesaj) bıraktım."
+    },
+    {
+        question: "I need to _______ this file to my computer.",
+        options: ["upload", "download", "attach", "delete"],
+        correctAnswer: "download",
+        explanation: "Bu dosyayı bilgisayarıma 'download' (indirmek) gerekiyor."
+    },
+    {
+        question: "Which one is an _______ sport?",
+        options: ["Chess", "Paragliding", "Yoga", "Walking"],
+        correctAnswer: "Paragliding",
+        explanation: "Yamaç paraşütü ('paragliding') bir macera sporudur."
+    },
+    {
+        question: "Pamukkale is a famous place known for its _______.",
+        options: ["castles", "palaces", "travertines", "mosques"],
+        correctAnswer: "travertines",
+        explanation: "Pamukkale, 'travertines' (travertenleri) ile ünlü bir yerdir."
+    },
+    {
+        question: "My mother is responsible for doing the _______.",
+        options: ["dishes", "laundry", "garbage", "shopping"],
+        correctAnswer: "laundry",
+        explanation: "Annem çamaşırları yıkamaktan ('doing the laundry') sorumludur."
+    },
+    {
+        question: "A person who studies stars and planets is an _______.",
+        options: ["astrologer", "astronomer", "biologist", "chemist"],
+        correctAnswer: "astronomer",
+        explanation: "Yıldızları ve gezegenleri inceleyen kişiye 'astronomer' (gökbilimci) denir."
+    },
+    {
+        question: "A _______ is a large amount of water covering an area that is usually dry.",
+        options: ["drought", "flood", "storm", "wave"],
+        correctAnswer: "flood",
+        explanation: "Genellikle kuru olan bir alanı kaplayan büyük miktardaki suya 'flood' (sel) denir."
+    },
+    {
+        question: "My friend is very _______. I can always depend on him.",
+        options: ["selfish", "reliable", "stubborn", "lazy"],
+        correctAnswer: "reliable",
+        explanation: "Arkadaşım çok 'reliable' (güvenilir). Ona her zaman güvenebilirim."
+    },
+    {
+        question: "I find jazz music very _______. It helps me to calm down.",
+        options: ["loud", "relaxing", "annoying", "energetic"],
+        correctAnswer: "relaxing",
+        explanation: "Caz müziğini çok 'relaxing' (rahatlatıcı) buluyorum."
+    },
+    {
+        question: "You should _______ the vegetables before you cook them.",
+        options: ["eat", "buy", "wash", "peel"],
+        correctAnswer: "wash",
+        explanation: "Sebzeleri pişirmeden önce onları 'wash' (yıkamak) gerekir."
+    },
+    {
+        question: "The person you are calling is not answering. The line is _______.",
+        options: ["busy", "engaged", "free", "available"],
+        correctAnswer: "engaged",
+        explanation: "Aradığınız kişi cevap vermiyorsa veya başka bir görüşme yapıyorsa hat 'engaged' (meşgul) olabilir."
+    },
+    {
+        question: "A _______ is a website where you can write about your experiences.",
+        options: ["forum", "blog", "chat room", "search engine"],
+        correctAnswer: "blog",
+        explanation: "Deneyimleriniz hakkında yazabileceğiniz bir web sitesine 'blog' denir."
+    },
+    {
+        question: "It is important to be _______ when you do extreme sports.",
+        options: ["careless", "careful", "scared", "worried"],
+        correctAnswer: "careful",
+        explanation: "Ekstrem sporlar yaparken 'careful' (dikkatli) olmak önemlidir."
+    },
+    {
+        question: "We stayed in a bed and _______ in a small village.",
+        options: ["breakfast", "lunch", "dinner", "snack"],
+        correctAnswer: "breakfast",
+        explanation: "'Bed and breakfast' (oda ve kahvaltı) küçük, pansiyon tipi konaklama yerleridir."
+    },
+    {
+        question: "It is not fair. You should _______ the chores with your sister.",
+        options: ["do", "make", "share", "give"],
+        correctAnswer: "share",
+        explanation: "Ev işlerini kardeşinle 'share' (paylaşmak) gerekir."
+    },
+    {
+        question: "A _______ is a great success or achievement.",
+        options: ["failure", "disaster", "triumph", "problem"],
+        correctAnswer: "triumph",
+        explanation: "Büyük bir başarıya veya zafere 'triumph' denir."
+    },
+    {
+        question: "A _______ is a violent storm with strong winds.",
+        options: ["breeze", "hurricane", "drizzle", "sunshine"],
+        correctAnswer: "hurricane",
+        explanation: "Güçlü rüzgarları olan şiddetli bir fırtınaya 'hurricane' (kasırga) denir."
+    },
+    {
+        question: "A person who doesn't like to talk about their achievements is _______.",
+        options: ["boastful", "modest", "arrogant", "proud"],
+        correctAnswer: "modest",
+        explanation: "Başarıları hakkında konuşmayı sevmeyen kişiye 'modest' (mütevazı) denir."
+    },
+    {
+        question: "The concert was _______. I want to go again.",
+        options: ["boring", "impressive", "awful", "terrible"],
+        correctAnswer: "impressive",
+        explanation: "Konser 'impressive' (etkileyici) idi. Tekrar gitmek istiyorum."
+    },
+    {
+        question: "Don't forget to _______ the soup while it is cooking.",
+        options: ["stir", "fry", "bake", "roast"],
+        correctAnswer: "stir",
+        explanation: "Çorba pişerken onu 'stir' (karıştırmak) gerektiğini unutma."
+    },
+    {
+        question: "I am _______ to see you. I have some good news.",
+        options: ["calling", "texting", "messaging", "emailing"],
+        correctAnswer: "calling",
+        explanation: "Seni görmek için 'calling' (arıyorum). Bazı iyi haberlerim var."
+    },
+    {
+        question: "He likes to _______ comments on his friends' photos.",
+        options: ["post", "read", "see", "get"],
+        correctAnswer: "post",
+        explanation: "Arkadaşlarının fotoğraflarına 'post comments' (yorum yapmak) hoşuna gidiyor."
+    },
+    {
+        question: "She finds trekking in the mountains very _______.",
+        options: ["boring", "amusing", "dull", "tiring"],
+        correctAnswer: "amusing",
+        explanation: "Dağlarda doğa yürüyüşü yapmayı çok 'amusing' (eğlenceli) buluyor."
+    },
+    {
+        question: "The _______ of the country is famous for its historical sites.",
+        options: ["south", "north", "east", "west"],
+        correctAnswer: "south",
+        explanation: "Ülkenin 'south' (güneyi) tarihi yerleriyle ünlüdür (Bu genel bir ifadedir, Türkiye için geçerlidir)."
+    },
+    {
+        question: "I have to _______ the floor because it is dirty.",
+        options: ["wash", "mop", "set", "clear"],
+        correctAnswer: "mop",
+        explanation: "Kirli olduğu için yeri 'mop' (paspaslamak) zorundayım."
+    },
+    {
+        question: "A _______ is the result of a scientific test.",
+        options: ["process", "conclusion", "procedure", "question"],
+        correctAnswer: "conclusion",
+        explanation: "Bilimsel bir testin sonucuna 'conclusion' (sonuç, netice) denir."
+    },
+    {
+        question: "A _______ is a slide of a large mass of rock and soil down a slope.",
+        options: ["landslide", "earthquake", "avalanche", "flood"],
+        correctAnswer: "landslide",
+        explanation: "Büyük bir kaya ve toprak kütlesinin bir yamaçtan aşağı kaymasına 'landslide' (heyelan) denir."
+    },
+    {
+        question: "He is a very _______ person. He always keeps his promises.",
+        options: ["unreliable", "dependable", "dishonest", "lazy"],
+        correctAnswer: "dependable",
+        explanation: "O çok 'dependable' (güvenilir) biridir. Her zaman sözlerini tutar."
+    },
+    {
+        question: "The sound of the violin is very _______.",
+        options: ["loud", "beautiful", "annoying", "bad"],
+        correctAnswer: "beautiful",
+        explanation: "Kemanın sesi çok 'beautiful' (güzel) dir."
+    },
+    {
+        question: "Can you _______ the potatoes into thin pieces?",
+        options: ["slice", "dice", "chop", "mix"],
+        correctAnswer: "slice",
+        explanation: "Patatesleri ince parçalar halinde 'slice' (dilimlemek) edebilir misin?"
+    },
+    {
+        question: "The line is not busy. It is _______.",
+        options: ["engaged", "available", "bad", "wrong"],
+        correctAnswer: "available",
+        explanation: "Hat meşgul değil. 'Available' (Müsait)."
+    },
+    {
+        question: "You can _______ to a website to get updates.",
+        options: ["subscribe", "delete", "ignore", "comment"],
+        correctAnswer: "subscribe",
+        explanation: "Güncellemeleri almak için bir web sitesine 'subscribe' (abone olmak) olabilirsiniz."
+    },
+    {
+        question: "She is not afraid of anything. She is very _______.",
+        options: ["scared", "brave", "worried", "anxious"],
+        correctAnswer: "brave",
+        explanation: "Hiçbir şeyden korkmuyor. O çok 'brave' (cesur)."
+    },
+    {
+        question: "The _______ in this hotel is excellent. The rooms are very clean.",
+        options: ["food", "service", "location", "price"],
+        correctAnswer: "service",
+        explanation: "Bu oteldeki 'service' (hizmet) mükemmel. Odalar çok temiz."
+    },
+    {
+        question: "I have to do the _______ because all the clothes are dirty.",
+        options: ["ironing", "shopping", "laundry", "cooking"],
+        correctAnswer: "laundry",
+        explanation: "Bütün kıyafetler kirli olduğu için 'laundry' (çamaşır yıkama) işini yapmak zorundayım."
+    },
+    {
+        question: "A person who invents new things is an _______.",
+        options: ["inventor", "explorer", "discoverer", "creator"],
+        correctAnswer: "inventor",
+        explanation: "Yeni şeyler icat eden kişiye 'inventor' (mucit) denir."
+    },
+    {
+        question: "What is the _______ plan in case of a fire?",
+        options: ["escape", "emergency", "evacuation", "safety"],
+        correctAnswer: "evacuation",
+        explanation: "Yangın durumunda 'evacuation' (tahliye) planı nedir?"
+    },
+    {
+        question: "A person who is always telling jokes is _______.",
+        options: ["serious", "humorous", "shy", "quiet"],
+        correctAnswer: "humorous",
+        explanation: "Her zaman şakalar anlatan kişiye 'humorous' (esprili, nüktedan) denir."
+    },
+    {
+        question: "I prefer _______ clothes because they are more comfortable.",
+        options: ["tight", "loose", "formal", "smart"],
+        correctAnswer: "loose",
+        explanation: "Daha rahat oldukları için 'loose' (bol) kıyafetleri tercih ederim."
+    },
+    {
+        question: "You need to add some _______ to the recipe.",
+        options: ["water", "flour", "sugar", "spices"],
+        correctAnswer: "spices",
+        explanation: "Tarife biraz 'spices' (baharat) eklemen gerekiyor."
+    },
+    {
+        question: "Can you _______ the phone? I am in the shower.",
+        options: ["hang up", "answer", "call", "make"],
+        correctAnswer: "answer",
+        explanation: "Telefonu 'answer' (cevaplamak) edebilir misin? Duştayım."
+    },
+    {
+        question: "I have a lot of _______ on my phone.",
+        options: ["applications", "websites", "documents", "files"],
+        correctAnswer: "applications",
+        explanation: "Telefonumda birçok 'applications' (uygulama) var."
+    },
+    {
+        question: "She finds skydiving very _______. She loves the feeling.",
+        options: ["boring", "dull", "exciting", "tiring"],
+        correctAnswer: "exciting",
+        explanation: "Hava dalışını çok 'exciting' (heyecan verici) buluyor. Bu hissi seviyor."
+    },
+    {
+        question: "What is the local _______? I want to try it.",
+        options: ["dish", "drink", "food", "meal"],
+        correctAnswer: "dish",
+        explanation: "Yöresel 'dish' (yemek) nedir? Denemek istiyorum."
+    },
+    {
+        question: "After dinner, I have to _______ the dishwasher.",
+        options: ["load", "set", "clear", "wash"],
+        correctAnswer: "load",
+        explanation: "Akşam yemeğinden sonra bulaşık makinesini 'load' (doldurmak) zorundayım."
+    },
+    {
+        question: "He made an important _______ about the universe.",
+        options: ["discovery", "invention", "creation", "idea"],
+        correctAnswer: "discovery",
+        explanation: "Evren hakkında önemli bir 'discovery' (keşif) yaptı."
+    },
+    {
+        question: "A _______ is a large, destructive fire that spreads quickly over a natural area.",
+        options: ["blaze", "flame", "fire", "inferno"],
+        correctAnswer: "inferno",
+        explanation: "Doğal bir alanda hızla yayılan büyük, yıkıcı bir yangına 'inferno' (cehennem gibi yangın) denebilir."
+    }
+
+    
         ],
 
      
@@ -10868,7 +10403,6 @@ const questionsByGrade = {
         correctAnswer: "Why do you ask",
         explanation: "Birisinin neden meşgul olup olmadığını sorduğunu öğrenmek için 'Why do you ask?' (Neden sordun?) denir."
     },
-
     {
         question: "What is another way to say something is 'very fashionable'?",
         options: ["Casual", "Ridiculous", "Trendy", "Formal"],
@@ -12105,154 +11639,629 @@ const questionsByGrade = {
         options: ["hurricane", "tsunami", "tornado", "blizzard"],
         correctAnswer: "tornado",
         explanation: "Şiddetle dönen rüzgarların oluşturduğu yıkıcı girdaba 'tornado' (hortum) denir."
+    },
+    {
+        question: "A friend who is _______ always backs you up and never tells your secrets to others.",
+        options: ["selfish", "loyal", "stubborn", "arrogant"],
+        correctAnswer: "loyal",
+        explanation: "Sizi her zaman destekleyen ve sırlarınızı asla başkalarına anlatmayan bir arkadaş 'loyal' (sadık) biridir."
+    },
+    {
+        question: "I can't stand listening to heavy metal music; I think it's _______.",
+        options: ["relaxing", "impressive", "unbearable", "terrific"],
+        correctAnswer: "unbearable",
+        explanation: "Heavy metal müziğe katlanamayan biri için bu müzik türü 'unbearable' (dayanılmaz) olabilir."
+    },
+    {
+        question: "Before you add the pasta to the boiling water, you should add a pinch of _______.",
+        options: ["sugar", "flour", "salt", "pepper"],
+        correctAnswer: "salt",
+        explanation: "Kaynayan suya makarnayı eklemeden önce genellikle bir tutam 'salt' (tuz) eklenir."
+    },
+    {
+        question: "A: Can I speak to Sarah, please? B: I'm sorry, the line is _______. Can you call back later?",
+        options: ["free", "available", "engaged", "clear"],
+        correctAnswer: "engaged",
+        explanation: "Telefonda konuştuğunuz hat meşgulse, 'The line is engaged' veya 'busy' dersiniz."
+    },
+    {
+        question: "If you want to use this website, you must _______ an account first.",
+        options: ["delete", "register", "login", "logout"],
+        correctAnswer: "register",
+        explanation: "Bir web sitesini kullanmak için genellikle önce bir hesap 'register' (kaydetmek) gerekir."
+    },
+    {
+        question: "He is an adrenaline junkie. He finds sports like paragliding ______.",
+        options: ["boring", "safe", "thrilling", "dull"],
+        correctAnswer: "thrilling",
+        explanation: "Adrenalin tutkunu biri, yamaç paraşütü gibi sporları 'thrilling' (heyecan verici) bulur."
+    },
+    {
+        question: "The traditional Turkish _______ is famous for its kebabs and baklava.",
+        options: ["climate", "cuisine", "location", "architecture"],
+        correctAnswer: "cuisine",
+        explanation: "Geleneksel Türk 'cuisine' (mutfağı), kebapları ve baklavasıyla ünlüdür."
+    },
+    {
+        question: "It is my _______ to load the dishwasher after dinner.",
+        options: ["responsibility", "hobby", "choice", "pleasure"],
+        correctAnswer: "responsibility",
+        explanation: "Akşam yemeğinden sonra bulaşık makinesini doldurmak benim 'responsibility' (sorumluluğum) dur."
+    },
+    {
+        question: "Scientists use a _______ to observe cells and other microorganisms.",
+        options: ["telescope", "microscope", "stethoscope", "camera"],
+        correctAnswer: "microscope",
+        explanation: "Bilim insanları hücreleri ve diğer mikroorganizmaları gözlemlemek için 'microscope' (mikroskop) kullanır."
+    },
+    {
+        question: "The town was completely flooded after three days of _______ rain.",
+        options: ["light", "torrential", "gentle", "drizzle"],
+        correctAnswer: "torrential",
+        explanation: "Üç günlük 'torrential' (sağanak, şiddetli) yağmurdan sonra kasabayı tamamen sel bastı."
+    },
+    {
+        question: "I don't get on well with my cousin. We don't have much in _______.",
+        options: ["common", "different", "similar", "contact"],
+        correctAnswer: "common",
+        explanation: "'Have something in common' (ortak noktası olmak) bir deyimdir. İyi geçinemiyorsanız, çok ortak noktanız yoktur."
+    },
+    {
+        question: "She prefers wearing _______ clothes because they are more comfortable for her.",
+        options: ["tight", "formal", "loose", "smart"],
+        correctAnswer: "loose",
+        explanation: "Daha rahat olduğu için 'loose' (bol) kıyafetler giymeyi tercih ediyor."
+    },
+    {
+        question: "To make this dish, you need to _______ the onions and garlic first.",
+        options: ["boil", "sauté", "bake", "roast"],
+        correctAnswer: "sauté",
+        explanation: "Bu yemeği yapmak için önce soğan ve sarımsağı 'sauté' (sotelemek) gerekir."
+    },
+    {
+        question: "He wasn't at his desk. I left a _______ with his secretary.",
+        options: ["call", "message", "note", "letter"],
+        correctAnswer: "message",
+        explanation: "Masasında değildi. Sekreterine bir 'message' (mesaj) bıraktım."
+    },
+    {
+        question: "You should never click on suspicious links or _______ unknown files.",
+        options: ["upload", "download", "attach", "delete"],
+        correctAnswer: "download",
+        explanation: "Şüpheli bağlantılara tıklamamalı veya bilinmeyen dosyaları 'download' (indirmek) yapmamalısınız."
+    },
+    {
+        question: "You must wear a life jacket for _______ as a safety precaution.",
+        options: ["rafting", "hiking", "caving", "trekking"],
+        correctAnswer: "rafting",
+        explanation: "Rafting yaparken güvenlik önlemi olarak can yeleği giymelisiniz."
+    },
+    {
+        question: "Hagia Sophia is one of the most important historical _______ in Istanbul.",
+        options: ["restaurants", "hotels", "sites", "shops"],
+        correctAnswer: "sites",
+        explanation: "Ayasofya, İstanbul'daki en önemli tarihi 'sites' (yerler, mekanlar) den biridir."
+    },
+    {
+        question: "Could you please _______ the floor? It's very dusty.",
+        options: ["vacuum", "mop", "sweep", "dust"],
+        correctAnswer: "vacuum",
+        explanation: "Zemini 'vacuum' (elektrik süpürgesiyle süpürmek) edebilir misin lütfen? Çok tozlu."
+    },
+    {
+        question: "The experiment _______ that the new medicine was effective.",
+        options: ["proved", "disproved", "questioned", "argued"],
+        correctAnswer: "proved",
+        explanation: "Deney, yeni ilacın etkili olduğunu 'proved' (kanıtladı)."
+    },
+    {
+        question: "A _______ is a storm with thunder, lightning, and heavy rain.",
+        options: ["blizzard", "thunderstorm", "drought", "hurricane"],
+        correctAnswer: "thunderstorm",
+        explanation: "Gök gürültüsü, şimşek ve şiddetli yağmurun olduğu bir fırtınaya 'thunderstorm' (gök gürültülü fırtına) denir."
+    },
+    {
+        question: "He is so _______. He only thinks about himself.",
+        options: ["generous", "self-centered", "loyal", "thoughtful"],
+        correctAnswer: "self-centered",
+        explanation: "O çok 'self-centered' (benmerkezci). Sadece kendini düşünür."
+    },
+    {
+        question: "What kind of music are you _______? I'm a big fan of jazz.",
+        options: ["into", "on", "at", "with"],
+        correctAnswer: "into",
+        explanation: "Bir şeyi sevdiğinizi belirtmek için 'be into something' (bir şeye ilgili olmak) deyimi kullanılır."
+    },
+    {
+        question: "First, _______ the potatoes into small cubes.",
+        options: ["peel", "slice", "dice", "mash"],
+        correctAnswer: "dice",
+        explanation: "Önce, patatesleri küçük küpler halinde 'dice' (doğramak) gerekir."
+    },
+    {
+        question: "Could you put me _______ to the manager, please?",
+        options: ["on", "through", "up", "off"],
+        correctAnswer: "through",
+        explanation: "Telefonda birini başka birine bağlamak için 'put someone through' kalıbı kullanılır."
+    },
+    {
+        question: "Don't forget to _______ from your social media account on a public computer.",
+        options: ["log in", "log out", "sign up", "register"],
+        correctAnswer: "log out",
+        explanation: "Halka açık bir bilgisayarda sosyal medya hesabınızdan 'log out' (çıkış yapmak) yapmayı unutmayın."
+    },
+    {
+        question: "She is a(n) _______ person; she loves trying new and exciting things.",
+        options: ["cautious", "adventurous", "timid", "shy"],
+        correctAnswer: "adventurous",
+        explanation: "O, 'adventurous' (maceraperest) biridir; yeni ve heyecan verici şeyler denemeyi sever."
+    },
+    {
+        question: "We stayed in a lovely _______ by the sea.",
+        options: ["resort", "hostel", "motel", "campsite"],
+        correctAnswer: "resort",
+        explanation: "Deniz kenarında sevimli bir 'resort' (tatil köyü) içinde kaldık."
+    },
+    {
+        question: "It is important to _______ the chores fairly among family members.",
+        options: ["divide", "do", "make", "give"],
+        correctAnswer: "divide",
+        explanation: "Ev işlerini aile üyeleri arasında adil bir şekilde 'divide' (bölmek, paylaştırmak) önemlidir."
+    },
+    {
+        question: "Scientists must be _______ and not let their personal feelings affect their research.",
+        options: ["subjective", "objective", "emotional", "biased"],
+        correctAnswer: "objective",
+        explanation: "Bilim insanları 'objective' (nesnel) olmalı ve kişisel duygularının araştırmalarını etkilemesine izin vermemelidir."
+    },
+    {
+        question: "Deforestation can increase the risk of _______ and soil erosion.",
+        options: ["avalanches", "landslides", "earthquakes", "tsunamis"],
+        correctAnswer: "landslides",
+        explanation: "Ormansızlaşma, 'landslides' (heyelan) ve toprak erozyonu riskini artırabilir."
+    },
+    {
+        question: "A true friend is someone who is _______ in difficult times.",
+        options: ["absent", "supportive", "distant", "critical"],
+        correctAnswer: "supportive",
+        explanation: "Gerçek bir arkadaş, zor zamanlarda 'supportive' (destekleyici) olan kişidir."
+    },
+    {
+        question: "I find listening to the sound of waves very _______.",
+        options: ["annoying", "calming", "loud", "disturbing"],
+        correctAnswer: "calming",
+        explanation: "Dalga sesini dinlemeyi çok 'calming' (sakinleştirici) buluyorum."
+    },
+    {
+        question: "You should _______ the chicken for at least an hour before grilling it.",
+        options: ["boil", "marinate", "fry", "steam"],
+        correctAnswer: "marinate",
+        explanation: "Tavuğu ızgara yapmadan önce en az bir saat 'marinate' (marine etmek) gerekir."
+    },
+    {
+        question: "I'm sorry, Mr. Brown is in a meeting. Can I _______ a message?",
+        options: ["give", "take", "leave", "send"],
+        correctAnswer: "take",
+        explanation: "Bir başkası adına mesaj almak için 'take a message' kalıbı kullanılır."
+    },
+    {
+        question: "To protect your account, you should create a strong _______.",
+        options: ["username", "password", "profile", "comment"],
+        correctAnswer: "password",
+        explanation: "Hesabınızı korumak için güçlü bir 'password' (şifre) oluşturmalısınız."
+    },
+    {
+        question: "What kind of _______ do you need for kayaking? You need a paddle and a life vest.",
+        options: ["gear", "clothes", "food", "transport"],
+        correctAnswer: "gear",
+        explanation: "Kano için ne tür bir 'gear' (teçhizat, malzeme) ihtiyacınız var?"
+    },
+    {
+        question: "The hotel was _______, located far from the noisy city center.",
+        options: ["central", "remote", "convenient", "accessible"],
+        correctAnswer: "remote",
+        explanation: "Otel, gürültülü şehir merkezinden uzakta, 'remote' (ücra) bir yerdeydi."
+    },
+    {
+        question: "I hate _______ the clothes after they are washed.",
+        options: ["washing", "drying", "ironing", "folding"],
+        correctAnswer: "ironing",
+        explanation: "Yıkandıktan sonra kıyafetleri 'ironing' (ütülemek) ten nefret ederim."
+    },
+    {
+        question: "A _______ is a procedure undertaken to make a discovery or test a hypothesis.",
+        options: ["research", "experiment", "observation", "conclusion"],
+        correctAnswer: "experiment",
+        explanation: "Bir keşif yapmak veya bir hipotezi test etmek için yapılan işleme 'experiment' (deney) denir."
+    },
+    {
+        question: "A _______ is a rotating column of air that is in contact with both the surface of the Earth and a cloud.",
+        options: ["tornado", "hurricane", "cyclone", "typhoon"],
+        correctAnswer: "tornado",
+        explanation: "Hem Dünya yüzeyiyle hem de bir bulutla temas halinde olan dönen bir hava sütununa 'tornado' (hortum) denir."
+    },
+    {
+        question: "She is a _______ person; she is determined and never gives up.",
+        options: ["laid-back", "ambitious", "easy-going", "lazy"],
+        correctAnswer: "ambitious",
+        explanation: "O, 'ambitious' (hırslı) biridir; kararlıdır ve asla pes etmez."
+    },
+    {
+        question: "I would rather _______ a book than watch TV.",
+        options: ["to read", "reading", "read", "reads"],
+        correctAnswer: "read",
+        explanation: "'Would rather' kalıbından sonra fiil yalın halde kullanılır."
+    },
+    {
+        question: "This soup is _______. It doesn't have much flavor.",
+        options: ["spicy", "sour", "sweet", "bland"],
+        correctAnswer: "bland",
+        explanation: "Bu çorba 'bland' (tatsız, yavan). Çok fazla lezzeti yok."
+    },
+    {
+        question: "I need to _______ my phone. The battery is almost dead.",
+        options: ["charge", "call", "text", "answer"],
+        correctAnswer: "charge",
+        explanation: "Telefonumu 'charge' (şarj etmek) gerekiyor. Bataryası neredeyse bitti."
+    },
+    {
+        question: "You can use a _______ like Google to find information online.",
+        options: ["browser", "website", "search engine", "link"],
+        correctAnswer: "search engine",
+        explanation: "Çevrimiçi bilgi bulmak için Google gibi bir 'search engine' (arama motoru) kullanabilirsiniz."
+    },
+    {
+        question: "You should be _______ of the risks before trying an extreme sport.",
+        options: ["unaware", "aware", "afraid", "excited"],
+        correctAnswer: "aware",
+        explanation: "Ekstrem bir spor denemeden önce risklerin 'aware' (farkında) olmalısınız."
+    },
+    {
+        question: "We stayed in a charming bed and _______ in the countryside.",
+        options: ["breakfast", "lunch", "dinner", "supper"],
+        correctAnswer: "breakfast",
+        explanation: "Kırsalda şirin bir 'bed and breakfast' (oda ve kahvaltı) pansiyonunda kaldık."
+    },
+    {
+        question: "My dad is in charge of _______ the lawn every two weeks.",
+        options: ["cutting", "watering", "mowing", "planting"],
+        correctAnswer: "mowing",
+        explanation: "Babam iki haftada bir çimleri 'mowing the lawn' (biçmek) ten sorumludur."
+    },
+    {
+        question: "The _______ from the experiment supported the scientist's initial theory.",
+        options: ["data", "process", "method", "question"],
+        correctAnswer: "data",
+        explanation: "Deneyden elde edilen 'data' (veri), bilim insanının başlangıçtaki teorisini destekledi."
+    },
+    {
+        question: "A _______ is a natural event such as a flood, earthquake, or hurricane that causes great damage.",
+        options: ["disaster", "problem", "issue", "accident"],
+        correctAnswer: "disaster",
+        explanation: "Sel, deprem veya kasırga gibi büyük hasara neden olan doğal bir olaya 'disaster' (afet) denir."
+    },
+    {
+        question: "A friend who you can _______ is very valuable.",
+        options: ["argue with", "confide in", "lie to", "ignore"],
+        correctAnswer: "confide in",
+        explanation: "'Confide in' (sırrını açmak, güvenmek) yapabileceğin bir arkadaş çok değerlidir."
+    },
+    {
+        question: "The concert was _______. The band played all my favourite songs.",
+        options: ["awful", "fantastic", "boring", "terrible"],
+        correctAnswer: "fantastic",
+        explanation: "Konser 'fantastic' (fantastik, harika) idi. Grup en sevdiğim tüm şarkıları çaldı."
+    },
+    {
+        question: "You should _______ the oven to 200°C before putting the pizza in.",
+        options: ["heat", "preheat", "cool", "freeze"],
+        correctAnswer: "preheat",
+        explanation: "Pizzayı koymadan önce fırını 200°C'ye 'preheat' (önceden ısıtmak) gerekir."
+    },
+    {
+        question: "I'm sorry, I think you have the wrong _______. There's no one here by that name.",
+        options: ["call", "message", "number", "line"],
+        correctAnswer: "number",
+        explanation: "Üzgünüm, sanırım yanlış 'number' (numara) yı aradınız."
+    },
+    {
+        question: "He spends hours _______ the internet for fun.",
+        options: ["surfing", "Browse", "searching", "looking"],
+        correctAnswer: "surfing",
+        explanation: "Eğlence için saatlerce internette 'surfing' (gezinmek) yapıyor."
+    },
+    {
+        question: "The tour guide gave us some useful _______ on what to see in the city.",
+        options: ["tips", "rules", "orders", "warnings"],
+        correctAnswer: "tips",
+        explanation: "Tur rehberi bize şehirde ne göreceğimiz konusunda bazı yararlı 'tips' (ipucları) verdi."
+    },
+    {
+        question: "My mom asked me to _______ the furniture because it was dusty.",
+        options: ["dust", "clean", "wipe", "wash"],
+        correctAnswer: "dust",
+        explanation: "Annem tozlu olduğu için mobilyaların 'dust' (tozunu almamı) istedi."
+    },
+    {
+        question: "A _______ is a substance that has chemical properties.",
+        options: ["matter", "element", "compound", "chemical"],
+        correctAnswer: "chemical",
+        explanation: "Kimyasal özelliklere sahip bir maddeye 'chemical' (kimyasal) denir."
+    },
+    {
+        question: "It is important to have an emergency _______ at home.",
+        options: ["kit", "box", "bag", "pack"],
+        correctAnswer: "kit",
+        explanation: "Evde bir acil durum 'kit' (çantası, kiti) olması önemlidir."
+    },
+    {
+        question: "She has a great _______ of humour and always makes people laugh.",
+        options: ["sense", "feeling", "idea", "thought"],
+        correctAnswer: "sense",
+        explanation: "Harika bir 'sense of humour' (mizah anlayışı) var ve her zaman insanları güldürür."
+    },
+    {
+        question: "I prefer _______ clothes that are made of natural materials.",
+        options: ["wearing", "to wear", "wear", "wore"],
+        correctAnswer: "wearing",
+        explanation: "'Prefer' fiilinden sonra gelen eylem genellikle -ing takısı alır."
+    },
+    {
+        question: "The soup needs more _______. It tastes a bit bland.",
+        options: ["seasoning", "sugar", "flour", "oil"],
+        correctAnswer: "seasoning",
+        explanation: "Çorbanın daha fazla 'seasoning' (baharat, çeşni) ihtiyacı var. Biraz tatsız."
+    },
+    {
+        question: "Please _______ a message after the beep.",
+        options: ["take", "leave", "give", "send"],
+        correctAnswer: "leave",
+        explanation: "Bip sesinden sonra bir mesaj 'leave' (bırakmak) lütfen."
+    },
+    {
+        question: "A _______ is a program that can harm your computer.",
+        options: ["software", "virus", "application", "file"],
+        correctAnswer: "virus",
+        explanation: "Bir 'virus' (virüs), bilgisayarınıza zarar verebilecek bir programdır."
+    },
+    {
+        question: "The most _______ part of the trip was seeing the ancient ruins.",
+        options: ["boring", "memorable", "tiring", "difficult"],
+        correctAnswer: "memorable",
+        explanation: "Gezinin en 'memorable' (unutulmaz) kısmı antik kalıntıları görmekti."
+    },
+    {
+        question: "Can you help me _______ the groceries away?",
+        options: ["put", "take", "do", "make"],
+        correctAnswer: "put",
+        explanation: "Market alışverişini 'put away' (yerine koymak) için bana yardım edebilir misin?"
+    },
+    {
+        question: "A _______ is a statement that can be tested scientifically.",
+        options: ["hypothesis", "theory", "law", "fact"],
+        correctAnswer: "hypothesis",
+        explanation: "Bilimsel olarak test edilebilen bir ifadeye 'hypothesis' (hipotez) denir."
+    },
+    {
+        question: "During a flood, you should move to _______ ground.",
+        options: ["lower", "higher", "wet", "dry"],
+        correctAnswer: "higher",
+        explanation: "Sel sırasında 'higher' (daha yüksek) bir yere hareket etmelisiniz."
+    },
+    {
+        question: "He is a very _______ person and gets on well with everyone.",
+        options: ["shy", "sociable", "reserved", "quiet"],
+        correctAnswer: "sociable",
+        explanation: "O çok 'sociable' (sosyal) biridir ve herkesle iyi geçinir."
+    },
+    {
+        question: "I would rather _______ to the cinema than stay at home.",
+        options: ["to go", "going", "go", "went"],
+        correctAnswer: "go",
+        explanation: "'Would rather' kalıbından sonra fiil yalın halde (V1) kullanılır."
+    },
+    {
+        question: "This dish is too _______. I can't eat it.",
+        options: ["sweet", "sour", "salty", "bitter"],
+        correctAnswer: "salty",
+        explanation: "Bu yemek çok 'salty' (tuzlu). Yiyemiyorum."
+    },
+    {
+        question: "Can you _______ me the file via email?",
+        options: ["send", "get", "take", "give"],
+        correctAnswer: "send",
+        explanation: "Dosyayı bana e-posta yoluyla 'send' (göndermek) edebilir misin?"
+    },
+    {
+        question: "The feeling of flying through the air on a zip-line is _______.",
+        options: ["exhilarating", "boring", "calm", "tiring"],
+        correctAnswer: "exhilarating",
+        explanation: "Bir zip-line üzerinde havada uçma hissi 'exhilarating' (çok heyecan verici, canlandırıcı) dir."
+    },
+    {
+        question: "The hotel offers a _______ view of the entire city.",
+        options: ["panoramic", "limited", "narrow", "small"],
+        correctAnswer: "panoramic",
+        explanation: "Otel, tüm şehrin 'panoramic' (panoramik) bir manzarasını sunuyor."
+    },
+    {
+        question: "She is not very _______ and often forgets her promises.",
+        options: ["reliable", "unreliable", "dependable", "trustworthy"],
+        correctAnswer: "unreliable",
+        explanation: "Çok 'unreliable' (güvenilmez) biri ve sık sık sözlerini unutur."
+    },
+    {
+        question: "I don't think that fashion is very important. I prefer to be _______.",
+        options: ["trendy", "stylish", "fashionable", "comfortable"],
+        correctAnswer: "comfortable",
+        explanation: "Modanın çok önemli olduğunu düşünmüyorum. 'Comfortable' (rahat) olmayı tercih ederim."
+    },
+    {
+        question: "What is the main _______ in this soup? It tastes like chicken.",
+        options: ["recipe", "process", "ingredient", "step"],
+        correctAnswer: "ingredient",
+        explanation: "Bu çorbadaki ana 'ingredient' (malzeme) nedir? Tadı tavuk gibi."
+    },
+    {
+        question: "I have to _______ a call. It's important.",
+        options: ["take", "make", "do", "give"],
+        correctAnswer: "make",
+        explanation: "'Make a call' (bir telefon görüşmesi yapmak) zorundayım. Önemli."
+    },
+    {
+        question: "You need an internet _______ to watch videos online.",
+        options: ["connection", "browser", "website", "link"],
+        correctAnswer: "connection",
+        explanation: "Çevrimiçi video izlemek için bir internet 'connection' (bağlantısı) na ihtiyacınız var."
+    },
+    {
+        question: "Canoeing down a calm river is a very _______ experience.",
+        options: ["peaceful", "dangerous", "risky", "challenging"],
+        correctAnswer: "peaceful",
+        explanation: "Sakin bir nehirde kano yapmak çok 'peaceful' (huzurlu) bir deneyimdir."
+    },
+    {
+        question: "The city is famous for its _______ atmosphere and friendly people.",
+        options: ["hostile", "welcoming", "unfriendly", "cold"],
+        correctAnswer: "welcoming",
+        explanation: "Şehir, 'welcoming' (samimi, konuksever) atmosferi ve dost canlısı insanlarıyla ünlüdür."
+    },
+    {
+        question: "Could you _______ the table after you finish your meal?",
+        options: ["set", "clear", "load", "unload"],
+        correctAnswer: "clear",
+        explanation: "Yemeğini bitirdikten sonra masayı 'clear' (toplamak) edebilir misin?"
+    },
+    {
+        question: "The _______ of gravity was discovered by Isaac Newton.",
+        options: ["law", "theory", "hypothesis", "idea"],
+        correctAnswer: "law",
+        explanation: "Yerçekimi 'law' (yasası) Isaac Newton tarafından keşfedildi."
+    },
+    {
+        question: "It is important to have a fire _______ in case of a fire.",
+        options: ["alarm", "drill", "escape", "extinguisher"],
+        correctAnswer: "extinguisher",
+        explanation: "Yangın durumunda bir yangın 'extinguisher' (söndürücü) olması önemlidir."
+    },
+    {
+        question: "He has a very _______ personality and makes friends easily.",
+        options: ["reserved", "charming", "shy", "quiet"],
+        correctAnswer: "charming",
+        explanation: "Çok 'charming' (çekici, karizmatik) bir kişiliği var ve kolayca arkadaş ediniyor."
+    },
+    {
+        question: "I'm not a big _______ of horror movies. I prefer comedies.",
+        options: ["fan", "hater", "critic", "viewer"],
+        correctAnswer: "fan",
+        explanation: "Korku filmlerinin büyük bir 'fan' (hayranı) değilim. Komedileri tercih ederim."
+    },
+    {
+        question: "You should add the _______ one by one to the mixture.",
+        options: ["ingredients", "steps", "processes", "recipes"],
+        correctAnswer: "ingredients",
+        explanation: "Karışıma 'ingredients' (malzemeleri) tek tek eklemelisiniz."
+    },
+    {
+        question: "The _______ on my phone is broken. I can't see anything.",
+        options: ["screen", "camera", "button", "battery"],
+        correctAnswer: "screen",
+        explanation: "Telefonumun 'screen' (ekranı) kırık. Hiçbir şey göremiyorum."
+    },
+    {
+        question: "You need a _______ to browse websites.",
+        options: ["browser", "link", "password", "username"],
+        correctAnswer: "browser",
+        explanation: "Web sitelerine göz atmak için bir 'browser' (tarayıcı) ya ihtiyacınız var."
+    },
+    {
+        question: "I prefer a _______ holiday to a city break. I love nature.",
+        options: ["beach", "cultural", "adventure", "relaxing"],
+        correctAnswer: "beach",
+        explanation: "Şehir gezisi yerine bir 'beach' (plaj) tatilini tercih ederim. Doğayı seviyorum."
+    },
+    {
+        question: "He is in charge of _______ the pets.",
+        options: ["walking", "feeding", "playing", "caring"],
+        correctAnswer: "caring",
+        explanation: "Evcil hayvanlara 'caring for' (bakmak) tan o sorumludur."
+    },
+    {
+        question: "A _______ is a scientist who studies living things.",
+        options: ["chemist", "physicist", "biologist", "geologist"],
+        correctAnswer: "biologist",
+        explanation: "Canlıları inceleyen bir bilim insanına 'biologist' (biyolog) denir."
+    },
+    {
+        question: "A _______ is a mass of rock and earth moving suddenly down a slope.",
+        options: ["landslide", "avalanche", "earthquake", "tsunami"],
+        correctAnswer: "landslide",
+        explanation: "Bir yamaçtan aniden aşağı doğru hareket eden bir kaya ve toprak kütlesine 'landslide' (heyelan) denir."
+    },
+    {
+        question: "She is very _______ and always says 'please' and 'thank you'.",
+        options: ["rude", "polite", "impolite", "mean"],
+        correctAnswer: "polite",
+        explanation: "Çok 'polite' (kibar) biri ve her zaman 'lütfen' ve 'teşekkür ederim' der."
+    },
+    {
+        question: "The _______ of the movie was very exciting.",
+        options: ["beginning", "middle", "end", "climax"],
+        correctAnswer: "climax",
+        explanation: "Filmin 'climax' (doruk noktası) çok heyecan vericiydi."
+    },
+    {
+        question: "The lemon juice makes the salad dressing very _______.",
+        options: ["sweet", "sour", "bitter", "salty"],
+        correctAnswer: "sour",
+        explanation: "Limon suyu salata sosunu çok 'sour' (ekşi) yapar."
+    },
+    {
+        question: "I have to _______ a phone call to my grandmother.",
+        options: ["make", "do", "take", "give"],
+        correctAnswer: "make",
+        explanation: "Büyükanneme bir telefon görüşmesi 'make' (yapmak) zorundayım."
+    },
+    {
+        question: "I need to _______ my profile picture on the social media site.",
+        options: ["update", "delete", "change", "edit"],
+        correctAnswer: "update",
+        explanation: "Sosyal medya sitesindeki profil resmimi 'update' (güncellemek) gerekiyor."
+    },
+    {
+        question: "The _______ of the castle was very impressive.",
+        options: ["architecture", "location", "view", "history"],
+        correctAnswer: "architecture",
+        explanation: "Kalenin 'architecture' (mimarisi) çok etkileyiciydi."
+    },
+    {
+        question: "She is not very good at _______ the house tidy.",
+        options: ["making", "doing", "keeping", "setting"],
+        correctAnswer: "keeping",
+        explanation: "Evi düzenli 'keeping' (tutmak) konusunda pek iyi değil."
+    },
+    {
+        question: "Scientists must follow a specific _______ when they do an experiment.",
+        options: ["process", "procedure", "idea", "result"],
+        correctAnswer: "procedure",
+        explanation: "Bilim insanları bir deney yaparken belirli bir 'procedure' (prosedür, işlem sırası) izlemelidir."
+    },
+    {
+        question: "A _______ is a period with a severe shortage of water.",
+        options: ["flood", "drought", "storm", "blizzard"],
+        correctAnswer: "drought",
+        explanation: "Şiddetli su sıkıntısı olan bir döneme 'drought' (kuraklık) denir."
     }
+
+
+
+
+
+
     ],
 
         advanced: [
-            {
-                question: "What do you say to negotiate a plan?",
-                options: ["Can we agree on this?", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "Can we agree on this?",
-                explanation: "Bir plan üzerinde pazarlık yapmak için 'Can we agree on this?' (Bunda anlaşabilir miyiz?) diyebilirsiniz."
-            },
-            {
-                question: "What is a global environmental issue?",
-                options: ["Deforestation", "Homework", "Traffic", "Shopping"],
-                correctAnswer: "Deforestation",
-                explanation: "Ormansızlaşma ('deforestation') küresel bir çevre sorunudur."
-            },
-            {
-                question: "What do you need for a science experiment?",
-                options: ["Spoon", "Hypothesis", "Book", "Pen"],
-                correctAnswer: "Hypothesis",
-                explanation: "Bir bilim deneyi için bir hipoteze ('hypothesis') ihtiyacınız vardır."
-            },
-            {
-                question: "What is a natural disaster with waves?",
-                options: ["Tsunami", "Tornado", "Earthquake", "Wildfire"],
-                correctAnswer: "Tsunami",
-                explanation: "Dalgalarla ilgili bir doğal afet tsunamidir."
-            },
-            {
-                question: "What do you do to combat fake news?",
-                options: ["Share everything", "Verify sources", "Click all links", "Post daily"],
-                correctAnswer: "Verify sources",
-                explanation: "Yalan haberlerle mücadele etmek için kaynakları doğrulamalısınız ('verify sources')."
-            },
-            {
-                question: "What do teens learn in biology class?",
-                options: ["Cooking", "Cells", "Dancing", "Painting"],
-                correctAnswer: "Cells",
-                explanation: "Gençler biyoloji dersinde hücreleri ('cells') öğrenirler."
-            },
-            {
-                question: "What is a biography?",
-                options: ["A fictional story", "A person’s life story", "A game’s rules", "A car’s history"],
-                correctAnswer: "A person’s life story",
-                explanation: "Bir biyografi, bir kişinin hayat hikayesidir."
-            },
-            {
-                question: "What do you need for a career fair?",
-                options: ["Spoon", "Résumé", "Book", "Pen"],
-                correctAnswer: "Résumé",
-                explanation: "Bir kariyer fuarı için bir özgeçmişe ('résumé') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to mediate a conflict?",
-                options: ["Let’s find a solution!", "I’m always right!", "Go away!", "No way!"],
-                correctAnswer: "Let’s find a solution!",
-                explanation: "Bir çatışmada arabuluculuk yapmak için 'Let’s find a solution!' (Bir çözüm bulalım!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with fire?",
-                options: ["Wildfire", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Wildfire",
-                explanation: "Orman yangını ('wildfire') ateşle ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to secure your digital identity?",
-                options: ["Share passwords", "Use encryption", "Click all links", "Post everything"],
-                correctAnswer: "Use encryption",
-                explanation: "Dijital kimliğinizi güvence altına almak için şifreleme ('encryption') kullanabilirsiniz."
-            },
-            {
-                question: "What do teens learn in chemistry class?",
-                options: ["Cooking", "Reactions", "Dancing", "Painting"],
-                correctAnswer: "Reactions",
-                explanation: "Gençler kimya dersinde reaksiyonları ('reactions') öğrenirler."
-            },
-            {
-                question: "What is an editorial?",
-                options: ["A fictional story", "An opinion piece", "A game’s rules", "A car’s history"],
-                correctAnswer: "An opinion piece",
-                explanation: "Bir başyazı ('editorial') bir fikir yazısıdır."
-            },
-            {
-                question: "What do you need for a school campaign?",
-                options: ["Spoon", "Posters", "Book", "Pen"],
-                correctAnswer: "Posters",
-                explanation: "Bir okul kampanyası için posterlere ('posters') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to encourage teamwork?",
-                options: ["Let’s work together!", "Do it alone!", "I’m tired!", "No way!"],
-                correctAnswer: "Let’s work together!",
-                explanation: "Takım çalışmasını teşvik etmek için 'Let’s work together!' (Birlikte çalışalım!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with snow?",
-                options: ["Blizzard", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Blizzard",
-                explanation: "Kar fırtınası ('blizzard') karla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to avoid online scams?",
-                options: ["Click all links", "Check website safety", "Share passwords", "Post everything"],
-                correctAnswer: "Check website safety",
-                explanation: "Çevrimiçi dolandırıcılıklardan kaçınmak için web sitesi güvenliğini kontrol etmelisiniz."
-            },
-            {
-                question: "What do teens learn in physics class?",
-                options: ["Cooking", "Motion", "Dancing", "Painting"],
-                correctAnswer: "Motion",
-                explanation: "Gençler fizik dersinde hareketi ('motion') öğrenirler."
-            },
-            {
-                question: "What is a feature article?",
-                options: ["A fictional story", "An in-depth story", "A game’s rules", "A car’s history"],
-                correctAnswer: "An in-depth story",
-                explanation: "Özel bir makale ('feature article') derinlemesine bir hikayedir."
-            },
-            {
-                question: "What do you need for a debate competition?",
-                options: ["Spoon", "Evidence", "Book", "Pen"],
-                correctAnswer: "Evidence",
-                explanation: "Bir münazara yarışması için kanıta ('evidence') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to propose a project?",
-                options: ["I have an idea!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "I have an idea!",
-                explanation: "Bir proje önermek için 'I have an idea!' (Bir fikrim var!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with wind?",
-                options: ["Hurricane", "Flood", "Earthquake", "Wildfire"],
-                correctAnswer: "Hurricane",
-                explanation: "Kasırga ('hurricane') rüzgarla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to protect your privacy online?",
-                options: ["Share everything", "Limit personal info", "Click all links", "Post daily"],
-                correctAnswer: "Limit personal info",
-                explanation: "Çevrimiçi gizliliğinizi korumak için kişisel bilgileri sınırlamalısınız."
-            },
-            {
-                question: "What do teens learn in social studies?",
-                options: ["Cooking", "Civics", "Dancing", "Painting"],
-                correctAnswer: "Civics",
-                explanation: "Gençler sosyal bilgiler dersinde yurttaşlık bilgisini ('civics') öğrenirler."
-            },
+            
     {
         question: "A person who is able to understand and share the feelings of another is _______.",
         options: ["apathetic", "empathetic", "selfish", "arrogant"],
@@ -12355,344 +12364,8 @@ const questionsByGrade = {
         correctAnswer: "simulate",
         explanation: "Deney, asit yağmurunun bitkiler üzerindeki etkilerini 'simulate' (simüle etmek, benzetmek) için tasarlanmıştır."
     },
-            {
-                question: "What is a TED Talk?",
-                options: ["A fictional story", "An inspiring speech", "A game’s rules", "A car’s history"],
-                correctAnswer: "An inspiring speech",
-                explanation: "Bir TED Konuşması, ilham verici bir konuşmadır."
-            },
-            {
-                question: "What do you need for a volunteering event?",
-                options: ["Spoon", "Commitment", "Book", "Pen"],
-                correctAnswer: "Commitment",
-                explanation: "Bir gönüllülük etkinliği için bağlılığa ('commitment') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to express disagreement?",
-                options: ["I see your point, but…", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "I see your point, but…",
-                explanation: "Fikrinizi belirtmek için kibarca 'I see your point, but…' (Senin açını anlıyorum, ama…) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with earth?",
-                options: ["Earthquake", "Flood", "Tornado", "Wildfire"],
-                correctAnswer: "Earthquake",
-                explanation: "Deprem ('earthquake') yer kabuğuyla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to stay safe from hackers?",
-                options: ["Share passwords", "Update software", "Click all links", "Post everything"],
-                correctAnswer: "Update software",
-                explanation: "Bilgisayar korsanlarından güvende kalmak için yazılımınızı güncellemelisiniz."
-            },
-            {
-                question: "What do teens learn in language arts?",
-                options: ["Cooking", "Writing", "Dancing", "Painting"],
-                correctAnswer: "Writing",
-                explanation: "Gençler dil sanatları dersinde yazmayı ('writing') öğrenirler."
-            },
-            {
-                question: "What is a webinar?",
-                options: ["A fictional story", "An online seminar", "A game’s rules", "A car’s history"],
-                correctAnswer: "An online seminar",
-                explanation: "Bir webinar, çevrimiçi bir seminerdir."
-            },
-            {
-                question: "What do you need for a school festival?",
-                options: ["Spoon", "Planning", "Book", "Pen"],
-                correctAnswer: "Planning",
-                explanation: "Bir okul festivali için planlama ('planning') yapmanız gerekir."
-            },
-            {
-                question: "What do you say to ask for clarification?",
-                options: ["Can you explain?", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "Can you explain?",
-                explanation: "Açıklama istemek için 'Can you explain?' (Açıklayabilir misin?) diye sorabilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with heat?",
-                options: ["Heatwave", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Heatwave",
-                explanation: "Sıcak hava dalgası ('heatwave') ısıyla ilgili bir doğal afettir."
-            },
-            {
-                question: "What do you do to promote digital citizenship?",
-                options: ["Share everything", "Be ethical online", "Click all links", "Post daily"],
-                correctAnswer: "Be ethical online",
-                explanation: "Dijital vatandaşlığı teşvik etmek için çevrimiçi ortamda etik olmalısınız."
-            },
-            {
-                question: "What do teens learn in computer class?",
-                options: ["Cooking", "Programming", "Dancing", "Painting"],
-                correctAnswer: "Programming",
-                explanation: "Gençler bilgisayar dersinde programlama ('programming') öğrenirler."
-            },
-            {
-                question: "What is a case study?",
-                options: ["A fictional story", "A detailed analysis", "A game’s rules", "A car’s history"],
-                correctAnswer: "A detailed analysis",
-                explanation: "Bir vaka çalışması ('case study') detaylı bir analizdir."
-            },
-            {
-                question: "What do you need for a leadership role?",
-                options: ["Spoon", "Responsibility", "Book", "Pen"],
-                correctAnswer: "Responsibility",
-                explanation: "Bir liderlik rolü için sorumluluğa ('responsibility') ihtiyacınız vardır."
-            },
-            {
-                question: "What do you say to motivate a group?",
-                options: ["We can do this!", "Go away!", "I’m tired!", "No way!"],
-                correctAnswer: "We can do this!",
-                explanation: "Bir grubu motive etmek için 'We can do this!' (Bunu yapabiliriz!) diyebilirsiniz."
-            },
-            {
-                question: "What is a natural disaster with mud?",
-                options: ["Landslide", "Flood", "Earthquake", "Tornado"],
-                correctAnswer: "Landslide",
-                explanation: "Heyelan ('landslide') çamurla ilgili bir doğal afettir."
-            },
-            {
-                question: "What adjective describes a friend who keeps promises?",
-                options: ["Unreliable", "Trustworthy", "Rude", "Lazy"],
-                correctAnswer: "Trustworthy",
-                explanation: "Sözlerini tutan bir arkadaşı 'trustworthy' (güvenilir) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to express themselves online?",
-                options: ["Share personal details", "Create content", "Click unknown links", "Download viruses"],
-                correctAnswer: "Create content",
-                explanation: "Gençler çevrimiçi ortamda kendilerini ifade etmek için içerik oluştururlar ('create content')."
-            },
-            {
-                question: "What is the most important tool for a chef?",
-                options: ["Spoon", "Chef’s knife", "Book", "Shoe"],
-                correctAnswer: "Chef’s knife",
-                explanation: "Bir şef için en önemli alet şef bıçağıdır ('chef’s knife')."
-            },
-            {
-                question: "What do you say to negotiate a time on the phone?",
-                options: ["Does that work for you?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Does that work for you?",
-                explanation: "Telefonda bir zaman üzerinde anlaşmak için 'Does that work for you?' (Bu sana uyar mı?) diyebilirsiniz."
-            },
-            {
-                question: "What is the most thrilling adventure?",
-                options: ["Reading quietly", "White-water rafting", "Eating lunch", "Sleeping"],
-                correctAnswer: "White-water rafting",
-                explanation: "En heyecan verici macera 'white-water rafting'dir."
-            },
-            {
-                question: "What is a chore that saves energy?",
-                options: ["Leaving lights on", "Turning off appliances", "Watching TV", "Playing games"],
-                correctAnswer: "Turning off appliances",
-                explanation: "Aletleri kapatmak ('turning off appliances') enerji tasarrufu sağlayan bir ev işidir."
-            },
-            {
-                question: "Which invention revolutionized communication?",
-                options: ["Wheel", "Internet", "Pen", "Shoe"],
-                correctAnswer: "Internet",
-                explanation: "İnternet ('internet') iletişimde devrim yaratan bir icattır."
-            },
-            {
-                question: "What is a common dream for teens?",
-                options: ["More homework", "Career success", "Watching TV", "Sleeping"],
-                correctAnswer: "Career success",
-                explanation: "Gençler için yaygın bir hayal kariyer başarısıdır ('career success')."
-            },
-            {
-                question: "What is the deadliest natural disaster?",
-                options: ["Earthquake", "Flood", "Tornado", "Wildfire"],
-                correctAnswer: "Earthquake",
-                explanation: "Deprem ('earthquake') en ölümcül doğal afetlerden biridir."
-            },
-            {
-                question: "What is the best way to stay safe online?",
-                options: ["Share passwords", "Use two-factor authentication", "Click all links", "Post everything"],
-                correctAnswer: "Use two-factor authentication",
-                explanation: "Çevrimiçi güvende kalmanın en iyi yolu iki faktörlü kimlik doğrulama kullanmaktır."
-            },
-            {
-                question: "What adjective describes a friend who inspires others?",
-                options: ["Boring", "Inspiring", "Rude", "Lazy"],
-                correctAnswer: "Inspiring",
-                explanation: "Başkalarına ilham veren bir arkadaşı 'inspiring' (ilham verici) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to stay informed online?",
-                options: ["Read fake news", "Follow reliable sources", "Click unknown links", "Download viruses"],
-                correctAnswer: "Follow reliable sources",
-                explanation: "Gençler çevrimiçi bilgilenmek için güvenilir kaynakları takip ederler."
-            },
-            {
-                question: "What is essential for a professional kitchen?",
-                options: ["Spoon", "Oven", "Book", "Shoe"],
-                correctAnswer: "Oven",
-                explanation: "Profesyonel bir mutfak için fırın ('oven') esastır."
-            },
-            {
-                question: "What do you say to clarify a phone conversation?",
-                options: ["Can you repeat that?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Can you repeat that?",
-                explanation: "Bir telefon görüşmesini netleştirmek için 'Can you repeat that?' (Tekrar edebilir misin?) diyebilirsiniz."
-            },
-            {
-                question: "What is a historical adventure?",
-                options: ["Watching TV", "Exploring ancient ruins", "Eating lunch", "Sleeping"],
-                correctAnswer: "Exploring ancient ruins",
-                explanation: "Antik kalıntıları keşfetmek ('exploring ancient ruins') tarihi bir maceradır."
-            },
-            {
-                question: "What is a chore that promotes recycling?",
-                options: ["Throwing trash", "Sorting recyclables", "Watching TV", "Playing games"],
-                correctAnswer: "Sorting recyclables",
-                explanation: "Geri dönüştürülebilirleri ayırmak ('sorting recyclables') geri dönüşümü teşvik eden bir ev işidir."
-            },
-            {
-                question: "Which invention changed transportation?",
-                options: ["Wheel", "Airplane", "Pen", "Shoe"],
-                correctAnswer: "Airplane",
-                explanation: "Uçak ('airplane') ulaşımı değiştiren bir icattır."
-            },
-            {
-                question: "What is a dream for global health?",
-                options: ["More diseases", "Access to medicine", "Watching TV", "Sleeping"],
-                correctAnswer: "Access to medicine",
-                explanation: "Küresel sağlık için bir hayal ilaca erişimdir ('access to medicine')."
-            },
-            {
-                question: "What is a natural disaster caused by heat?",
-                options: ["Earthquake", "Drought", "Flood", "Tornado"],
-                correctAnswer: "Drought",
-                explanation: "Kuraklık ('drought') ısıyla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is a key to online privacy?",
-                options: ["Share everything", "Use privacy settings", "Click all links", "Post daily"],
-                correctAnswer: "Use privacy settings",
-                explanation: "Çevrimiçi gizliliğin anahtarı gizlilik ayarlarını kullanmaktır."
-            },
-            {
-                question: "What adjective describes a friend who solves problems?",
-                options: ["Clueless", "Resourceful", "Rude", "Lazy"],
-                correctAnswer: "Resourceful",
-                explanation: "Sorunları çözen bir arkadaşı 'resourceful' (becerikli) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to learn online?",
-                options: ["Watch entertainment", "Take online courses", "Click unknown links", "Download viruses"],
-                correctAnswer: "Take online courses",
-                explanation: "Gençler çevrimiçi öğrenmek için çevrimiçi dersler alırlar."
-            },
-            {
-                question: "What is a must-have for a home kitchen?",
-                options: ["Spoon", "Refrigerator", "Book", "Shoe"],
-                correctAnswer: "Refrigerator",
-                explanation: "Bir ev mutfağı için buzdolabı ('refrigerator') olmazsa olmazdır."
-            },
-            {
-                question: "What do you say to decline a phone invitation?",
-                options: ["I can’t make it", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "I can’t make it",
-                explanation: "Bir telefon davetini reddetmek için 'I can’t make it' (Gelemiyorum) diyebilirsiniz."
-            },
-            {
-                question: "What is a nature-based adventure?",
-                options: ["Watching TV", "Wildlife safari", "Eating lunch", "Sleeping"],
-                correctAnswer: "Wildlife safari",
-                explanation: "Yaban hayatı safari ('wildlife safari') doğa temelli bir maceradır."
-            },
-            {
-                question: "What is a chore that helps the environment?",
-                options: ["Throwing trash", "Composting", "Watching TV", "Playing games"],
-                correctAnswer: "Composting",
-                explanation: "Kompost yapmak ('composting') çevreye yardımcı olan bir ev işidir."
-            },
-            {
-                question: "Which invention aids medical treatment?",
-                options: ["Wheel", "X-ray machine", "Pen", "Shoe"],
-                correctAnswer: "X-ray machine",
-                explanation: "X-ray cihazı ('X-ray machine') tıbbi tedaviye yardımcı olur."
-            },
-            {
-                question: "What is a dream for equality?",
-                options: ["More division", "Fair opportunities", "Watching TV", "Sleeping"],
-                correctAnswer: "Fair opportunities",
-                explanation: "Eşitlik için bir hayal adil fırsatlardır ('fair opportunities')."
-            },
-            {
-                question: "What is a natural disaster with strong winds?",
-                options: ["Earthquake", "Tornado", "Flood", "Wildfire"],
-                correctAnswer: "Tornado",
-                explanation: "Hortum ('tornado') şiddetli rüzgarlarla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to avoid cyberbullying?",
-                options: ["Share everything", "Report it", "Click all links", "Post daily"],
-                correctAnswer: "Report it",
-                explanation: "Siber zorbalıktan kaçınmanın en iyi yolu onu bildirmektir ('report it')."
-            },
-            {
-                question: "What adjective describes a friend who is always happy?",
-                options: ["Sad", "Cheerful", "Rude", "Lazy"],
-                correctAnswer: "Cheerful",
-                explanation: "Her zaman mutlu olan bir arkadaşı 'cheerful' (neşeli) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to collaborate online?",
-                options: ["Work alone", "Use group chats", "Click unknown links", "Download viruses"],
-                correctAnswer: "Use group chats",
-                explanation: "Gençler çevrimiçi işbirliği yapmak için grup sohbetleri kullanır."
-            },
-            {
-                question: "What is a key ingredient for baking?",
-                options: ["Spoon", "Flour", "Book", "Shoe"],
-                correctAnswer: "Flour",
-                explanation: "Pişirme için kilit bir malzeme undur ('flour')."
-            },
-            {
-                question: "What do you say to offer condolences on the phone?",
-                options: ["I’m so sorry", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "I’m so sorry",
-                explanation: "Telefonda başsağlığı dilemek için 'I’m so sorry' (Çok üzgünüm) diyebilirsiniz."
-            },
-            {
-                question: "What is a cultural adventure?",
-                options: ["Watching TV", "Visiting festivals", "Eating lunch", "Sleeping"],
-                correctAnswer: "Visiting festivals",
-                explanation: "Festivalleri ziyaret etmek ('visiting festivals') kültürel bir maceradır."
-            },
-            {
-                question: "What is a chore that saves water?",
-                options: ["Leaving taps on", "Fixing leaks", "Watching TV", "Playing games"],
-                correctAnswer: "Fixing leaks",
-                explanation: "Sızıntıları onarmak ('fixing leaks') su tasarrufu sağlayan bir ev işidir."
-            },
-            {
-                question: "Which invention supports education?",
-                options: ["Wheel", "Tablet", "Pen", "Shoe"],
-                correctAnswer: "Tablet",
-                explanation: "Tablet eğitimi destekleyen bir icattır."
-            },
-            {
-                question: "What is a dream for innovation?",
-                options: ["Old machines", "New solutions", "Watching TV", "Sleeping"],
-                correctAnswer: "New solutions",
-                explanation: "İnovasyon için bir hayal yeni çözümlerdir ('new solutions')."
-            },
-            {
-                question: "What is a natural disaster with waves?",
-                options: ["Earthquake", "Tsunami", "Flood", "Wildfire"],
-                correctAnswer: "Tsunami",
-                explanation: "Tsunami dalgalarla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to secure online accounts?",
-                options: ["Share passwords", "Use strong passwords", "Click all links", "Post everything"],
-                correctAnswer: "Use strong passwords",
-                explanation: "Çevrimiçi hesapları güvence altına almanın en iyi yolu güçlü şifreler kullanmaktır."
-            },
 
-            {
+{
         question: "He pretends to be my friend, but I know he is not sincere. I can't _______ him.",
         options: ["get on well with", "back up", "rely on", "come over"],
         correctAnswer: "rely on",
@@ -12872,306 +12545,650 @@ const questionsByGrade = {
         correctAnswer: "mitigate",
         explanation: "İklim değişikliğinin etkilerini 'mitigate' (hafifletmek, azaltmak) için karbon ayak izimizi azaltmalıyız."
     },
-{
-                question: "What adjective describes a friend who loves new ideas?",
-                options: ["Boring", "Creative", "Rude", "Lazy"],
-                correctAnswer: "Creative",
-                explanation: "Yeni fikirleri seven bir arkadaşı 'creative' (yaratıcı) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to stay entertained online?",
-                options: ["Read textbooks", "Stream videos", "Click unknown links", "Download viruses"],
-                correctAnswer: "Stream videos",
-                explanation: "Gençler çevrimiçi eğlenmek için video akışı yaparlar."
-            },
-            {
-                question: "What is a key tool for cooking pasta?",
-                options: ["Spoon", "Pot", "Book", "Shoe"],
-                correctAnswer: "Pot",
-                explanation: "Makarna pişirmek için kilit bir alet tenceredir ('pot')."
-            },
-            {
-                question: "What do you say to confirm a phone order?",
-                options: ["That’s correct", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "That’s correct",
-                explanation: "Bir telefon siparişini onaylamak için 'That’s correct' (Bu doğru) diyebilirsiniz."
-            },
-            {
-                question: "What is a space adventure?",
-                options: ["Watching TV", "Visiting a planet", "Eating lunch", "Sleeping"],
-                correctAnswer: "Visiting a planet",
-                explanation: "Bir gezegeni ziyaret etmek ('visiting a planet') bir uzay macerasıdır."
-            },
-            {
-                question: "What is a chore that promotes cleanliness?",
-                options: ["Throwing trash", "Sweeping floors", "Watching TV", "Playing games"],
-                correctAnswer: "Sweeping floors",
-                explanation: "Zeminleri süpürmek ('sweeping floors') temizliği teşvik eden bir ev işidir."
-            },
-            {
-                question: "Which invention powers homes?",
-                options: ["Wheel", "Solar panel", "Pen", "Shoe"],
-                correctAnswer: "Solar panel",
-                explanation: "Güneş paneli ('solar panel') evlere güç veren bir icattır."
-            },
-            {
-                question: "What is a dream for communities?",
-                options: ["More conflict", "Stronger unity", "Watching TV", "Sleeping"],
-                correctAnswer: "Stronger unity",
-                explanation: "Topluluklar için bir hayal daha güçlü birlikteliktir ('stronger unity')."
-            },
-            {
-                question: "What is a natural disaster with snow?",
-                options: ["Earthquake", "Blizzard", "Flood", "Tornado"],
-                correctAnswer: "Blizzard",
-                explanation: "Kar fırtınası ('blizzard') karla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to avoid online scams?",
-                options: ["Click all ads", "Verify websites", "Share passwords", "Post everything"],
-                correctAnswer: "Verify websites",
-                explanation: "Çevrimiçi dolandırıcılıklardan kaçınmanın en iyi yolu web sitelerini doğrulamaktır."
-            },
-            {
-                question: "What adjective describes a friend who plans well?",
-                options: ["Disorganized", "Organized", "Rude", "Lazy"],
-                correctAnswer: "Organized",
-                explanation: "İyi plan yapan bir arkadaşı 'organized' (düzenli) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to share ideas online?",
-                options: ["Stay offline", "Post on forums", "Click unknown links", "Download viruses"],
-                correctAnswer: "Post on forums",
-                explanation: "Gençler çevrimiçi fikir paylaşmak için forumlarda gönderi yaparlar."
-            },
-            {
-                question: "What is a key appliance for preserving food?",
-                options: ["Spoon", "Freezer", "Book", "Shoe"],
-                correctAnswer: "Freezer",
-                explanation: "Yiyecekleri korumak için kilit bir alet dondurucudur ('freezer')."
-            },
-            {
-                question: "What do you say to apologize for a late call?",
-                options: ["Sorry for calling late", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Sorry for calling late",
-                explanation: "Geç bir arama için özür dilemek için 'Sorry for calling late' (Geç aradığım için üzgünüm) diyebilirsiniz."
-            },
-            {
-                question: "What is a wildlife adventure?",
-                options: ["Watching TV", "Safari tour", "Eating lunch", "Sleeping"],
-                correctAnswer: "Safari tour",
-                explanation: "Safari turu ('safari tour') bir yaban hayatı macerasıdır."
-            },
-            {
-                question: "What is a chore that helps animals?",
-                options: ["Throwing trash", "Feeding pets", "Watching TV", "Playing games"],
-                correctAnswer: "Feeding pets",
-                explanation: "Evcil hayvanları beslemek ('feeding pets') hayvanlara yardımcı olan bir ev işidir."
-            },
-            {
-                question: "Which invention enhances safety?",
-                options: ["Wheel", "Seatbelt", "Pen", "Shoe"],
-                correctAnswer: "Seatbelt",
-                explanation: "Emniyet kemeri ('seatbelt') güvenliği artıran bir icattır."
-            },
-            {
-                question: "What is a dream for humanity?",
-                options: ["More wars", "Global cooperation", "Watching TV", "Sleeping"],
-                correctAnswer: "Global cooperation",
-                explanation: "İnsanlık için bir hayal küresel işbirliğidir ('global cooperation')."
-            },
-            {
-                question: "What is a natural disaster with rocks?",
-                options: ["Earthquake", "Landslide", "Flood", "Tornado"],
-                correctAnswer: "Landslide",
-                explanation: "Heyelan ('landslide') kayalarla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to report cyberbullying?",
-                options: ["Ignore it", "Tell an adult", "Click all links", "Post everything"],
-                correctAnswer: "Tell an adult",
-                explanation: "Siber zorbalığı bildirmenin en iyi yolu bir yetişkine söylemektir."
-            },
-            {
-                question: "What adjective describes a friend who loves adventure?",
-                options: ["Boring", "Adventurous", "Rude", "Lazy"],
-                correctAnswer: "Adventurous",
-                explanation: "Macerayı seven bir arkadaşı 'adventurous' (maceracı) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to build skills online?",
-                options: ["Watch random videos", "Learn coding", "Click unknown links", "Download viruses"],
-                correctAnswer: "Learn coding",
-                explanation: "Gençler çevrimiçi beceri geliştirmek için kodlama öğrenirler."
-            },
-            {
-                question: "What is a key tool for grilling?",
-                options: ["Spoon", "Grill", "Book", "Shoe"],
-                correctAnswer: "Grill",
-                explanation: "Izgara yapmak için kilit bir alet ızgaradır ('grill')."
-            },
-            {
-                question: "What do you say to thank for a phone favor?",
-                options: ["Thanks a lot!", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Thanks a lot!",
-                explanation: "Bir telefon iyiliği için teşekkür etmek için 'Thanks a lot!' (Çok teşekkürler!) diyebilirsiniz."
-            },
-            {
-                question: "What is a culinary adventure?",
-                options: ["Watching TV", "Trying new foods", "Eating lunch", "Sleeping"],
-                correctAnswer: "Trying new foods",
-                explanation: "Yeni yiyecekler denemek ('trying new foods') bir mutfak macerasıdır."
-            },
-            {
-                question: "What is a chore that saves money?",
-                options: ["Buying new things", "Repairing items", "Watching TV", "Playing games"],
-                correctAnswer: "Repairing items",
-                explanation: "Eşyaları onarmak ('repairing items') para tasarrufu sağlayan bir ev işidir."
-            },
-            {
-                question: "Which invention supports health?",
-                options: ["Wheel", "Vaccine", "Pen", "Shoe"],
-                correctAnswer: "Vaccine",
-                explanation: "Aşı ('vaccine') sağlığı destekleyen bir icattır."
-            },
-            {
-                question: "What is a dream for exploration?",
-                options: ["Staying home", "Discovering space", "Watching TV", "Sleeping"],
-                correctAnswer: "Discovering space",
-                explanation: "Keşif için bir hayal uzayı keşfetmektir ('discovering space')."
-            },
-            {
-                question: "What is a natural disaster with fire?",
-                options: ["Earthquake", "Wildfire", "Flood", "Tornado"],
-                correctAnswer: "Wildfire",
-                explanation: "Orman yangını ('wildfire') ateşle ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to manage online time?",
-                options: ["Stay online all day", "Set time limits", "Click all links", "Post everything"],
-                correctAnswer: "Set time limits",
-                explanation: "Çevrimiçi zamanı yönetmenin en iyi yolu zaman sınırları belirlemektir."
-            },
-            {
-                question: "What adjective describes a friend who is fair?",
-                options: ["Unfair", "Fair", "Rude", "Lazy"],
-                correctAnswer: "Fair",
-                explanation: "Adil bir arkadaşı 'fair' (adil) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to stay connected online?",
-                options: ["Avoid friends", "Use messaging apps", "Click unknown links", "Download viruses"],
-                correctAnswer: "Use messaging apps",
-                explanation: "Gençler çevrimiçi bağlantıda kalmak için mesajlaşma uygulamalarını kullanır."
-            },
-            {
-                question: "What is a key tool for baking bread?",
-                options: ["Spoon", "Oven", "Book", "Shoe"],
-                correctAnswer: "Oven",
-                explanation: "Ekmek pişirmek için kilit bir alet fırındır ('oven')."
-            },
-            {
-                question: "What do you say to ask for a phone update?",
-                options: ["What’s new?", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "What’s new?",
-                explanation: "Telefonda bir güncelleme istemek için 'What’s new?' (Ne haber?) diyebilirsiniz."
-            },
-            {
-                question: "What is an urban adventure?",
-                options: ["Watching TV", "Exploring a city", "Eating lunch", "Sleeping"],
-                correctAnswer: "Exploring a city",
-                explanation: "Bir şehri keşfetmek ('exploring a city') bir şehir macerasıdır."
-            },
-            {
-                question: "What is a chore that builds teamwork?",
-                options: ["Working alone", "Cleaning with family", "Watching TV", "Playing games"],
-                correctAnswer: "Cleaning with family",
-                explanation: "Aile ile temizlik yapmak ('cleaning with family') takım çalışmasını geliştiren bir ev işidir."
-            },
-            {
-                question: "Which invention connects people?",
-                options: ["Wheel", "Telephone", "Pen", "Shoe"],
-                correctAnswer: "Telephone",
-                explanation: "Telefon ('telephone') insanları birbirine bağlayan bir icattır."
-            },
-            {
-                question: "What is a dream for education?",
-                options: ["More exams", "Better schools", "Watching TV", "Sleeping"],
-                correctAnswer: "Better schools",
-                explanation: "Eğitim için bir hayal daha iyi okullardır ('better schools')."
-            },
-            {
-                question: "What is a natural disaster with water?",
-                options: ["Earthquake", "Flood", "Tornado", "Wildfire"],
-                correctAnswer: "Flood",
-                explanation: "Sel ('flood') suyla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to avoid online ads?",
-                options: ["Click all ads", "Use ad blockers", "Share passwords", "Post everything"],
-                correctAnswer: "Use ad blockers",
-                explanation: "Çevrimiçi reklamlardan kaçınmanın en iyi yolu reklam engelleyiciler kullanmaktır."
-            },
-            {
-                question: "What adjective describes a friend who is calm?",
-                options: ["Angry", "Calm", "Rude", "Lazy"],
-                correctAnswer: "Calm",
-                explanation: "Sakin bir arkadaşı 'calm' (sakin) olarak tanımlarsınız."
-            },
-            {
-                question: "What do teens do to promote causes online?",
-                options: ["Stay silent", "Share campaigns", "Click unknown links", "Download viruses"],
-                correctAnswer: "Share campaigns",
-                explanation: "Gençler çevrimiçi davaları desteklemek için kampanyalar paylaşır."
-            },
-            {
-                question: "What is a key appliance for quick cooking?",
-                options: ["Spoon", "Microwave", "Book", "Shoe"],
-                correctAnswer: "Microwave",
-                explanation: "Hızlı pişirme için kilit bir alet mikrodalgadır ('microwave')."
-            },
-            {
-                question: "What do you say to end a formal phone call?",
-                options: ["Have a great day!", "Hello", "Sorry", "Goodbye"],
-                correctAnswer: "Have a great day!",
-                explanation: "Resmi bir telefon görüşmesini bitirmek için 'Have a great day!' (İyi günler!) diyebilirsiniz."
-            },
-            {
-                question: "What is a virtual adventure?",
-                options: ["Watching TV", "Virtual reality tour", "Eating lunch", "Sleeping"],
-                correctAnswer: "Virtual reality tour",
-                explanation: "Sanal gerçeklik turu ('virtual reality tour') bir sanal maceradır."
-            },
-            {
-                question: "What is a chore that improves safety?",
-                options: ["Leaving clutter", "Clearing pathways", "Watching TV", "Playing games"],
-                correctAnswer: "Clearing pathways",
-                explanation: "Yolları temizlemek ('clearing pathways') güvenliği artıran bir ev işidir."
-            },
-            {
-                question: "Which invention supports research?",
-                options: ["Wheel", "Microscope", "Pen", "Shoe"],
-                correctAnswer: "Microscope",
-                explanation: "Mikroskop ('microscope') araştırmayı destekleyen bir icattır."
-            },
-            {
-                question: "What is a dream for the environment?",
-                options: ["More pollution", "Clean energy", "Watching TV", "Sleeping"],
-                correctAnswer: "Clean energy",
-                explanation: "Çevre için bir hayal temiz enerjidir ('clean energy')."
-            },
-            {
-                question: "What is a natural disaster with ice?",
-                options: ["Earthquake", "Avalanche", "Flood", "Tornado"],
-                correctAnswer: "Avalanche",
-                explanation: "Çığ ('avalanche') buzla ilgili bir doğal afettir."
-            },
-            {
-                question: "What is the best way to learn online safely?",
-                options: ["Use unverified sites", "Choose trusted platforms", "Click all links", "Post everything"],
-                correctAnswer: "Choose trusted platforms",
-                explanation: "Çevrimiçi güvenli bir şekilde öğrenmenin en iyi yolu güvenilir platformlar seçmektir."
-            }
+    {
+        question: "A person who is _______ is excessively proud of oneself; conceited.",
+        options: ["modest", "humble", "arrogant", "shy"],
+        correctAnswer: "arrogant",
+        explanation: "Kendisiyle aşırı gurur duyan, kendini beğenmiş kişiye 'arrogant' (kibirli) denir."
+    },
+    {
+        question: "The documentary offered a _______ perspective on the issue, which made me reconsider my own views.",
+        options: ["biased", "thought-provoking", "superficial", "one-sided"],
+        correctAnswer: "thought-provoking",
+        explanation: "Belgesel, konuyla ilgili 'thought-provoking' (düşündürücü) bir bakış açısı sundu ve bu da kendi görüşlerimi yeniden gözden geçirmemi sağladı."
+    },
+    {
+        question: "The recipe requires you to _______ the herbs finely before adding them to the sauce.",
+        options: ["mince", "grate", "peel", "stir"],
+        correctAnswer: "mince",
+        explanation: "Tarif, otları sosa eklemeden önce ince ince 'mince' (kıymak) gerektiğini belirtiyor."
+    },
+    {
+        question: "Due to the poor signal, our conversation was frequently _______. I couldn't understand most of what he said.",
+        options: ["clear", "loud", "interrupted", "fluent"],
+        correctAnswer: "interrupted",
+        explanation: "Zayıf sinyal nedeniyle konuşmamız sık sık 'interrupted' (kesintiye uğradı)."
+    },
+    {
+        question: "It is crucial to be aware of your digital _______ to protect your online privacy.",
+        options: ["account", "profile", "footprint", "identity"],
+        correctAnswer: "footprint",
+        explanation: "Çevrimiçi gizliliğinizi korumak için dijital 'footprint' (ayak izinizin) farkında olmanız çok önemlidir."
+    },
+    {
+        question: "Despite the _______ conditions, the climbers were determined to reach the summit.",
+        options: ["favourable", "perilous", "easy", "safe"],
+        correctAnswer: "perilous",
+        explanation: "'Perilous' (tehlikeli, riskli) koşullara rağmen, dağcılar zirveye ulaşmaya kararlıydı."
+    },
+    {
+        question: "The city is a _______ of cultures, with people from all over the world living together.",
+        options: ["melting pot", "separation", "division", "uniformity"],
+        correctAnswer: "melting pot",
+        explanation: "Şehir, dünyanın her yerinden insanların bir arada yaşadığı bir kültürlerin 'melting pot' (kaynaştığı pota) dır."
+    },
+    {
+        question: "Neglecting your _______ can lead to problems at home and with your family.",
+        options: ["hobbies", "responsibilities", "friends", "freetime"],
+        correctAnswer: "responsibilities",
+        explanation: "'Responsibilities' (sorumluluklarınızı) ihmal etmek evde ve ailenizle sorunlara yol açabilir."
+    },
+    {
+        question: "The scientist's _______ was a significant step forward in cancer research.",
+        options: ["failure", "setback", "breakthrough", "problem"],
+        correctAnswer: "breakthrough",
+        explanation: "Bilim insanının 'breakthrough' (çığır açan buluşu), kanser araştırmalarında ileriye doğru atılmış önemli bir adımdı."
+    },
+    {
+        question: "The authorities issued a warning to _______ the area before the hurricane hit.",
+        options: ["enter", "visit", "evacuate", "populate"],
+        correctAnswer: "evacuate",
+        explanation: "Yetkililer, kasırga vurmadan önce bölgeyi 'evacuate' (tahliye etmek) için bir uyarı yayınladı."
+    },
+    {
+        question: "His _______ support during the difficult times meant a lot to me.",
+        options: ["wavering", "unwavering", "hesitant", "reluctant"],
+        correctAnswer: "unwavering",
+        explanation: "Zor zamanlarda gösterdiği 'unwavering' (sarsılmaz, kararlı) destek benim için çok şey ifade ediyordu."
+    },
+    {
+        question: "The band's music is a _______ of rock, jazz, and folk influences.",
+        options: ["separation", "fusion", "division", "distinction"],
+        correctAnswer: "fusion",
+        explanation: "Grubun müziği, rock, caz ve folk etkilerinin bir 'fusion' (birleşimi, füzyonu) dur."
+    },
+    {
+        question: "For this dessert, you need to _______ the cream until it forms stiff peaks.",
+        options: ["whisk", "stir", "mix", "fold"],
+        correctAnswer: "whisk",
+        explanation: "Bu tatlı için, kremayı katı tepeler oluşturana kadar 'whisk' (çırpmanız) gerekir."
+    },
+    {
+        question: "I'm calling to _______ about the availability of the product.",
+        options: ["complain", "inquire", "argue", "discuss"],
+        correctAnswer: "inquire",
+        explanation: "Ürünün mevcudiyeti hakkında 'inquire' (bilgi almak, sormak) için arıyorum."
+    },
+    {
+        question: "Posting _______ comments online can have serious legal consequences.",
+        options: ["positive", "defamatory", "kind", "supportive"],
+        correctAnswer: "defamatory",
+        explanation: "İnternette 'defamatory' (iftira niteliğinde, karalayıcı) yorumlar yayınlamanın ciddi yasal sonuçları olabilir."
+    },
+    {
+        question: "The _______ of the landscape from the hot-air balloon was breathtaking.",
+        options: ["panorama", "detail", "close-up", "snapshot"],
+        correctAnswer: "panorama",
+        explanation: "Sıcak hava balonundan manzaranın 'panorama' (panoraması) nefes kesiciydi."
+    },
+    {
+        question: "The hotel is situated in an _______ location, perfect for a peaceful holiday.",
+        options: ["idyllic", "bustling", "noisy", "chaotic"],
+        correctAnswer: "idyllic",
+        explanation: "Otel, huzurlu bir tatil için mükemmel olan 'idyllic' (cennet gibi, pastoral) bir konumda yer almaktadır."
+    },
+    {
+        question: "He tends to _______, putting off important tasks until the last minute.",
+        options: ["hurry", "rush", "procrastinate", "act quickly"],
+        correctAnswer: "procrastinate",
+        explanation: "Önemli görevleri son dakikaya kadar erteleyerek 'procrastinate' (ertelemek) eğilimindedir."
+    },
+    {
+        question: "The findings of the study _______ the initial hypothesis.",
+        options: ["contradicted", "supported", "proved", "confirmed"],
+        correctAnswer: "contradicted",
+        explanation: "Çalışmanın bulguları, başlangıçtaki hipotezle 'contradicted' (çelişiyordu)."
+    },
+    {
+        question: "It is our collective responsibility to _______ the effects of global warming.",
+        options: ["increase", "worsen", "mitigate", "cause"],
+        correctAnswer: "mitigate",
+        explanation: "Küresel ısınmanın etkilerini 'mitigate' (hafifletmek, azaltmak) kolektif sorumluluğumuzdur."
+    },
+    {
+        question: "A person who is _______ has a friendly and pleasant manner.",
+        options: ["hostile", "genial", "surly", "unfriendly"],
+        correctAnswer: "genial",
+        explanation: "Arkadaş canlısı ve hoş bir tavrı olan kişiye 'genial' (cana yakın, samimi) denir."
+    },
+    {
+        question: "The performance was so _______ that the audience gave a standing ovation.",
+        options: ["dull", "mediocre", "captivating", "boring"],
+        correctAnswer: "captivating",
+        explanation: "Performans o kadar 'captivating' (büyüleyici, etkileyici) idi ki, seyirciler ayakta alkışladı."
+    },
+    {
+        question: "The _______ of this dish is its unique blend of sweet and sour flavors.",
+        options: ["ingredient", "recipe", "hallmark", "process"],
+        correctAnswer: "hallmark",
+        explanation: "Bu yemeğin 'hallmark' (ayırıcı özelliği, alametifarikası), tatlı ve ekşi tatların eşsiz karışımıdır."
+    },
+    {
+        question: "I'm sorry to _______, but I have an urgent message for Mr. Smith.",
+        options: ["intrude", "disturb", "bother", "interrupt"],
+        correctAnswer: "intrude",
+        explanation: "'Intrude' (izinsiz girmek, rahatsız etmek) ettiğim için üzgünüm, ama Bay Smith'e acil bir mesajım var."
+    },
+    {
+        question: "The internet has become _______ in modern life; we use it for everything.",
+        options: ["optional", "unimportant", "ubiquitous", "rare"],
+        correctAnswer: "ubiquitous",
+        explanation: "İnternet modern hayatta 'ubiquitous' (her yerde bulunan, yaygın) hale geldi; onu her şey için kullanıyoruz."
+    },
+    {
+        question: "The _______ terrain made the hike more difficult than we expected.",
+        options: ["flat", "even", "rugged", "smooth"],
+        correctAnswer: "rugged",
+        explanation: "'Rugged' (engebeli, sarp) arazi, yürüyüşü beklediğimizden daha zor hale getirdi."
+    },
+    {
+        question: "The ancient _______ has been wonderfully preserved for visitors.",
+        options: ["ruin", "citadel", "skyscraper", "factory"],
+        correctAnswer: "citadel",
+        explanation: "Antik 'citadel' (iç kale), ziyaretçiler için harika bir şekilde korunmuştur."
+    },
+    {
+        question: "She completed the chore with _______, finishing it quickly and efficiently.",
+        options: ["delay", "hesitation", "alacrity", "reluctance"],
+        correctAnswer: "alacrity",
+        explanation: "Ev işini 'alacrity' (çeviklik, heves) ile tamamladı, hızlı ve verimli bir şekilde bitirdi."
+    },
+    {
+        question: "The experiment was designed to be _______, so other scientists could test the results.",
+        options: ["unique", "replicable", "secret", "complex"],
+        correctAnswer: "replicable",
+        explanation: "Deney, diğer bilim insanlarının sonuçları test edebilmesi için 'replicable' (tekrarlanabilir) olacak şekilde tasarlandı."
+    },
+    {
+        question: "The _______ of the earthquake was felt in neighboring countries.",
+        options: ["aftermath", "tremor", "epicenter", "cause"],
+        correctAnswer: "aftermath",
+        explanation: "Depremin 'aftermath' (sonrasındaki etkileri), komşu ülkelerde de hissedildi."
+    },
+    {
+        question: "A _______ person is someone who is not easily upset or excited.",
+        options: ["passionate", "excitable", "placid", "emotional"],
+        correctAnswer: "placid",
+        explanation: "Kolayca üzülmeyen veya heyecanlanmayan kişiye 'placid' (sakin, dingin) denir."
+    },
+    {
+        question: "His music is _______, often blending different genres in unexpected ways.",
+        options: ["conventional", "predictable", "formulaic", "idiosyncratic"],
+        correctAnswer: "idiosyncratic",
+        explanation: "Onun müziği 'idiosyncratic' (kendine özgü, nevi şahsına münhasır) dır, genellikle farklı türleri beklenmedik şekillerde harmanlar."
+    },
+    {
+        question: "You need to _______ the meat in spices overnight for the best flavor.",
+        options: ["marinate", "boil", "fry", "roast"],
+        correctAnswer: "marinate",
+        explanation: "En iyi lezzet için eti bir gece boyunca baharatlarla 'marinate' (marine etmek) gerekir."
+    },
+    {
+        question: "The new regulations aim to prevent companies from _______ customers.",
+        options: ["helping", "supporting", "exploiting", "serving"],
+        correctAnswer: "exploiting",
+        explanation: "Yeni düzenlemeler, şirketlerin müşterileri 'exploiting' (sömürmesini) önlemeyi amaçlıyor."
+    },
+    {
+        question: "The spread of _______ online is a major challenge for social media platforms.",
+        options: ["facts", "information", "misinformation", "knowledge"],
+        correctAnswer: "misinformation",
+        explanation: "Çevrimiçi ortamda 'misinformation' (yanlış bilginin) yayılması, sosyal medya platformları için büyük bir zorluktur."
+    },
+    {
+        question: "The _______ nature of the sport requires both physical strength and mental focus.",
+        options: ["easy", "demanding", "simple", "relaxing"],
+        correctAnswer: "demanding",
+        explanation: "Sporun 'demanding' (zorlu, çok çaba gerektiren) doğası hem fiziksel güç hem de zihinsel odaklanma gerektirir."
+    },
+    {
+        question: "The _______ of the island is its unspoiled natural beauty.",
+        options: ["charm", "problem", "disadvantage", "issue"],
+        correctAnswer: "charm",
+        explanation: "Adanın 'charm' (cazibesi, çekiciliği), el değmemiş doğal güzelliğidir."
+    },
+    {
+        question: "It is his _______ to ensure the safety of all employees.",
+        options: ["prerogative", "duty", "choice", "option"],
+        correctAnswer: "duty",
+        explanation: "Tüm çalışanların güvenliğini sağlamak onun 'duty' (görevi) dir."
+    },
+    {
+        question: "The cell _______ is a complex mechanism that controls what enters and leaves the cell.",
+        options: ["wall", "membrane", "nucleus", "cytoplasm"],
+        correctAnswer: "membrane",
+        explanation: "Hücre 'membrane' (zarı), hücreye neyin girip çıktığını kontrol eden karmaşık bir mekanizmadır."
+    },
+    {
+        question: "The _______ of the approaching tornado caused panic in the town.",
+        options: ["specter", "sight", "view", "appearance"],
+        correctAnswer: "specter",
+        explanation: "Yaklaşan kasırganın 'specter' (tehdidi, hayaleti) kasabada paniğe neden oldu."
+    },
+    {
+        question: "A person who is _______ is excessively talkative, especially on trivial matters.",
+        options: ["taciturn", "reticent", "garrulous", "concise"],
+        correctAnswer: "garrulous",
+        explanation: "Özellikle önemsiz konularda aşırı konuşkan olan kişiye 'garrulous' (geveze, konuşkan) denir."
+    },
+    {
+        question: "The song's _______ melody made it an instant hit.",
+        options: ["dissonant", "cacophonous", "euphonious", "jarring"],
+        correctAnswer: "euphonious",
+        explanation: "Şarkının 'euphonious' (kulağa hoş gelen, ahenkli) melodisi onu anında bir hit yaptı."
+    },
+    {
+        question: "The chef's _______ is evident in every dish he creates.",
+        options: ["inexperience", "culinary expertise", "clumsiness", "incompetence"],
+        correctAnswer: "culinary expertise",
+        explanation: "Şefin 'culinary expertise' (mutfak uzmanlığı), yarattığı her yemekte belirgindir."
+    },
+    {
+        question: "I need to _______ my subscription before it expires.",
+        options: ["cancel", "renew", "start", "delete"],
+        correctAnswer: "renew",
+        explanation: "Süresi dolmadan aboneliğimi 'renew' (yenilemek) gerekiyor."
+    },
+    {
+        question: "The internet can be a breeding ground for _______, so it's important to be critical of what you read.",
+        options: ["facts", "truths", "fallacies", "realities"],
+        correctAnswer: "fallacies",
+        explanation: "İnternet 'fallacies' (safsatalar, yanıltıcı argümanlar) için bir üreme alanı olabilir, bu yüzden okuduklarınıza karşı eleştirel olmak önemlidir."
+    },
+    {
+        question: "The _______ journey through the jungle tested their endurance.",
+        options: ["easy", "arduous", "short", "comfortable"],
+        correctAnswer: "arduous",
+        explanation: "Ormandaki 'arduous' (zorlu, meşakkatli) yolculuk onların dayanıklılığını test etti."
+    },
+    {
+        question: "The _______ of the medieval castle was breathtaking.",
+        options: ["grandeur", "simplicity", "plainness", "modesty"],
+        correctAnswer: "grandeur",
+        explanation: "Ortaçağ kalesinin 'grandeur' (ihtişamı, görkemi) nefes kesiciydi."
+    },
+    {
+        question: "She is a _______ supporter of animal rights, dedicating her life to the cause.",
+        options: ["lukewarm", "zealous", "apathetic", "indifferent"],
+        correctAnswer: "zealous",
+        explanation: "Hayvan haklarının 'zealous' (şevkli, gayretli) bir destekçisidir ve hayatını bu davaya adamıştır."
+    },
+    {
+        question: "The scientist's work laid the _______ for future discoveries in the field.",
+        options: ["obstacle", "groundwork", "hindrance", "barrier"],
+        correctAnswer: "groundwork",
+        explanation: "Bilim insanının çalışması, alandaki gelecekteki keşifler için 'groundwork' (temel, zemin) oluşturdu."
+    },
+    {
+        question: "The _______ from the volcanic eruption covered the entire region in ash.",
+        options: ["fallout", "lava", "magma", "smoke"],
+        correctAnswer: "fallout",
+        explanation: "Volkanik patlamadan kaynaklanan 'fallout' (serpinti), tüm bölgeyi külle kapladı."
+    },
+    {
+        question: "A person who is _______ is showing a lack of respect for people or things that are generally taken seriously.",
+        options: ["reverent", "pious", "flippant", "serious"],
+        correctAnswer: "flippant",
+        explanation: "Genellikle ciddiye alınan kişilere veya şeylere karşı saygı eksikliği gösteren kişiye 'flippant' (saygısız, laubali) denir."
+    },
+    {
+        question: "The two events are _______; one did not cause the other.",
+        options: ["connected", "related", "uncorrelated", "linked"],
+        correctAnswer: "uncorrelated",
+        explanation: "İki olay 'uncorrelated' (birbiriyle ilişkisiz); biri diğerine neden olmadı."
+    },
+    {
+        question: "The dish was _______ with fresh herbs to enhance its flavor.",
+        options: ["covered", "garnished", "hidden", "mixed"],
+        correctAnswer: "garnished",
+        explanation: "Yemek, lezzetini artırmak için taze otlarla 'garnished' (süslendi)."
+    },
+    {
+        question: "His _______ of the situation was completely different from mine.",
+        options: ["perception", "reality", "fact", "truth"],
+        correctAnswer: "perception",
+        explanation: "Onun duruma ilişkin 'perception' (algısı) benimkinden tamamen farklıydı."
+    },
+    {
+        question: "The company's success is _______ on its ability to innovate.",
+        options: ["independent", "predicated", "separate", "free"],
+        correctAnswer: "predicated",
+        explanation: "Şirketin başarısı, yenilik yapma yeteneğine 'predicated on' (dayanmaktadır, bağlıdır)."
+    },
+    {
+        question: "The _______ sport of wingsuit flying is only for the most experienced thrill-seekers.",
+        options: ["safe", "extreme", "tame", "calm"],
+        correctAnswer: "extreme",
+        explanation: "Kanatlı tulumla uçuş sporu, sadece en deneyimli macera arayanlar içindir."
+    },
+    {
+        question: "The _______ of the Amazon is vital for the planet's ecological balance.",
+        options: ["destruction", "preservation", "deforestation", "pollution"],
+        correctAnswer: "preservation",
+        explanation: "Amazon'un 'preservation' (korunması), gezegenin ekolojik dengesi için hayati önem taşır."
+    },
+    {
+        question: "It is a _______ to assume that all teenagers are lazy.",
+        options: ["fact", "fallacy", "truth", "reality"],
+        correctAnswer: "fallacy",
+        explanation: "Tüm gençlerin tembel olduğunu varsaymak bir 'fallacy' (safsata, yanılgı) dır."
+    },
+    {
+        question: "The process by which plants use sunlight to synthesize foods from carbon dioxide and water is _______.",
+        options: ["respiration", "photosynthesis", "transpiration", "digestion"],
+        correctAnswer: "photosynthesis",
+        explanation: "Bitkilerin güneş ışığını kullanarak karbondioksit ve sudan besin sentezlediği sürece 'photosynthesis' (fotosentez) denir."
+    },
+    {
+        question: "A _______ is a large-scale, destructive event that causes significant damage.",
+        options: ["mishap", "cataclysm", "inconvenience", "difficulty"],
+        correctAnswer: "cataclysm",
+        explanation: "Önemli hasara neden olan büyük ölçekli, yıkıcı bir olaya 'cataclysm' (büyük felaket) denir."
+    },
+    {
+        question: "A person who is _______ is quick to notice things.",
+        options: ["oblivious", "inattentive", "perceptive", "careless"],
+        correctAnswer: "perceptive",
+        explanation: "Bir şeyleri çabuk fark eden kişiye 'perceptive' (anlayışlı, zeki) denir."
+    },
+    {
+        question: "The composer's music is known for its complex harmonies and _______ melodies.",
+        options: ["simple", "intricate", "plain", "basic"],
+        correctAnswer: "intricate",
+        explanation: "Bestecinin müziği, karmaşık armonileri ve 'intricate' (girift, karmaşık) melodileriyle tanınır."
+    },
+    {
+        question: "The instructions were _______; I had no idea where to start.",
+        options: ["clear", "lucid", "straightforward", "ambiguous"],
+        correctAnswer: "ambiguous",
+        explanation: "Talimatlar 'ambiguous' (belirsiz, muğlak) idi; nereden başlayacağım hakkında hiçbir fikrim yoktu."
+    },
+    {
+        question: "You need to be _______ to succeed in this competitive field.",
+        options: ["complacent", "tenacious", "apathetic", "indifferent"],
+        correctAnswer: "tenacious",
+        explanation: "Bu rekabetçi alanda başarılı olmak için 'tenacious' (inatçı, azimli) olmanız gerekir."
+    },
+    {
+        question: "A _______ is a widely held but fixed and oversimplified image or idea of a particular type of person or thing.",
+        options: ["prototype", "stereotype", "archetype", "original"],
+        correctAnswer: "stereotype",
+        explanation: "Belirli bir tür kişi veya şey hakkında yaygın olarak benimsenen ancak sabit ve aşırı basitleştirilmiş bir imaja 'stereotype' (kalıp yargı, basmakalıp) denir."
+    },
+    {
+        question: "The city's _______ has grown rapidly in the last decade.",
+        options: ["infrastructure", "history", "climate", "geography"],
+        correctAnswer: "infrastructure",
+        explanation: "Şehrin 'infrastructure' (altyapısı) son on yılda hızla büyüdü."
+    },
+    {
+        question: "She is a _______ of healthy living, always promoting exercise and good nutrition.",
+        options: ["critic", "proponent", "opponent", "detractor"],
+        correctAnswer: "proponent",
+        explanation: "Her zaman egzersiz ve iyi beslenmeyi teşvik eden, sağlıklı yaşamın bir 'proponent' (savunucusu, destekçisi) dur."
+    },
+    {
+        question: "The scientist's _______ was that the new drug would be more effective.",
+        options: ["conclusion", "result", "hypothesis", "fact"],
+        correctAnswer: "hypothesis",
+        explanation: "Bilim insanının 'hypothesis' (hipotezi, varsayımı), yeni ilacın daha etkili olacağı yönündeydi."
+    },
+    {
+        question: "The _______ of the drought on agriculture was devastating.",
+        options: ["impact", "benefit", "advantage", "cause"],
+        correctAnswer: "impact",
+        explanation: "Kuraklığın tarım üzerindeki 'impact' (etkisi) yıkıcıydı."
+    },
+    {
+        question: "A person who is _______ is having a secret and typically selfish reason for doing something.",
+        options: ["altruistic", "sincere", "genuine", "having an ulterior motive"],
+        correctAnswer: "having an ulterior motive",
+        explanation: "Bir şeyi yapmak için gizli ve tipik olarak bencil bir nedeni olan kişinin 'having an ulterior motive' (art niyeti olmak) durumu vardır."
+    },
+    {
+        question: "The novel is a _______ on the follies of modern society.",
+        options: ["celebration", "satire", "praise", "tribute"],
+        correctAnswer: "satire",
+        explanation: "Roman, modern toplumun çılgınlıkları üzerine bir 'satire' (hiciv, taşlama) dir."
+    },
+    {
+        question: "The _______ of the new technology is expected to be gradual.",
+        options: ["dissemination", "concealment", "suppression", "withdrawal"],
+        correctAnswer: "dissemination",
+        explanation: "Yeni teknolojinin 'dissemination' (yayılması, dağılması) nın kademeli olması bekleniyor."
+    },
+    {
+        question: "A person who is _______ is feeling or showing sorrow and regret for having done wrong.",
+        options: ["proud", "defiant", "remorseful", "unapologetic"],
+        correctAnswer: "remorseful",
+        explanation: "Yanlış yaptığı için üzüntü ve pişmanlık duyan kişiye 'remorseful' (pişman) denir."
+    },
+    {
+        question: "The _______ of his argument was that the system itself was flawed.",
+        options: ["crux", "surface", "detail", "tangent"],
+        correctAnswer: "crux",
+        explanation: "Argümanının 'crux' (en önemli ve zor noktası), sistemin kendisinin kusurlu olduğuydu."
+    },
+    {
+        question: "The two countries signed a _______ non-aggression pact.",
+        options: ["temporary", "bilateral", "unilateral", "permanent"],
+        correctAnswer: "bilateral",
+        explanation: "İki ülke 'bilateral' (iki taraflı) bir saldırmazlık paktı imzaladı."
+    },
+    {
+        question: "A person who is _______ is extremely thorough and accurate.",
+        options: ["scrupulous", "careless", "negligent", "sloppy"],
+        correctAnswer: "scrupulous",
+        explanation: "Son derece titiz ve doğru olan kişiye 'scrupulous' (vicdanlı, titiz) denir."
+    },
+    {
+        question: "The _______ of the artist's work is its emotional intensity.",
+        options: ["hallmark", "flaw", "defect", "weakness"],
+        correctAnswer: "hallmark",
+        explanation: "Sanatçının eserinin 'hallmark' (ayırıcı özelliği), duygusal yoğunluğudur."
+    },
+    {
+        question: "A _______ is a person who has a fanatical and uncompromising pursuit of their ideals.",
+        options: ["moderate", "pragmatist", "zealot", "realist"],
+        correctAnswer: "zealot",
+        explanation: "İdeallerinin fanatik ve uzlaşmaz bir takipçisi olan kişiye 'zealot' (fanatik, bağnaz) denir."
+    },
+    {
+        question: "The _______ of the problem was much deeper than it appeared.",
+        options: ["etiology", "symptom", "surface", "manifestation"],
+        correctAnswer: "etiology",
+        explanation: "Sorunun 'etiology' (neden bilimi, kökeni), göründüğünden çok daha derindi."
+    },
+    {
+        question: "A person who is _______ is showing a deep and solemn respect.",
+        options: ["irreverent", "flippant", "disrespectful", "reverent"],
+        correctAnswer: "reverent",
+        explanation: "Derin ve ciddi bir saygı gösteren kişiye 'reverent' (saygılı, hürmetkar) denir."
+    },
+    {
+        question: "The _______ of evidence presented by the prosecution was overwhelming.",
+        options: "['paucity', 'plethora', 'dearth', 'scarcity']",
+        correctAnswer: "'plethora'",
+        explanation: "İddia makamı tarafından sunulan kanıtların 'plethora' (bolluğu, fazlalığı) eziciydi."
+    },
+    {
+        question: "A _______ is a long, angry speech of criticism or accusation.",
+        options: ["eulogy", "panegyric", "tirade", "compliment"],
+        correctAnswer: "tirade",
+        explanation: "Uzun, öfkeli bir eleştiri veya suçlama konuşmasına 'tirade' (sert ve uzun eleştiri) denir."
+    },
+    {
+        question: "A person who is _______ is attempting to win favor from influential people by flattery.",
+        options: ["sincere", "genuine", "obsequious", "forthright"],
+        correctAnswer: "obsequious",
+        explanation: "Dalkavuklukla etkili insanlardan lütuf kazanmaya çalışan kişiye 'obsequious' (yağcı, dalkavuk) denir."
+    },
+    {
+        question: "The _______ of his argument was difficult to follow.",
+        options: ["simplicity", "tortuosity", "clarity", "directness"],
+        correctAnswer: "tortuosity",
+        explanation: "Argümanının 'tortuosity' (dolambaçlılığı, karmaşıklığı) takip etmeyi zorlaştırıyordu."
+    },
+    {
+        question: "A person who is _______ is having or showing a strong or unreasoning belief in a particular cause.",
+        options: ["apathetic", "indifferent", "fanatical", "dispassionate"],
+        correctAnswer: "fanatical",
+        explanation: "Belirli bir davaya karşı güçlü veya mantıksız bir inanç gösteren kişiye 'fanatical' (fanatik) denir."
+    },
+    {
+        question: "The _______ of the company's success was its commitment to quality.",
+        options: ["cornerstone", "obstacle", "hindrance", "problem"],
+        correctAnswer: "cornerstone",
+        explanation: "Şirketin başarısının 'cornerstone' (temel taşı), kaliteye olan bağlılığıydı."
+    },
+    {
+        question: "A _______ is a choice or decision made after careful thought.",
+        options: ["whim", "impulse", "deliberation", "guess"],
+        correctAnswer: "deliberation",
+        explanation: "Dikkatli bir düşünmeden sonra yapılan bir seçim veya karara 'deliberation' (tartışma, düşünme) sonucu varılır."
+    },
+    {
+        question: "A person who is _______ is famous and respected within a particular sphere.",
+        options: ["notorious", "eminent", "infamous", "obscure"],
+        correctAnswer: "eminent",
+        explanation: "Belirli bir alanda ünlü ve saygın olan kişiye 'eminent' (seçkin, ünlü) denir."
+    },
+    {
+        question: "The _______ of his claims was later proven to be false.",
+        options: ["veracity", "validity", "truthfulness", "authenticity"],
+        correctAnswer: "veracity",
+        explanation: "İddialarının 'veracity' (doğruluğu, gerçekliği) nin daha sonra yanlış olduğu kanıtlandı."
+    },
+    {
+        question: "A _______ is a feeling of pensive sadness, typically with no obvious cause.",
+        options: ["elation", "joy", "melancholy", "ecstasy"],
+        correctAnswer: "melancholy",
+        explanation: "Genellikle belirgin bir nedeni olmayan dalgın bir hüzün hissine 'melancholy' (melankoli, hüzün) denir."
+    },
+    {
+        question: "A person who is _______ is excessively willing to serve or please others.",
+        options: ["servile", "dominant", "assertive", "independent"],
+        correctAnswer: "servile",
+        explanation: "Başkalarına hizmet etmeye veya onları memnun etmeye aşırı istekli olan kişiye 'servile' (köle ruhlu, dalkavuk) denir."
+    },
+    {
+        question: "The _______ of the old building was a sad sight for the local residents.",
+        options: ["restoration", "preservation", "dilapidation", "renovation"],
+        correctAnswer: "dilapidation",
+        explanation: "Eski binanın 'dilapidation' (harabe hali, bakımsızlığı), yerel halk için üzücü bir manzaraydı."
+    },
+    {
+        question: "A _______ is a short and amusing or interesting story about a real incident or person.",
+        options: ["novel", "epic", "anecdote", "fable"],
+        correctAnswer: "anecdote",
+        explanation: "Gerçek bir olay veya kişi hakkında kısa ve eğlenceli veya ilginç bir hikayeye 'anecdote' (anekdot, fıkra) denir."
+    },
+    {
+        question: "A person who is _______ is having or showing an irritable and bad-tempered disposition.",
+        options: ["amiable", "congenial", "cantankerous", "cordial"],
+        correctAnswer: "cantankerous",
+        explanation: "Asabi ve huysuz bir yapıya sahip olan kişiye 'cantankerous' (huysuz, geçimsiz) denir."
+    },
+    {
+        question: "The _______ of his speech was a call for unity and cooperation.",
+        options: ["peroration", "introduction", "body", "digression"],
+        correctAnswer: "peroration",
+        explanation: "Konuşmasının 'peroration' (sonuç bölümü, kapanış), birlik ve işbirliği için bir çağrıydı."
+    },
+    {
+        question: "A _______ is a person who attacks cherished beliefs or institutions.",
+        options: ["supporter", "advocate", "proponent", "iconoclast"],
+        correctAnswer: "iconoclast",
+        explanation: "Değer verilen inançlara veya kurumlara saldıran kişiye 'iconoclast' (yerleşik inançlara karşı çıkan kimse) denir."
+    },
+    {
+        question: "The _______ of his argument was that the current system is unsustainable.",
+        options: ["linchpin", "detail", "tangent", "footnote"],
+        correctAnswer: "linchpin",
+        explanation: "Argümanının 'linchpin' (en önemli unsuru, kilit noktası), mevcut sistemin sürdürülemez olduğuydu."
+    },
+    {
+        question: "A person who is _______ is having or showing a feeling of envious resentment of someone or their achievements.",
+        options: ["admiring", "supportive", "benevolent", "begrudging"],
+        correctAnswer: "begrudging",
+        explanation: "Birine veya başarılarına karşı kıskanç bir gücenme duygusu gösteren kişiye 'begrudging' (istemeyerek veren/kıskanan) denir."
+    },
+    {
+        question: "The _______ of the city's nightlife is its diverse range of clubs and bars.",
+        options: ["panoply", "scarcity", "dearth", "lack"],
+        correctAnswer: "panoply",
+        explanation: "Şehrin gece hayatının 'panoply' (görkemli ve etkileyici dizisi), çeşitli kulüp ve bar yelpazesidir."
+    },
+    {
+        question: "A person who is _______ is behaving or speaking in a way that is intended to be clever and funny but is often silly or annoying.",
+        options: ["witty", "facetious", "serious", "solemn"],
+        correctAnswer: "facetious",
+        explanation: "Zeki ve komik olması amaçlanan ancak genellikle aptalca veya can sıkıcı olan bir şekilde davranan veya konuşan kişiye 'facetious' (şakacı, alaycı) denir."
+    },
+    {
+        question: "The _______ between the two leaders was palpable, making negotiations difficult.",
+        options: ["amity", "rapport", "antipathy", "harmony"],
+        correctAnswer: "antipathy",
+        explanation: "İki lider arasındaki 'antipathy' (antifati, sevimsizlik) elle tutulur düzeydeydi ve müzakereleri zorlaştırıyordu."
+    },
+    {
+        question: "A _______ is a formal expression of praise for someone who has died.",
+        options: ["tirade", "diatribe", "eulogy", "criticism"],
+        correctAnswer: "eulogy",
+        explanation: "Ölen biri için yapılan resmi bir övgü ifadesine 'eulogy' (methiye, övgü) denir."
+    },
+    {
+        question: "A person who is _______ is showing a strong feeling of excitement and eagerness.",
+        options: ["apathetic", "lethargic", "ardent", "indifferent"],
+        correctAnswer: "ardent",
+        explanation: "Güçlü bir heyecan ve şevk duygusu gösteren kişiye 'ardent' (ateşli, şevkli) denir."
+    },
+    {
+        question: "The _______ of the evidence led to a quick verdict.",
+        options: ["ambiguity", "paucity", "cogency", "weakness"],
+        correctAnswer: "cogency",
+        explanation: "Kanıtın 'cogency' (ikna ediciliği, geçerliliği), hızlı bir karara yol açtı."
+    },
+    {
+        question: "A _______ is a person who is fond of company; sociable.",
+        options: ["misanthrope", "recluse", "gregarious", "hermit"],
+        correctAnswer: "gregarious",
+        explanation: "Arkadaşlıktan hoşlanan, sosyal olan kişiye 'gregarious' (sokulgan, sosyal) denir."
+    },
+    {
+        question: "The _______ of his words was not lost on his audience.",
+        options: ["levity", "gravity", "frivolity", "humor"],
+        correctAnswer: "gravity",
+        explanation: "Sözlerinin 'gravity' (ciddiyeti, önemi) dinleyicilerinin gözünden kaçmadı."
+    },
+    {
+        question: "A person who is _______ is showing a critical or disrespectful attitude.",
+        options: ["reverent", "deferential", "irreverent", "pious"],
+        correctAnswer: "irreverent",
+        explanation: "Eleştirel veya saygısız bir tavır sergileyen kişiye 'irreverent' (saygısız) denir."
+    }
+
+    
 
         ]
     }

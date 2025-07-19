@@ -85,7 +85,6 @@ class Quiz {
         gradeButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const grade = button.getAttribute('data-grade');
-                console.log(`SINIF SEÇİLDİ: ${grade}`); // Hata Ayıklama Mesajı 1
                 this.state.selectedGrade = grade;
                 this.resetGame(false); 
                 this.showScreen('quiz-screen');
@@ -143,24 +142,20 @@ class Quiz {
 
     initQuiz() {
         if (!this.loadQuestions()) {
-            console.error(`HATA: Sınıf ${this.state.selectedGrade} için sorular 'questionsByGrade' nesnesinde bulunamadı.`); // Hata Ayıklama Mesajı 2
             this.showModal({ title: 'Hata!', message: `Sorular yüklenemedi! Lütfen 'sorular.js' dosyasını kontrol edin.` });
             this.showScreen('home-screen');
             return;
         }
         
-        console.log(`'${this.state.selectedGrade}. Sınıf' için soru nesnesi başarıyla yüklendi.`); // Hata Ayıklama Mesajı 3
         
         this.prepareQuestionsForLevel();
         
         if (this.state.mevcutSorular.length === 0) {
-            console.error(`HATA: Sınıf ${this.state.selectedGrade}, Seviye '${this.state.seviye}' için hiç soru bulunamadı.`); // Hata Ayıklama Mesajı 4
             this.showModal({ title: 'Soru Yok!', message: `Seçtiğiniz sınıf ve seviyede soru bulunamadı! Ana sayfaya dönülüyor.` });
             this.showScreen('home-screen');
             return;
         }
 
-        console.log(`'${this.state.seviye}' seviyesi için ${this.state.mevcutSorular.length} adet soru bulundu ve karıştırıldı.`); // Hata Ayıklama Mesajı 5
 
         this.displayQuestion();
         this.updateLevelTitle();
@@ -227,19 +222,15 @@ class Quiz {
     }
 
     checkAnswer(answer, correctAnswer, button) {
-    console.log("--- checkAnswer metodu BAŞLADI ---");
-    console.log("Kullanıcının cevabı:", answer);
+
 
     if (this.state.cevapVerildi) {
-        console.log("Zaten cevap verilmiş, fonksiyondan çıkılıyor.");
         return;
     }
 
-    console.log("Zamanlayıcı durduruluyor...");
     this.stopTimer();
 
     this.state.cevapVerildi = true;
-    console.log("Butonlar pasif hale getiriliyor...");
     const buttons = this.elements.answers.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
 
@@ -250,22 +241,17 @@ class Quiz {
         this.showModal({ title: "Hata!", message: "Soru verisi alınamadı." });
         return;
     }
-    console.log("Mevcut soru:", currentQuestion.question);
 
     let isCorrect = answer.toLowerCase() === correctAnswer.toLowerCase();
-    console.log("Cevap doğru mu?", isCorrect);
 
     let modalTitle = isCorrect ? "Doğru!" : "Yanlış!";
 
     if (isCorrect) {
-        // 'button' null değilse sınıf ekle
         if (button) button.classList.add('correct');
         this.state.dogruCevapSayisi++;
         this.sounds.correct.play();
         if (typeof confetti === 'function') confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-        console.log("Doğru cevap işlemleri tamamlandı.");
     } else {
-        // 'button' null değilse sınıf ekle
         if (button) button.classList.add('wrong');
         this.state.yanlisCevapSayisi++;
         this.updateWrongBar();
@@ -282,19 +268,15 @@ class Quiz {
                 btn.classList.add('correct');
             }
         });
-        console.log("Yanlış cevap işlemleri tamamlandı.");
     }
 
     if (this.state.yanlisCevapSayisi >= 10) {
-        console.log("Oyun bitti, 10 yanlışa ulaşıldı.");
         this.sounds.game_over.play();
         this.endGame(false);
         return;
     }
 
-    console.log("Popup'ı göstermek için 1.2 saniye bekleniyor...");
     setTimeout(() => {
-        console.log("Popup gösteriliyor...");
         this.showModal({
             title: modalTitle,
             message: currentQuestion.explanation || "Bu soru için bir açıklama bulunmuyor.",
@@ -315,7 +297,6 @@ class Quiz {
         });
     }, 1200);
 
-    console.log("--- checkAnswer metodu BİTTİ ---");
 }
 
     updateProgressBar() {
