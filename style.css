@@ -1,6 +1,3 @@
-/* ==========================================================================
-   TEMA ve RENK DEĞİŞKENLERİ
-   ========================================================================== */
 :root {
     --primary-color: #007AFF;
     --success-color: #34C759;
@@ -35,9 +32,6 @@ body[data-theme='dark'] {
     --shadow-color: rgba(0, 0, 0, 0.25);
 }
 
-/* ==========================================================================
-   TEMEL STİLLER ve ANİMASYONLAR
-   ========================================================================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; }
 body {
@@ -50,9 +44,6 @@ body {
 button { font-family: var(--font-family); cursor: pointer; border: none; }
 @keyframes slideInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ==========================================================================
-   ANA YAPI ve GENEL ELEMENTLER
-   ========================================================================== */
 .app-wrapper { display: flex; flex-direction: column; min-height: 100vh; max-width: 700px; margin: 0 auto; padding: 0 1rem; }
 .theme-toggle { position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: var(--bg-alt-color); color: var(--text-muted-color); font-size: 1.25rem; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 15px var(--shadow-color); transition: all 0.2s ease; z-index: 1000; }
 .theme-toggle:hover { transform: translateY(-3px) scale(1.1); }
@@ -68,10 +59,6 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 .btn-primary { background: linear-gradient(45deg, #834d9b, #d04ed6); color: white; padding: 0.8rem 2rem; font-size: 1rem; font-weight: 500; border-radius: 25px; transition: all 0.2s ease; }
 .btn-primary:hover { transform: translateY(-3px); }
 
-/* ==========================================================================
-   ANA EKRAN (HOME) STİLLERİ
-   ========================================================================== */
-// EKLENECEK KODLAR
 .rules-section {
     background-color: var(--bg-alt-color);
     border-radius: 16px;
@@ -93,7 +80,6 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
     position: relative;
 }
 
-
 .rules-list { list-style: none; padding-left: 0; }
 .rules-list li::before { content: '\f058'; font-family: "Font Awesome 6 Free"; font-weight: 900; color: var(--primary-color); position: absolute; left: 0; top: 4px; }
 .select-grade-text { font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; }
@@ -105,9 +91,6 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 .grade-7 { background: linear-gradient(45deg, var(--grade-7-start), var(--grade-7-end)); }
 .grade-8 { background: linear-gradient(45deg, var(--grade-8-start), var(--grade-8-end)); }
 
-/* ==========================================================================
-   QUIZ EKRANI STİLLERİ
-   ========================================================================== */
 .level-indicator { font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; padding: 0.5rem 1.5rem; background-color: var(--bg-alt-color); border-radius: 20px; box-shadow: 0 4px 12px var(--shadow-color); }
 .timer { width: 60px; height: 60px; border-radius: 50%; background-color: var(--bg-alt-color); border: 4px solid var(--success-color); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; color: var(--text-color); margin-bottom: 1rem; box-shadow: 0 4px 12px var(--shadow-color); transition: all 0.3s ease; }
 .timer.warning { border-color: #ffc107; transform: scale(1.1); }
@@ -129,9 +112,6 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 .wrong-bar-segment.dark-red { background-color: var(--danger-color); }
 .wrong-bar-segment.inactive { background-color: var(--border-color); opacity: 0.5; }
 
-/* ==========================================================================
-   TEMA UYUMLU MODAL (POPUP) STİLLERİ
-   ========================================================================== */
 .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 9999; opacity: 0; visibility: hidden; transition: opacity 0.3s ease; backdrop-filter: blur(4px); }
 .modal.active { opacity: 1; visibility: visible; }
 .modal-content { background-color: var(--bg-alt-color); border: 1px solid var(--border-color); color: var(--text-color); padding: 2rem 2.5rem; border-radius: 16px; box-shadow: 0 8px 32px var(--shadow-color); width: 90%; max-width: 450px; text-align: center; transform: scale(0.95); transition: transform 0.3s ease; }
@@ -142,9 +122,6 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 .modal-buttons button { background-color: var(--primary-color); color: white; padding: 0.9rem 2.5rem; font-size: 1rem; font-weight: 600; border-radius: 10px; transition: all 0.2s ease-in-out; box-shadow: 0 4px 15px -5px var(--primary-color); }
 .modal-buttons button:hover { transform: translateY(-3px) scale(1.05); filter: brightness(1.1); box-shadow: 0 7px 20px -5px var(--primary-color); }
 
-/* ==========================================================================
-   GÖZDEN GEÇİRME EKRANI STİLLERİ
-   ========================================================================== */
 .review-container { width: 100%; margin: 1rem 0 2rem 0; }
 .review-item { background-color: var(--bg-alt-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 8px var(--shadow-color); }
 .review-item h4 { font-size: 1rem; margin-bottom: 0.75rem; }
@@ -152,21 +129,13 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 .review-item .user-answer { color: var(--danger-color); font-weight: bold; }
 .review-item .correct-answer { color: var(--success-color); font-weight: bold; }
 
-/* ==========================================================================
-   RESPONSIVE AYARLAR
-   ========================================================================== */
 @media (min-width: 768px) {
     .grade-buttons { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
     .answer-options { grid-template-columns: 1fr 1fr; }
 }
-/* ==========================================================================
-   KOMPAKT MOBİL GÖRÜNÜM İÇİN EKSTRA STİLLER
-   ========================================================================== */
 
-/* Ekran yüksekliği 800px'den daha az olan cihazlar için bu kurallar geçerli olsun */
 @media (max-height: 800px) {
 
-    /* Üst başlık alanındaki dikey boşluğu azalt */
     .app-header {
         padding-top: 1.5rem;
         padding-bottom: 1rem;
@@ -176,29 +145,10 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
         max-width: 80px; /* Logoyu biraz küçült */
     }
 
-    /* Zamanlayıcıyı küçült ve boşluğunu azalt */
-    .timer {
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
-        margin-bottom: 0.75rem;
-    }
-
-    /* Soru alanının minimum yüksekliğini ve boşluğunu azalt */
-    .question-area {
-        min-height: 80px;
-        margin-bottom: 1rem;
-    }
-
-    #question {
-        font-size: clamp(1.1rem, 4.5vw, 1.5rem); /* Yazı boyutunu biraz küçült */
-    }
-
-    /* Cevap seçenekleri arasındaki boşlukları azalt */
-    .answer-options {
-        gap: 0.5rem; /* Butonlar arası boşluk */
-        margin-bottom: 1rem;
-    }
+.timer {        width: 50px;        height: 50px;        font-size: 1.2rem;        margin-bottom: 0.75rem;    }
+.question-area {        min-height: 80px;        margin-bottom: 1rem;    }
+#question {        font-size: clamp(1.1rem, 4.5vw, 1.5rem);     }
+.answer-options {        gap: 0.5rem;         margin-bottom: 1rem;    }
 
     /* Cevap butonlarının iç boşluğunu azalt */
     .answer-options button {
@@ -220,4 +170,156 @@ body[data-theme='dark'] .app-subtitle { color: #d04ed6;}
 body.quiz-active .app-header {
     display: none;
 }
+
+
+/* Modal butonları için daha öncelikli (özgül) renk stilleri */
+
+.modal-buttons .btn-orange {
+    background-color: #f39c12; /* Varsayılan olarak turuncu */
+    border-color: #e67e22;
+    color: #ffffff;
+}
+
+.modal-buttons .btn-orange:hover {
+    background-color: #d35400; /* Üzerine gelince koyu turuncu */
+}
+
+.modal-buttons .btn-blue {
+    background-color: #3498db; /* Varsayılan olarak mavi */
+    border-color: #2980b9;
+    color: #ffffff;
+}
+
+.modal-buttons .btn-blue:hover {
+    background-color: #2980b9; /* Üzerine gelince koyu mavi */
+}
+
+
+/* 🟩 EKLENECEK KISIM (dosyanın herhangi bir uygun yerine, örn: .theme-toggle'dan sonra) */
+.music-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Solda konumlandır */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-alt-color);
+    color: var(--text-muted-color);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    border: none; /* Ekstra kenarlık olmasın */
+    cursor: pointer;
+}
+
+.music-toggle:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.stats-box {
+    padding: 8px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    display: block; /* Her kutunun kendi satırında olmasını sağlar */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.stats-correct {
+    background-color: #28a745; /* Koyu Yeşil */
+}
+
+.stats-wrong {
+    background-color: #dc3545; /* Koyu Kırmızı */
+}
+
+.kalan-soru {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--text-muted-color);
+    display: block;
+}
+
+/* 🟩 EKLENECEK KISIM */
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-muted-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: var(--danger-color);
+}
+
+/* style.css dosyanıza ekleyin */
+
+#joker-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.joker-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.joker-btn:hover:not(:disabled) {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.joker-btn:disabled {
+    border-color: #777;
+    color: #777;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* style.css dosyanıza ekleyebilirsiniz */
+
+.success-level {
+    font-size: 1.5rem; /* Yazıyı büyütür */
+    font-weight: bold;
+    color: #4CAF50; /* Yeşil renk - temaya göre değiştirebilirsiniz */
+    padding: 10px;
+    border: 2px dashed #4CAF50;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Koyu temada daha iyi görünmesi için */
+[data-theme="dark"] .success-level {
+    color: #66bb6a;
+    border-color: #66bb6a;
+}
+
+
+
+
 

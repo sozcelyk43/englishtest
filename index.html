@@ -12,6 +12,9 @@
     <button id="theme-toggle" class="theme-toggle" aria-label="Tema değiştir" title="Tema değiştir">
         <i class="fas fa-moon"></i>
     </button>
+    <button id="music-toggle" class="music-toggle" aria-label="Müziği aç/kapa" title="Müziği aç/kapa">
+        <i class="fas fa-volume-off"></i> 
+    </button>
 
     <div class="app-wrapper">
         <header class="app-header">
@@ -25,8 +28,8 @@
                 <div class="rules-section">
                     <h3 class="rules-title">Kurallar</h3>
                     <ul class="rules-list">
-                        <li>Her sınıf seviyesi, 3 bölümden oluşur (Kolay, Orta, Zor).</li>
-                        <li>Her seviyede yanlış cevap sayısı 10’dan az olmalıdır.</li>
+			<li>Her sınıf seviyesi, 4 bölümden oluşur.</li>                        
+			<li>Her seviyede yanlış cevap sayısı 10’dan az olmalıdır.</li>
                         <li>Seviye atlamak için tüm soruları cevaplayın ve 10’dan az yanlış yapın.</li>
                         <li>10 yanlış cevapta oyun biter ve istatistikleriniz gösterilir.</li>
                     </ul>
@@ -40,13 +43,25 @@
                 </div>
             </section>
 
-            <section id="quiz-screen" class="screen">
+           <section id="quiz-screen" class="screen">
                 <div id="level-title" class="level-indicator"></div>
                 <div id="timer" class="timer">20</div>
                 <div class="question-area">
                     <p id="question" aria-live="polite"></p>
                 </div>
                 <div id="answers" class="answer-options"></div>
+
+                <div id="joker-container">
+                    <button id="joker-fifty-fifty" class="joker-btn" title="%50 Joker">
+                        <i class="fas fa-divide"></i> 50/50
+                    </button>
+                    <button id="joker-extra-time" class="joker-btn" title="Ekstra Süre">
+                        <i class="fas fa-stopwatch"></i> +15s
+                    </button>
+                    <button id="joker-skip-question" class="joker-btn" title="Soruyu Atla">
+                        <i class="fas fa-forward"></i> Atla
+                    </button>
+                </div>
                 <div id="result-area" class="result-display">
                     <p id="result"></p>
                 </div>
@@ -56,12 +71,13 @@
                 <div id="wrong-bar" class="wrong-bar-container"></div>
                 <button id="back-to-home" class="btn-primary">Ana Sayfaya Dön</button>
             </section>
-            
+
             <section id="review-screen" class="screen">
                 <h2>Yanlış Cevaplar</h2>
                 <div id="review-list" class="review-container"></div>
                 <button id="back-to-home-from-review" class="btn-primary">Ana Sayfaya Dön</button>
             </section>
+
         </main>
 
         <footer class="app-footer">
