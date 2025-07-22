@@ -1,3 +1,6 @@
+Chart.register(ChartDataLabels);
+
+
 class Quiz {
 
 
@@ -453,23 +456,20 @@ this.startTimer(false);
 
     }
 
-    checkAnswer(answer, correctAnswer, button) {
-
-
+// app.js dosyasındaki Quiz class'ının içine
+checkAnswer(answer, correctAnswer, button) {
     if (this.state.cevapVerildi) {
         return;
     }
 
     this.stopTimer();
-        this.elements.jokerContainer.style.display = 'none';
-
+    this.elements.jokerContainer.style.display = 'none';
 
     this.state.cevapVerildi = true;
     const buttons = this.elements.answers.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
 
     const currentQuestion = this.state.mevcutSorular[this.state.kullanilanSoruIndeksleri.slice(-1)[0]];
-
     if (!currentQuestion) {
         console.error("KRİTİK HATA: 'currentQuestion' verisi bulunamadı!");
         this.showModal({ title: "Hata!", message: "Soru verisi alınamadı." });
@@ -477,7 +477,6 @@ this.startTimer(false);
     }
 
     let isCorrect = answer.toLowerCase() === correctAnswer.toLowerCase();
-
     let modalTitle = isCorrect ? "Doğru!" : "Yanlış!";
 
     if (isCorrect) {
@@ -510,23 +509,24 @@ this.startTimer(false);
         return;
     }
 
-setTimeout(() => {
-    const kalanSoru = this.state.mevcutSorular.length - this.state.kullanilanSoruIndeksleri.length;
-    const seviyeAdi = this.state.seviye.charAt(0).toUpperCase() + this.state.seviye.slice(1);
+    setTimeout(() => {
+        const kalanSoru = this.state.mevcutSorular.length - this.state.kullanilanSoruIndeksleri.length;
+        const seviyeAdi = this.state.seviye.charAt(0).toUpperCase() + this.state.seviye.slice(1);
 
-    const message = `
-        <span class="stats-box stats-correct">Doğru Sayısı: ${this.state.dogruCevapSayisi}</span>
-        <span class="stats-box stats-wrong">Yanlış Sayısı: ${this.state.yanlisCevapSayisi}</span>
-        <span class="kalan-soru">
-            ${seviyeAdi}: ${this.state.bolumIndex + 1}. Bölüm bitmesine kalan soru sayısı: ${kalanSoru}
-        </span>
-    `;
+        // 🟩 DEĞİŞEN KISIM: Mesaj yerine grafik alanı oluşturuluyor
+        const message = `
+            <div class="chart-container">
+                <canvas id="resultChart"></canvas>
+            </div>
+            <span class="kalan-soru">
+                ${seviyeAdi}: ${this.state.bolumIndex + 1}. Bölüm bitmesine kalan soru sayısı: ${kalanSoru}
+            </span>
+        `;
 
-    this.showModal({
-        title: modalTitle,
-        message: message,
-        buttons: [
-            {
+        this.showModal({
+            title: modalTitle,
+            message: message,
+            buttons: [{
                 text: 'Sonraki Soru',
                 className: 'btn-modal btn-next',
                 action: () => {
@@ -537,12 +537,13 @@ setTimeout(() => {
                         this.displayQuestion();
                     }
                 }
-            }
-        ]
-    });
-}, 1200);
+            }]
+        });
 
+        // 🟩 EKLENEN KISIM: Grafik çizdiriliyor
+        this.renderResultChart();
 
+    }, 1200);
 }
 
     updateProgressBar() {
@@ -736,11 +737,10 @@ if (closeButton) {
         this.elements.timer.textContent = this.state.timeLeft;
     }
 
+// app.js dosyasındaki Quiz class'ının içine
 handleTimeout() {
     this.stopTimer();
-        this.elements.jokerContainer.style.display = 'none';
-
-
+    this.elements.jokerContainer.style.display = 'none';
 
     this.state.cevapVerildi = true;
     this.sounds.wrong.play();
@@ -773,9 +773,12 @@ handleTimeout() {
     setTimeout(() => {
         const kalanSoru = this.state.mevcutSorular.length - this.state.kullanilanSoruIndeksleri.length;
         const seviyeAdi = this.state.seviye.charAt(0).toUpperCase() + this.state.seviye.slice(1);
+        
+        // 🟩 DEĞİŞEN KISIM: Mesaj yerine grafik alanı oluşturuluyor
         const message = `
-            <span class="stats-box stats-correct">Doğru Sayısı: ${this.state.dogruCevapSayisi}</span>
-            <span class="stats-box stats-wrong">Yanlış Sayısı: ${this.state.yanlisCevapSayisi}</span>
+            <div class="chart-container">
+                <canvas id="resultChart"></canvas>
+            </div>
             <span class="kalan-soru">
                 ${seviyeAdi}: ${this.state.bolumIndex + 1}. Bölüm bitmesine kalan soru sayısı: ${kalanSoru}
             </span>`;
@@ -796,7 +799,64 @@ handleTimeout() {
                 }
             }]
         });
+
+        // 🟩 EKLENEN KISIM: Grafik çizdiriliyor
+        this.renderResultChart();
+
     }, 1200);
+}
+
+
+// app.js dosyasındaki Quiz class'ının içine
+renderResultChart() {
+    const ctx = document.getElementById('resultChart')?.getContext('2d');
+    if (!ctx) return;
+
+    new Chart(ctx, {
+        type: 'doughnut', // Pasta grafiği tipi
+        data: {
+            labels: ['Doğru', 'Yanlış'],
+            datasets: [{
+                label: 'Cevap Durumu',
+                data: [this.state.dogruCevapSayisi, this.state.yanlisCevapSayisi],
+                backgroundColor: [
+                    '#28a745', // Doğru için yeşil renk
+                    '#dc3545'  // Yanlış için kırmızı renk
+                ],
+                borderColor: [
+                    'var(--bg-alt-color)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '40%', // Ortadaki boşluğun büyüklüğü
+            plugins: {
+                // Efsane (legend) kısmını gizle
+                legend: {
+                    display: false
+                },
+                // Dilimlerin içine sayıları yazdıran eklenti ayarları
+                datalabels: {
+                    display: (context) => {
+                        // Eğer dilimin değeri 0 ise etiketi gösterme
+                        return context.dataset.data[context.dataIndex] > 0;
+                    },
+                    formatter: (value, context) => {
+                        // Dilimin değerini (doğru/yanlış adedini) döndür
+                        return value;
+                    },
+                    color: '#fff', // Yazı rengi
+                    font: {
+                        weight: 'bold',
+                        size: 16
+                    }
+                }
+            }
+        }
+    });
 }
 
    showReviewScreen(isMidGameReview = false) {

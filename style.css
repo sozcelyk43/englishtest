@@ -320,6 +320,12 @@ body.quiz-active .app-header {
 }
 
 
-
+/* Grafik Konteyneri Stili */
+.chart-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem auto; /* Ortala ve altında boşluk bırak */
+}
 
 
