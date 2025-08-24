@@ -1,97 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Kim İngilizce Bilmek İster? | Ozcelik Inc.</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Test İndirme Bağlantısı</title>
+  <meta name="description" content="English Test uygulamasını indirmek için tıklayın." />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: #f7f7f8;
+    }
+    a {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      text-decoration: none;
+      color: #0b57d0;
+      padding: .9rem 1.1rem;
+      border-radius: .8rem;
+      background: white;
+      box-shadow: 0 4px 16px rgba(0,0,0,.08);
+      transition: transform .1s ease, box-shadow .2s ease;
+    }
+    a:hover { box-shadow: 0 6px 22px rgba(0,0,0,.12); }
+    a:active { transform: translateY(1px); }
+  </style>
 </head>
-<body data-theme="dark">
-
-    <button id="theme-toggle" class="theme-toggle" aria-label="Tema değiştir" title="Tema değiştir">
-        <i class="fas fa-moon"></i>
-    </button>
-    <button id="music-toggle" class="music-toggle" aria-label="Müziği aç/kapa" title="Müziği aç/kapa">
-        <i class="fas fa-volume-off"></i> 
-    </button>
-
-    <div class="app-wrapper">
-        <header class="app-header">
-            <img src="logo.png" alt="Kim İngilizce Bilmek İster Logosu" class="logo">
-            <h1 class="app-title">(MEB müfredatına uyumlu)</h1>
-            <h2 class="app-subtitle">from Beginner to Advanced</h2>
-        </header>
-
-        <main class="app-main-content">
-            <section id="home-screen" class="screen active">
-                <div class="rules-section">
-                    <h3 class="rules-title">Kurallar</h3>
-                    <ul class="rules-list">
-			<li>Her sınıf seviyesi, 4 bölümden oluşur.</li>                        
-			<li>Her seviyede yanlış cevap sayısı 10’dan az olmalıdır.</li>
-                        <li>Seviye atlamak için tüm soruları cevaplayın ve 10’dan az yanlış yapın.</li>
-                        <li>10 yanlış cevapta oyun biter ve istatistikleriniz gösterilir.</li>
-                    </ul>
-                </div>
-                <p class="select-grade-text">Lütfen sınıfınızı seçin:</p>
-                <div class="grade-buttons">
-                    <button class="grade-button grade-5" data-grade="5">5. Sınıf</button>
-                    <button class="grade-button grade-6" data-grade="6">6. Sınıf</button>
-                    <button class="grade-button grade-7" data-grade="7">7. Sınıf</button>
-                    <button class="grade-button grade-8" data-grade="8">8. Sınıf</button>
-                </div>
-            </section>
-
-           <section id="quiz-screen" class="screen">
-                <div id="level-title" class="level-indicator"></div>
-                <div id="timer" class="timer">20</div>
-                <div class="question-area">
-                    <p id="question" aria-live="polite"></p>
-                </div>
-                <div id="answers" class="answer-options"></div>
-
-                <div id="joker-container">
-                    <button id="joker-fifty-fifty" class="joker-btn" title="%50 Joker">
-                        <i class="fas fa-divide"></i> 50/50
-                    </button>
-                    <button id="joker-extra-time" class="joker-btn" title="Ekstra Süre">
-                        <i class="fas fa-stopwatch"></i> +15s
-                    </button>
-                    <button id="joker-skip-question" class="joker-btn" title="Soruyu Atla">
-                        <i class="fas fa-forward"></i> Atla
-                    </button>
-                </div>
-                <div id="result-area" class="result-display">
-                    <p id="result"></p>
-                </div>
-                <div class="progress-container">
-                    <div id="progress-bar" class="progress-bar"></div>
-                </div>
-                <div id="wrong-bar" class="wrong-bar-container"></div>
-                <button id="back-to-home" class="btn-primary">Ana Sayfaya Dön</button>
-            </section>
-
-            <section id="review-screen" class="screen">
-                <h2>Yanlış Cevaplar</h2>
-                <div id="review-list" class="review-container"></div>
-                <button id="back-to-home-from-review" class="btn-primary">Ana Sayfaya Dön</button>
-            </section>
-
-        </main>
-
-        <footer class="app-footer">
-            <p>&copy; 2025 Ozcelik Inc. Her hakkı saklıdır.</p>
-        </footer>
-    </div>
-
-
-
-	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-	<script src="sorular.js"></script>
-	<script src="app.js"></script>
-
+<body>
+  <a href="https://play.google.com/store/apps/details?id=com.ozcelikinc.englishtest" target="_blank" rel="noopener noreferrer">English Test uygulamasını indirmek için tıklayınız.</a>
 </body>
 </html>
